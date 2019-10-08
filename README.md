@@ -1,10 +1,10 @@
 # website
-[![CircleCI](https://circleci.com/gh/offen/website/tree/master.svg?style=svg)](https://circleci.com/gh/offen/offen/tree/master)
+[![CircleCI](https://circleci.com/gh/offen/website/tree/master.svg?style=svg)](https://circleci.com/gh/offen/website/tree/master)
 [![Patreon](https://img.shields.io/static/v1.svg?label=patreon&message=donate&color=e85b46)](https://www.patreon.com/offen)
 
 > The www.offen.dev website
 
-This repository contains the source code for the www.offen.dev website, as well as the code needed for running and extending an instance of `offen/offen`.
+This repository contains the source code for the <www.offen.dev> website, as well as the code needed for running and extending an instance of `offen/offen`.
 
 ---
 
