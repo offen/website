@@ -8,8 +8,6 @@ help:
 	@echo "        **IMPORTANT**: this wipes any existing data in your local database."
 	@echo "    build"
 	@echo "        Build the production images."
-	@echo "    secret"
-	@echo "        Generate a random base64 encoded secret"
 
 setup: dev-build update howto
 
@@ -33,10 +31,6 @@ bootstrap:
 
 update:
 	@echo "Installing / updating dependencies ..."
-	@docker-compose run script npm install
-	@docker-compose run vault npm install
-	@docker-compose run auditorium npm install
-	@docker-compose run server go mod download
 	@docker-compose run homepage pip install --user -r requirements.txt
 
 DOCKER_IMAGE_TAG ?= latest
@@ -45,8 +39,5 @@ ROBOTS_FILE ?= robots.txt.staging
 build:
 	@docker build -t offen/server:${DOCKER_IMAGE_TAG} -f build/server/Dockerfile .
 	@docker build --build-arg siteurl=${SITEURL} --build-arg robots=${ROBOTS_FILE} -t offen/proxy:${DOCKER_IMAGE_TAG} -f build/proxy/Dockerfile .
-
-secret:
-	@docker-compose run server make secret
 
 .PHONY: setup build bootstrap build secret

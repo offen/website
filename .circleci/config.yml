@@ -1,12 +1,6 @@
 version: 2
 
 build_preconditions: &build_preconditions
-  requires:
-    - server
-    - vault
-    - script
-    - auditorium
-    - packages
   filters:
     branches:
       only:
@@ -23,136 +17,6 @@ deploy_preconditions: &deploy_preconditions
         - development
 
 jobs:
-  server:
-    docker:
-      - image: circleci/golang:1.13
-        environment:
-          POSTGRES_CONNECTION_STRING: postgres://circle:test@localhost:5432/circle_test?sslmode=disable
-          PORT: 8080
-          EVENT_RETENTION_PERIOD: 4464h
-          COOKIE_EXCHANGE_SECRET: VswgMshC4mPDfey8o+yScg==
-      - image: circleci/postgres:11.2-alpine
-        environment:
-          - POSTGRES_USER=circle
-          - POSTGRES_PASSWORD=test
-    working_directory: ~/offen/server
-    steps:
-      - checkout:
-          path: ~/offen
-      - restore_cache:
-          key: offen-server-{{ checksum "go.mod" }}
-      - run:
-          name: Download modules
-          command: go mod download
-      - save_cache:
-          paths:
-            - /go/pkg/mod
-          key: offen-server-{{ checksum "go.mod" }}
-      - run:
-          name: Waiting for Postgres to be ready
-          command: |
-            for i in `seq 1 10`;
-            do
-              nc -z localhost 5432 && echo Success && exit 0
-              echo -n .
-              sleep 1
-            done
-            echo Failed waiting for Postgres && exit 1
-      - run:
-          name: Run tests
-          command: |
-            cp ~/offen/bootstrap.yml .
-            make test-ci
-
-  vault:
-    docker:
-      - image: circleci/node:10-browsers
-    working_directory: ~/offen/vault
-    steps:
-      - checkout:
-          path: ~/offen
-      - restore_cache:
-          key: offen-vault-{{ checksum "package.json" }}
-      - run:
-          name: Install dependencies
-          command: npm install
-      - save_cache:
-          paths:
-            - ~/offen/vault/node_modules
-          key: offen-vault-{{ checksum "package.json" }}
-      - run:
-          name: Run tests
-          command: npm test
-
-  script:
-    docker:
-      - image: circleci/node:10-browsers
-    working_directory: ~/offen/script
-    steps:
-      - checkout:
-          path: ~/offen
-      - restore_cache:
-          key: offen-script-{{ checksum "package.json" }}
-      - run:
-          name: Install lsof
-          command: sudo apt-get install lsof
-      - run:
-          name: Install dependencies
-          command: npm install
-      - save_cache:
-          paths:
-            - ~/offen/script/node_modules
-          key: offen-script-{{ checksum "package.json" }}
-      - run:
-          name: Run tests
-          command: npm test
-
-  auditorium:
-    docker:
-      - image: circleci/node:10-browsers
-    working_directory: ~/offen/auditorium
-    steps:
-      - checkout:
-          path: ~/offen
-      - restore_cache:
-          key: offen-auditorium-{{ checksum "package.json" }}
-      - run:
-          name: Install lsof
-          command: sudo apt-get install lsof
-      - run:
-          name: Install dependencies
-          command: npm install
-      - save_cache:
-          paths:
-            - ~/offen/auditorium/node_modules
-          key: offen-auditorium-{{ checksum "package.json" }}
-      - run:
-          name: Run tests
-          command: npm test
-
-  packages:
-    docker:
-      - image: circleci/node:10-browsers
-    working_directory: ~/offen/packages
-    steps:
-      - checkout:
-          path: ~/offen
-      - restore_cache:
-          key: offen-packages-{{ checksum "package.json" }}
-      - run:
-          name: Install lsof
-          command: sudo apt-get install lsof
-      - run:
-          name: Install dependencies
-          command: npm install
-      - save_cache:
-          paths:
-            - ~/offen/packages/node_modules
-          key: offen-packages-{{ checksum "package.json" }}
-      - run:
-          name: Run tests
-          command: npm test
-
   build:
     docker:
       - image: docker:18-git
@@ -165,13 +29,11 @@ jobs:
             - v1-{{ .Branch }}
           paths:
             - /caches/proxy.tar
-            - /caches/server.tar
       - run:
           name: Load Docker image layer cache
           command: |
             set +o pipefail
             docker load -i /caches/proxy.tar | true
-            docker load -i /caches/server.tar | true
       - run:
           name: Build application Docker image
           command: |
@@ -184,19 +46,16 @@ jobs:
               export DOCKER_IMAGE_TAG="latest"
               export ROBOTS_FILE="robots.txt.staging"
             fi
-            docker build -t offen/server:$DOCKER_IMAGE_TAG -f build/server/Dockerfile .
             docker build --build-arg siteurl=$SITEURL --build-arg robots=$ROBOTS_FILE -t offen/proxy:$DOCKER_IMAGE_TAG -f build/proxy/Dockerfile .
       - run:
           name: Save Docker image layer cache
           command: |
             mkdir -p /caches
             docker save -o /caches/proxy.tar offen/proxy
-            docker save -o /caches/server.tar offen/server
       - save_cache:
           key: v1-{{ .Branch }}-{{ epoch }}
           paths:
             - /caches/proxy.tar
-            - /caches/server.tar
       - deploy:
           name: Push application Docker image
           command: |
@@ -206,7 +65,6 @@ jobs:
               export DOCKER_IMAGE_TAG="latest"
             fi
             echo "$DOCKER_PASS" | docker login --username $DOCKER_USER --password-stdin
-            docker push offen/server:$DOCKER_IMAGE_TAG
             docker push offen/proxy:$DOCKER_IMAGE_TAG
 
   deploy:
@@ -232,9 +90,8 @@ jobs:
             sudo pip install awsebcli --upgrade
       - run:
           name: Run database migrations
-          working_directory: ~/offen/server
           command: |
-            go run cmd/offen/main.go migrate -conn $(aws secretsmanager get-secret-value --secret-id $TARGET_ENVIRONMENT/postgresConnectionString | jq -r '.SecretString')
+            echo "TBD"
       - run:
           name: Deploy
           command: |
@@ -243,13 +100,8 @@ jobs:
 
 workflows:
   version: 2
-  test_build_deploy:
+  build_deploy:
     jobs:
-      - server
-      - vault
-      - script
-      - auditorium
-      - packages
       - build:
           <<: *build_preconditions
       - deploy:

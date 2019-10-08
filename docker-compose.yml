@@ -6,23 +6,13 @@ services:
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf
     ports:
-      - 8080:80
+      - 8000:80
     depends_on:
       - homepage
       - server
-      - auditorium
-      - vault
-      - script
 
   server:
-    build:
-      context: '.'
-      dockerfile: Dockerfile.golang
-    working_dir: /offen/server
-    volumes:
-      - .:/offen
-      - ./bootstrap.yml:/offen/server/bootstrap.yml
-      - serverdeps:/go/pkg/mod
+    image: offen/server:latest
     environment:
       POSTGRES_CONNECTION_STRING: postgres://postgres:develop@server_database:5432/postgres?sslmode=disable
       PORT: 8080
@@ -31,62 +21,25 @@ services:
       EVENT_RETENTION_PERIOD: 4464h
       ACCOUNT_USER_EMAIL_SALT: JuhbRA4lCdo8rt5qVdLpk3==
       SECURE_COOKIE: 'off'
-    command: refresh run
-    links:
+    depends_on:
       - server_database
-    ports:
-      - 8081:8080
 
   server_database:
     image: postgres:11.2
     environment:
       POSTGRES_PASSWORD: develop
 
-  vault:
-    build:
-      context: '.'
-      dockerfile: Dockerfile.node
-    working_dir: /offen/vault
-    volumes:
-      - .:/offen
-      - vaultdeps:/offen/vault/node_modules
-    command: npm start -- --port 9977
-
-  script:
-    build:
-      context: '.'
-      dockerfile: Dockerfile.node
-    working_dir: /offen/script
-    volumes:
-      - .:/offen
-      - scriptdeps:/offen/script/node_modules
-    command: npm start -- --port 9966
-
-  auditorium:
-    build:
-      context: '.'
-      dockerfile: Dockerfile.node
-    working_dir: /offen/auditorium
-    volumes:
-      - .:/offen
-      - auditoriumdeps:/offen/auditorium/node_modules
-    command: npm start -- --port 9955
-
   homepage:
     build:
       context: '.'
       dockerfile: ./Dockerfile.python
-    working_dir: /offen/homepage
+    working_dir: /website/homepage
     volumes:
-      - .:/offen
+      - .:/website
       - homepagedeps:/root/.local
     command: make devserver
     environment:
       DEBUG: 1
 
 volumes:
-  serverdeps:
-  scriptdeps:
-  auditoriumdeps:
-  vaultdeps:
   homepagedeps:

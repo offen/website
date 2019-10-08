@@ -1,16 +1,12 @@
-# offen
-[![CircleCI](https://circleci.com/gh/offen/offen/tree/master.svg?style=svg)](https://circleci.com/gh/offen/offen/tree/master)
+# website
+[![CircleCI](https://circleci.com/gh/offen/website/tree/master.svg?style=svg)](https://circleci.com/gh/offen/offen/tree/master)
 [![Patreon](https://img.shields.io/static/v1.svg?label=patreon&message=donate&color=e85b46)](https://www.patreon.com/offen)
 
-> The offen analytics software
+> The www.offen.dev website
 
-This repository contains all source code needed to build and run __offen__, both on the server as well as on the client. See each of the READMEs in the subdirectories for instructions on how to work on that particular area of the application.
+This repository contains the source code for the www.offen.dev website, as well as the code needed for running and extending an instance of `offen/offen`.
 
 ---
-
-Development of __offen__ has just started, so instructions are rare and things will stay highly volatile for quite some while.
-
-Guidelines for running and developing the Software will be added when it makes sense to do so. If you have questions in the meantime, feel free to open an issue.
 
 ### Developing the application
 
@@ -34,7 +30,7 @@ You can test your setup by starting the application:
 $ docker-compose up
 ```
 
-which should enable you to access <http://localhost:8080/auditorium/> and use the `auditorium`
+which should enable you to access the homepage at <http://localhost:8000/> and use the `auditorium` at <http://localhost:8000/>
 
 ### License
 
