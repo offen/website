@@ -13,6 +13,9 @@ services:
 
   server:
     image: offen/server:latest
+    command: serve
+    volumes:
+      - ./bootstrap.yml:/bootstrap.yml
     environment:
       POSTGRES_CONNECTION_STRING: postgres://postgres:develop@server_database:5432/postgres?sslmode=disable
       PORT: 8080
