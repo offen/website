@@ -86,12 +86,14 @@ jobs:
           command: |
             if [ "${CIRCLE_BRANCH}" == "master" ]; then
               echo 'export TARGET_ENVIRONMENT="production"' >> $BASH_ENV
+              echo 'export DOCKER_IMAGE_TAG="stable"' >> $BASH_ENV
             else
               echo 'export TARGET_ENVIRONMENT="staging"' >> $BASH_ENV
+              echo 'export DOCKER_IMAGE_TAG="latest"' >> $BASH_ENV
             fi
       - run:
           name: Run database migrations
-          command: docker run -it offen/offen:latest migrate -conn $(aws secretsmanager get-secret-value --secret-id $TARGET_ENVIRONMENT/postgresConnectionString | jq -r '.SecretString')
+          command: docker run -it offen/offen:$DOCKER_IMAGE_TAG migrate -conn $(aws secretsmanager get-secret-value --secret-id $TARGET_ENVIRONMENT/postgresConnectionString | jq -r '.SecretString')
       - run:
           name: Deploy
           command: |
