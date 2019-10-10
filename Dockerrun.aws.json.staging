@@ -23,7 +23,7 @@
     },
     {
       "name": "server",
-      "image": "offen/server:latest",
+      "image": "offen/offen:latest",
       "essential": true,
       "memory": 256
     }

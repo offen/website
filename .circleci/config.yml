@@ -68,11 +68,19 @@ jobs:
             docker push offen/proxy:$DOCKER_IMAGE_TAG
 
   deploy:
-    working_directory: ~/offen
     docker:
-      - image: circleci/golang:1.12
+      - image: docker:18-git
+    working_directory: ~/offen
     steps:
       - checkout
+      - setup_remote_docker
+      - run:
+          name: Install deployment dependencies
+          command: |
+            sudo apt-get update && sudo apt-get install -qq -y python-pip libpython-dev
+            curl -O https://bootstrap.pypa.io/get-pip.py && sudo python get-pip.py
+            sudo pip install -q awscli --upgrade
+            sudo pip install awsebcli --upgrade
       - run:
           name: Define target environment
           command: |
@@ -82,16 +90,8 @@ jobs:
               echo 'export TARGET_ENVIRONMENT="staging"' >> $BASH_ENV
             fi
       - run:
-          name: Install deployment dependencies
-          command: |
-            sudo apt-get update && sudo apt-get install -qq -y python-pip libpython-dev
-            curl -O https://bootstrap.pypa.io/get-pip.py && sudo python get-pip.py
-            sudo pip install -q awscli --upgrade
-            sudo pip install awsebcli --upgrade
-      - run:
           name: Run database migrations
-          command: |
-            echo "TBD"
+          command: docker run -it offen/offen:latest migrate -conn $(aws secretsmanager get-secret-value --secret-id $TARGET_ENVIRONMENT/postgresConnectionString | jq -r '.SecretString')
       - run:
           name: Deploy
           command: |

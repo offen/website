@@ -30,7 +30,7 @@
     },
     {
       "name": "server",
-      "image": "offen/server:stable",
+      "image": "offen/offen:stable",
       "essential": true,
       "memory": 256
     },

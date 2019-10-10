@@ -17,7 +17,7 @@ dev-build:
 howto:
 	@echo "Successfully built containers and installed dependencies."
 	@echo "If this is your initial setup, you can run 'make bootstrap' next"
-	@echo "to create seed the database."
+	@echo "to create and seed the database."
 
 bootstrap:
 	@echo "Bootstrapping Server service ..."
@@ -32,6 +32,8 @@ bootstrap:
 update:
 	@echo "Installing / updating dependencies ..."
 	@docker-compose run homepage pip install --user -r requirements.txt
+	@echo "Applying pending database migrations ..."
+	@docker-compose run server migrate
 
 DOCKER_IMAGE_TAG ?= latest
 ROBOTS_FILE ?= robots.txt.staging

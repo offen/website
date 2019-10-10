@@ -12,7 +12,7 @@ services:
       - server
 
   server:
-    image: offen/server:latest
+    image: offen/offen:latest
     command: serve
     volumes:
       - ./bootstrap.yml:/bootstrap.yml
