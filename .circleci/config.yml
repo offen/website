@@ -28,12 +28,12 @@ jobs:
           keys:
             - v1-{{ .Branch }}
           paths:
-            - /caches/proxy.tar
+            - /caches/website.tar
       - run:
           name: Load Docker image layer cache
           command: |
             set +o pipefail
-            docker load -i /caches/proxy.tar | true
+            docker load -i /caches/website.tar | true
       - run:
           name: Build application Docker image
           command: |
@@ -46,16 +46,16 @@ jobs:
               export DOCKER_IMAGE_TAG="latest"
               export ROBOTS_FILE="robots.txt.staging"
             fi
-            docker build --build-arg siteurl=$SITEURL --build-arg robots=$ROBOTS_FILE -t offen/proxy:$DOCKER_IMAGE_TAG -f build/proxy/Dockerfile .
+            docker build --build-arg siteurl=$SITEURL --build-arg robots=$ROBOTS_FILE -t offen/website:$DOCKER_IMAGE_TAG -f build/Dockerfile .
       - run:
           name: Save Docker image layer cache
           command: |
             mkdir -p /caches
-            docker save -o /caches/proxy.tar offen/proxy
+            docker save -o /caches/website.tar offen/website
       - save_cache:
           key: v1-{{ .Branch }}-{{ epoch }}
           paths:
-            - /caches/proxy.tar
+            - /caches/website.tar
       - deploy:
           name: Push application Docker image
           command: |

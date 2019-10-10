@@ -11,7 +11,7 @@
   "containerDefinitions": [
     {
       "name": "proxy",
-      "image": "offen/proxy:stable",
+      "image": "offen/website:stable",
       "essential": true,
       "memory": 128,
       "portMappings": [

@@ -35,10 +35,11 @@ update:
 	@echo "Applying pending database migrations ..."
 	@docker-compose run server migrate
 
-DOCKER_IMAGE_TAG ?= latest
+DOCKER_IMAGE_TAG ?= local
 ROBOTS_FILE ?= robots.txt.staging
+SITEURL ?= http://localhost:8000
 
 build:
-	@docker build --build-arg siteurl=${SITEURL} --build-arg robots=${ROBOTS_FILE} -t offen/proxy:${DOCKER_IMAGE_TAG} -f build/proxy/Dockerfile .
+	@docker build --build-arg siteurl=${SITEURL} --build-arg robots=${ROBOTS_FILE} -t offen/website:${DOCKER_IMAGE_TAG} -f build/Dockerfile .
 
-.PHONY: setup build bootstrap build secret
+.PHONY: setup build bootstrap build
