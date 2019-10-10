@@ -1,10 +1,9 @@
 # website
 [![CircleCI](https://circleci.com/gh/offen/website/tree/master.svg?style=svg)](https://circleci.com/gh/offen/website/tree/master)
-[![Patreon](https://img.shields.io/static/v1.svg?label=patreon&message=donate&color=e85b46)](https://www.patreon.com/offen)
 
 > The www.offen.dev website
 
-This repository contains the source code for the <www.offen.dev> website, as well as the code needed for running and extending an instance of `offen/offen`.
+This repository contains the source code for the <https://www.offen.dev> website, as well as the code needed for running and extending an instance of `offen/offen` on the same domain.
 
 ---
 
@@ -30,7 +29,7 @@ You can test your setup by starting the application:
 $ docker-compose up
 ```
 
-which should enable you to access the homepage at <http://localhost:8000/> and use the `auditorium` at <http://localhost:8000/>
+which should enable you to access the homepage at <http://localhost:8000/> and use the wrapped `auditorium` at <http://localhost:8000/auditorium>
 
 ### License
 
