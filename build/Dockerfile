@@ -22,7 +22,7 @@ ARG robots
 ENV ROBOTS_FILE=$robots
 
 COPY --from=homepage /code/homepage/output /www/data
-COPY ./build/proxy/$ROBOTS_FILE /www/data/robots.txt
-COPY ./build/proxy/nginx.conf /etc/nginx/nginx.conf
+COPY ./build/$ROBOTS_FILE /www/data/robots.txt
+COPY ./build/nginx.conf /etc/nginx/nginx.conf
 
 EXPOSE 80
