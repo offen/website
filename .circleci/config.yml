@@ -69,7 +69,7 @@ jobs:
 
   deploy:
     docker:
-      - image: docker:18-git
+      - image: circleci/golang:1.13
     working_directory: ~/offen
     steps:
       - checkout
