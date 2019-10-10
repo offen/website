@@ -25,7 +25,8 @@
       "name": "server",
       "image": "offen/offen:latest",
       "essential": true,
-      "memory": 256
+      "memory": 256,
+      "command": ["serve"]
     }
   ]
 }

@@ -32,7 +32,8 @@
       "name": "server",
       "image": "offen/offen:stable",
       "essential": true,
-      "memory": 256
+      "memory": 256,
+      "command": ["serve"]
     },
     {
       "name": "logspout",
