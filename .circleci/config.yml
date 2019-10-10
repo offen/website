@@ -65,7 +65,7 @@ jobs:
               export DOCKER_IMAGE_TAG="latest"
             fi
             echo "$DOCKER_PASS" | docker login --username $DOCKER_USER --password-stdin
-            docker push offen/proxy:$DOCKER_IMAGE_TAG
+            docker push offen/website:$DOCKER_IMAGE_TAG
 
   deploy:
     docker:
