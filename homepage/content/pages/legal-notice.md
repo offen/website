@@ -11,8 +11,8 @@ Torfstr. 22
 13353 Berlin
 
 ### Contact Information
-E-Mail: [mail@offen.dev](mailto:mail@offen.dev)  
-Internet address: [www.offen.dev](https://www.offen.dev/)  
+E-Mail: [hioffen@posteo.de](mailto:hioffen@posteo.de)  
+Internet address: [www.offen.dev](https://www.offen.dev/)
 
 ### Graphics and Image Sources
 NLNet Logo [https://nlnet.nl/logo/](https://nlnet.nl/logo/){: target="_blank"}
