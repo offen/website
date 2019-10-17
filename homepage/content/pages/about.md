@@ -24,6 +24,6 @@ We are happy to work with [NLnet Foundation][nlnet-foundation]{: target="_blank"
 
 *Feel free to contact us with any kind of feedback.* From criticism and praise to contributions or support, everything is welcome. Get in touch.
 
-[mail@offen.dev][mail@offen.dev]
+[hioffen@posteo.de][hioffen@posteo.de]
 
-[mail@offen.dev]: mailto:mail@offen.dev
+[hioffen@posteo.de]: mailto:hioffen@posteo.de

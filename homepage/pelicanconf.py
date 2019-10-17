@@ -39,7 +39,8 @@ TAGS_SAVE_AS = None
 DIRECT_TEMPLATES = []
 
 GITHUB_ORG = 'https://github.com/offen'
-CONTACT_EMAIL = 'mail@offen.dev'
+CONTACT_EMAIL = 'hioffen@posteo.de'
+GPG_KEY_FILE = '74B041E23DB29D552644CEB1B18C633D6967FE3F.asc'
 PATREON_URL = 'https://www.patreon.com/bePatron?u=21484999'
 
 OFFEN_ACCOUNT_ID = '9b63c4d8-65c0-438c-9d30-cc4b01173393'
