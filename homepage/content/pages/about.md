@@ -24,6 +24,4 @@ We are happy to work with [NLnet Foundation][nlnet-foundation]{: target="_blank"
 
 *Feel free to contact us with any kind of feedback.* From criticism and praise to contributions or support, everything is welcome. Get in touch.
 
-[hioffen@posteo.de][hioffen@posteo.de]
-
-[hioffen@posteo.de]: mailto:hioffen@posteo.de
+[hioffen@posteo.de](mailto:hioffen@posteo.de) [[GPG Key]](/theme/74B041E23DB29D552644CEB1B18C633D6967FE3F.asc){: target="_blank"} 
