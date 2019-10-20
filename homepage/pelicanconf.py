@@ -26,9 +26,6 @@ THEME = './theme'
 # Delete the output directory before generating new files.
 DELETE_OUTPUT_DIRECTORY = True
 
-PLUGIN_PATHS = ['./plugins']
-PLUGINS = ['assets']
-
 # dont create following standard pages
 AUTHORS_SAVE_AS = None
 ARCHIVES_SAVE_AS = None
@@ -38,9 +35,15 @@ TAGS_SAVE_AS = None
 # keep this for access to page variable
 DIRECT_TEMPLATES = []
 
+PLUGIN_PATHS = ['./plugins']
+PLUGINS = ['assets']
+
+
 GITHUB_ORG = 'https://github.com/offen'
 CONTACT_EMAIL = 'hioffen@posteo.de'
 GPG_KEY_FILE = '74B041E23DB29D552644CEB1B18C633D6967FE3F.asc'
-PATREON_URL = 'https://www.patreon.com/bePatron?u=21484999'
+PATREON_URL = 'https://www.patreon.com/offen'
+LINKEDIN_URL = 'https://www.linkedin.com/company/hioffen'
+TWITTER_URL = 'https://twitter.com/hioffen'
 
 OFFEN_ACCOUNT_ID = '9b63c4d8-65c0-438c-9d30-cc4b01173393'
