@@ -36,22 +36,8 @@ TAGS_SAVE_AS = None
 DIRECT_TEMPLATES = []
 
 PLUGIN_PATHS = ['./plugins']
-PLUGINS = ['assets','sitemap']
+PLUGINS = ['assets']
 
-# generate Sitemap
-SITEMAP = {
-    'format': 'xml',
-    'priorities': {
-        'indexes': 1,
-        'articles': 0.5,
-        'pages': 0.5
-    },
-    'changefreqs': {
-        'articles': 'monthly',
-        'indexes': 'daily',
-        'pages': 'monthly'
-    }
-}
 
 GITHUB_ORG = 'https://github.com/offen'
 CONTACT_EMAIL = 'hioffen@posteo.de'
