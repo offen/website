@@ -18,6 +18,8 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
+SITEURL = 'http://localhost:8000'
+
 # pagination
 DEFAULT_PAGINATION = False
 
@@ -33,7 +35,8 @@ CATEGORIES_SAVE_AS = None
 TAGS_SAVE_AS = None
 
 # keep this for access to page variable
-DIRECT_TEMPLATES = []
+DIRECT_TEMPLATES = ['sitemap']
+SITEMAP_SAVE_AS = 'sitemap.xml'
 
 PLUGIN_PATHS = ['./plugins']
 PLUGINS = ['assets']
