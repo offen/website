@@ -12,7 +12,7 @@ services:
       - server
 
   server:
-    image: offen/offen:latest
+    image: offen/offen:latest@sha256:e14297bb6c6e03e282b0ce9d38ba2b987ef2a5de16e8943aaae3c3ca75260427
     command: serve
     volumes:
       - ./bootstrap.yml:/bootstrap.yml
