@@ -14,6 +14,9 @@ setup: dev-build update howto
 dev-build:
 	@docker-compose build
 
+up:
+	@docker-compose up
+
 howto:
 	@echo "Successfully built containers and installed dependencies."
 	@echo "If this is your initial setup, you can run 'make bootstrap' next"
