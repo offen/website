@@ -23,7 +23,7 @@
     },
     {
       "name": "server",
-      "image": "offen/offen:latest@sha256:e14297bb6c6e03e282b0ce9d38ba2b987ef2a5de16e8943aaae3c3ca75260427",
+      "image": "offen/offen@sha256:fe55ba1c183eb8bb4dd19143e6fe1133d6d3b9115c94cc2150620b27adef18fc",
       "essential": true,
       "memory": 256,
       "command": ["serve"]

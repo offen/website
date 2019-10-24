@@ -26,7 +26,7 @@ $ make bootstrap
 You can test your setup by starting the application:
 
 ```sh
-$ docker-compose up
+$ make up
 ```
 
 which should enable you to access the homepage at <http://localhost:8000/> and use the wrapped `auditorium` at <http://localhost:8000/auditorium>
