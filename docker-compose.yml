@@ -12,18 +12,19 @@ services:
       - server
 
   server:
-    image: offen/offen:latest
+    image: offen/offen@sha256:fe55ba1c183eb8bb4dd19143e6fe1133d6d3b9115c94cc2150620b27adef18fc
     command: serve
     volumes:
       - ./bootstrap.yml:/bootstrap.yml
+      - database:/data
     environment:
-      POSTGRES_CONNECTION_STRING: postgres://postgres:develop@server_database:5432/postgres?sslmode=disable
-      DEVELOPMENT: '1'
-      PORT: 8080
-      COOKIE_EXCHANGE_SECRET: 8jeKYbbnywoYIZznu4HffQ==
-      EVENT_RETENTION_PERIOD: 4464h
-      ACCOUNT_USER_EMAIL_SALT: eypctS7SVKM1Ureb61db5Q==
-      SECURE_COOKIE: 'off'
+      OFFEN_APP_EVENTRETENTIONPERIOD: 4464h
+      OFFEN_APP_DEVELOPMENT: '1'
+      OFFEN_APP_DISABLESECURECOOKIE: '1'
+      OFFEN_DATABASE_CONNECTIONSTRING: /data/offen.db
+      OFFEN_SERVER_PORT: 8080
+      OFFEN_SECRETS_COOKIEEXCHANGE: 8jeKYbbnywoYIZznu4HffQ==
+      OFFEN_SECRETS_EMAILSALT: eypctS7SVKM1Ureb61db5Q==
     depends_on:
       - server_database
 
@@ -46,3 +47,4 @@ services:
 
 volumes:
   homepagedeps:
+  database:
