@@ -34,9 +34,9 @@
       "essential": true,
       "memory": 256,
       "command": ["serve"],
-      "environment": {
-        "OFFEN_SERVER_REVERSEPROXY": "1"
-      }
+      "environment": [
+        { name: "OFFEN_SERVER_REVERSEPROXY", "value": "1" }
+      ]
     },
     {
       "name": "logspout",
