@@ -28,7 +28,7 @@
       "memory": 256,
       "command": ["serve"],
       "environment": [
-        { name: "OFFEN_SERVER_REVERSEPROXY", "value": "1" }
+        { "name": "OFFEN_SERVER_REVERSEPROXY", "value": "1" }
       ]
     }
   ]
