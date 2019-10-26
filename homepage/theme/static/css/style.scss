@@ -11,6 +11,7 @@ $grey-mid: #898989;
 $grey-bright: #D5D5D5;
 $white: #FFF;
 
+
 /* ---------------------------------------------------
 BASICS
 ----------------------------------------------------*/
@@ -73,13 +74,13 @@ LAYOUT & SPACER
 }
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
+  .container-full {
+    padding: 60px 0 120px 0;
+  }
   .container-reader {
     width: 600px;
     margin: 0 auto;
-    padding: 60px 20px 120px 20px;
-  }
-  .container-full {
-    padding: 60px 80px 120px 80px;
+    padding: 60px 0 120px 0;
   }
   .footer {
     padding: 40px 40px 0 40px;
@@ -87,11 +88,9 @@ LAYOUT & SPACER
 }
 /* Mobile Styles */
 @media only screen and (min-width: 600px) and (max-width: 960px) {
-  .container-reader,
-  .container-full {
+  .container-reader {
     width: 600px;
     margin: 0 auto;
-    padding: 60px 20px 120px 20px;
   }
 }
 @media only screen and (max-width: 960px) {
@@ -128,10 +127,16 @@ CARDS
 .card-deck,
 .card,
 .footer-card-deck {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .card {
-  max-width: 300px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 280px;
   color: $black-mid;
 }
 .card h2,
@@ -148,15 +153,22 @@ CARDS
 /* Mobile Styles */
 @media only screen and (max-width: 960px) {
   .card-deck,
-  .card,
   .footer-card-deck {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
+  .card-deck {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
   .card {
-    align-self: center;
+    margin: 0 auto;
   }
   .card:nth-child(2) {
-    margin: 100px 0 100px 0;
+    margin: 100px auto 100px auto;
   }
   .footer-card {
     text-align: center;
@@ -166,18 +178,22 @@ CARDS
 @media only screen and (min-width: 961px) {
   .card-deck,
   .footer-card-deck {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
   }
-  .card {
-    flex-direction: column;
-  }
   .card-deck {
-    justify-content: space-evenly;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
   .card:nth-child(2) {
-    margin: 0 40px 0 40px;
+    margin: 0 50px 0 50px;
   }
   .footer-card-deck {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
   }
   .footer-card:nth-child(1),
@@ -196,13 +212,13 @@ CARDS
 TYPO
 ----------------------------------------------------*/
 body {
-  background-color: $white;
   font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
   word-wrap: break-word;
   color: $grey-mid;
+  background-color: $black-mid; // overscroll color
 }
 h1,
 h2 {
