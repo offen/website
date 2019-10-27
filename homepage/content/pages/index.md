@@ -1,8 +1,9 @@
 Title: Transparent web analytics for everyone | offen
-description: offen is a free and open source analytics software for websites and web applications that allows respectful handling of data.
+description: offen is a free and open source analytics software for websites and web applications. Users can access their data while the operators treat it with respect.
 save_as: index.html
 href: /
 template: index
+sitemap_priority: 1.0
 
 ## Summary
 

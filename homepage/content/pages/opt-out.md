@@ -1,5 +1,5 @@
 Title: Opt-out | offen
-description: offen is a free and open source analytics software for websites and web applications that allows respectful handling of data.
+description: Prevent offen from aggregating the actions you have taken on participating websites.
 save_as: opt-out/index.html
 exclude_from_sitemap: true
 

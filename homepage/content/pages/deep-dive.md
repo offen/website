@@ -1,7 +1,8 @@
 Title: Deep dive | offen
-description: offen is a free and open source analytics software for websites and web applications that allows respectful handling of data.
+description: What do users know about their data? How can they access it? Do operators benefit from a careful handling of user data? Does offen work in accordance with GDPR?
 save_as: deep-dive/index.html
 href: /deep-dive/
+sitemap_priority: 0.7
 
 ## Deep dive
 

@@ -1,7 +1,8 @@
 Title: Legal Notice | offen
-description: offen is a free and open source analytics software for websites and web applications that allows respectful handling of data.
+description: Information in accordance with Section 5 TMG
 save_as: legal-notice/index.html
 href: /legal-notice/
+exclude_from_sitemap: true
 
 ## Legal Notice
 
