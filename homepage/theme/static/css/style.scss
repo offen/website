@@ -3,15 +3,13 @@
 /* ---------------------------------------------------
 ROOTS
 ----------------------------------------------------*/
-:root {
---yellow-mid: #F7BF08;
---yellow-bright: #fde28c;
---mint-mid: #BBD9D3;
---black-mid: #39352A;
---grey-mid: #898989;
---grey-bright: #D5D5D5;
---white: #FFF;
-}
+$yellow-mid: #F7BF08;
+$yellow-bright: #fde28c;
+$mint-mid: #BBD9D3;
+$black-mid: #39352A;
+$grey-mid: #898989;
+$grey-bright: #D5D5D5;
+$white: #FFF;
 
 
 /* ---------------------------------------------------
@@ -34,28 +32,28 @@ LAYOUT & SPACER
   z-index: 1;
   top: 0;
   right: 0;
-  background-color: var(--yellow-mid);
+  background-color: $yellow-mid;
 }
 .intro {
   width: 100%;
   margin: 70px 0 0 0;
-  background-color: var(--yellow-mid);
+  background-color: $yellow-mid;
 }
 .feature {
   width: 100%;
 }
 .cta-top {
   width: 100%;
-  color: var(--yellow-mid);
+  color: $yellow-mid;
 }
 .content {
   width: 100%;
   margin: 70px 0 0 0;
-  background-color: var(--white);
+  background-color: $white;
 }
 .content-index {
   width: 100%;
-  background-color: var(--white);
+  background-color: $white;
 }
 .cta-bottom,
 .outro {
@@ -64,8 +62,8 @@ LAYOUT & SPACER
 .footer {
   width: 100%;
   min-height: 300px;
-  color: var(--grey-mid);
-  background-color: var(--black-mid);
+  color: $grey-mid;
+  background-color: $black-mid;
 }
 .spacer-intro {
   width: 430px;
@@ -76,13 +74,13 @@ LAYOUT & SPACER
 }
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
+  .container-full {
+    padding: 60px 0 120px 0;
+  }
   .container-reader {
     width: 600px;
     margin: 0 auto;
-    padding: 60px 20px 120px 20px;
-  }
-  .container-full {
-    padding: 60px 80px 120px 80px;
+    padding: 60px 0 120px 0;
   }
   .footer {
     padding: 40px 40px 0 40px;
@@ -90,11 +88,9 @@ LAYOUT & SPACER
 }
 /* Mobile Styles */
 @media only screen and (min-width: 600px) and (max-width: 960px) {
-  .container-reader,
-  .container-full {
+  .container-reader {
     width: 600px;
     margin: 0 auto;
-    padding: 60px 20px 120px 20px;
   }
 }
 @media only screen and (max-width: 960px) {
@@ -131,11 +127,17 @@ CARDS
 .card-deck,
 .card,
 .footer-card-deck {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .card {
-  max-width: 300px;
-  color: var(--black-mid);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 280px;
+  color: $black-mid;
 }
 .card h2,
 .card p {
@@ -151,15 +153,22 @@ CARDS
 /* Mobile Styles */
 @media only screen and (max-width: 960px) {
   .card-deck,
-  .card,
   .footer-card-deck {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
+  .card-deck {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
   .card {
-    align-self: center;
+    margin: 0 auto;
   }
   .card:nth-child(2) {
-    margin: 100px 0 100px 0;
+    margin: 100px auto 100px auto;
   }
   .footer-card {
     text-align: center;
@@ -169,18 +178,22 @@ CARDS
 @media only screen and (min-width: 961px) {
   .card-deck,
   .footer-card-deck {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
   }
-  .card {
-    flex-direction: column;
-  }
   .card-deck {
-    justify-content: space-evenly;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
   .card:nth-child(2) {
-    margin: 0 40px 0 40px;
+    margin: 0 50px 0 50px;
   }
   .footer-card-deck {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
   }
   .footer-card:nth-child(1),
@@ -199,25 +212,25 @@ CARDS
 TYPO
 ----------------------------------------------------*/
 body {
-  background-color: var(--white);
   font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
   word-wrap: break-word;
-  color: var(--grey-mid);
+  color: $grey-mid;
+  background-color: $black-mid; // overscroll color
 }
 h1,
 h2 {
   font-weight: 700;
   line-height: 1.3;
-  color: var(--black-mid);
+  color: $black-mid;
 }
 h3,
 h4 {
   font-size: 14px;
   font-weight: 400;
-  color: var(--black-mid);
+  color: $black-mid;
 }
 h3 {
   margin: 0 0 20px 0;
@@ -226,7 +239,7 @@ p + h3 {
   margin: 60px 0 20px 0;
 }
 h4 {
-  color: var(--grey-mid);
+  color: $grey-mid;
 }
 /* Desktop Styles */
 @media only screen and (min-width: 481px) {
@@ -257,7 +270,7 @@ LINKS
 a,
 a:hover,
 a:focus {
-  color: var(--grey-mid);
+  color: $grey-mid;
   text-decoration: none;
 }
 p a,
@@ -268,7 +281,7 @@ p a:focus {
 ol li p a,
 ol li p a:hover,
 ol li p a:focus {
-color: var(--grey-bright);
+color: $grey-bright;
 }
 
 
@@ -276,7 +289,7 @@ color: var(--grey-bright);
 TYPO ELEMENTS
 ----------------------------------------------------*/
 h1 + p {
-  color: var(--black-mid);
+  color: $black-mid;
 }
 .bg h2 {
   margin: 0 0 10px 0;
@@ -294,11 +307,11 @@ h1 + p {
 }
 #bg-cta-top h2,
 #bg-cta-top p {
-  color: var(--white);
+  color: $white;
 }
 #bg-outro h2,
 #bg-outro p {
-  color: var(--black-mid);
+  color: $black-mid;
 }
 strong,
 h1 + p strong,
@@ -307,16 +320,16 @@ h1 + p strong,
 }
 .container-reader h2 {
   margin: 0 0 20px 0;
-  color: var(--grey-bright);
+  color: $grey-bright;
 }
 strong,
 h3 strong {
   text-decoration: none;
   font-weight: 400;
-  color: var(--black-mid);
+  color: $black-mid;
 }
 .cta-top strong {
-  color: var(--white);
+  color: $white;
 }
 .content-index p,
 .content p {
@@ -325,32 +338,32 @@ h3 strong {
 hr {
   height: 0;
   margin: 80px 0 20px 0;
-  border-top: 1px solid var(--grey-bright);
+  border-top: 1px solid $grey-bright;
 }
 blockquote {
   margin: 0;
   padding: 0 0 0 20px;
   font-style: italic;
-  border-left: 1px solid var(--grey-bright);
+  border-left: 1px solid $grey-bright;
 }
 ol {
   padding-inline-start: 20px;
 }
 em {
-  background: linear-gradient(transparent 66%, var(--yellow-bright) 66%);
+  background: linear-gradient(transparent 66%, $yellow-bright 66%);
   font-style: normal;
 }
 .footer-card h3 strong {
   font-weight: 700;
-  color: var(--yellow-mid);
+  color: $yellow-mid;
 }
 .footer h3,
 .footer h4 {
-  color: var(--yellow-mid);
+  color: $yellow-mid;
   margin: 0 0 2px 0;
 }
 .footnote {
-  color: var(--grey-bright);
+  color: $grey-bright;
 }
 /* reposition for fixed menu */
 .footnote li {
@@ -379,8 +392,8 @@ BUTTONS
 .btn-color-yellow:hover,
 .btn-color-yellow:active {
   font-weight: 700;
-  color: var(--yellow-mid);
-  border: solid var(--yellow-mid) 5px;
+  color: $yellow-mid;
+  border: solid $yellow-mid 5px;
 }
 .btn-color-black,
 .btn-color-black:visited,
@@ -388,8 +401,8 @@ BUTTONS
 .btn-color-black:hover,
 .btn-color-black:active {
   font-weight: 700;
-  color: var(--black-mid);
-  border: solid var(--black-mid) 5px;
+  color: $black-mid;
+  border: solid $black-mid 5px;
 }
 .btn-color-white,
 .btn-color-white:visited,
@@ -397,8 +410,8 @@ BUTTONS
 .btn-color-white:hover,
 .btn-color-white:active {
   font-weight: 700;
-  color: var(--white);
-  border: solid var(--white) 5px;
+  color: $white;
+  border: solid $white 5px;
 }
 
 
@@ -442,12 +455,12 @@ nav ul li a:visited {
   line-height: 70px;
   text-decoration: none;
   font-weight: 700;
-  background: var(--yellow-mid);
-  color: var(--black-mid);
+  background: $yellow-mid;
+  color: $black-mid;
 }
 nav ul li a:hover,
 nav ul li a:visited:hover {
-  color: var(--black-mid);
+  color: $black-mid;
 }
 nav ul li a:not(:only-child):after,
 nav ul li a:visited:not(:only-child):after {
@@ -471,7 +484,7 @@ nav ul li ul li a {
   position: absolute;
   top: 0;
   right: 0;
-  background: var(--yellow-mid);
+  background: $yellow-mid;
   height: 70px;
   width: 70px;
 }
@@ -531,7 +544,7 @@ nav ul li ul li a {
   border-radius: 1px;
   height: 2px;
   width: 25px;
-  background: var(--black-mid);
+  background: $black-mid;
   position: absolute;
   display: block;
   content: '';

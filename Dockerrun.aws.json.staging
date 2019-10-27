@@ -23,10 +23,13 @@
     },
     {
       "name": "server",
-      "image": "offen/offen@sha256:fe55ba1c183eb8bb4dd19143e6fe1133d6d3b9115c94cc2150620b27adef18fc",
+      "image": "offen/offen@sha256:4c0d2d5db9bc749d21ad8659008658bf25318074b7c813b0a694e64816df750d",
       "essential": true,
       "memory": 256,
-      "command": ["serve"]
+      "command": ["serve"],
+      "environment": [
+        { "name": "OFFEN_SERVER_REVERSEPROXY", "value": "1" }
+      ]
     }
   ]
 }
