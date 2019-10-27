@@ -19,7 +19,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <link rel="canonical" href="{{ SITEURL }}/{{ page.save_as }}">
   <link rel="shortcut icon" type="image/x-icon" href="/theme/images/favicon.ico">
-  {% assets filters="libsass,cssmin", output="css/style.min.css", "css/normalize.css", "css/fonts.css", "css/style.scss" %}
+  {% assets filters="libsass,postcss,cssmin", output="css/style.min.css", "css/normalize.css", "css/fonts.css", "css/style.scss" %}
     <link rel="stylesheet" href="/{{ ASSET_URL }}">
   {% endassets %}
   {% if OFFEN_ACCOUNT_ID and not page.no_stats %}
