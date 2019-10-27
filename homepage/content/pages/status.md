@@ -1,7 +1,8 @@
-Title: Status | offen
-description: offen is a free and open source analytics software for websites and web applications that allows respectful handling of data.
+Title: Project status | offen
+description: How much headway has been made on individual tasks leading up to a stable version.
 save_as: status/index.html
 href: /status/
+
 
 ## Project status
 

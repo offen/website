@@ -4,7 +4,7 @@
   {% if not page.exclude_from_sitemap %}
     <url>
       <loc>{{ SITEURL }}{{ page.href }}</loc>
-      <priority>{{ page.sitemap_priority or 1.0 }}</priority>
+      <priority>{{ page.sitemap_priority or 0.5 }}</priority>
     </url>
   {% endif %}
 {% endfor %}
