@@ -11,7 +11,8 @@ RUN apt-get update \
 	&& rm -rf /var/lib/apt/lists/*
 
 WORKDIR /code/homepage
-ENV PATH /root/.local/bin:$PATH
+ENV PATH "/root/.local/bin:$PATH"
+ENV NODE_PATH="/usr/lib/node_modules"
 RUN pip install --user -r requirements.txt
 RUN make publish
 
