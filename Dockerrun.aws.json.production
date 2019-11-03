@@ -37,19 +37,6 @@
       "environment": [
         { "name": "OFFEN_SERVER_REVERSEPROXY", "value": "1" }
       ]
-    },
-    {
-      "name": "logspout",
-      "image": "gliderlabs/logspout:latest",
-      "essential": true,
-      "memory": 64,
-      "command": ["syslog+tls://$LOG_TARGET"],
-      "mountPoints": [
-        {
-          "sourceVolume": "log-socket",
-          "containerPath": "/var/run/docker.sock"
-        }
-      ]
     }
   ]
 }
