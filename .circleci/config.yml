@@ -93,7 +93,7 @@ jobs:
             fi
       - run:
           name: Run database migrations
-          command: docker run -it offen/offen:$DOCKER_IMAGE_TAG migrate -conn $(aws secretsmanager get-secret-value --secret-id $TARGET_ENVIRONMENT/postgresConnectionString | jq -r '.SecretString')
+          command: docker run -it offen/offen:offen@sha256:4c0d2d5db9bc749d21ad8659008658bf25318074b7c813b0a694e64816df750d migrate -conn $(aws secretsmanager get-secret-value --secret-id $TARGET_ENVIRONMENT/postgresConnectionString | jq -r '.SecretString')
       - run:
           name: Deploy
           command: |
