@@ -24,8 +24,7 @@
         "options": {
           "awslogs-create-group": true,
           "awslogs-group": "production",
-          "awslogs-region": "eu-central-1",
-          "awslogs-stream-prefix": "proxy"
+          "awslogs-region": "eu-central-1"
         }
       }
     },
@@ -43,8 +42,7 @@
         "options": {
           "awslogs-create-group": true,
           "awslogs-group": "production",
-          "awslogs-region": "eu-central-1",
-          "awslogs-stream-prefix": "server"
+          "awslogs-region": "eu-central-1"
         }
       }
     }
