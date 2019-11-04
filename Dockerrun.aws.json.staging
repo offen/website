@@ -24,7 +24,7 @@
         "logDriver": "awslogs",
         "options": {
           "awslogs-group": "proxy",
-          "awslogs-region": "eu-west-1",
+          "awslogs-region": "eu-central-1",
           "awslogs-stream-prefix": "staging"
         }
       }
@@ -42,7 +42,7 @@
         "logDriver": "awslogs",
         "options": {
           "awslogs-group": "server",
-          "awslogs-region": "eu-west-1",
+          "awslogs-region": "eu-central-1",
           "awslogs-stream-prefix": "staging"
         }
       }
