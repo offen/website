@@ -24,9 +24,9 @@
         "logDriver": "awslogs",
         "options": {
           "awslogs-create-group": true,
-          "awslogs-group": "proxy",
+          "awslogs-group": "staging",
           "awslogs-region": "eu-central-1",
-          "awslogs-stream-prefix": "staging"
+          "awslogs-stream-prefix": "proxy"
         }
       }
     },
@@ -43,9 +43,9 @@
         "logDriver": "awslogs",
         "options": {
           "awslogs-create-group": true,
-          "awslogs-group": "server",
+          "awslogs-group": "staging",
           "awslogs-region": "eu-central-1",
-          "awslogs-stream-prefix": "staging"
+          "awslogs-stream-prefix": "server"
         }
       }
     }
