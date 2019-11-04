@@ -19,7 +19,15 @@
           "condition": "START"
         }
       ],
-      "links": ["server"]
+      "links": ["server"],
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-group": "proxy",
+          "awslogs-region": "eu-west-1",
+          "awslogs-stream-prefix": "staging"
+        }
+      }
     },
     {
       "name": "server",
@@ -29,7 +37,15 @@
       "command": ["serve"],
       "environment": [
         { "name": "OFFEN_SERVER_REVERSEPROXY", "value": "1" }
-      ]
+      ],
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-group": "server",
+          "awslogs-region": "eu-west-1",
+          "awslogs-stream-prefix": "staging"
+        }
+      }
     }
   ]
 }
