@@ -1,13 +1,5 @@
 {
   "AWSEBDockerrunVersion": 2,
-  "volumes": [
-    {
-      "name": "log-socket",
-      "host": {
-        "sourcePath": "/var/run/docker.sock"
-      }
-    }
-  ],
   "containerDefinitions": [
     {
       "name": "proxy",
@@ -27,6 +19,15 @@
         }
       ],
       "links": ["server"]
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-create-group": true,
+          "awslogs-group": "production",
+          "awslogs-region": "eu-central-1",
+          "awslogs-stream-prefix": "proxy"
+        }
+      }
     },
     {
       "name": "server",
@@ -36,7 +37,16 @@
       "command": ["serve"],
       "environment": [
         { "name": "OFFEN_SERVER_REVERSEPROXY", "value": "1" }
-      ]
+      ],
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-create-group": true,
+          "awslogs-group": "production",
+          "awslogs-region": "eu-central-1",
+          "awslogs-stream-prefix": "server"
+        }
+      }
     }
   ]
 }
