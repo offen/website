@@ -23,6 +23,7 @@
       "logConfiguration": {
         "logDriver": "awslogs",
         "options": {
+          "awslogs-create-group": true,
           "awslogs-group": "proxy",
           "awslogs-region": "eu-central-1",
           "awslogs-stream-prefix": "staging"
@@ -41,6 +42,7 @@
       "logConfiguration": {
         "logDriver": "awslogs",
         "options": {
+          "awslogs-create-group": true,
           "awslogs-group": "server",
           "awslogs-region": "eu-central-1",
           "awslogs-stream-prefix": "staging"
