@@ -36,7 +36,7 @@ We would like to turn the tables on this much quoted statement and apply it to t
 
 Visiting a website or using a web application that utilizes __offen__, the user gains access to and ownership of the usage data collected. The cookie used by __offen__ allows viewing all of the associated metrics, the users can *assert themselves what is being collected and what isn't*. Data is being displayed in an accessible and articulate manner and each metric comes with explanations about its usage, relevance and possible privacy implications.
 
-Users can choose to export their data, delete it selectively or in its entirety, or simply opt out of any data collection.
+Users can choose to export their data, delete it selectively or in its entirety.
 
 ### For operators
 
