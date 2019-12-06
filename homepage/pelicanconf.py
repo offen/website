@@ -39,8 +39,12 @@ DIRECT_TEMPLATES = ['sitemap']
 SITEMAP_SAVE_AS = 'sitemap.xml'
 
 PLUGIN_PATHS = ['./plugins']
-PLUGINS = ['assets']
+PLUGINS = ['decorate_content', 'assets']
 
+DECORATE_CONTENT = {
+    # maps any CSS selector to a list of classes to be added
+    # 'p': ['pv0', 'dim']
+}
 
 GITHUB_ORG = 'https://github.com/offen'
 CONTACT_EMAIL = 'hioffen@posteo.de'
