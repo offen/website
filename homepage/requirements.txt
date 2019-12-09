@@ -3,3 +3,4 @@ markdown==3.1.1
 git+git://github.com/miracle2k/webassets#d1f3455e383446ca4ab0c644f326ee937e68e809
 cssmin==0.2.0
 libsass==0.19.3
+beautifulsoup4==4.8.1
