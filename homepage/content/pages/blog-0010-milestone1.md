@@ -1,39 +1,50 @@
 Title: Laying the foundation for fair web analytics
-description: ????
+description: Our milestone 1 achievements include extensible architecture, a localization option and an improved server structure.
 save_as: blog/laying-foundation-for-fair-web-analytics/index.html
 href: /blog/laying-foundation-for-fair-web-analytics/
 sitemap_priority: 0.7
 
-11 Dec 2019 - Hendrik Niefeld
-## Laying the foundation
-What we achieved in the last 6 weeks
+11 Dec 2019, Hendrik Niefeld
+## Episode One — Laying the foundation for fair web analytics
+Milestone 1 is completed. This is what we've achieved in the last six weeks.
 
-### *Application architecture*
-extension by middleware
-additional behavior can transparently be added by any consumer
+### Extension through middleware
+We have further refined the existing application architecture to make it more robust and accessible to both contributors and people who want to build upon Offen. As a developer, you can transparently control additional behavior by adding or removing middleware.
 
-### *Build*
-We want offen to be easy to deploy, and also make it easy for people interested to give it a test drive.
-compiled into a single binary file
-you can now download a offen binary and execute it on your local machine to instantly have a (ephemeral) instance up and running.
-Right now, this setup only supports Linux, but we are aiming to support Windows and MacOS just as well soon.
-
-<div class="btn-wrapper">
+### Easy to test drive
+Download a single binary file and run it on your local computer to get an Offen instance up and running immediately. At the moment this setup only supports Linux. Windows and MacOS will follow soon.
+<div class="btn-wrapper-article">
 <a class="btn btn-color-yellow" target="_blank" href="https://8342-180605180-gh.circle-artifacts.com/0/tmp/artifacts/offen-stable.tar.gz">Download binary</a>
 </div>
 
-.
-.
-.
+### Develop without complex setup
+Docker and Docker-Compose are the only hard requirement for you to develop Offen. We have successfully tested this setup under Linux, Windows and MacOS. Head over to our wiki for instructions how to get the setup up and running.
+<div class="btn-wrapper-article">
+<a class="btn btn-color-yellow" target="_blank" href="https://github.com/offen/offen/wiki/Developing-offen#setup">Open wiki</a>
+</div>
 
+### Lightweight and accessible interfaces
+The *Auditorium* is ready for a dry run. It's a functional prototype for accessing and managing user data. We opted for [Choo](https://choo.io/){: target="_blank"} as the application framework and [Tachyons](https://tachyons.io/){: target="_blank"} as the CSS framework.
 
-### *Dev Setup*
-accessible to contributors without any complex setup
-Docker and docker-compose based solution
-successfully tested this on Linux, MacOS and Windows
+### Ready to localize
+You can now localize all user-related content in server- and client-side applications. At the moment English is the only supported locale, but we would be happy to add more locales soon. Contributors wanted after milestone 3 is completed.
+<div class="btn-wrapper-article">
+<a class="btn btn-color-yellow" href="mailto:hioffen@posteo.de">Get in touch</a>
+</div>
+
+### Read the docs
+The work on our wiki has started. Including documentation for [developers](https://github.com/offen/offen/wiki/Developing-offen){: target="_blank"} as well as for [website operators](https://github.com/offen/offen/wiki/Running-offen){: target="_blank"} who want to deploy and run Offen.
+
+### No reverse proxy required
+We have further hardened and improved the HTTP server that Offen exposes. If you want to, you can already expose this server to the Internet without having to run a reverse proxy in front of it.
+
+### Up next
+*Episode Two — Collecting data securely* will feature user opt-in, userland cryptography, meaningful statistics and much more. We'll be right back.
 
 ---
-This is a reduction of a detailed description that you can find with our Milestone 1 pull.
-<div class="btn-wrapper">
-<a class="btn btn-color-black" target="_blank" href="https://github.com/offen/offen/pull/192">Open Milestone 1 pull</a>
+
+### Deep dive
+Interested in the details? Want to get your hands dirty? Head over to our GitHub repo.
+<div class="btn-wrapper-article">
+<a class="btn btn-color-black" target="_blank" href="https://github.com/offen/offen/pull/192">Open milestone 1 pull</a>
 </div>
