@@ -8,12 +8,12 @@ sm_image_url: /theme/images/offen-logo-social-media.jpg
 ## Legal Notice
 
 ### Information in accordance with Section 5 TMG
-Frederik Ring
-Torfstr. 22
-13353 Berlin
+Frederik Ring  
+Torfstr. 22  
+13353 Berlin  
 
 ### Contact Information
-E-Mail: [hioffen@posteo.de](mailto:hioffen@posteo.de)
+E-Mail: [hioffen@posteo.de](mailto:hioffen@posteo.de)  
 Internet address: [www.offen.dev](https://www.offen.dev/)
 
 ### Graphics and Image Sources
