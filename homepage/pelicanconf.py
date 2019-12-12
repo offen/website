@@ -39,8 +39,12 @@ DIRECT_TEMPLATES = ['sitemap']
 SITEMAP_SAVE_AS = 'sitemap.xml'
 
 PLUGIN_PATHS = ['./plugins']
-PLUGINS = ['assets']
+PLUGINS = ['decorate_content', 'assets']
 
+DECORATE_CONTENT = {
+    # maps any CSS selector to a list of classes to be added
+    # 'p': ['pv0', 'dim']
+}
 
 GITHUB_ORG = 'https://github.com/offen'
 CONTACT_EMAIL = 'hioffen@posteo.de'
@@ -50,3 +54,5 @@ LINKEDIN_URL = 'https://www.linkedin.com/company/hioffen'
 TWITTER_URL = 'https://twitter.com/hioffen'
 
 OFFEN_ACCOUNT_ID = '9b63c4d8-65c0-438c-9d30-cc4b01173393'
+
+STATUS_URL = '/blog/laying-foundation-for-fair-web-analytics'

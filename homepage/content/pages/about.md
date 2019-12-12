@@ -1,14 +1,15 @@
-Title: About | offen
+Title: About | Offen
 description: Who we are, who supports us and how you can can get in touch.
 save_as: about/index.html
 href: /about/
+sm_image_url: /theme/images/offen-logo-social-media.jpg
 
 ## About
 
 
 ### Status Quo
 
-__offen__ is created by [Frederik Ring][frederik-ring]{: target="_blank"} and [Hendrik Niefeld][hendrik-niefeld]{: target="_blank"} and is currently being conceptually designed, both as a product as well as as a software.
+Offen is created by [Frederik Ring][frederik-ring]{: target="_blank"} and [Hendrik Niefeld][hendrik-niefeld]{: target="_blank"} and is currently being conceptually designed, both as a product as well as as a software.
 
 [hendrik-niefeld]: http://niefeld.com/
 [frederik-ring]: https://www.frederikring.com/

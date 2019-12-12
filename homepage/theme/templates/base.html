@@ -14,8 +14,8 @@
   <meta property="og:description" content="{{ page.description }}">
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ SITEURL }}{{ page.href or page.url or page.save_as }}">
-  <meta property="og:image" content="{{ SITEURL }}/theme/images/offen-logo-social-media.jpg">
-  <meta name="twitter:image:alt" content="offen logo">
+  <meta property="og:image" content="{{ SITEURL }}{{ page.sm_image_url }}">
+  <meta name="twitter:image:alt" content="Offen logo">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="canonical" href="{{ SITEURL }}{{ page.href or page.url or page.save_as }}">
   <link rel="shortcut icon" type="image/x-icon" href="/theme/images/favicon.ico">
@@ -31,7 +31,7 @@
     <section class="nav-bar">
       <div class="nav-container">
         <div class="icon">
-          <a href="/"><img src="/theme/images/offen-icon-white.svg" alt="offen logo" width="42" height="46" class="logo"></a>
+          <a href="/"><img src="/theme/images/offen-icon-white.svg" alt="Offen logo" width="42" height="46" class="logo"></a>
         </div>
         <nav>
           <div class="nav-mobile"><span id="nav-toggle"><span></span></span></div>
@@ -43,7 +43,7 @@
               <a href="/deep-dive/">Deep dive</a>
             </li>
             <li>
-              <a href="/status/">Status</a>
+              <a href="{{ STATUS_URL }}">Status</a>
             </li>
             <li>
               <a href="/about/">About</a>
@@ -78,7 +78,7 @@
                 Participate
               </h2>
               <p>
-                Development of <strong>offen</strong> has just started. Do not hesitate to make a contribution and help us handle data with respect.
+                Development of Offen has just started. Do not hesitate to make a contribution and help us handle data with respect.
               </p>
               <div class="btn-wrapper">
                 <a class="btn btn-color-black" href="{{GITHUB_ORG}}" rel="noopener" target="_blank">Get involved</a>
@@ -89,10 +89,10 @@
                 In the making
               </h2>
               <p>
-                <strong>offen</strong> is still in alpha. Discover what is already up and running and where we want to go in the coming months.
+                Offen is still in alpha. Discover what is already up and running and where we want to go in the coming months.
               </p>
               <div class="btn-wrapper">
-                <a class="btn btn-color-black" href="/status/">Project status</a>
+                <a class="btn btn-color-black" href="{{ STATUS_URL }}">Project status</a>
               </div>
             </div>
             <div class="card">
@@ -100,7 +100,7 @@
                 Ethical internet
               </h2>
               <p>
-                We're working hard to ensure that <strong>offen</strong> is independent, cutting-edge and can be sustained for years to come.
+                We're working hard to ensure that Offen is independent, cutting-edge and can be sustained for years to come.
               </p>
               <div class="btn-wrapper">
                 <a class="btn btn-color-black" href="{{PATREON_URL}}" rel="noopener" target="_blank">Support us</a>
@@ -115,7 +115,7 @@
   <div class="footer">
     <div class="footer-card-deck">
       <div class="footer-card">
-        <h3><strong>offen</strong></h3>
+        <h3>Offen</h3>
         <h4>Transparent web analytics</h4>
         <h4>for everyone</h4>
       </div>
