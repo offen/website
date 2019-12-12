@@ -4,6 +4,8 @@ save_as: blog/laying-foundation-for-fair-web-analytics/index.html
 href: /blog/laying-foundation-for-fair-web-analytics/
 sitemap_priority: 0.7
 
+![Page not Found](/theme/images/blog-0010-milestone1.webp){:class="image-text-600-322"}
+
 11 Dec 2019, Hendrik Niefeld
 ## Episode One — Laying the foundation for fair web analytics
 Milestone 1 is completed. This is what we've achieved in the last six weeks.

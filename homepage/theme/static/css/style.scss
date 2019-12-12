@@ -591,13 +591,21 @@ img {
 .image-text-custom {
   margin: 10px 0 -15px 0;
 }
-.image-text-560-315 {
-  width: 560px;
-  height: 315px;
+.image-text-600-338 {
+  width: 600px;
+  height: 338px;
+}
+.image-text-600-322 {
+  width: 600px;
+  height: 322px;
 }
 
 @media only screen and (max-width: 600px) {
-  .image-text-560-315 {
+  .image-text-600-338 {
+    max-width:100%;
+    height: auto;
+  }
+  .image-text-600-322 {
     max-width:100%;
     height: auto;
   }
