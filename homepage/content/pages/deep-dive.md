@@ -3,6 +3,7 @@ description: What do users know about their data? How can they access it? Do ope
 save_as: deep-dive/index.html
 href: /deep-dive/
 sitemap_priority: 0.7
+sm_image_url: /theme/images/offen-logo-social-media.jpg
 
 ## Deep dive
 

@@ -2,6 +2,7 @@ Title: Project status | offen
 description: How much headway has been made on individual tasks leading up to a stable version.
 save_as: status/index.html
 href: /status/
+sm_image_url: /theme/images/offen-logo-social-media.jpg
 
 
 ## Project status

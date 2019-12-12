@@ -2,6 +2,7 @@ Title: Opt-out | offen
 description: Prevent offen from aggregating the actions you have taken on participating websites.
 save_as: opt-out/index.html
 exclude_from_sitemap: true
+sm_image_url: /theme/images/offen-logo-social-media.jpg
 
 ## You are opted out
 

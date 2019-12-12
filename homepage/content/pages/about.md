@@ -2,6 +2,7 @@ Title: About | offen
 description: Who we are, who supports us and how you can can get in touch.
 save_as: about/index.html
 href: /about/
+sm_image_url: /theme/images/offen-logo-social-media.jpg
 
 ## About
 

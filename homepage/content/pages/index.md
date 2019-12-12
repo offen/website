@@ -4,6 +4,7 @@ save_as: index.html
 href: /
 template: index
 sitemap_priority: 1.0
+sm_image_url: /theme/images/offen-logo-social-media.jpg
 
 ## Summary
 
