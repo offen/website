@@ -1,4 +1,4 @@
-Title: Legal Notice | offen
+Title: Legal Notice | Offen
 description: Information in accordance with Section 5 TMG
 save_as: legal-notice/index.html
 href: /legal-notice/
