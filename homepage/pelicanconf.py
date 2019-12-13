@@ -37,6 +37,7 @@ TAGS_SAVE_AS = None
 # keep this for access to page variable
 DIRECT_TEMPLATES = ['sitemap']
 SITEMAP_SAVE_AS = 'sitemap.xml'
+PAGE_SAVE_AS = '{slug}/index.html'
 
 PLUGIN_PATHS = ['./plugins']
 PLUGINS = ['decorate_content', 'assets']

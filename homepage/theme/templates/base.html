@@ -13,11 +13,11 @@
   <meta property="og:title" content="{{ page.title }}">
   <meta property="og:description" content="{{ page.description }}">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="{{ SITEURL }}{{ page.href or page.url or page.save_as }}">
+  <meta property="og:url" content="{{ SITEURL }}/{{ page.save_as | replace('index.html', '') }}">
   <meta property="og:image" content="{{ SITEURL }}{{ page.sm_image_url }}">
   <meta name="twitter:image:alt" content="Offen logo">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="canonical" href="{{ SITEURL }}{{ page.href or page.url or page.save_as }}">
+  <link rel="canonical" href="{{ SITEURL }}/{{ page.save_as | replace('index.html', '') }}">
   <link rel="shortcut icon" type="image/x-icon" href="/theme/images/favicon.ico">
   {% assets filters="libsass,postcss,cssmin", output="css/style.min.css", "css/normalize.css", "css/fonts.css", "css/style.scss" %}
     <link rel="stylesheet" href="/{{ ASSET_URL }}">
@@ -26,7 +26,7 @@
     <script async src="/script.js" data-account-id="{{ OFFEN_ACCOUNT_ID }}"></script>
   {% endif %}
 </head>
-<body class="{{page.template}}">
+<body class="{{ page.template }}">
   <div class="menu">
     <section class="nav-bar">
       <div class="nav-container">
@@ -49,10 +49,10 @@
               <a href="/about/">About</a>
             </li>
             <li>
-              <a href="{{GITHUB_ORG}}" rel="noopener" target="_blank">GitHub</a>
+              <a href="{{ GITHUB_ORG }}" rel="noopener" target="_blank">GitHub</a>
             </li>
             <li>
-              <a href="{{PATREON_URL}}" rel="noopener" target="_blank">Patreon</a>
+              <a href="{{ PATREON_URL }}" rel="noopener" target="_blank">Patreon</a>
             </li>
           </ul>
         </nav>
@@ -103,7 +103,7 @@
                 We're working hard to ensure that Offen is independent, cutting-edge and can be sustained for years to come.
               </p>
               <div class="btn-wrapper">
-                <a class="btn btn-color-black" href="{{PATREON_URL}}" rel="noopener" target="_blank">Support us</a>
+                <a class="btn btn-color-black" href="{{ PATREON_URL }}" rel="noopener" target="_blank">Support us</a>
               </div>
             </div>
           </div>
@@ -121,22 +121,22 @@
       </div>
       <div class="footer-card">
         <p>
-          <a href="mailto:{{CONTACT_EMAIL}}">{{CONTACT_EMAIL}}</a>
-          <a target="_blank" href="/theme/{{GPG_KEY_FILE}}">[GPG Key]</a>
+          <a href="mailto:{{ CONTACT_EMAIL }}">{{CONTACT_EMAIL}}</a>
+          <a target="_blank" href="/theme/{{ GPG_KEY_FILE }}">[GPG Key]</a>
         </p>
         <p>
-          <a href="{{GITHUB_ORG}}" rel="noopener" target="_blank">GitHub</a>
+          <a href="{{ GITHUB_ORG }}" rel="noopener" target="_blank">GitHub</a>
         </p>
         <p>
-          <a href="{{PATREON_URL}}" rel="noopener" target="_blank">Patreon</a>
+          <a href="{{ PATREON_URL }}" rel="noopener" target="_blank">Patreon</a>
         </p>
       </div>
       <div class="footer-card">
         <p>
-          <a href="{{LINKEDIN_URL}}" rel="noopener" target="_blank">LinkedIn</a>
+          <a href="{{ LINKEDIN_URL }}" rel="noopener" target="_blank">LinkedIn</a>
         </p>
         <p>
-          <a href="{{TWITTER_URL}}" rel="noopener" target="_blank">Twitter</a>
+          <a href="{{ TWITTER_URL }}" rel="noopener" target="_blank">Twitter</a>
         </p>
         <p>
           <a href="/legal-notice/">Legal Notice</a>

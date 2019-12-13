@@ -3,7 +3,7 @@
 {% for page in pages %}
   {% if not page.exclude_from_sitemap %}
     <url>
-      <loc>{{ SITEURL }}{{ page.href }}</loc>
+      <loc>{{ SITEURL }}/{{ page.save_as | replace('index.html', '') }}</loc>
       <priority>{{ page.sitemap_priority or 0.5 }}</priority>
     </url>
   {% endif %}
