@@ -3,32 +3,32 @@
 {% block head %}
 <head>
   <title>
-    {% block title %}{{ page.title }}{% endblock %}
+    {% block title %}{{ title }}{% endblock %}
   </title>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="{{ page.description }}">
+  <meta name="description" content="{{ description }}">
   <meta property="og:site_name" content="{{ SITENAME }}">
   <meta property="og:locale" content="{{ DEFAULT_LANG }}">
-  <meta property="og:title" content="{{ page.title }}">
-  <meta property="og:description" content="{{ page.description }}">
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:description" content="{{ description }}">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="{{ SITEURL }}/{{ page.save_as | replace('index.html', '') }}">
-  <meta property="og:image" content="{{ SITEURL }}{{ page.sm_image_url }}">
+  <meta property="og:url" content="{{ SITEURL }}/{{ href }}">
+  <meta property="og:image" content="{{ SITEURL }}{{ sm_image_url or '/theme/images/offen-logo-social-media.jpg' }}">
   <meta name="twitter:image:alt" content="Offen logo">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="canonical" href="{{ SITEURL }}/{{ page.save_as | replace('index.html', '') }}">
+  <link rel="canonical" href="{{ SITEURL }}/{{ href }}">
   <link rel="shortcut icon" type="image/x-icon" href="/theme/images/favicon.ico">
   {% assets filters="libsass,postcss,cssmin", output="css/style.min.css", "css/normalize.css", "css/fonts.css", "css/style.scss" %}
     <link rel="stylesheet" href="/{{ ASSET_URL }}">
   {% endassets %}
-  {% if OFFEN_ACCOUNT_ID and not page.no_stats %}
+  {% if OFFEN_ACCOUNT_ID and not no_stats %}
     <script async src="/script.js" data-account-id="{{ OFFEN_ACCOUNT_ID }}"></script>
   {% endif %}
 </head>
 {% endblock %}
-<body class="{{ page.template }}">
+<body class="{{ template }}">
   <div class="menu">
     <section class="nav-bar">
       <div class="nav-container">
@@ -45,7 +45,7 @@
               <a href="/deep-dive/">Deep dive</a>
             </li>
             <li>
-              <a href="{{ STATUS_URL }}">Status</a>
+              <a href="/blog/{{ articles[0].slug }}/">Status</a>
             </li>
             <li>
               <a href="/about/">About</a>
@@ -65,7 +65,7 @@
   {% block content %}
     <div class="content">
       <div class="container-reader">
-        {{ page.content }}
+        {{ content }}
       </div>
     </div>
   {% endblock %}
@@ -94,7 +94,7 @@
                 Offen is still in alpha. Discover what is already up and running and where we want to go in the coming months.
               </p>
               <div class="btn-wrapper">
-                <a class="btn btn-color-black" href="{{ STATUS_URL }}">Project status</a>
+                <a class="btn btn-color-black" href="/blog/{{ articles[0].slug }}/">Project status</a>
               </div>
             </div>
             <div class="card">

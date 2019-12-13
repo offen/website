@@ -18,7 +18,6 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-
 SITEURL = 'http://localhost:8000'
 
 # pagination
@@ -29,18 +28,17 @@ THEME = './theme'
 # Delete the output directory before generating new files.
 DELETE_OUTPUT_DIRECTORY = True
 
+DIRECT_TEMPLATES = ['sitemap', 'archives']
+
 # dont create following standard pages
 AUTHOR_SAVE_AS = ''
 AUTHORS_SAVE_AS = ''
-ARCHIVE_SAVE_AS = ''
-ARCHIVES_SAVE_AS = ''
 CATEGORY_SAVE_AS = ''
 CATEGORIES_SAVE_AS = ''
 TAG_SAVE_AS = ''
 TAGS_SAVE_AS = ''
 
-# keep this for access to page variable
-DIRECT_TEMPLATES = ['sitemap']
+ARCHIVES_SAVE_AS = 'blog/index.html'
 SITEMAP_SAVE_AS = 'sitemap.xml'
 PAGE_SAVE_AS = '{slug}/index.html'
 ARTICLE_SAVE_AS = 'blog/{slug}/index.html'
@@ -61,5 +59,3 @@ LINKEDIN_URL = 'https://www.linkedin.com/company/hioffen'
 TWITTER_URL = 'https://twitter.com/hioffen'
 
 OFFEN_ACCOUNT_ID = '9b63c4d8-65c0-438c-9d30-cc4b01173393'
-
-STATUS_URL = '/blog/laying-foundation-for-fair-web-analytics'
