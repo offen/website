@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+{% block head %}
 <head>
   <title>
     {% block title %}{{ page.title }}{% endblock %}
@@ -26,6 +27,7 @@
     <script async src="/script.js" data-account-id="{{ OFFEN_ACCOUNT_ID }}"></script>
   {% endif %}
 </head>
+{% endblock %}
 <body class="{{ page.template }}">
   <div class="menu">
     <section class="nav-bar">

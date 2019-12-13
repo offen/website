@@ -18,6 +18,7 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
+
 SITEURL = 'http://localhost:8000'
 
 # pagination
@@ -29,15 +30,20 @@ THEME = './theme'
 DELETE_OUTPUT_DIRECTORY = True
 
 # dont create following standard pages
-AUTHORS_SAVE_AS = None
-ARCHIVES_SAVE_AS = None
-CATEGORIES_SAVE_AS = None
-TAGS_SAVE_AS = None
+AUTHOR_SAVE_AS = ''
+AUTHORS_SAVE_AS = ''
+ARCHIVE_SAVE_AS = ''
+ARCHIVES_SAVE_AS = ''
+CATEGORY_SAVE_AS = ''
+CATEGORIES_SAVE_AS = ''
+TAG_SAVE_AS = ''
+TAGS_SAVE_AS = ''
 
 # keep this for access to page variable
 DIRECT_TEMPLATES = ['sitemap']
 SITEMAP_SAVE_AS = 'sitemap.xml'
 PAGE_SAVE_AS = '{slug}/index.html'
+ARTICLE_SAVE_AS = 'blog/{slug}/index.html'
 
 PLUGIN_PATHS = ['./plugins']
 PLUGINS = ['decorate_content', 'assets']

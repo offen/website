@@ -8,4 +8,12 @@
     </url>
   {% endif %}
 {% endfor %}
+{% for article in articles %}
+  {% if not article.exclude_from_sitemap %}
+    <url>
+      <loc>{{ SITEURL }}/{{ article.save_as | replace('index.html', '') }}</loc>
+      <priority>{{ article.sitemap_priority or 0.5 }}</priority>
+    </url>
+  {% endif %}
+{% endfor %}
 </urlset>
