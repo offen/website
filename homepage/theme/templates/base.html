@@ -1,32 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+{% block head %}
 <head>
   <title>
-    {% block title %}{{ page.title }}{% endblock %}
+    {% block title %}{{ title }}{% endblock %}
   </title>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="{{ page.description }}">
+  <meta name="description" content="{{ description }}">
   <meta property="og:site_name" content="{{ SITENAME }}">
   <meta property="og:locale" content="{{ DEFAULT_LANG }}">
-  <meta property="og:title" content="{{ page.title }}">
-  <meta property="og:description" content="{{ page.description }}">
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:description" content="{{ description }}">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="{{ SITEURL }}{{ page.href or page.url or page.save_as }}">
-  <meta property="og:image" content="{{ SITEURL }}{{ page.sm_image_url }}">
+  <meta property="og:url" content="{{ SITEURL }}/{{ href }}">
+  <meta property="og:image" content="{{ SITEURL }}{{ sm_image_url or '/theme/images/offen-logo-social-media.jpg' }}">
   <meta name="twitter:image:alt" content="Offen logo">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="canonical" href="{{ SITEURL }}{{ page.href or page.url or page.save_as }}">
+  <link rel="canonical" href="{{ SITEURL }}/{{ href }}">
   <link rel="shortcut icon" type="image/x-icon" href="/theme/images/favicon.ico">
   {% assets filters="libsass,postcss,cssmin", output="css/style.min.css", "css/normalize.css", "css/fonts.css", "css/style.scss" %}
     <link rel="stylesheet" href="/{{ ASSET_URL }}">
   {% endassets %}
-  {% if OFFEN_ACCOUNT_ID and not page.no_stats %}
+  {% if OFFEN_ACCOUNT_ID and not no_stats %}
     <script async src="/script.js" data-account-id="{{ OFFEN_ACCOUNT_ID }}"></script>
   {% endif %}
 </head>
-<body class="{{page.template}}">
+{% endblock %}
+<body class="{{ template }}">
   <div class="menu">
     <section class="nav-bar">
       <div class="nav-container">
@@ -43,16 +45,16 @@
               <a href="/deep-dive/">Deep dive</a>
             </li>
             <li>
-              <a href="{{ STATUS_URL }}">Status</a>
+              <a href="/blog/">Status</a>
             </li>
             <li>
               <a href="/about/">About</a>
             </li>
             <li>
-              <a href="{{GITHUB_ORG}}" rel="noopener" target="_blank">GitHub</a>
+              <a href="{{ GITHUB_ORG }}" rel="noopener" target="_blank">GitHub</a>
             </li>
             <li>
-              <a href="{{PATREON_URL}}" rel="noopener" target="_blank">Patreon</a>
+              <a href="{{ PATREON_URL }}" rel="noopener" target="_blank">Patreon</a>
             </li>
           </ul>
         </nav>
@@ -63,7 +65,7 @@
   {% block content %}
     <div class="content">
       <div class="container-reader">
-        {{ page.content }}
+        {{ content }}
       </div>
     </div>
   {% endblock %}
@@ -92,7 +94,7 @@
                 Offen is still in alpha. Discover what is already up and running and where we want to go in the coming months.
               </p>
               <div class="btn-wrapper">
-                <a class="btn btn-color-black" href="{{ STATUS_URL }}">Project status</a>
+                <a class="btn btn-color-black" href="/blog/">Project status</a>
               </div>
             </div>
             <div class="card">
@@ -103,7 +105,7 @@
                 We're working hard to ensure that Offen is independent, cutting-edge and can be sustained for years to come.
               </p>
               <div class="btn-wrapper">
-                <a class="btn btn-color-black" href="{{PATREON_URL}}" rel="noopener" target="_blank">Support us</a>
+                <a class="btn btn-color-black" href="{{ PATREON_URL }}" rel="noopener" target="_blank">Support us</a>
               </div>
             </div>
           </div>
@@ -121,22 +123,22 @@
       </div>
       <div class="footer-card">
         <p>
-          <a href="mailto:{{CONTACT_EMAIL}}">{{CONTACT_EMAIL}}</a>
-          <a target="_blank" href="/theme/{{GPG_KEY_FILE}}">[GPG Key]</a>
+          <a href="mailto:{{ CONTACT_EMAIL }}">{{CONTACT_EMAIL}}</a>
+          <a target="_blank" href="/theme/{{ GPG_KEY_FILE }}">[GPG Key]</a>
         </p>
         <p>
-          <a href="{{GITHUB_ORG}}" rel="noopener" target="_blank">GitHub</a>
+          <a href="{{ GITHUB_ORG }}" rel="noopener" target="_blank">GitHub</a>
         </p>
         <p>
-          <a href="{{PATREON_URL}}" rel="noopener" target="_blank">Patreon</a>
+          <a href="{{ PATREON_URL }}" rel="noopener" target="_blank">Patreon</a>
         </p>
       </div>
       <div class="footer-card">
         <p>
-          <a href="{{LINKEDIN_URL}}" rel="noopener" target="_blank">LinkedIn</a>
+          <a href="{{ LINKEDIN_URL }}" rel="noopener" target="_blank">LinkedIn</a>
         </p>
         <p>
-          <a href="{{TWITTER_URL}}" rel="noopener" target="_blank">Twitter</a>
+          <a href="{{ TWITTER_URL }}" rel="noopener" target="_blank">Twitter</a>
         </p>
         <p>
           <a href="/legal-notice/">Legal Notice</a>

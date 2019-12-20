@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% set title = 'Feed' %}
+{% set description = 'Description' %}
+{% set href = 'blog/' %}
+{% set no_stats = False %}
+{% set template = 'archives' %}
+
+{% block content %}
+    {% for article in articles %}
+    {% if loop.index != 1 %}
+      <hr>
+    {% endif %}
+    <div class="content">
+      <div class="container-reader">
+          {{ article.content }}
+      </div>
+    </div>
+    {% endfor %}
+{% endblock %}

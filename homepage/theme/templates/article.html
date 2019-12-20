@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% set title = article.title %}
+{% set description = article.description %}
+{% set href = article.save_as.replace('index.html', '') %}
+{% set sm_image_url = article.sm_image_url %}
+{% set no_stats = article.no_stats %}
+{% set template = article.template %}
+{% set content = article.content %}

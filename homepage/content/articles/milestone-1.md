@@ -1,7 +1,7 @@
-Title: Laying the foundation for fair web analytics | Offen
+title: Laying the foundation for fair web analytics | Offen
 description: Our milestone 1 achievements include extensible architecture, a localization option and an improved server structure.
-save_as: blog/laying-foundation-for-fair-web-analytics/index.html
-href: /blog/laying-foundation-for-fair-web-analytics/
+date: 2019-12-12
+slug: laying-foundation-for-fair-web-analytics
 sitemap_priority: 0.7
 sm_image_url: /theme/images/offen-blog-0010-milestone1.jpg
 
