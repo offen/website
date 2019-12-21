@@ -20,9 +20,13 @@
   <meta name="twitter:card" content="summary_large_image">
   <link rel="canonical" href="{{ SITEURL }}/{{ href }}">
   <link rel="shortcut icon" type="image/x-icon" href="/theme/images/favicon.ico">
+  <link rel="stylesheet" href="/theme/css/tachyons.min.css">
+  <link rel="stylesheet" href="/theme/css/fix.css">
+  <!--
   {% assets filters="libsass,postcss,cssmin", output="css/style.min.css", "css/normalize.css", "css/fonts.css", "css/style.scss" %}
     <link rel="stylesheet" href="/{{ ASSET_URL }}">
   {% endassets %}
+-->
   {% if OFFEN_ACCOUNT_ID and not no_stats %}
     <script async src="/script.js" data-account-id="{{ OFFEN_ACCOUNT_ID }}"></script>
   {% endif %}
