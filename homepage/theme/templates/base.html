@@ -32,8 +32,9 @@
   {% endif %}
 </head>
 {% endblock %}
-<body class="{{ template }}">
-  <div class="menu">
+<body class="{{ template }} f5 sans-serif dark-gray">
+<!-- Menu ######################################################### -->
+  <div class="menu cclr-yellow-mid"> <!--menu-->
     <section class="nav-bar">
       <div class="nav-container">
         <div class="icon">
@@ -65,99 +66,99 @@
       </div>
     </section>
   </div>
-
-  {% block content %}
-    <div class="content">
-      <div class="container-reader">
-        {{ content }}
+<!-- Content ######################################################### -->
+    {% block content %}
+      <div class="content">
+        <div class="container-reader">
+          {{ content }}
+        </div>
       </div>
-    </div>
-  {% endblock %}
+    {% endblock %}
 
-  {% block outro %}
-    <div class="cta-bottom">
-      <div class="bg" id="bg-cta-bottom">
-        <div class="container-full">
-          <div class="card-deck">
-            <div class="card">
-              <h2>
-                Participate
-              </h2>
-              <p>
-                Development of Offen has just started. Do not hesitate to make a contribution and help us handle data with respect.
-              </p>
-              <div class="btn-wrapper">
-                <a class="btn btn-color-black" href="{{GITHUB_ORG}}" rel="noopener" target="_blank">Get involved</a>
+    {% block outro %}
+      <div class="cta-bottom">
+        <div class="bg" id="bg-cta-bottom">
+          <div class="container-full">
+            <div class="card-deck">
+              <div class="card">
+                <h2>
+                  Participate
+                </h2>
+                <p>
+                  Development of Offen has just started. Do not hesitate to make a contribution and help us handle data with respect.
+                </p>
+                <div class="btn-wrapper">
+                  <a class="btn btn-color-black" href="{{GITHUB_ORG}}" rel="noopener" target="_blank">Get involved</a>
+                </div>
               </div>
-            </div>
-            <div class="card">
-              <h2>
-                In the making
-              </h2>
-              <p>
-                Offen is still in alpha. Discover what is already up and running and where we want to go in the coming months.
-              </p>
-              <div class="btn-wrapper">
-                <a class="btn btn-color-black" href="/blog/">Project status</a>
+              <div class="card">
+                <h2>
+                  In the making
+                </h2>
+                <p>
+                  Offen is still in alpha. Discover what is already up and running and where we want to go in the coming months.
+                </p>
+                <div class="btn-wrapper">
+                  <a class="btn btn-color-black" href="/blog/">Project status</a>
+                </div>
               </div>
-            </div>
-            <div class="card">
-              <h2>
-                Ethical internet
-              </h2>
-              <p>
-                We're working hard to ensure that Offen is independent, cutting-edge and can be sustained for years to come.
-              </p>
-              <div class="btn-wrapper">
-                <a class="btn btn-color-black" href="{{ PATREON_URL }}" rel="noopener" target="_blank">Support us</a>
+              <div class="card">
+                <h2>
+                  Ethical internet
+                </h2>
+                <p>
+                  We're working hard to ensure that Offen is independent, cutting-edge and can be sustained for years to come.
+                </p>
+                <div class="btn-wrapper">
+                  <a class="btn btn-color-black" href="{{ PATREON_URL }}" rel="noopener" target="_blank">Support us</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+    {% endblock %}
+<!-- Footer ######################################################### -->
+    <div class="footer">
+      <div class="footer-card-deck">
+        <div class="footer-card">
+          <h3>Offen</h3>
+          <h4>Transparent web analytics</h4>
+          <h4>for everyone</h4>
+        </div>
+        <div class="footer-card">
+          <p>
+            <a href="mailto:{{ CONTACT_EMAIL }}">{{CONTACT_EMAIL}}</a>
+            <a target="_blank" href="/theme/{{ GPG_KEY_FILE }}">[GPG Key]</a>
+          </p>
+          <p>
+            <a href="{{ GITHUB_ORG }}" rel="noopener" target="_blank">GitHub</a>
+          </p>
+          <p>
+            <a href="{{ PATREON_URL }}" rel="noopener" target="_blank">Patreon</a>
+          </p>
+        </div>
+        <div class="footer-card">
+          <p>
+            <a href="{{ LINKEDIN_URL }}" rel="noopener" target="_blank">LinkedIn</a>
+          </p>
+          <p>
+            <a href="{{ TWITTER_URL }}" rel="noopener" target="_blank">Twitter</a>
+          </p>
+          <p>
+            <a href="/legal-notice/">Legal Notice</a>
+          </p>
+        </div>
+        <div class="footer-card">
+          {{ BUILD_DATE }}
+        </div>
+      </div>
     </div>
-  {% endblock %}
 
-  <div class="footer">
-    <div class="footer-card-deck">
-      <div class="footer-card">
-        <h3>Offen</h3>
-        <h4>Transparent web analytics</h4>
-        <h4>for everyone</h4>
-      </div>
-      <div class="footer-card">
-        <p>
-          <a href="mailto:{{ CONTACT_EMAIL }}">{{CONTACT_EMAIL}}</a>
-          <a target="_blank" href="/theme/{{ GPG_KEY_FILE }}">[GPG Key]</a>
-        </p>
-        <p>
-          <a href="{{ GITHUB_ORG }}" rel="noopener" target="_blank">GitHub</a>
-        </p>
-        <p>
-          <a href="{{ PATREON_URL }}" rel="noopener" target="_blank">Patreon</a>
-        </p>
-      </div>
-      <div class="footer-card">
-        <p>
-          <a href="{{ LINKEDIN_URL }}" rel="noopener" target="_blank">LinkedIn</a>
-        </p>
-        <p>
-          <a href="{{ TWITTER_URL }}" rel="noopener" target="_blank">Twitter</a>
-        </p>
-        <p>
-          <a href="/legal-notice/">Legal Notice</a>
-        </p>
-      </div>
-      <div class="footer-card">
-        {{ BUILD_DATE }}
-      </div>
-    </div>
-  </div>
-
-  {% block scripts %}
-    {% assets filters="rjsmin", output="scripts/packed.js", "scripts/jquery-3.4.1.min.js", "scripts/menu.js", "scripts/fade.js" %}
-      <script src="/{{ ASSET_URL }}"></script>
-    {% endassets %}
-  {% endblock %}
-</body>
+    {% block scripts %}
+      {% assets filters="rjsmin", output="scripts/packed.js", "scripts/jquery-3.4.1.min.js", "scripts/menu.js", "scripts/fade.js" %}
+        <script src="/{{ ASSET_URL }}"></script>
+      {% endassets %}
+    {% endblock %}
+  </body>
 </html>
