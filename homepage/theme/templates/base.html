@@ -32,9 +32,9 @@
   {% endif %}
 </head>
 {% endblock %}
-<body class="{{ template }} f5 sans-serif dark-gray">
+<body class="{{ template }} f5 sans-serif fnt-cclr-mid-black">
 <!-- Menu ######################################################### -->
-  <div class="menu cclr-yellow-mid"> <!--menu-->
+  <div class="menu w100 cclr-mid-yellow"> <!--menu-->
     <section class="nav-bar">
       <div class="nav-container">
         <div class="icon">
@@ -68,48 +68,48 @@
   </div>
 <!-- Content ######################################################### -->
     {% block content %}
-      <div class="content">
-        <div class="container-reader">
+      <div class="w100 bg-white mid-grey">
+        <div class="mw6 center">
           {{ content }}
         </div>
       </div>
     {% endblock %}
 
     {% block outro %}
-      <div class="cta-bottom">
-        <div class="bg" id="bg-cta-bottom">
-          <div class="container-full">
+      <div class="w100 cclr-mid-yellow"> <!--cta-bottom-->
+        <div class="w100" id="bg-cta-bottom">
+          <div class="mw8 center">
             <div class="card-deck">
               <div class="card">
-                <h2>
+                <h2 class="pa0 ma0">
                   Participate
                 </h2>
-                <p>
+                <p class="pa0 ma0">
                   Development of Offen has just started. Do not hesitate to make a contribution and help us handle data with respect.
                 </p>
-                <div class="btn-wrapper">
+                <div class="pa0 ma0">
                   <a class="btn btn-color-black" href="{{GITHUB_ORG}}" rel="noopener" target="_blank">Get involved</a>
                 </div>
               </div>
               <div class="card">
-                <h2>
+                <h2 class="pa0 ma0">
                   In the making
                 </h2>
-                <p>
+                <p class="pa0 ma0">
                   Offen is still in alpha. Discover what is already up and running and where we want to go in the coming months.
                 </p>
-                <div class="btn-wrapper">
+                <div class="pa0 ma0">
                   <a class="btn btn-color-black" href="/blog/">Project status</a>
                 </div>
               </div>
               <div class="card">
-                <h2>
+                <h2 class="pa0 ma0">
                   Ethical internet
                 </h2>
-                <p>
+                <p class="pa0 ma0">
                   We're working hard to ensure that Offen is independent, cutting-edge and can be sustained for years to come.
                 </p>
-                <div class="btn-wrapper">
+                <div class="pa0 ma0">
                   <a class="btn btn-color-black" href="{{ PATREON_URL }}" rel="noopener" target="_blank">Support us</a>
                 </div>
               </div>
@@ -119,33 +119,33 @@
       </div>
     {% endblock %}
 <!-- Footer ######################################################### -->
-    <div class="footer">
+    <div class="w100 cclr-mid-black gray"> <!--footer-->
       <div class="footer-card-deck">
         <div class="footer-card">
-          <h3>Offen</h3>
-          <h4>Transparent web analytics</h4>
-          <h4>for everyone</h4>
+          <h3 class="pa0 ma0">Offen</h3>
+          <h4 class="pa0 ma0">Transparent web analytics</h4>
+          <h4 class="pa0 ma0">for everyone</h4>
         </div>
         <div class="footer-card">
-          <p>
+          <p class="pa0 ma0">
             <a href="mailto:{{ CONTACT_EMAIL }}">{{CONTACT_EMAIL}}</a>
             <a target="_blank" href="/theme/{{ GPG_KEY_FILE }}">[GPG Key]</a>
           </p>
-          <p>
+          <p class="pa0 ma0">
             <a href="{{ GITHUB_ORG }}" rel="noopener" target="_blank">GitHub</a>
           </p>
-          <p>
+          <p class="pa0 ma0">
             <a href="{{ PATREON_URL }}" rel="noopener" target="_blank">Patreon</a>
           </p>
         </div>
         <div class="footer-card">
-          <p>
+          <p class="pa0 ma0">
             <a href="{{ LINKEDIN_URL }}" rel="noopener" target="_blank">LinkedIn</a>
           </p>
-          <p>
+          <p class="pa0 ma0">
             <a href="{{ TWITTER_URL }}" rel="noopener" target="_blank">Twitter</a>
           </p>
-          <p>
+          <p class="pa0 ma0">
             <a href="/legal-notice/">Legal Notice</a>
           </p>
         </div>

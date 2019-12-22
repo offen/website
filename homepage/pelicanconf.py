@@ -46,9 +46,9 @@ ARTICLE_SAVE_AS = 'blog/{slug}/index.html'
 PLUGIN_PATHS = ['./plugins']
 PLUGINS = ['decorate_content', 'assets']
 
+# maps any CSS selector to a list of classes to be added
 DECORATE_CONTENT = {
-    # maps any CSS selector to a list of classes to be added
-    # 'p': ['pv0', 'dim']
+'p': ['pa0', 'ma0']
 }
 
 GITHUB_ORG = 'https://github.com/offen'

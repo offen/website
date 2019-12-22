@@ -1,22 +1,25 @@
 /* ---------------------------------------------------
 CUSTOM COLORS
 ----------------------------------------------------*/
-.cclr-yellow-mid {
+.cclr-mid-yellow {
   background-color: #F7BF08;
   }
-.cclr-yellow-bright {
+.cclr-bright-yellow {
   background-color: #fde28c;
   } 
-.cclr-mint-mid {
+.cclr-mid-mint {
   background-color: #BBD9D3;
   } 
-.cclr-black-mid {
+.cclr-mid-black {
   background-color: #39352A;
   } 
-.cclr-grey-mid {
+.fnt-cclr-mid-black { /* font color */
+  color: #39352A;
+  } 
+.cclr-mid-grey {
   background-color: #898989;
   } 
-.cclr-grey-bright {
+.cclr-bright-grey {
   background-color: #D5D5D5;
   } 
 
@@ -26,7 +29,7 @@ LAYOUT
 ----------------------------------------------------*/
 .menu {
   width: 100%;
-  height: 70px;
+  height: 64px;  /* mt5 */
   position: fixed;
   z-index: 1;
   top: 0;
