@@ -2,8 +2,8 @@
 
 {% block content %}
   <div class="w-100 cclr-mid-yellow"> <!--intro-->
-    <div class="w-100 mt5 mb0" id="bg-intro">
-      <div class="flex justify-center pt6">
+    <div class="w-100 mt5 mb0 ph4" id="bg-intro">
+      <div class="flex justify-center pt6 ph4">
         <div class="mw5 tr pr4">
           <img src="/theme/images/offen-logo-white.svg" alt="Offen logo" width="146" height="90">
         </div>
@@ -23,27 +23,27 @@
   </div>
 
   <div class="w-100 cclr-mid-mint"> <!--feature-->
-    <div class="w-100 pt3 pb6" id="bg-feature">
+    <div class="pt3 pb6 ph3" id="bg-feature">
       <div class="mw8 center">
         <div class="flex flex-wrap justify-around">
-          <div class="w55 mh3 mt5">
-            <h2 class="f25 ma0 mb3">
+          <div class="w55 mh3 pt5">
+            <h2 class="f25 lh-solid ma0 mb3">
               <em>Free & Open</em>
             </h2>
             <p class="ma0">
               Anyone can audit our open source code to verify it works as intended. Offen will always be available free of charge.
             </p>
           </div>
-          <div class="w55 mh3 mt5">
-            <h2 class="f25 ma0 mb3">
+          <div class="w55 mh3 pt5">
+            <h2 class="f25 lh-solid ma0 mb3">
               <em>Fair & Secure</em>
             </h2>
             <p class="ma0">
               Pay respect to your website visitors and gain insights as a user at the same time. All data is encrypted end-to-end.
             </p>
           </div>
-          <div class="w55 mh3 mt5">
-            <h2 class="f25 ma0 mb3">
+          <div class="w55 mh3 pt5">
+            <h2 class="f25 lh-solid ma0 mb3">
               <em>Easy to use</em>
             </h2>
             <p class="ma0">
@@ -57,43 +57,41 @@
 
 
   <div class="w-100 cclr-mid-black white"> <!--cta-top-->
-    <div class="w-100" id="bg-cta-top">
-      <div class="mw8 center">
-        <div class="mw6 center tr">
-          <h2 class="ma0">
+    <div class="pt3 pb6 ph4" id="bg-cta-top">
+      <div class="flex justify-end mw6 center pt5">
+        <div class="w55 tr">
+          <h2 class="f25 lh-solid ma0 mb3">
             In the making
           </h2>
-          <p class="ma0">
+          <p class="ma0 mb4">
             Offen is still in alpha. Discover what is already up and running and where we want to go in the coming months.
           </p>
-          <div class="ma0">
-            <a class="btn btn-color-white" href="/blog/">Project status</a>
-          </div>
+          <a class="b link dim ph4 pv2 dib b--solid bw2 b--white white" href="/blog/">Project status</a>
         </div>
       </div>
     </div>
   </div>
-  <div class="w-100 bg-white mid-grey"> <!--content-index-->
-    <div class="mw6 center">
+  
+  <div class="w-100 bg-white gray"> <!--content-index-->
+    <div class="flex flex-wrap justify-center pt5 pb6 ph3">
       {{ page.content }}
     </div>
   </div>
 {% endblock %}
 
+
 {% block outro %}
   <div class="w-100 cclr-mid-yellow"> <!--outro-->
-    <div class="w-100" id="bg-outro">
-      <div class="mw8 center">
-        <div class="mw6 center tr">
-          <h2 class="ma0">
+    <div class="pt3 pb6 ph4" id="bg-outro">
+      <div class="flex justify-end mw6 center pt5">
+        <div class="w55 tr">
+          <h2 class="f25 lh-solid ma0 mb3">
             Ethical internet
           </h2>
-          <p class="ma0">
+          <p class="mb4">
             We're working hard to ensure that Offen is independent, cutting-edge and can be sustained for years to come.
           </p>
-          <div class="ma0">
-            <a class="btn btn-color-black" href="{{PATREON_URL}}" rel="noopener" target="_blank">Support us</a>
-          </div>
+          <a class="b link dim ph4 pv2 dib b--solid bw2 brd-cclr-mid-black fnt-cclr-mid-black" href="{{PATREON_URL}}" rel="noopener" target="_blank">Support us</a>
         </div>
       </div>
     </div>

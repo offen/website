@@ -4,6 +4,12 @@ CUSTOM COLORS
 .cclr-mid-yellow {
   background-color: #F7BF08;
   }
+.fnt-cclr-mid-yellow { /* font color */
+  color: #F7BF08;
+  } 
+.brd-cclr-mid-yellow { /* button border color */
+  border-color: #F7BF08;
+  } 
 .cclr-bright-yellow {
   background-color: #fde28c;
   } 
@@ -46,6 +52,12 @@ LAYOUT
 }
 .w55 {
   width: 18rem;
+}
+/* custom margin for two-row text */
+@media only screen and (min-width: 1088px) {
+  .mrgn-t {
+    margin-top: 2.8rem;
+  }
 }
 
 
@@ -231,15 +243,13 @@ GRAPHICS
 #bg-feature {
   background: url(/theme/images/gfx-pattern-mint-bright.svg) center;
 }
-/*
 #bg-cta-top {
   background: url(/theme/images/gfx-object-white.svg) center;
 }
-
 #bg-outro {
   background: url(/theme/images/gfx-pattern-yellow-bright.svg) center;
 }
-
+/*
 #bg-cta-bottom {
   background: url(/theme/images/gfx-pattern-yellow-bright.svg) center;
 }

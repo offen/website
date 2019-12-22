@@ -120,36 +120,40 @@
     {% endblock %}
 <!-- Footer ######################################################### -->
     <div class="w-100 cclr-mid-black gray"> <!--footer-->
-      <div class="flex justify-between">
-        <div class="w-20">
-          <h3 class="pa0 ma0">Offen</h3>
-          <h4 class="pa0 ma0">Transparent web analytics</h4>
-          <h4 class="pa0 ma0">for everyone</h4>
+      <div class="flex-l justify-between pt4 pb6 ph4">
+        
+        <div class="flex w-auto">
+          <div class="w5 mr3 fnt-cclr-mid-yellow">
+            <p class="ma0">Offen</h3>
+            <p class="ma0">Transparent web analytics</h4>
+            <p class="ma0">for everyone</h4>
+          </div>
+          <div class="w5 mr4">
+            <p class="ma0">
+              <a class="link b dim gray" href="mailto:{{ CONTACT_EMAIL }}">{{CONTACT_EMAIL}}</a>
+              <a class="link b dim gray" target="_blank" href="/theme/{{ GPG_KEY_FILE }}">[GPG Key]</a>
+            </p>
+            <p class="ma0">
+              <a class="link b dim gray" href="{{ GITHUB_ORG }}" rel="noopener" target="_blank">GitHub</a>
+            </p>
+            <p class="ma0">
+              <a class="link b dim gray" href="{{ PATREON_URL }}" rel="noopener" target="_blank">Patreon</a>
+            </p>
+          </div>
+          <div class="w5">
+            <p class="ma0">
+              <a class="link b dim gray" href="{{ LINKEDIN_URL }}" rel="noopener" target="_blank">LinkedIn</a>
+            </p>
+            <p class="ma0">
+              <a class="link b dim gray" href="{{ TWITTER_URL }}" rel="noopener" target="_blank">Twitter</a>
+            </p>
+            <p class="ma0">
+              <a class="link b dim gray" href="/legal-notice/">Legal Notice</a>
+            </p>
+          </div>
         </div>
-        <div class="w-15">
-          <p class="pa0 ma0">
-            <a href="mailto:{{ CONTACT_EMAIL }}">{{CONTACT_EMAIL}}</a>
-            <a target="_blank" href="/theme/{{ GPG_KEY_FILE }}">[GPG Key]</a>
-          </p>
-          <p class="pa0 ma0">
-            <a href="{{ GITHUB_ORG }}" rel="noopener" target="_blank">GitHub</a>
-          </p>
-          <p class="pa0 ma0">
-            <a href="{{ PATREON_URL }}" rel="noopener" target="_blank">Patreon</a>
-          </p>
-        </div>
-        <div class="w-15">
-          <p class="pa0 ma0">
-            <a href="{{ LINKEDIN_URL }}" rel="noopener" target="_blank">LinkedIn</a>
-          </p>
-          <p class="pa0 ma0">
-            <a href="{{ TWITTER_URL }}" rel="noopener" target="_blank">Twitter</a>
-          </p>
-          <p class="pa0 ma0">
-            <a href="/legal-notice/">Legal Notice</a>
-          </p>
-        </div>
-        <div class="w-50 tr">
+        
+        <div class="tr">
           {{ BUILD_DATE }}
         </div>
       </div>

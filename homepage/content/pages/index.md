@@ -4,16 +4,27 @@ save_as: index.html
 template: index
 sitemap_priority: 1.0
 
-## Summary
 
-Offen is a web analytics software that gives users access to the data they are generating. Not only operators running sites or applications are given able to use the analytics tools, but also *the users themselves are granted access to and ownership of their data*.
+<div class="mw6 ph3">
+<h2 class="f25 lh-solid ma0">Summary</h2>
 
-Usage metrics come with explanations about their meaning, relevance, usage and possible privacy implications. Offen also details *which kind of data is not collected*. All data can be deleted selectively or in its entirety by the users, or the collection can be disabled altogether.
+<p class="ma0 mb2">
+Offen is a web analytics software that gives users access to the data they are generating. Not only operators running sites or applications are given able to use the analytics tools, but also <em>the users themselves are granted access to and ownership of their data.</em>
+</p>
 
-Offen treats both users and operators as parties of equal importance. Users can expect full transparency and are encouraged to make *autonomous and informed decisions regarding the use of their data*. Operators are enabled to gain insights while respecting their users' privacy and data.
+<p class="ma0 mb2">
+Usage metrics come with explanations about their meaning, relevance, usage and possible privacy implications. Offen also details <em>which kind of data is not collected.</em> All data can be deleted selectively or in its entirety by the users, or the collection can be disabled altogether.
+</p>
+</div>
 
-Offen is currently in the early stages of development and is applying for funds to sustain its development. An early alpha version is running on this site: you can *visit the [auditorium](/auditorium/)* to access your data.
+<div class="mw6 ph3 mrgn-t">
+<p class="ma0 mb2">
+Offen treats both users and operators as parties of equal importance. Users can expect full transparency and are encouraged to make <em>autonomous and informed decisions regarding the use of their data.</em> Operators are enabled to gain insights while respecting their users' privacy and data.
+</p>
 
-<div class="btn-wrapper">
-<a class="btn btn-color-yellow" href="/deep-dive/">Deep dive</a>
+<p class="ma0 mb4">
+Offen is currently in the early stages of development and is applying for funds to sustain its development. An early alpha version is running on this site: you can <em>visit the [auditorium](/auditorium/)</em> to access your data.
+</p>
+
+<a class="b link dim ph4 pv2 dib b--solid bw2 brd-cclr-mid-yellow fnt-cclr-mid-yellow" href="/deep-dive/">Deep dive</a>
 </div>
