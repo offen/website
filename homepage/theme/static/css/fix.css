@@ -16,6 +16,9 @@ CUSTOM COLORS
 .fnt-cclr-mid-black { /* font color */
   color: #39352A;
   } 
+.brd-cclr-mid-black { /* button border color */
+  border-color: #39352A;
+  } 
 .cclr-mid-grey {
   background-color: #898989;
   } 
@@ -41,7 +44,24 @@ LAYOUT
     position: static;
   }
 }
-  
+.w55 {
+  width: 18rem;
+}
+
+
+/* ---------------------------------------------------
+TYPO
+----------------------------------------------------*/
+.f25 {
+  font-size: 1.9rem;
+}
+span {
+  display: table;
+}
+em {
+  background: linear-gradient(transparent 66%, #fde28c 66%);
+  font-style: normal;
+}
   
   
   
@@ -200,3 +220,27 @@ nav ul li ul li a {
 #nav-toggle.active span:after {
   transform: rotate(-45deg);
 }
+
+
+/* ---------------------------------------------------
+GRAPHICS
+----------------------------------------------------*/
+#bg-intro {
+  background: url(/theme/images/gfx-intro.svg) no-repeat center;
+}
+#bg-feature {
+  background: url(/theme/images/gfx-pattern-mint-bright.svg) center;
+}
+/*
+#bg-cta-top {
+  background: url(/theme/images/gfx-object-white.svg) center;
+}
+
+#bg-outro {
+  background: url(/theme/images/gfx-pattern-yellow-bright.svg) center;
+}
+
+#bg-cta-bottom {
+  background: url(/theme/images/gfx-pattern-yellow-bright.svg) center;
+}
+*/

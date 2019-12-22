@@ -32,9 +32,9 @@
   {% endif %}
 </head>
 {% endblock %}
-<body class="{{ template }} f5 sans-serif fnt-cclr-mid-black">
+<body class="{{ template }} f5 sans-serif lh-copy fnt-cclr-mid-black">
 <!-- Menu ######################################################### -->
-  <div class="menu w100 cclr-mid-yellow"> <!--menu-->
+  <div class="menu w-100 cclr-mid-yellow"> <!--menu-->
     <section class="nav-bar">
       <div class="nav-container">
         <div class="icon">
@@ -68,7 +68,7 @@
   </div>
 <!-- Content ######################################################### -->
     {% block content %}
-      <div class="w100 bg-white mid-grey">
+      <div class="w-100 mt5 bg-white mid-grey">
         <div class="mw6 center">
           {{ content }}
         </div>
@@ -76,11 +76,11 @@
     {% endblock %}
 
     {% block outro %}
-      <div class="w100 cclr-mid-yellow"> <!--cta-bottom-->
-        <div class="w100" id="bg-cta-bottom">
+      <div class="w-100 cclr-mid-yellow"> <!--cta-bottom-->
+        <div class="w-100" id="bg-cta-bottom">
           <div class="mw8 center">
-            <div class="card-deck">
-              <div class="card">
+            <div class="flex flex-wrap justify-around">
+              <div class="w5">
                 <h2 class="pa0 ma0">
                   Participate
                 </h2>
@@ -91,7 +91,7 @@
                   <a class="btn btn-color-black" href="{{GITHUB_ORG}}" rel="noopener" target="_blank">Get involved</a>
                 </div>
               </div>
-              <div class="card">
+              <div class="w5">
                 <h2 class="pa0 ma0">
                   In the making
                 </h2>
@@ -102,7 +102,7 @@
                   <a class="btn btn-color-black" href="/blog/">Project status</a>
                 </div>
               </div>
-              <div class="card">
+              <div class="w5">
                 <h2 class="pa0 ma0">
                   Ethical internet
                 </h2>
@@ -119,14 +119,14 @@
       </div>
     {% endblock %}
 <!-- Footer ######################################################### -->
-    <div class="w100 cclr-mid-black gray"> <!--footer-->
-      <div class="footer-card-deck">
-        <div class="footer-card">
+    <div class="w-100 cclr-mid-black gray"> <!--footer-->
+      <div class="flex justify-between">
+        <div class="w-20">
           <h3 class="pa0 ma0">Offen</h3>
           <h4 class="pa0 ma0">Transparent web analytics</h4>
           <h4 class="pa0 ma0">for everyone</h4>
         </div>
-        <div class="footer-card">
+        <div class="w-15">
           <p class="pa0 ma0">
             <a href="mailto:{{ CONTACT_EMAIL }}">{{CONTACT_EMAIL}}</a>
             <a target="_blank" href="/theme/{{ GPG_KEY_FILE }}">[GPG Key]</a>
@@ -138,7 +138,7 @@
             <a href="{{ PATREON_URL }}" rel="noopener" target="_blank">Patreon</a>
           </p>
         </div>
-        <div class="footer-card">
+        <div class="w-15">
           <p class="pa0 ma0">
             <a href="{{ LINKEDIN_URL }}" rel="noopener" target="_blank">LinkedIn</a>
           </p>
@@ -149,7 +149,7 @@
             <a href="/legal-notice/">Legal Notice</a>
           </p>
         </div>
-        <div class="footer-card">
+        <div class="w-50 tr">
           {{ BUILD_DATE }}
         </div>
       </div>

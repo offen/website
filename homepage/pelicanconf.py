@@ -48,6 +48,11 @@ PLUGINS = ['decorate_content', 'assets']
 
 # maps any CSS selector to a list of classes to be added
 DECORATE_CONTENT = {
+'h2': ['pa0', 'ma0'],
+'h3': ['pa0', 'ma0'],
+'h4': ['pa0', 'ma0'],
+'h5': ['pa0', 'ma0'],
+'h6': ['pa0', 'ma0'],
 'p': ['pa0', 'ma0']
 }
 
