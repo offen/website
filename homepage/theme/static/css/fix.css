@@ -74,7 +74,7 @@ LAYOUT
 
 
 /* ---------------------------------------------------
-TYPO
+TYPO AND LAYOUT ELEMENTS
 ----------------------------------------------------*/
 /* Custom Tachyons class */
 .f25 {
@@ -93,7 +93,10 @@ em {
   background: linear-gradient(transparent 66%, #fde28c 66%);
   font-style: normal;
 }
-  
+hr {
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
   
   
 /* ---------------------------------------------------
@@ -109,7 +112,6 @@ MENU
   position: absolute;
   padding: 12px 0 0 20px;
   float: left;
-  line-height: 4rem;
 }
 body.index .icon {
   opacity: 0;
@@ -179,7 +181,7 @@ nav ul li ul li a {
   }
   nav {
     width: 100%;
-    padding: 0 0 15px 0;
+    padding: 0;
     padding-top: 4rem;
   }
   nav ul {
@@ -251,6 +253,25 @@ nav ul li ul li a {
 }
 #nav-toggle.active span:after {
   transform: rotate(-45deg);
+}
+
+
+/* ---------------------------------------------------
+IMAGES
+----------------------------------------------------*/
+/* Put article image outside of container margins */
+.larger-image {
+  margin-top: -4rem;
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+/* Custom media query - extra small */
+@media only screen and (min-width: 30em) {
+  .larger-image {
+    margin-top: -4rem;
+    margin-left: -4rem;
+    margin-right: -4rem;
+  }
 }
 
 
