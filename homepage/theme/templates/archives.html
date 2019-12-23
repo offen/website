@@ -1,18 +1,19 @@
 {% extends "base.html" %}
 
-{% set title = 'Feed' %}
-{% set description = 'Description' %}
+{% set title = 'Fair analytics blog | Offen' %}
+{% set description = 'Developing Offen. A free and open source analytics software for websites and web applications that allows respectful handling of data.' %}
 {% set href = 'blog/' %}
 {% set no_stats = False %}
 {% set template = 'archives' %}
+{% set is_article = 'true' %}
 
 {% block content %}
     {% for article in articles %}
     {% if loop.index != 1 %}
-      <hr>
+      <hr class="mb5 b--none">
     {% endif %}
-    <div class="content bg-red">
-      <div class="container-reader">
+    <div class="w-100 mt5-ns gray">
+      <div class="mw7 center pt5 pb5 ph3 ph5-ns bg-white">
           {{ article.content }}
       </div>
     </div>
