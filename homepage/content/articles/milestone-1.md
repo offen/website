@@ -5,25 +5,27 @@ slug: laying-foundation-for-fair-web-analytics
 sitemap_priority: 0.7
 sm_image_url: /theme/images/offen-blog-0010-milestone1.jpg
 
-![Milestone 1 - Laying the foundation for fair web analytics](/theme/images/offen-blog-0010-milestone1.jpg){:class="image-text-600-322"}
+<img alt="Milestone 1 - Laying the foundation for fair web analytics" class="mb5" src="/theme/images/offen-blog-0010-milestone1.jpg"/>
 
-12 Dec 2019, Hendrik Niefeld
+###### 12 Dec 2019, Hendrik Niefeld
 ## Episode One — Laying the foundation for fair web analytics
 Milestone 1 is completed. This is what we've achieved in the last six weeks.
+
+---
 
 ### Extension through middleware
 We have further refined the existing application architecture to make it more robust and accessible to both contributors and people who want to build upon Offen. As a developer, you can transparently control additional behavior by adding or removing middleware.
 
 ### Easy to test drive
 Download a single binary file and run it on your local computer to get an Offen instance up and running immediately. At the moment this setup only supports Linux. Windows and MacOS will follow soon.
-<div class="btn-wrapper-article">
-<a class="btn btn-color-yellow" target="_blank" href="https://8342-180605180-gh.circle-artifacts.com/0/tmp/artifacts/offen-stable.tar.gz">Download binary</a>
+<div class="mb5">
+<a class="b link dim ph4 pv2 dib b--solid bw2 brd-cclr-mid-yellow fnt-cclr-mid-yellow" target="_blank" href="https://8342-180605180-gh.circle-artifacts.com/0/tmp/artifacts/offen-stable.tar.gz">Download binary</a>
 </div>
 
 ### Develop without complex setup
 Docker and Docker-Compose are the only hard requirement for you to develop Offen. We have successfully tested this setup under Linux, Windows and MacOS. Head over to our wiki for instructions how to get the setup up and running.
-<div class="btn-wrapper-article">
-<a class="btn btn-color-yellow" target="_blank" href="https://github.com/offen/offen/wiki/Developing-offen#setup">Open wiki</a>
+<div class="mb5">
+<a class="b link dim ph4 pv2 dib b--solid bw2 brd-cclr-mid-yellow fnt-cclr-mid-yellow" target="_blank" href="https://github.com/offen/offen/wiki/Developing-offen#setup">Open wiki</a>
 </div>
 
 ### Lightweight and accessible interfaces
@@ -31,8 +33,8 @@ The *Auditorium* is ready for a dry run. It's a functional prototype for accessi
 
 ### Ready to localize
 You can now localize all user-related content in server- and client-side applications. At the moment English is the only supported locale, but we would be happy to add more locales soon. Contributors wanted after milestone 3 is completed.
-<div class="btn-wrapper-article">
-<a class="btn btn-color-yellow" href="mailto:hioffen@posteo.de">Get in touch</a>
+<div class="mb5">
+<a class="b link dim ph4 pv2 dib b--solid bw2 brd-cclr-mid-yellow fnt-cclr-mid-yellow" href="mailto:hioffen@posteo.de">Get in touch</a>
 </div>
 
 ### Read the docs
@@ -48,6 +50,6 @@ We have further hardened and improved the HTTP server that Offen exposes. If you
 
 ### Deep dive
 Interested in the details? Want to get your hands dirty? Head over to our GitHub repo.
-<div class="btn-wrapper-article">
-<a class="btn btn-color-black" target="_blank" href="https://github.com/offen/offen/pull/192">Open milestone 1 pull</a>
+<div class="mb5">
+<a class="b link dim ph4 pv2 dib b--solid bw2 brd-cclr-mid-black fnt-cclr-mid-black" target="_blank" href="https://github.com/offen/offen/pull/192">Open milestone 1 pull</a>
 </div>

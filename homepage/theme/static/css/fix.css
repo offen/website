@@ -3,35 +3,38 @@ COLORS
 ----------------------------------------------------*/
 /* Custom Tachyons classes */
 .cclr-mid-yellow {
-  background-color: #F7BF08;
-  }
-.fnt-cclr-mid-yellow { /* font color */
+ background-color: #F7BF08;
+}
+.fnt-cclr-mid-yellow { 
   color: #F7BF08;
-  } 
-.brd-cclr-mid-yellow { /* button border color */
+} 
+.brd-cclr-mid-yellow { 
   border-color: #F7BF08;
-  } 
+} 
 .cclr-bright-yellow {
   background-color: #fde28c;
-  } 
+} 
 .cclr-mid-mint {
   background-color: #BBD9D3;
-  } 
+} 
 .cclr-mid-black {
   background-color: #39352A;
-  } 
-.fnt-cclr-mid-black { /* font color */
+} 
+.fnt-cclr-mid-black { 
   color: #39352A;
-  } 
-.brd-cclr-mid-black { /* button border color */
+} 
+.brd-cclr-mid-black { 
   border-color: #39352A;
-  } 
+} 
 .cclr-mid-grey {
   background-color: #898989;
-  } 
+} 
 .cclr-bright-grey {
   background-color: #D5D5D5;
-  } 
+} 
+.cclr-dark-white {
+  background-color: #f9f7f2;
+} 
 
 
 /* ---------------------------------------------------
@@ -55,11 +58,17 @@ LAYOUT
 .w55 { 
   width: 18rem;
 }
+/* Custom media query - extra small */
+@media only screen and (max-width: 30em) {
+  .w55 { 
+    width: 100%;
+  }
+}
 /* Custom media query - extra large */
 @media only screen and (min-width: 68em) {
 /* Custom Tachyons class - margin for two-row text */
   .mrgn-t {
-    margin-top: 2.8rem;
+    margin-top: 3.8rem;
   }
 }
 
@@ -260,8 +269,6 @@ GRAPHICS
 #bg-outro {
   background: url(/theme/images/gfx-pattern-yellow-bright.svg) center;
 }
-/*
 #bg-cta-bottom {
   background: url(/theme/images/gfx-pattern-yellow-bright.svg) center;
 }
-*/

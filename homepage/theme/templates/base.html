@@ -32,7 +32,7 @@
   {% endif %}
 </head>
 {% endblock %}
-<body class="{{ template }} f5 sans-serif lh-copy fnt-cclr-mid-black">
+<body class="{{ template }} f5 sans-serif lh-copy fnt-cclr-mid-black cclr-dark-white">
 <!-- Menu ######################################################### -->
   <div class="menu w-100 cclr-mid-yellow"> <!-- menu -->
     <section class="nav-bar">
@@ -68,8 +68,8 @@
   </div>
 <!-- Content ######################################################### -->
     {% block content %}
-      <div class="w-100 mt5-ns bg-white mid-grey"> <!-- content -->
-        <div class="mw6 center">
+      <div class="w-100 mt5-ns gray"> <!-- content -->
+        <div class="mw7 center pt5 pb6 ph3 ph5-ns bg-white">
           {{ content }}
         </div>
       </div>
@@ -77,41 +77,35 @@
 
     {% block outro %}
       <div class="w-100 cclr-mid-yellow"> <!--cta-bottom-->
-        <div class="w-100" id="bg-cta-bottom">
+        <div class="pt3 pb6 ph3" id="bg-cta-bottom">
           <div class="mw8 center">
             <div class="flex flex-wrap justify-around">
-              <div class="w5">
-                <h2 class="pa0 ma0">
+              <div class="w55 mh3 pt5">
+                <h2 class="f25 lh-solid ma0 mb3">
                   Participate
                 </h2>
-                <p class="pa0 ma0">
+                <p class="ma0 mb4">
                   Development of Offen has just started. Do not hesitate to make a contribution and help us handle data with respect.
                 </p>
-                <div class="pa0 ma0">
-                  <a class="btn btn-color-black" href="{{GITHUB_ORG}}" rel="noopener" target="_blank">Get involved</a>
-                </div>
+                <a class="b link dim ph4 pv2 dib b--solid bw2 brd-cclr-mid-black fnt-cclr-mid-black" href="{{GITHUB_ORG}}" rel="noopener" target="_blank">Get involved</a>
               </div>
-              <div class="w5">
-                <h2 class="pa0 ma0">
+              <div class="w55 mh3 pt5">
+                <h2 class="f25 lh-solid ma0 mb3">
                   In the making
                 </h2>
-                <p class="pa0 ma0">
+                <p class="ma0 mb4">
                   Offen is still in alpha. Discover what is already up and running and where we want to go in the coming months.
                 </p>
-                <div class="pa0 ma0">
-                  <a class="btn btn-color-black" href="/blog/">Project status</a>
-                </div>
+                <a class="b link dim ph4 pv2 dib b--solid bw2 brd-cclr-mid-black fnt-cclr-mid-black" href="/blog/">Project status</a>
               </div>
-              <div class="w5">
-                <h2 class="pa0 ma0">
+              <div class="w55 mh3 pt5">
+                <h2 class="f25 lh-solid ma0 mb3">
                   Ethical internet
                 </h2>
-                <p class="pa0 ma0">
+                <p class="ma0 mb4">
                   We're working hard to ensure that Offen is independent, cutting-edge and can be sustained for years to come.
                 </p>
-                <div class="pa0 ma0">
-                  <a class="btn btn-color-black" href="{{ PATREON_URL }}" rel="noopener" target="_blank">Support us</a>
-                </div>
+                <a class="b link dim ph4 pv2 dib b--solid bw2 brd-cclr-mid-black fnt-cclr-mid-black" href="{{ PATREON_URL }}" rel="noopener" target="_blank">Support us</a>
               </div>
             </div>
           </div>
@@ -119,8 +113,8 @@
       </div>
     {% endblock %}
 <!-- Footer ######################################################### -->
-    <div class="w-100 cclr-mid-black gray"> <!--footer-->
-      <div class="flex flex-row-l flex-column w-100-l w-80 center pt4 pb6 ph4">
+    <div class="w-100 cclr-mid-black gray ph4"> <!--footer-->
+      <div class="flex flex-row-l flex-column w-100-l mw6-m center-m pt4 pb6">
         <div class="w-25-l mt3 mr3 fnt-cclr-mid-yellow">
           <p class="ma0">Offen</h3>
           <p class="ma0">Transparent web analytics</h4>

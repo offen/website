@@ -48,12 +48,15 @@ PLUGINS = ['decorate_content', 'assets']
 
 # maps any CSS selector to a list of classes to be added
 DECORATE_CONTENT = {
-'h2': ['f25', 'ma0', 'mb3'],
-'h3': ['ma0'],
-'h4': ['ma0'],
+'h2': ['f25', 'ma0', 'mb3', 'light-silver'],
+'h3': ['f5', 'normal', 'mt4', 'ma0', 'mb3', 'fnt-cclr-mid-black'],
+'h4': ['f5', 'normal', 'mt4', 'ma0', 'mb3'],
 'h5': ['ma0'],
-'h6': ['ma0'],
-'p': ['ma0', 'mb2']
+'h6': ['f5', 'lh-solid', 'normal', 'i', 'ma0', 'mb3', 'light-silver'],
+'p': ['ma0', 'pb3'],
+'a': ['link', 'b', 'dim', 'gray'],
+'blockquote': ['f5', 'i', 'ma0', 'ml4'],
+'hr': ['m0a', 'mt5', 'mb3', 'b--black-05']
 }
 
 GITHUB_ORG = 'https://github.com/offen'
