@@ -1,6 +1,7 @@
 /* ---------------------------------------------------
-CUSTOM COLORS
+COLORS
 ----------------------------------------------------*/
+/* Custom Tachyons classes */
 .cclr-mid-yellow {
   background-color: #F7BF08;
   }
@@ -38,23 +39,25 @@ LAYOUT
 ----------------------------------------------------*/
 .menu {
   width: 100%;
-  height: 4rem;  /* mt5 */
+  height: 4rem;  /* Tachyons mt5 */
   position: fixed;
   z-index: 1;
   top: 0;
   right: 0;
 }
-/* Mobile Styles*/
-@media only screen and (max-width: 480px) {
+/* Custom media query - extra small */
+@media only screen and (max-width: 29.99em) {
   .menu {
     position: static;
   }
 }
-.w55 {
+/* Custom Tachyons class */
+.w55 { 
   width: 18rem;
 }
-/* custom margin for two-row text */
-@media only screen and (min-width: 1088px) {
+/* Custom media query - extra large */
+@media only screen and (min-width: 68em) {
+/* Custom Tachyons class - margin for two-row text */
   .mrgn-t {
     margin-top: 2.8rem;
   }
@@ -64,11 +67,18 @@ LAYOUT
 /* ---------------------------------------------------
 TYPO
 ----------------------------------------------------*/
+/* Custom Tachyons class */
 .f25 {
   font-size: 1.9rem;
 }
 span {
   display: table;
+}
+/* Custom media query - medium small - neutralize span line braks */
+@media only screen and (max-width: 34em) {
+  p span {
+    display: initial;
+  }
 }
 em {
   background: linear-gradient(transparent 66%, #fde28c 66%);

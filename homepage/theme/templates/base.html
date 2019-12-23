@@ -34,7 +34,7 @@
 {% endblock %}
 <body class="{{ template }} f5 sans-serif lh-copy fnt-cclr-mid-black">
 <!-- Menu ######################################################### -->
-  <div class="menu w-100 cclr-mid-yellow"> <!--menu-->
+  <div class="menu w-100 cclr-mid-yellow"> <!-- menu -->
     <section class="nav-bar">
       <div class="nav-container">
         <div class="icon">
@@ -68,7 +68,7 @@
   </div>
 <!-- Content ######################################################### -->
     {% block content %}
-      <div class="w-100 mt5 bg-white mid-grey">
+      <div class="w-100 mt5-ns bg-white mid-grey"> <!-- content -->
         <div class="mw6 center">
           {{ content }}
         </div>
@@ -120,40 +120,38 @@
     {% endblock %}
 <!-- Footer ######################################################### -->
     <div class="w-100 cclr-mid-black gray"> <!--footer-->
-      <div class="flex-l justify-between pt4 pb6 ph4">
-        
-        <div class="flex w-auto">
-          <div class="w5 mr3 fnt-cclr-mid-yellow">
-            <p class="ma0">Offen</h3>
-            <p class="ma0">Transparent web analytics</h4>
-            <p class="ma0">for everyone</h4>
-          </div>
-          <div class="w5 mr4">
-            <p class="ma0">
-              <a class="link b dim gray" href="mailto:{{ CONTACT_EMAIL }}">{{CONTACT_EMAIL}}</a>
-              <a class="link b dim gray" target="_blank" href="/theme/{{ GPG_KEY_FILE }}">[GPG Key]</a>
-            </p>
-            <p class="ma0">
-              <a class="link b dim gray" href="{{ GITHUB_ORG }}" rel="noopener" target="_blank">GitHub</a>
-            </p>
-            <p class="ma0">
-              <a class="link b dim gray" href="{{ PATREON_URL }}" rel="noopener" target="_blank">Patreon</a>
-            </p>
-          </div>
-          <div class="w5">
-            <p class="ma0">
-              <a class="link b dim gray" href="{{ LINKEDIN_URL }}" rel="noopener" target="_blank">LinkedIn</a>
-            </p>
-            <p class="ma0">
-              <a class="link b dim gray" href="{{ TWITTER_URL }}" rel="noopener" target="_blank">Twitter</a>
-            </p>
-            <p class="ma0">
-              <a class="link b dim gray" href="/legal-notice/">Legal Notice</a>
-            </p>
-          </div>
+      <div class="flex flex-row-l flex-column w-100-l w-80 center pt4 pb6 ph4">
+        <div class="w-25-l mt3 mr3 fnt-cclr-mid-yellow">
+          <p class="ma0">Offen</h3>
+          <p class="ma0">Transparent web analytics</h4>
+          <p class="ma0">for everyone</h4>
         </div>
-        
-        <div class="tr">
+        <div class="w-25-l mt3 mr3">
+          <p class="ma0">
+            <a class="link b dim gray" href="mailto:{{ CONTACT_EMAIL }}">{{CONTACT_EMAIL}}</a>
+          </p>
+          <p class="ma0">
+            <a class="link b dim gray" target="_blank" href="/theme/{{ GPG_KEY_FILE }}">Email GPG Key</a>
+          </p>
+          <p class="ma0 mt2">
+            <a class="link b dim gray" href="{{ GITHUB_ORG }}" rel="noopener" target="_blank">GitHub</a>
+          </p>
+          <p class="ma0">
+            <a class="link b dim gray" href="{{ PATREON_URL }}" rel="noopener" target="_blank">Patreon</a>
+          </p>
+        </div>
+        <div class="w-25-l mt3 mr3">
+          <p class="ma0">
+            <a class="link b dim gray" href="{{ LINKEDIN_URL }}" rel="noopener" target="_blank">LinkedIn</a>
+          </p>
+          <p class="ma0">
+            <a class="link b dim gray" href="{{ TWITTER_URL }}" rel="noopener" target="_blank">Twitter</a>
+          </p>
+          <p class="ma0">
+            <a class="link b dim gray" href="/legal-notice/">Legal Notice</a>
+          </p>
+        </div>
+        <div class="w-25-l mt3 tr-l">
           {{ BUILD_DATE }}
         </div>
       </div>
