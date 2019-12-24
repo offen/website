@@ -22,8 +22,11 @@
   <link rel="canonical" href="{{ SITEURL }}/{{ href }}">
   {% endif %}
   <link rel="shortcut icon" type="image/x-icon" href="/theme/images/favicon.ico">
-  <link rel="stylesheet" href="/theme/css/tachyons.min.css">
-  <link rel="stylesheet" href="/theme/css/fix.css">
+  <link rel="stylesheet" type="text/css" href="/theme/css/tachyons.min.css">
+  <link rel="stylesheet" type="text/css" href="/theme/css/fix.css">
+  <link rel="stylesheet" type="text/css" href="/theme/css/fonts.css">
+  <link rel="preload" href="/theme//fonts/rubik-v9-latin-regular.woff2" as="font">
+  <link rel="preload" href="/theme//fonts/rubik-v9-latin-500.woff2" as="font">
   <!--
   {% assets filters="libsass,postcss,cssmin", output="css/style.min.css", "css/normalize.css", "css/fonts.css", "css/style.scss" %}
     <link rel="stylesheet" href="/{{ ASSET_URL }}">
@@ -34,7 +37,7 @@
   {% endif %}
 </head>
 {% endblock %}
-<body class="{{ template }} f5 sans-serif lh-copy fnt-cclr-mid-black cclr-dark-white">
+<body class="{{ template }} f5 rubik lh-copy fnt-cclr-mid-black cclr-dark-white">
 <!-- Menu ######################################################### -->
   <div class="menu w-100 cclr-mid-yellow"> <!-- menu -->
     <section class="nav-bar">
@@ -81,7 +84,7 @@
       <div class="w-100 cclr-mid-yellow"> <!--cta-bottom-->
         <div class="pt3 pb6 ph3" id="bg-cta-bottom">
           <div class="mw8 center">
-            <div class="flex flex-wrap justify-around">
+            <div class="flex flex-wrap justify-center">
               <div class="w55 mh3 pt5 tc">
                 <h2 class="f25 lh-solid ma0 mb3">
                   Participate
@@ -107,7 +110,7 @@
                   Ethical internet
                 </h2>
                 <p class="ma0 mb3">
-                  We're working hard to ensure that Offen is independent, cutting-edge and can be sustained for years to come.
+                  We're working hard to ensure that Offen is independent and can be sustained for years to come.
                 </p>
                 <a class="b link dim ph4 pv2 dib b--solid bw2 brd-cclr-mid-black fnt-cclr-mid-black" href="{{ PATREON_URL }}" rel="noopener" target="_blank">Support us</a>
               </div>
