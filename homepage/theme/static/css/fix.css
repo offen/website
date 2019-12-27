@@ -26,12 +26,6 @@ COLORS
 .brd-cclr-mid-black { 
   border-color: #39352A;
 } 
-.cclr-mid-grey {
-  background-color: #898989;
-} 
-.cclr-bright-grey {
-  background-color: #D5D5D5;
-} 
 .cclr-dark-white {
   background-color: #f9f7f2;
 } 
@@ -47,6 +41,25 @@ LAYOUT
   z-index: 1;
   top: 0;
   right: 0;
+}
+article {
+  -webkit-column-count: 1;
+     -moz-column-count: 1;
+          column-count: 1;
+}
+/* Custom media query */
+@media only screen and (min-width: 60rem) {
+  article {
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2;
+    -webkit-column-gap: 4em;
+       -moz-column-gap: 4em;
+            column-gap: 4em;
+    -webkit-column-rule: 0.18rem solid rgba(0,0,0,.05);
+       -moz-column-rule: 0.18rem solid rgba(0,0,0,.05);
+            column-rule: 0.18rem solid rgba(0,0,0,.05);
+  }
 }
 /* Custom media query - extra small */
 @media only screen and (max-width: 29.99em) {
@@ -64,18 +77,15 @@ LAYOUT
     width: 100%;
   }
 }
-/* Custom media query - extra large */
-@media only screen and (min-width: 68em) {
-/* Custom Tachyons class - margin for two-row text */
-  .mrgn-t {
-    margin-top: 3.8rem;
-  }
-}
+
 
 
 /* ---------------------------------------------------
 TYPO AND LAYOUT ELEMENTS
 ----------------------------------------------------*/
+.link:focus {
+    outline: none;
+}
 /* Break long word on mobile */
 body {
   overflow-wrap: break-word;
@@ -101,6 +111,7 @@ hr {
   margin-left: -1rem;
   margin-right: -1rem;
 }
+
   
   
 /* ---------------------------------------------------
@@ -175,7 +186,7 @@ nav ul li ul li a {
   height: 4rem;
   width: 4rem;
 }
-/* Mobile Styles */
+/* Custom media query */
 @media only screen and (max-width: 60rem) {
   .nav-list {
     margin: 0;
@@ -296,3 +307,4 @@ GRAPHICS
 #bg-cta-bottom {
   background: url(/theme/images/gfx-pattern-yellow-bright.svg) center;
 }
+
