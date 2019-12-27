@@ -27,11 +27,6 @@
   <link rel="stylesheet" type="text/css" href="/theme/css/fonts.css">
   <link rel="preload" href="/theme//fonts/rubik-v9-latin-regular.woff2" as="font">
   <link rel="preload" href="/theme//fonts/rubik-v9-latin-500.woff2" as="font">
-  <!--
-  {% assets filters="libsass,postcss,cssmin", output="css/style.min.css", "css/normalize.css", "css/fonts.css", "css/style.scss" %}
-    <link rel="stylesheet" href="/{{ ASSET_URL }}">
-  {% endassets %}
--->
   {% if OFFEN_ACCOUNT_ID and not no_stats %}
     <script async src="/script.js" data-account-id="{{ OFFEN_ACCOUNT_ID }}"></script>
   {% endif %}
@@ -123,9 +118,11 @@
     <div class="w-100 cclr-mid-black gray ph4"> <!--footer-->
       <div class="flex flex-row-l flex-column w-100-l mw6-m center-m pt4 pb6">
         <div class="w-25-l mt3 mr3 fnt-cclr-mid-yellow">
-          <p class="ma0">Offen</h3>
-          <p class="ma0">Transparent web analytics</h4>
-          <p class="ma0">for everyone</h4>
+          <p class="ma0">
+            <a class="b link dim fnt-cclr-mid-yellow" href="/">Offen</a>
+          </p>
+          <p class="ma0">Transparent web analytics</p>
+          <p class="ma0">for everyone</p>
         </div>
         <div class="w-25-l mt3 mr3">
           <p class="ma0">

@@ -69,7 +69,7 @@ article {
 }
 /* Custom Tachyons class */
 .w55 { 
-  width: 18rem;
+  width: 18.5rem;
 }
 /* Custom media query - extra small */
 @media only screen and (max-width: 30em) {
@@ -89,6 +89,9 @@ TYPO AND LAYOUT ELEMENTS
 /* Break long word on mobile */
 body {
   overflow-wrap: break-word;
+  overscroll-behavior: none;
+  /* overscroll color */
+  background-color: #39352A; 
 }
 /* Custom Tachyons class */
 .f25 {

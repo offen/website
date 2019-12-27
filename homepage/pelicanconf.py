@@ -53,7 +53,7 @@ DECORATE_CONTENT = {
 'h3': ['f5', 'normal', 'mt4', 'ma0', 'mb3', 'fnt-cclr-mid-black'],
 'h4': ['f5', 'normal', 'mt4', 'ma0', 'mb3'],
 'h5': ['ma0'],
-'h6': ['f5', 'lh-solid', 'normal', 'i', 'ma0', 'mb3', 'light-silver'],
+'h6': ['f5', 'lh-solid', 'normal', 'ma0', 'mb3', 'light-silver'],
 'p': ['ma0', 'pb3'],
 'blockquote': ['f5', 'i', 'ma0', 'ml4-ns', 'ml3'],
 'hr': ['mt5', 'mb3', 'b--black-05']
