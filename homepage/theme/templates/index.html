@@ -71,10 +71,16 @@
       </div>
     </div>
   </div>
-  
+
   <div class="w-100 bg-white gray"> <!--content-index-->
     <div class="flex flex-wrap justify-center pt5 pb6">
-      {{ page.content }}
+      <div class="mw7 mw8-l center ph5-ns ph3">
+        <h2>Summary</h2>
+        <div class="columns mb3">
+          {{ page.content }}
+          <a class="b link dim ph4 pv2 dib b--solid bw2 brd-cclr-mid-yellow fnt-cclr-mid-yellow" href="/deep-dive/">Deep dive</a>
+        </div>
+      </div>
     </div>
   </div>
 {% endblock %}
