@@ -28,22 +28,38 @@ THEME = './theme'
 # Delete the output directory before generating new files.
 DELETE_OUTPUT_DIRECTORY = True
 
-# dont create following standard pages
-AUTHORS_SAVE_AS = None
-ARCHIVES_SAVE_AS = None
-CATEGORIES_SAVE_AS = None
-TAGS_SAVE_AS = None
+DIRECT_TEMPLATES = ['sitemap', 'archives']
 
-# keep this for access to page variable
-DIRECT_TEMPLATES = ['sitemap']
+# dont create following standard pages
+AUTHOR_SAVE_AS = ''
+AUTHORS_SAVE_AS = ''
+CATEGORY_SAVE_AS = ''
+CATEGORIES_SAVE_AS = ''
+TAG_SAVE_AS = ''
+TAGS_SAVE_AS = ''
+
+ARCHIVES_SAVE_AS = 'blog/index.html'
 SITEMAP_SAVE_AS = 'sitemap.xml'
+PAGE_SAVE_AS = '{slug}/index.html'
+ARTICLE_SAVE_AS = 'blog/{slug}/index.html'
 
 PLUGIN_PATHS = ['./plugins']
 PLUGINS = ['decorate_content', 'assets']
 
 DECORATE_CONTENT = {
-    # maps any CSS selector to a list of classes to be added
-    # 'p': ['pv0', 'dim']
+    '[data-button]': ['dib', 'mv3', 'ph4', 'pv2', 'b--solid', 'bw2'],
+    '[data-button="yellow"]': ['brd-cclr-mid-yellow', 'fnt-cclr-mid-yellow'],
+    '[data-button="black"]': ['brd-cclr-mid-black', 'fnt-cclr-mid-black'],
+    'a': ['link', 'b', 'dim'],
+    'a:not([data-button])': ['gray'],
+    'h2': ['f25', 'ma0', 'mb3', 'light-silver'],
+    'h3': ['f5', 'normal', 'mt4', 'ma0', 'mb3', 'fnt-cclr-mid-black'],
+    'h4': ['f5', 'normal', 'mt4', 'ma0', 'mb3'],
+    'h5': ['ma0'],
+    'h6': ['f5', 'lh-solid', 'normal', 'ma0', 'mb3', 'light-silver'],
+    'p': ['ma0', 'pb3'],
+    'blockquote': ['f5', 'i', 'ma0', 'ml4-ns', 'ml3'],
+    'hr': ['mt5', 'mb3', 'b--black-05']
 }
 
 GITHUB_ORG = 'https://github.com/offen'
@@ -54,5 +70,3 @@ LINKEDIN_URL = 'https://www.linkedin.com/company/hioffen'
 TWITTER_URL = 'https://twitter.com/hioffen'
 
 OFFEN_ACCOUNT_ID = '9b63c4d8-65c0-438c-9d30-cc4b01173393'
-
-STATUS_URL = '/blog/laying-foundation-for-fair-web-analytics'

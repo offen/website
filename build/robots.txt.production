@@ -2,3 +2,5 @@ User-agent: *
 Disallow: /vault/
 Disallow: /auditorium/
 Disallow: /legal-notice/
+
+Sitemap: /sitemap.xml

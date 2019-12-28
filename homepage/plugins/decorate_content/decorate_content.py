@@ -22,7 +22,7 @@ def content_object_init(instance):
         soup = BeautifulSoup(instance._content, "html.parser")
 
         for selector, class_names in settings.items():
-            elems = soup.find_all(selector)
+            elems = soup.select(selector)
             for elem in elems:
                 elem["class"] = elem.get("class", []) + class_names
 

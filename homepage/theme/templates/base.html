@@ -1,157 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
+{% block head %}
 <head>
   <title>
-    {% block title %}{{ page.title }}{% endblock %}
+    {% block title %}{{ title }}{% endblock %}
   </title>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="{{ page.description }}">
+  <meta name="description" content="{{ description }}">
   <meta property="og:site_name" content="{{ SITENAME }}">
   <meta property="og:locale" content="{{ DEFAULT_LANG }}">
-  <meta property="og:title" content="{{ page.title }}">
-  <meta property="og:description" content="{{ page.description }}">
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:description" content="{{ description }}">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="{{ SITEURL }}{{ page.href or page.url or page.save_as }}">
-  <meta property="og:image" content="{{ SITEURL }}{{ page.sm_image_url }}">
+  <meta property="og:url" content="{{ SITEURL }}/{{ href }}">
+  <meta property="og:image" content="{{ SITEURL }}{{ sm_image_url or '/theme/images/offen-logo-social-media.jpg' }}">
   <meta name="twitter:image:alt" content="Offen logo">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="canonical" href="{{ SITEURL }}{{ page.href or page.url or page.save_as }}">
+  {% if template != 'archives' %}
+  <link rel="canonical" href="{{ SITEURL }}/{{ href }}">
+  {% endif %}
   <link rel="shortcut icon" type="image/x-icon" href="/theme/images/favicon.ico">
-  {% assets filters="libsass,postcss,cssmin", output="css/style.min.css", "css/normalize.css", "css/fonts.css", "css/style.scss" %}
+  {% assets filters="postcss,cssmin", output="css/style.min.css", "css/tachyons.min.css", "css/fix.css", "css/fonts.css" %}
     <link rel="stylesheet" href="/{{ ASSET_URL }}">
   {% endassets %}
-  {% if OFFEN_ACCOUNT_ID and not page.no_stats %}
+  <link rel="preload" href="/theme/fonts/rubik-v9-latin-regular.woff2" as="font">
+  <link rel="preload" href="/theme/fonts/rubik-v9-latin-500.woff2" as="font">
+  {% if OFFEN_ACCOUNT_ID and not no_stats %}
     <script async src="/script.js" data-account-id="{{ OFFEN_ACCOUNT_ID }}"></script>
   {% endif %}
 </head>
-<body class="{{page.template}}">
-  <div class="menu">
+{% endblock %}
+<body class="{{ template }} f5 rubik lh-copy fnt-cclr-mid-black cclr-dark-white">
+  <div class="menu w-100 cclr-mid-yellow">
     <section class="nav-bar">
       <div class="nav-container">
         <div class="icon">
-          <a href="/"><img src="/theme/images/offen-icon-white.svg" alt="Offen logo" width="42" height="46" class="logo"></a>
+          <a href="/"><img src="/theme/images/offen-icon-white.svg" alt="Offen logo" width="37" height="40" class="logo"></a>
         </div>
         <nav>
           <div class="nav-mobile"><span id="nav-toggle"><span></span></span></div>
           <ul class="nav-list">
             <li>
-              <a href="/">Summary</a>
+              <a class="b link dim fnt-cclr-mid-black" href="/">Summary</a>
             </li>
             <li>
-              <a href="/deep-dive/">Deep dive</a>
+              <a class="b link dim fnt-cclr-mid-black" href="/deep-dive/">Deep dive</a>
             </li>
             <li>
-              <a href="{{ STATUS_URL }}">Status</a>
+              <a class="b link dim fnt-cclr-mid-black" href="/blog/">Status</a>
             </li>
             <li>
-              <a href="/about/">About</a>
+              <a class="b link dim fnt-cclr-mid-black" href="/about/">About</a>
             </li>
             <li>
-              <a href="{{GITHUB_ORG}}" rel="noopener" target="_blank">GitHub</a>
+              <a class="b link dim fnt-cclr-mid-black" href="{{ GITHUB_ORG }}" rel="noopener" target="_blank">GitHub</a>
             </li>
             <li>
-              <a href="{{PATREON_URL}}" rel="noopener" target="_blank">Patreon</a>
+              <a class="b link dim fnt-cclr-mid-black" href="{{ PATREON_URL }}" rel="noopener" target="_blank">Patreon</a>
             </li>
           </ul>
         </nav>
       </div>
     </section>
   </div>
-
-  {% block content %}
-    <div class="content">
-      <div class="container-reader">
-        {{ page.content }}
+    {% block content %}
+      <div class="w-100 mt5-ns gray">
+        <div class="mw7 center pt5 pb5 ph3 ph5-ns bg-white">
+          {{ content }}
+        </div>
       </div>
-    </div>
-  {% endblock %}
+    {% endblock %}
 
-  {% block outro %}
-    <div class="cta-bottom">
-      <div class="bg" id="bg-cta-bottom">
-        <div class="container-full">
-          <div class="card-deck">
-            <div class="card">
-              <h2>
-                Participate
-              </h2>
-              <p>
-                Development of Offen has just started. Do not hesitate to make a contribution and help us handle data with respect.
-              </p>
-              <div class="btn-wrapper">
-                <a class="btn btn-color-black" href="{{GITHUB_ORG}}" rel="noopener" target="_blank">Get involved</a>
+    {% block outro %}
+      <div class="w-100 cclr-mid-yellow">
+        <div class="pt3 pb6 ph3" id="bg-cta-bottom">
+          <div class="mw8 center">
+            <div class="flex flex-wrap justify-center">
+              <div class="w55 mh3 pt5 tc">
+                <h2 class="f25 lh-solid ma0 mb3">
+                  Participate
+                </h2>
+                <p class="ma0 mb3">
+                  Development of Offen has just started. Do not hesitate to make a contribution and help us handle data with respect.
+                </p>
+                <a class="b link dim ph4 pv2 dib b--solid bw2 brd-cclr-mid-black fnt-cclr-mid-black" href="{{GITHUB_ORG}}" rel="noopener" target="_blank">Get involved</a>
               </div>
-            </div>
-            <div class="card">
-              <h2>
-                In the making
-              </h2>
-              <p>
-                Offen is still in alpha. Discover what is already up and running and where we want to go in the coming months.
-              </p>
-              <div class="btn-wrapper">
-                <a class="btn btn-color-black" href="{{ STATUS_URL }}">Project status</a>
+              {% if is_article != 'true' %}
+              <div class="w55 mh3 pt5 tc">
+                <h2 class="f25 lh-solid ma0 mb3">
+                  In the making
+                </h2>
+                <p class="ma0 mb3">
+                  Offen is still in alpha. Discover what is already up and running and where we want to go in the coming months.
+                </p>
+                <a class="b link dim ph4 pv2 dib b--solid bw2 brd-cclr-mid-black fnt-cclr-mid-black" href="/blog/">Project status</a>
               </div>
-            </div>
-            <div class="card">
-              <h2>
-                Ethical internet
-              </h2>
-              <p>
-                We're working hard to ensure that Offen is independent, cutting-edge and can be sustained for years to come.
-              </p>
-              <div class="btn-wrapper">
-                <a class="btn btn-color-black" href="{{PATREON_URL}}" rel="noopener" target="_blank">Support us</a>
+              {% endif %}
+              <div class="w55 mh3 pt5 tc">
+                <h2 class="f25 lh-solid ma0 mb3">
+                  Ethical internet
+                </h2>
+                <p class="ma0 mb3">
+                  We're working hard to ensure that Offen is independent and can be sustained for years to come.
+                </p>
+                <a class="b link dim ph4 pv2 dib b--solid bw2 brd-cclr-mid-black fnt-cclr-mid-black" href="{{ PATREON_URL }}" rel="noopener" target="_blank">Support us</a>
               </div>
             </div>
           </div>
         </div>
       </div>
+    {% endblock %}
+    <div class="w-100 cclr-mid-black gray ph4"> <!--footer-->
+      <div class="flex flex-row-l flex-column w-100-l mw6-m center-m pt4 pb6">
+        <div class="w-25-l mt3 mr3 fnt-cclr-mid-yellow">
+          <p class="ma0">
+            <a class="b link dim fnt-cclr-mid-yellow" href="/">Offen</a>
+          </p>
+          <p class="ma0">Transparent web analytics</p>
+          <p class="ma0">for everyone</p>
+        </div>
+        <div class="w-25-l mt3 mr3">
+          <p class="ma0">
+            <a class="link b dim gray" href="mailto:{{ CONTACT_EMAIL }}">{{CONTACT_EMAIL}}</a>
+          </p>
+          <p class="ma0">
+            <a class="link b dim gray" target="_blank" href="/theme/{{ GPG_KEY_FILE }}">GPG Key</a>
+          </p>
+          <p class="ma0 mt2">
+            <a class="link b dim gray" href="{{ GITHUB_ORG }}" rel="noopener" target="_blank">GitHub</a>
+          </p>
+          <p class="ma0">
+            <a class="link b dim gray" href="{{ PATREON_URL }}" rel="noopener" target="_blank">Patreon</a>
+          </p>
+        </div>
+        <div class="w-25-l mt3 mr3">
+          <p class="ma0">
+            <a class="link b dim gray" href="{{ LINKEDIN_URL }}" rel="noopener" target="_blank">LinkedIn</a>
+          </p>
+          <p class="ma0">
+            <a class="link b dim gray" href="{{ TWITTER_URL }}" rel="noopener" target="_blank">Twitter</a>
+          </p>
+          <p class="ma0">
+            <a class="link b dim gray" href="/legal-notice/">Legal Notice</a>
+          </p>
+        </div>
+        <div class="w-25-l mt3 tr-l">
+          {{ BUILD_DATE }}
+        </div>
+      </div>
     </div>
-  {% endblock %}
 
-  <div class="footer">
-    <div class="footer-card-deck">
-      <div class="footer-card">
-        <h3>Offen</h3>
-        <h4>Transparent web analytics</h4>
-        <h4>for everyone</h4>
-      </div>
-      <div class="footer-card">
-        <p>
-          <a href="mailto:{{CONTACT_EMAIL}}">{{CONTACT_EMAIL}}</a>
-          <a target="_blank" href="/theme/{{GPG_KEY_FILE}}">[GPG Key]</a>
-        </p>
-        <p>
-          <a href="{{GITHUB_ORG}}" rel="noopener" target="_blank">GitHub</a>
-        </p>
-        <p>
-          <a href="{{PATREON_URL}}" rel="noopener" target="_blank">Patreon</a>
-        </p>
-      </div>
-      <div class="footer-card">
-        <p>
-          <a href="{{LINKEDIN_URL}}" rel="noopener" target="_blank">LinkedIn</a>
-        </p>
-        <p>
-          <a href="{{TWITTER_URL}}" rel="noopener" target="_blank">Twitter</a>
-        </p>
-        <p>
-          <a href="/legal-notice/">Legal Notice</a>
-        </p>
-      </div>
-      <div class="footer-card">
-        {{ BUILD_DATE }}
-      </div>
-    </div>
-  </div>
-
-  {% block scripts %}
-    {% assets filters="rjsmin", output="scripts/packed.js", "scripts/jquery-3.4.1.min.js", "scripts/menu.js", "scripts/fade.js" %}
-      <script src="/{{ ASSET_URL }}"></script>
-    {% endassets %}
-  {% endblock %}
-</body>
+    {% block scripts %}
+      {% assets filters="rjsmin", output="scripts/packed.js", "scripts/jquery-3.4.1.min.js", "scripts/menu.js", "scripts/fade.js" %}
+        <script src="/{{ ASSET_URL }}"></script>
+      {% endassets %}
+    {% endblock %}
+  </body>
 </html>

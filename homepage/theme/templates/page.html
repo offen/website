@@ -1,1 +1,9 @@
 {% extends "base.html" %}
+
+{% set title = page.title %}
+{% set description = page.description %}
+{% set href = page.save_as.replace('index.html', '') %}
+{% set sm_image_url = page.sm_image_url %}
+{% set no_stats = page.no_stats %}
+{% set template = page.template %}
+{% set content = page.content %}

@@ -1,9 +1,7 @@
-Title: Legal Notice | Offen
+title: Legal Notice | Offen
 description: Information in accordance with Section 5 TMG
-save_as: legal-notice/index.html
-href: /legal-notice/
+slug: legal-notice
 exclude_from_sitemap: true
-sm_image_url: /theme/images/offen-logo-social-media.jpg
 
 ## Legal Notice
 
