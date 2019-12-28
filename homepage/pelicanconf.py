@@ -46,9 +46,12 @@ ARTICLE_SAVE_AS = 'blog/{slug}/index.html'
 PLUGIN_PATHS = ['./plugins']
 PLUGINS = ['decorate_content', 'assets']
 
-# maps any CSS selector to a list of classes to be added
 DECORATE_CONTENT = {
-    'a': ['link', 'b', 'dim', 'gray'],
+    '[data-button]': ['dib', 'mv3', 'ph4', 'pv2', 'b--solid', 'bw2'],
+    '[data-button="yellow"]': ['brd-cclr-mid-yellow', 'fnt-cclr-mid-yellow'],
+    '[data-button="black"]': ['brd-cclr-mid-black', 'fnt-cclr-mid-black'],
+    'a': ['link', 'b', 'dim'],
+    'a:not([data-button])': ['gray'],
     'h2': ['f25', 'ma0', 'mb3', 'light-silver'],
     'h3': ['f5', 'normal', 'mt4', 'ma0', 'mb3', 'fnt-cclr-mid-black'],
     'h4': ['f5', 'normal', 'mt4', 'ma0', 'mb3'],

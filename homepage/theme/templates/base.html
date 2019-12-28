@@ -25,16 +25,15 @@
   {% assets filters="postcss,cssmin", output="css/style.min.css", "css/tachyons.min.css", "css/fix.css", "css/fonts.css" %}
     <link rel="stylesheet" href="/{{ ASSET_URL }}">
   {% endassets %}
-  <link rel="preload" href="/theme//fonts/rubik-v9-latin-regular.woff2" as="font">
-  <link rel="preload" href="/theme//fonts/rubik-v9-latin-500.woff2" as="font">
+  <link rel="preload" href="/theme/fonts/rubik-v9-latin-regular.woff2" as="font">
+  <link rel="preload" href="/theme/fonts/rubik-v9-latin-500.woff2" as="font">
   {% if OFFEN_ACCOUNT_ID and not no_stats %}
     <script async src="/script.js" data-account-id="{{ OFFEN_ACCOUNT_ID }}"></script>
   {% endif %}
 </head>
 {% endblock %}
 <body class="{{ template }} f5 rubik lh-copy fnt-cclr-mid-black cclr-dark-white">
-<!-- Menu ######################################################### -->
-  <div class="menu w-100 cclr-mid-yellow"> <!-- menu -->
+  <div class="menu w-100 cclr-mid-yellow">
     <section class="nav-bar">
       <div class="nav-container">
         <div class="icon">
@@ -66,9 +65,8 @@
       </div>
     </section>
   </div>
-<!-- Content ######################################################### -->
     {% block content %}
-      <div class="w-100 mt5-ns gray"> <!-- content -->
+      <div class="w-100 mt5-ns gray">
         <div class="mw7 center pt5 pb5 ph3 ph5-ns bg-white">
           {{ content }}
         </div>
@@ -76,7 +74,7 @@
     {% endblock %}
 
     {% block outro %}
-      <div class="w-100 cclr-mid-yellow"> <!--cta-bottom-->
+      <div class="w-100 cclr-mid-yellow">
         <div class="pt3 pb6 ph3" id="bg-cta-bottom">
           <div class="mw8 center">
             <div class="flex flex-wrap justify-center">
@@ -114,7 +112,6 @@
         </div>
       </div>
     {% endblock %}
-<!-- Footer ######################################################### -->
     <div class="w-100 cclr-mid-black gray ph4"> <!--footer-->
       <div class="flex flex-row-l flex-column w-100-l mw6-m center-m pt4 pb6">
         <div class="w-25-l mt3 mr3 fnt-cclr-mid-yellow">
@@ -129,7 +126,7 @@
             <a class="link b dim gray" href="mailto:{{ CONTACT_EMAIL }}">{{CONTACT_EMAIL}}</a>
           </p>
           <p class="ma0">
-            <a class="link b dim gray" target="_blank" href="/theme/{{ GPG_KEY_FILE }}">Email GPG Key</a>
+            <a class="link b dim gray" target="_blank" href="/theme/{{ GPG_KEY_FILE }}">GPG Key</a>
           </p>
           <p class="ma0 mt2">
             <a class="link b dim gray" href="{{ GITHUB_ORG }}" rel="noopener" target="_blank">GitHub</a>
