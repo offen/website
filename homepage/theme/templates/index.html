@@ -1,52 +1,52 @@
-{% extends "base.html" %}
+{% extends "page.html" %}
 
 {% block content %}
-  <div class="intro">
-    <div class="bg" id="bg-intro">
-      <div class="container-reader">
-        <div class="spacer-intro">
-          <div class="sign">
-            <img src="/theme/images/offen-logo-white.svg" alt="Offen logo" width="152" height="94">
-          </div>
-          <h1>
-            <em>Transparent web analytics for operators and users</em>
+  <div class="w-100 mt5-ns cclr-mid-yellow">
+    <div class="mw8 center" id="bg-intro">
+      <div class="flex flex-wrap pt6-ns pt-3 ph4">
+        <div class="mw5 pr4 pb3">
+          <img src="/theme/images/offen-logo-white.svg" alt="Offen logo" width="146" height="90">
+        </div>
+        <div class="mw6">
+          <h1 class="f1-ns f2 lh-solid ma0 mb3">
+            Transparent <span>web analytics</span>
           </h1>
-          <p>
-            Offen is a free and open source analytics software for websites and web applications that allows respectful handling of data.
+          <p class="ma0 mb4">
+            Offen is an open source analytics software for websites <span>and web applications. It allows respectful handling of data </span> <span>for operators and users.</span>
           </p>
-          <div class="btn-wrapper">
-            <a class="btn btn-color-black" href="{{GITHUB_ORG}}" rel="noopener" target="_blank">Get involved</a>
+          <div class="pb6">
+            <a class="b link dim ph4 pv2 dib b--solid bw2 brd-cclr-mid-black fnt-cclr-mid-black" href="{{GITHUB_ORG}}" rel="noopener" target="_blank">Get involved</a>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="feature">
-    <div class="bg" id="bg-feature">
-      <div class="container-full">
-        <div class="card-deck">
-          <div class="card">
-            <h2>
+  <div class="w-100 cclr-mid-mint">
+    <div class="pt3 pb6 ph3" id="bg-feature">
+      <div class="mw8 center">
+        <div class="flex flex-wrap justify-around">
+          <div class="w55 mh3 pt5 tc">
+            <h2 class="f25 lh-solid ma0 mb3">
               <em>Free & Open</em>
             </h2>
-            <p>
-              Anyone can audit our open source code to verify it works as intended. Offen will always be available free of charge.
+            <p class="ma0">
+              Anyone can audit our open source code to verify it works as intended. Offen will always be available for free.
             </p>
           </div>
-          <div class="card">
-            <h2>
+          <div class="w55 mh3 pt5 tc">
+            <h2 class="f25 lh-solid ma0 mb3">
               <em>Fair & Secure</em>
             </h2>
-            <p>
+            <p class="ma0">
               Pay respect to your website visitors and gain insights as a user at the same time. All data is encrypted end-to-end.
             </p>
           </div>
-          <div class="card">
-            <h2>
+          <div class="w55 mh3 pt5 tc">
+            <h2 class="f25 lh-solid ma0 mb3">
               <em>Easy to use</em>
             </h2>
-            <p>
+            <p class="ma0">
               Simply paste our code into the source of your website. Users can visit the auditorium to access their data.
             </p>
           </div>
@@ -56,44 +56,48 @@
   </div>
 
 
-  <div class="cta-top">
-    <div class="bg" id="bg-cta-top">
-      <div class="container-reader">
-        <div class="spacer-right">
-          <h2>
+  <div class="w-100 cclr-mid-black white">
+    <div class="pt3 pb6 ph4" id="bg-cta-top">
+      <div class="flex justify-end mw6 center pt5">
+        <div class="w55 tr">
+          <h2 class="f25 lh-solid ma0 mb3">
             In the making
           </h2>
-          <p>
+          <p class="ma0 mb4">
             Offen is still in alpha. Discover what is already up and running and where we want to go in the coming months.
           </p>
-          <div class="btn-wrapper">
-            <a class="btn btn-color-white" href="/blog/">Project status</a>
-          </div>
+          <a class="b link dim ph4 pv2 dib b--solid bw2 b--white white" href="/blog/">Project status</a>
         </div>
       </div>
     </div>
   </div>
-  <div class="content-index">
-    <div class="container-reader">
-      {{ page.content }}
+
+  <div class="w-100 bg-white gray">
+    <div class="flex flex-wrap justify-center pt5 pb6">
+      <div class="mw7 mw8-l center ph5-ns ph3">
+        <h2>Summary</h2>
+        <div class="columns mb3">
+          {{ page.content }}
+          <a class="b link dim ph4 pv2 mt3 dib b--solid bw2 brd-cclr-mid-yellow fnt-cclr-mid-yellow" href="/deep-dive/">Deep dive</a>
+        </div>
+      </div>
     </div>
   </div>
 {% endblock %}
 
+
 {% block outro %}
-  <div class="outro">
-    <div class="bg" id="bg-outro">
-      <div class="container-reader">
-        <div class="spacer-right">
-          <h2>
+  <div class="w-100 cclr-mid-yellow">
+    <div class="pt3 pb6 ph4" id="bg-outro">
+      <div class="flex justify-end mw6 center pt5">
+        <div class="w55 tr">
+          <h2 class="f25 lh-solid ma0 mb3">
             Ethical internet
           </h2>
-          <p>
+          <p class="mb4">
             We're working hard to ensure that Offen is independent, cutting-edge and can be sustained for years to come.
           </p>
-          <div class="btn-wrapper">
-            <a class="btn btn-color-black" href="{{PATREON_URL}}" rel="noopener" target="_blank">Support us</a>
-          </div>
+          <a class="b link dim ph4 pv2 dib b--solid bw2 brd-cclr-mid-black fnt-cclr-mid-black" href="{{PATREON_URL}}" rel="noopener" target="_blank">Support us</a>
         </div>
       </div>
     </div>

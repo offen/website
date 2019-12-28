@@ -47,8 +47,19 @@ PLUGIN_PATHS = ['./plugins']
 PLUGINS = ['decorate_content', 'assets']
 
 DECORATE_CONTENT = {
-    # maps any CSS selector to a list of classes to be added
-    # 'p': ['pv0', 'dim']
+    '[data-button]': ['dib', 'mv3', 'ph4', 'pv2', 'b--solid', 'bw2'],
+    '[data-button="yellow"]': ['brd-cclr-mid-yellow', 'fnt-cclr-mid-yellow'],
+    '[data-button="black"]': ['brd-cclr-mid-black', 'fnt-cclr-mid-black'],
+    'a': ['link', 'b', 'dim'],
+    'a:not([data-button])': ['gray'],
+    'h2': ['f25', 'ma0', 'mb3', 'light-silver'],
+    'h3': ['f5', 'normal', 'mt4', 'ma0', 'mb3', 'fnt-cclr-mid-black'],
+    'h4': ['f5', 'normal', 'mt4', 'ma0', 'mb3'],
+    'h5': ['ma0'],
+    'h6': ['f5', 'lh-solid', 'normal', 'ma0', 'mb3', 'light-silver'],
+    'p': ['ma0', 'pb3'],
+    'blockquote': ['f5', 'i', 'ma0', 'ml4-ns', 'ml3'],
+    'hr': ['mt5', 'mb3', 'b--black-05']
 }
 
 GITHUB_ORG = 'https://github.com/offen'
