@@ -10,4 +10,4 @@ Usage metrics come with explanations about their meaning, relevance, usage and p
 
 Offen treats both users and operators as parties of equal importance. Users can expect full transparency and are encouraged to make _autonomous and informed decisions regarding the use of their data._ Operators are enabled to gain insights while respecting their users' privacy and data.
 
-Offen is currently in the early stages of development and is applying for funds to sustain its development. An early alpha version is running on this site: you can _visit the [auditorium](/auditorium/)_ to access your data.
+Offen is currently in the early stages of development and is applying for funds to sustain its development.
