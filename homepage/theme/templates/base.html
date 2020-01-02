@@ -32,126 +32,127 @@
   {% endif %}
 </head>
 {% endblock %}
-<body class="{{ template }} f5 rubik lh-copy fnt-cclr-mid-black cclr-dark-white">
-  <div class="menu w-100 cclr-mid-yellow">
-    <section class="nav-bar">
-      <div class="nav-container">
-        <div class="icon">
-          <a href="/"><img src="/theme/images/offen-icon-white.svg" alt="Offen logo" width="37" height="40" class="logo"></a>
+<body class="{{ template }} f5 rubik lh-copy fnt-cclr-mid-black cclr-mid-black">
+  <div class="cclr-dark-white">
+    <div class="menu w-100 cclr-mid-yellow">
+      <section class="nav-bar">
+        <div class="nav-container">
+          <div class="icon">
+            <a href="/"><img src="/theme/images/offen-icon-white.svg" alt="Offen logo" width="37" height="40" class="logo"></a>
+          </div>
+          <nav>
+            <div class="nav-mobile"><span id="nav-toggle"><span></span></span></div>
+            <ul class="nav-list">
+              <li>
+                <a class="b link dim fnt-cclr-mid-black" href="/">Summary</a>
+              </li>
+              <li>
+                <a class="b link dim fnt-cclr-mid-black" href="/deep-dive/">Deep dive</a>
+              </li>
+              <li>
+                <a class="b link dim fnt-cclr-mid-black" href="/blog/">Status</a>
+              </li>
+              <li>
+                <a class="b link dim fnt-cclr-mid-black" href="/about/">About</a>
+              </li>
+              <li>
+                <a class="b link dim fnt-cclr-mid-black" href="{{ GITHUB_ORG }}" rel="noopener" target="_blank">GitHub</a>
+              </li>
+              <li>
+                <a class="b link dim fnt-cclr-mid-black" href="{{ PATREON_URL }}" rel="noopener" target="_blank">Patreon</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <nav>
-          <div class="nav-mobile"><span id="nav-toggle"><span></span></span></div>
-          <ul class="nav-list">
-            <li>
-              <a class="b link dim fnt-cclr-mid-black" href="/">Summary</a>
-            </li>
-            <li>
-              <a class="b link dim fnt-cclr-mid-black" href="/deep-dive/">Deep dive</a>
-            </li>
-            <li>
-              <a class="b link dim fnt-cclr-mid-black" href="/blog/">Status</a>
-            </li>
-            <li>
-              <a class="b link dim fnt-cclr-mid-black" href="/about/">About</a>
-            </li>
-            <li>
-              <a class="b link dim fnt-cclr-mid-black" href="{{ GITHUB_ORG }}" rel="noopener" target="_blank">GitHub</a>
-            </li>
-            <li>
-              <a class="b link dim fnt-cclr-mid-black" href="{{ PATREON_URL }}" rel="noopener" target="_blank">Patreon</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </section>
-  </div>
-    {% block content %}
-      <div class="w-100 mt5-ns gray">
-        <div class="mw7 center pt5 pb5 ph3 ph5-ns bg-white">
-          {{ content }}
+      </section>
+    </div>
+      {% block content %}
+        <div class="w-100 mt5-ns gray">
+          <div class="mw7 center pt5 pb5 ph3 ph5-ns bg-white">
+            {{ content }}
+          </div>
         </div>
-      </div>
-    {% endblock %}
+      {% endblock %}
 
-    {% block outro %}
-      <div class="w-100 cclr-mid-yellow">
-        <div class="pt3 pb6 ph3" id="bg-cta-bottom">
-          <div class="mw8 center">
-            <div class="flex flex-wrap justify-center">
-              <div class="w55 mh3 pt5 tc">
-                <h2 class="f25 lh-solid ma0 mb3">
-                  Participate
-                </h2>
-                <p class="ma0 mb3">
-                  Development of Offen has just started. Do not hesitate to make a contribution and help us handle data with respect.
-                </p>
-                <a class="b link dim ph4 pv2 dib b--solid bw2 brd-cclr-mid-black fnt-cclr-mid-black" href="{{GITHUB_ORG}}" rel="noopener" target="_blank">Get involved</a>
-              </div>
-              {% if is_article != 'true' %}
-              <div class="w55 mh3 pt5 tc">
-                <h2 class="f25 lh-solid ma0 mb3">
-                  In the making
-                </h2>
-                <p class="ma0 mb3">
-                  Offen is still in alpha. Discover what is already up and running and where we want to go in the coming months.
-                </p>
-                <a class="b link dim ph4 pv2 dib b--solid bw2 brd-cclr-mid-black fnt-cclr-mid-black" href="/blog/">Project status</a>
-              </div>
-              {% endif %}
-              <div class="w55 mh3 pt5 tc">
-                <h2 class="f25 lh-solid ma0 mb3">
-                  Ethical internet
-                </h2>
-                <p class="ma0 mb3">
-                  We're working hard to ensure that Offen is independent and can be sustained for years to come.
-                </p>
-                <a class="b link dim ph4 pv2 dib b--solid bw2 brd-cclr-mid-black fnt-cclr-mid-black" href="{{ PATREON_URL }}" rel="noopener" target="_blank">Support us</a>
+      {% block outro %}
+        <div class="w-100 cclr-mid-yellow">
+          <div class="pt3 pb6 ph3" id="bg-cta-bottom">
+            <div class="mw8 center">
+              <div class="flex flex-wrap justify-center">
+                <div class="w55 mh3 pt5 tc">
+                  <h2 class="f25 lh-solid ma0 mb3">
+                    Participate
+                  </h2>
+                  <p class="ma0 mb3">
+                    Development of Offen has just started. Do not hesitate to make a contribution and help us handle data with respect.
+                  </p>
+                  <a class="b link dim ph4 pv2 dib b--solid bw2 brd-cclr-mid-black fnt-cclr-mid-black" href="{{GITHUB_ORG}}" rel="noopener" target="_blank">Get involved</a>
+                </div>
+                {% if is_article != 'true' %}
+                <div class="w55 mh3 pt5 tc">
+                  <h2 class="f25 lh-solid ma0 mb3">
+                    In the making
+                  </h2>
+                  <p class="ma0 mb3">
+                    Offen is still in alpha. Discover what is already up and running and where we want to go in the coming months.
+                  </p>
+                  <a class="b link dim ph4 pv2 dib b--solid bw2 brd-cclr-mid-black fnt-cclr-mid-black" href="/blog/">Project status</a>
+                </div>
+                {% endif %}
+                <div class="w55 mh3 pt5 tc">
+                  <h2 class="f25 lh-solid ma0 mb3">
+                    Ethical internet
+                  </h2>
+                  <p class="ma0 mb3">
+                    We're working hard to ensure that Offen is independent and can be sustained for years to come.
+                  </p>
+                  <a class="b link dim ph4 pv2 dib b--solid bw2 brd-cclr-mid-black fnt-cclr-mid-black" href="{{ PATREON_URL }}" rel="noopener" target="_blank">Support us</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    {% endblock %}
-    <div class="w-100 cclr-mid-black gray ph4"> <!--footer-->
-      <div class="flex flex-row-l flex-column w-100-l mw6-m center-m pt4 pb6">
-        <div class="w-25-l mt3 mr3 fnt-cclr-mid-yellow">
-          <p class="ma0">
-            <a class="b link dim fnt-cclr-mid-yellow" href="/">Offen</a>
-          </p>
-          <p class="ma0">Transparent web analytics</p>
-          <p class="ma0">for everyone</p>
-        </div>
-        <div class="w-25-l mt3 mr3">
-          <p class="ma0">
-            <a class="link b dim gray" href="mailto:{{ CONTACT_EMAIL }}">{{CONTACT_EMAIL}}</a>
-          </p>
-          <p class="ma0">
-            <a class="link b dim gray" target="_blank" href="/theme/{{ GPG_KEY_FILE }}">GPG Key</a>
-          </p>
-          <p class="ma0 mt2">
-            <a class="link b dim gray" href="{{ GITHUB_ORG }}" rel="noopener" target="_blank">GitHub</a>
-          </p>
-          <p class="ma0">
-            <a class="link b dim gray" href="{{ PATREON_URL }}" rel="noopener" target="_blank">Patreon</a>
-          </p>
-        </div>
-        <div class="w-25-l mt3 mr3">
-          <p class="ma0">
-            <a class="link b dim gray" href="{{ LINKEDIN_URL }}" rel="noopener" target="_blank">LinkedIn</a>
-          </p>
-          <p class="ma0">
-            <a class="link b dim gray" href="{{ TWITTER_URL }}" rel="noopener" target="_blank">Twitter</a>
-          </p>
-          <p class="ma0">
-            <a class="link b dim gray" href="/legal-notice/">Legal Notice</a>
-          </p>
-        </div>
-        <div class="w-25-l mt3 tr-l">
-          {{ BUILD_DATE }}
+      {% endblock %}
+      <div class="w-100 cclr-mid-black gray ph4"> <!--footer-->
+        <div class="flex flex-row-l flex-column w-100-l mw6-m center-m pt4 pb6">
+          <div class="w-25-l mt3 mr3 fnt-cclr-mid-yellow">
+            <p class="ma0">
+              <a class="b link dim fnt-cclr-mid-yellow" href="/">Offen</a>
+            </p>
+            <p class="ma0">Transparent web analytics</p>
+            <p class="ma0">for everyone</p>
+          </div>
+          <div class="w-25-l mt3 mr3">
+            <p class="ma0">
+              <a class="link b dim gray" href="mailto:{{ CONTACT_EMAIL }}">{{CONTACT_EMAIL}}</a>
+            </p>
+            <p class="ma0">
+              <a class="link b dim gray" target="_blank" href="/theme/{{ GPG_KEY_FILE }}">GPG Key</a>
+            </p>
+            <p class="ma0 mt2">
+              <a class="link b dim gray" href="{{ GITHUB_ORG }}" rel="noopener" target="_blank">GitHub</a>
+            </p>
+            <p class="ma0">
+              <a class="link b dim gray" href="{{ PATREON_URL }}" rel="noopener" target="_blank">Patreon</a>
+            </p>
+          </div>
+          <div class="w-25-l mt3 mr3">
+            <p class="ma0">
+              <a class="link b dim gray" href="{{ LINKEDIN_URL }}" rel="noopener" target="_blank">LinkedIn</a>
+            </p>
+            <p class="ma0">
+              <a class="link b dim gray" href="{{ TWITTER_URL }}" rel="noopener" target="_blank">Twitter</a>
+            </p>
+            <p class="ma0">
+              <a class="link b dim gray" href="/legal-notice/">Legal Notice</a>
+            </p>
+          </div>
+          <div class="w-25-l mt3 tr-l">
+            {{ BUILD_DATE }}
+          </div>
         </div>
       </div>
     </div>
-
     {% block scripts %}
       {% assets filters="rjsmin", output="scripts/packed.js", "scripts/jquery-3.4.1.min.js", "scripts/menu.js", "scripts/fade.js" %}
         <script src="/{{ ASSET_URL }}"></script>
