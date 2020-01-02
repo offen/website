@@ -82,8 +82,6 @@ TYPO AND LAYOUT ELEMENTS
 body {
   overflow-wrap: break-word;
   overscroll-behavior: none;
-  /* overscroll color */
-  background-color: #39352A;
 }
 /* Custom Tachyons class */
 .f25 {
