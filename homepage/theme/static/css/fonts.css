@@ -1,7 +1,7 @@
 /* rubik-regular - latin */
 @font-face {
   font-family: 'Rubik';
-  font-display: swap;
+  font-display: block;
   font-style: normal;
   font-weight: 400;
   src: local('Rubik'), local('Rubik-Regular'),
@@ -12,7 +12,7 @@
 /* rubik-700 - latin */
 @font-face {
   font-family: 'Rubik';
-  font-display: swap;
+  font-display: block;
   font-style: normal;
   font-weight: 700;
   src: local('Rubik Bold'), local('Rubik-Bold'),
