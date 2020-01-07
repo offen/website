@@ -2,14 +2,11 @@ help:
 	@echo "    setup"
 	@echo "        Build the development containers and install dependencies."
 	@echo "    update"
-	@echo "        Install / update dependencies in the containers."
-	@echo "    bootstrap"
-	@echo "        Set up and seed databases."
-	@echo "        **IMPORTANT**: this wipes any existing data in your local database."
+	@echo "        Install / update dependencies in the development containers."
 	@echo "    build"
-	@echo "        Build the production images."
+	@echo "        Build the production assets."
 
-setup: dev-build update howto
+setup: dev-build update
 
 dev-build:
 	@docker-compose build
@@ -17,32 +14,20 @@ dev-build:
 up:
 	@docker-compose up
 
-howto:
-	@echo "Successfully built containers and installed dependencies."
-	@echo "If this is your initial setup, you can run 'make bootstrap' next"
-	@echo "to create and seed the database."
-
-bootstrap:
-	@echo "Bootstrapping Server service ..."
-	@docker-compose run server bootstrap
-	@echo ""
-	@echo "You can now log into the development backend using the following credentials:"
-	@echo ""
-	@echo "Email: develop@offen.dev"
-	@echo "Password: develop"
-	@echo ""
-
 update:
 	@echo "Installing / updating dependencies ..."
 	@docker-compose run homepage pip install --user -r requirements.txt
-	@echo "Applying pending database migrations ..."
-	@docker-compose run server migrate
+	@echo "Successfully built containers and installed dependencies."
 
-DOCKER_IMAGE_TAG ?= local
 ROBOTS_FILE ?= robots.txt.staging
 SITEURL ?= http://localhost:8000
 
 build:
-	@docker build --build-arg siteurl=${SITEURL} --build-arg robots=${ROBOTS_FILE} -t offen/website:${DOCKER_IMAGE_TAG} -f build/Dockerfile .
+	@docker build --build-arg siteurl=${SITEURL} -t offen/website -f build/Dockerfile .
+	@rm -rf output && mkdir output
+	@docker create --entrypoint=bash -it --name assets offen/website
+	@docker cp assets:/code/homepage/output/. ./output/
+	@cp build/${ROBOTS_FILE} ./output/robots.txt
+	@docker rm assets
 
-.PHONY: setup build bootstrap build
+.PHONY: setup build up

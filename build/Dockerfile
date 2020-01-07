@@ -1,9 +1,10 @@
-FROM nikolaik/python-nodejs:python3.7-nodejs10 as homepage
+FROM nikolaik/python-nodejs:python3.7-nodejs10
+
+ENV PATH "/root/.local/bin:$PATH"
+ENV NODE_PATH="/usr/lib/node_modules"
 
 ARG siteurl
 ENV SITEURL=$siteurl
-
-COPY ./homepage /code/homepage
 
 RUN npm install -g postcss-cli@^6.1.3 autoprefixer@^9.7.0 svgo@^1.3.0
 RUN apt-get update \
@@ -11,19 +12,8 @@ RUN apt-get update \
 	&& rm -rf /var/lib/apt/lists/*
 
 WORKDIR /code/homepage
-ENV PATH "/root/.local/bin:$PATH"
-ENV NODE_PATH="/usr/lib/node_modules"
+COPY ./homepage/requirements.txt /code/homepage/requirements.txt
 RUN pip install --user -r requirements.txt
-RUN make publish
 
-FROM nginx:1.17-alpine
-LABEL maintainer="mail@offen.dev"
-
-ARG robots
-ENV ROBOTS_FILE=$robots
-
-COPY --from=homepage /code/homepage/output /www/data
-COPY ./build/$ROBOTS_FILE /www/data/robots.txt
-COPY ./build/nginx.conf /etc/nginx/nginx.conf
-
-EXPOSE 80
+COPY ./homepage /code/homepage
+RUN make publish && rm -rf output/theme/.webassets-cache
