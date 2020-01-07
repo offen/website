@@ -18,14 +18,17 @@ jobs:
             if [ "${CIRCLE_BRANCH}" == "master" ]; then
               export SITEURL="https://www.offen.dev"
               export BUCKET="offen-dev-production"
+              export DISTRIBUTION="E2UP8XHLFOC3QC"
               export ROBOTS_FILE="robots.txt.production"
             else
               export SITEURL="https://staging.offen.dev"
               export BUCKET="offen-dev-staging"
+              export DISTRIBUTION="E13I20LK8ASYFH"
               export ROBOTS_FILE="robots.txt.staging"
             fi
             make build
             aws s3 sync --delete ./output/. s3://$BUCKET
+            aws cloudfront create-invalidation --distribution-id $DISTRIBUTION --paths "/*"
 
 workflows:
   version: 2
