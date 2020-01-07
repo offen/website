@@ -1,75 +1,9 @@
 version: 2
 
-build_preconditions: &build_preconditions
-  filters:
-    branches:
-      only:
-        - master
-        - development
-
-deploy_preconditions: &deploy_preconditions
-  requires:
-    - build
-  filters:
-    branches:
-      only:
-        - master
-        - development
-
 jobs:
-  build:
-    docker:
-      - image: docker:18-git
-    working_directory: ~/offen
-    steps:
-      - checkout
-      - setup_remote_docker
-      - restore_cache:
-          keys:
-            - v1-{{ .Branch }}
-          paths:
-            - /caches/website.tar
-      - run:
-          name: Load Docker image layer cache
-          command: |
-            set +o pipefail
-            docker load -i /caches/website.tar | true
-      - run:
-          name: Build application Docker image
-          command: |
-            if [ "${CIRCLE_BRANCH}" == "master" ]; then
-              export SITEURL="https://www.offen.dev"
-              export DOCKER_IMAGE_TAG="stable"
-              export ROBOTS_FILE="robots.txt.production"
-            else
-              export SITEURL="https://staging.offen.dev"
-              export DOCKER_IMAGE_TAG="latest"
-              export ROBOTS_FILE="robots.txt.staging"
-            fi
-            docker build --build-arg siteurl=$SITEURL --build-arg robots=$ROBOTS_FILE -t offen/website:$DOCKER_IMAGE_TAG -f build/Dockerfile .
-      - run:
-          name: Save Docker image layer cache
-          command: |
-            mkdir -p /caches
-            docker save -o /caches/website.tar offen/website
-      - save_cache:
-          key: v1-{{ .Branch }}-{{ epoch }}
-          paths:
-            - /caches/website.tar
-      - deploy:
-          name: Push application Docker image
-          command: |
-            if [ "${CIRCLE_BRANCH}" == "master" ]; then
-              export DOCKER_IMAGE_TAG="stable"
-            else
-              export DOCKER_IMAGE_TAG="latest"
-            fi
-            echo "$DOCKER_ACCESSTOKEN" | docker login --username $DOCKER_USER --password-stdin
-            docker push offen/website:$DOCKER_IMAGE_TAG
-
   deploy:
     docker:
-      - image: circleci/golang:1.13
+      - image: circleci/python:3.7
     working_directory: ~/offen
     steps:
       - checkout
@@ -77,34 +11,32 @@ jobs:
       - run:
           name: Install deployment dependencies
           command: |
-            sudo apt-get update && sudo apt-get install -qq -y python-pip libpython-dev
-            curl -O https://bootstrap.pypa.io/get-pip.py && sudo python get-pip.py
             sudo pip install -q awscli --upgrade
-            sudo pip install awsebcli --upgrade
       - run:
-          name: Define target environment
+          name: Build and deploy to S3
           command: |
             if [ "${CIRCLE_BRANCH}" == "master" ]; then
-              echo 'export TARGET_ENVIRONMENT="production"' >> $BASH_ENV
-              echo 'export DOCKER_IMAGE_TAG="stable"' >> $BASH_ENV
+              export SITEURL="https://www.offen.dev"
+              export BUCKET="offen-dev-production"
+              export DISTRIBUTION="E2UP8XHLFOC3QC"
+              export ROBOTS_FILE="robots.txt.production"
             else
-              echo 'export TARGET_ENVIRONMENT="staging"' >> $BASH_ENV
-              echo 'export DOCKER_IMAGE_TAG="latest"' >> $BASH_ENV
+              export SITEURL="https://staging.offen.dev"
+              export BUCKET="offen-dev-staging"
+              export DISTRIBUTION="E13I20LK8ASYFH"
+              export ROBOTS_FILE="robots.txt.staging"
             fi
-      - run:
-          name: Run database migrations
-          command: docker run -it offen/offen:offen@sha256:4c0d2d5db9bc749d21ad8659008658bf25318074b7c813b0a694e64816df750d migrate -conn $(aws secretsmanager get-secret-value --secret-id $TARGET_ENVIRONMENT/postgresConnectionString | jq -r '.SecretString')
-      - run:
-          name: Deploy
-          command: |
-            cp Dockerrun.aws.json.$TARGET_ENVIRONMENT Dockerrun.aws.json
-            eb deploy
+            make build
+            aws s3 sync --delete ./output/. s3://$BUCKET
+            aws cloudfront create-invalidation --distribution-id $DISTRIBUTION --paths "/*"
 
 workflows:
   version: 2
   build_deploy:
     jobs:
-      - build:
-          <<: *build_preconditions
       - deploy:
-          <<: *deploy_preconditions
+          filters:
+            branches:
+              only:
+                - master
+                - development
