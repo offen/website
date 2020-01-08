@@ -1,3 +1,4 @@
+import os
 from datetime import datetime
 from calendar import month_name
 # If your site is available via HTTPS, make sure SITEURL begins with https://
@@ -69,4 +70,4 @@ PATREON_URL = 'https://www.patreon.com/offen'
 LINKEDIN_URL = 'https://www.linkedin.com/company/hioffen'
 TWITTER_URL = 'https://twitter.com/hioffen'
 
-OFFEN_ACCOUNT_ID = '8f7ee44a-4cd8-47f2-a77e-8c7c98d46b89'
+OFFEN_ACCOUNT_ID = os.environ.get('OFFEN_ACCOUNT_ID', None)

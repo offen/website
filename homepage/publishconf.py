@@ -15,5 +15,3 @@ FEED_ALL_ATOM = 'feeds/all.atom.xml'
 DELETE_OUTPUT_DIRECTORY = True
 
 PLUGINS += ['optimize_images']
-
-OFFEN_ACCOUNT_ID = None
