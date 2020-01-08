@@ -5,6 +5,8 @@ ENV NODE_PATH="/usr/lib/node_modules"
 
 ARG siteurl
 ENV SITEURL=$siteurl
+ARG offen-account-id
+ENV OFFEN_ACCOUNT_ID=$offen-account-id
 
 RUN npm install -g postcss-cli@^6.1.3 autoprefixer@^9.7.0 svgo@^1.3.0
 RUN apt-get update \
