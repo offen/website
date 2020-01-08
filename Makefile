@@ -23,7 +23,7 @@ ROBOTS_FILE ?= robots.txt.staging
 SITEURL ?= http://localhost:8000
 
 build:
-	@docker build --build-arg siteurl=${SITEURL} --build-arg offen-account-id=${OFFEN_ACCOUNT_ID} -t offen/website -f build/Dockerfile .
+	@docker build --build-arg siteurl=${SITEURL} --build-arg offenaccountid=${OFFEN_ACCOUNT_ID} -t offen/website -f build/Dockerfile .
 	@rm -rf output && mkdir output
 	@docker create --entrypoint=bash -it --name assets offen/website
 	@docker cp assets:/code/homepage/output/. ./output/
