@@ -20,6 +20,7 @@ jobs:
               export BUCKET="offen-dev-production"
               export DISTRIBUTION="E2UP8XHLFOC3QC"
               export ROBOTS_FILE="robots.txt.production"
+              export OFFEN_ACCOUNT_ID="5ec8345a-2a45-4eb9-92e5-8d9e5684db58"
             else
               export SITEURL="https://staging.offen.dev"
               export BUCKET="offen-dev-staging"
