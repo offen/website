@@ -20,11 +20,13 @@ jobs:
               export BUCKET="offen-dev-production"
               export DISTRIBUTION="E2UP8XHLFOC3QC"
               export ROBOTS_FILE="robots.txt.production"
+              export OFFEN_ACCOUNT_ID="5ec8345a-2a45-4eb9-92e5-8d9e5684db58"
             else
               export SITEURL="https://staging.offen.dev"
               export BUCKET="offen-dev-staging"
               export DISTRIBUTION="E13I20LK8ASYFH"
               export ROBOTS_FILE="robots.txt.staging"
+              export OFFEN_ACCOUNT_ID="8f7ee44a-4cd8-47f2-a77e-8c7c98d46b89"
             fi
             make build
             aws s3 sync --delete ./output/. s3://$BUCKET
