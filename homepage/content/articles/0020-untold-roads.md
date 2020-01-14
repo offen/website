@@ -1,6 +1,6 @@
 title: temp | Offen
 description: temp
-date: 2020-01-12
+date: 2020-01-15
 slug: untold-roads-versioning-early-stage-software
 sitemap_priority: 0.7
 sm_image_url: /theme/images/offen-blog-0020-untoldRoads.jpg
