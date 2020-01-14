@@ -10,7 +10,7 @@ sm_image_url: /theme/images/offen-blog-0020-untoldRoads.jpg
 </figure>
 
 ###### 15 Jan 2020, Frederik Ring
-## [Untold roads to v1.0](/blog/untold-roads-versioning-early-stage-software/)
+# [Untold roads to v1.0](/blog/untold-roads-versioning-early-stage-software/)
 
 After a lot of experimenting, taking detours and having unanticipated revelations while building the foundation for Offen over the last months, the state of the project is starting to settle, and we are eager to get ready for users to install our software, and use it for transparently collecting usage statistics for their websites and applications.
 
