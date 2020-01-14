@@ -275,6 +275,7 @@ IMAGES
 .smaller-image {
   width: 200px;
   height: 109px;
+  margin-bottom: -2rem;
 }
 /* Custom media query - extra small */
 @media only screen and (min-width: 30em) {
