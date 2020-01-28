@@ -90,7 +90,7 @@ body {
 span {
   display: table;
 }
-/* Custom media query - medium small - neutralize span line braks */
+/* Custom media query - medium small (custom width) - neutralize span line braks */
 @media only screen and (max-width: 34em) {
   p span {
     display: initial;
@@ -108,7 +108,14 @@ hr {
   transition: none;
   opacity: 1;
 }
-
+ul {
+  padding-inline-start: 2rem;
+}
+@media only screen and (max-width: 30em) {
+  ul {
+    padding-inline-start: 1rem;
+  }
+}
 
 /* ---------------------------------------------------
 MENU
