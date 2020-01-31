@@ -9,7 +9,6 @@ sm_image_url: /theme/images/offen-blog-0010-milestone1.jpg
 <img alt="Milestone 1 - Laying the foundation for fair web analytics" src="/theme/images/offen-blog-0010-milestone1.jpg"/>
 </figure>
 
-
 ###### 12 Dec 2019, Hendrik Niefeld
 # [Episode One — Laying the foundation for fair web analytics](/blog/laying-foundation-for-fair-web-analytics/)
 Milestone 1 is completed. This is what we've achieved in the last six weeks.
