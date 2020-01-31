@@ -40,6 +40,7 @@
           <div class="icon">
             <a href="/"><img src="/theme/images/offen-icon-white.svg" alt="Offen logo" width="37" height="40" class="logo"></a>
           </div>
+          {% if is_getstarted != 'true' %}
           <nav>
             <div class="nav-mobile"><span id="nav-toggle"><span></span></span></div>
             <ul class="nav-list">
@@ -63,6 +64,7 @@
               </li>
             </ul>
           </nav>
+          {% endif %}
         </div>
       </section>
     </div>
@@ -74,6 +76,7 @@
         </div>
       {% endblock %}
 
+      {% if is_getstarted != 'true' %}
       {% block outro %}
         <div class="w-100 cclr-mid-yellow">
           <div class="pt3 pb6 ph3" id="bg-cta-bottom">
@@ -113,6 +116,7 @@
           </div>
         </div>
       {% endblock %}
+      {% endif %}
       <div class="w-100 cclr-mid-black gray ph4"> <!--footer-->
         <div class="flex flex-row-l flex-column w-100-l mw6-m center-m pt4 pb6">
           <div class="w-25-l mt3 mr3 fnt-cclr-mid-yellow">
