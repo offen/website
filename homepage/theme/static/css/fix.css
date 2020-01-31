@@ -104,7 +104,18 @@ hr {
   margin-left: -1rem;
   margin-right: -1rem;
 }
-
+.dim:focus {
+  transition: none;
+  opacity: 1;
+}
+ul {
+  padding-inline-start: 2rem;
+}
+@media only screen and (max-width: 30em) {
+  ul {
+    padding-inline-start: 1rem;
+  }
+}
 
 
 /* ---------------------------------------------------
