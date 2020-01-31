@@ -1,6 +1,6 @@
 title: Collecting data securely | Offen
 description: Our key milestone 2 features are user consent, improved crypto implementation and an extended set of stats.
-date: 2020-02-02
+date: 2020-01-31
 slug: collecting-data-securely
 sitemap_priority: 0.7
 sm_image_url: /theme/images/offen-blog-0030-milestone2.jpg
@@ -9,7 +9,7 @@ sm_image_url: /theme/images/offen-blog-0030-milestone2.jpg
 <img alt="Milestone 2 - Collecting data securely" src="/theme/images/offen-blog-0030-milestone-2.jpg"/>
 </figure>
 
-###### 2 Feb 2020, Hendrik Niefeld
+###### 31 Jan 2020, Hendrik Niefeld
 # [Episode Two  — Collecting data securely](/blog/collecting-data-securely/)
 We finished milestone 2. Here is what we' ve been doing for the last 8 weeks.
 
