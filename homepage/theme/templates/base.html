@@ -37,8 +37,9 @@
     <div class="menu w-100 cclr-mid-yellow">
       <section class="nav-bar">
         <div class="nav-container">
-          <div class="icon">
-            <a href="/"><img src="/theme/images/offen-icon-white.svg" alt="Offen logo" width="37" height="40" class="logo"></a>
+          <div class="icon flex">
+            <a class="link dim" href="/"><img src="/theme/images/offen-icon-white.svg" alt="Offen logo" width="37" height="40" class="logo"></a>
+            <a class="link dim" href="/"><p class="f25 normal ma0 ml2 white">Offen</p></a>
           </div>
           {% if is_getstarted != 'true' %}
           <nav>
@@ -133,14 +134,17 @@
             <p class="ma0">
               <a class="link b dim gray" target="_blank" href="/theme/{{ GPG_KEY_FILE }}">GPG Key</a>
             </p>
+            {% if is_getstarted != 'true' %}
             <p class="ma0 mt2">
               <a class="link b dim gray" href="{{ GITHUB_ORG }}" rel="noopener" target="_blank">GitHub</a>
             </p>
             <p class="ma0">
               <a class="link b dim gray" href="{{ PATREON_URL }}" rel="noopener" target="_blank">Patreon</a>
             </p>
+            {% endif %}
           </div>
           <div class="w-25-l mt3 mr3">
+            {% if is_getstarted != 'true' %}
             <p class="ma0">
               <a class="link b dim gray" href="{{ LINKEDIN_URL }}" rel="noopener" target="_blank">LinkedIn</a>
             </p>
@@ -150,6 +154,7 @@
             <p class="ma0">
               <a class="link b dim gray" href="/legal-notice/">Legal Notice</a>
             </p>
+            {% endif %}
           </div>
           <div class="w-25-l mt3 tr-l">
             {{ BUILD_DATE }}
