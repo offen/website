@@ -129,6 +129,12 @@ ul {
 .tracked-min {
 	letter-spacing:  .03em;
 }
+.intro-margin-a {
+	margin-top: 0.3rem;
+}
+.intro-margin-b {
+	margin-top: 0.7rem;
+}
 
 
 /* ---------------------------------------------------
@@ -319,8 +325,34 @@ IMAGES
 GRAPHICS
 ----------------------------------------------------*/
 #bg-intro {
-  background: url(/theme/images/gfx-intro.svg) no-repeat center;
+  background: url(/theme/images/gfx-intro.svg);
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: 200px 130px;
 }
+/*
+@media only screen and (min-width: 45.1em) and (max-width: 60em) {
+	#bg-intro {
+		background-position: 180px 130px;
+	}
+}
+@media only screen and (min-width: 30.1em) and (max-width: 45em) {
+	#bg-intro {
+		background-position: 140px 130px;
+	}
+}
+*/
+@media only screen and (min-width: 30.1em) and (max-width: 60em) {
+	#bg-intro {
+		background-position: calc(20% + 120px) 130px;
+	}
+}
+@media only screen and (max-width: 30em) {
+	#bg-intro {
+		background-position: 10px 60px;
+	}
+}
+
 #bg-feature {
   background: url(/theme/images/gfx-pattern-mint-bright.svg) center;
 }

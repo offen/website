@@ -128,13 +128,13 @@
             <p class="ma0">for everyone</p>
           </div>
           <div class="w-25-l mt3 mr3">
+            {% if is_getstarted != 'true' %}
             <p class="ma0">
               <a class="link b dim gray" href="mailto:{{ CONTACT_EMAIL }}">{{CONTACT_EMAIL}}</a>
             </p>
             <p class="ma0">
               <a class="link b dim gray" target="_blank" href="/theme/{{ GPG_KEY_FILE }}">GPG Key</a>
             </p>
-            {% if is_getstarted != 'true' %}
             <p class="ma0 mt2">
               <a class="link b dim gray" href="{{ GITHUB_ORG }}" rel="noopener" target="_blank">GitHub</a>
             </p>
