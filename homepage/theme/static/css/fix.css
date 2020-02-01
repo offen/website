@@ -75,6 +75,9 @@ LAYOUT
     width: 100%;
   }
 }
+.get-started {
+
+}
 
 
 
@@ -140,9 +143,6 @@ ul {
 /* ---------------------------------------------------
 MENU
 ----------------------------------------------------*/
-.nav-list {
-  margin: 0 0.7rem 0 0;
-}
 .nav-bar {
   height: 4rem;
 }
@@ -179,9 +179,18 @@ nav ul li a:visited {
   background: #F7BF08;
   color: #39352A;
 }
+nav ul li:last-child a {
+	padding-right: 2rem;
+  background: #39352A;
+  color: #fff;
+}
 nav ul li a:hover,
 nav ul li a:visited:hover {
   color: #39352A;
+}
+nav ul li:last-child a:hover,
+nav ul li:last-child a:visited:hover {
+  color: #fff;
 }
 nav ul li a:not(:only-child):after,
 nav ul li a:visited:not(:only-child):after {
@@ -231,17 +240,19 @@ nav ul li ul li a {
   nav ul li a {
     padding: 1rem;
     line-height: 1;
-	  padding-left: 20%;
+	  padding-left: 4.2rem;
   }
   nav ul li ul li a {
     padding-left: 30%;
   }
   nav ul li:last-child a {
-    padding-bottom: 4rem;
+    padding-bottom: 1.2rem;
+		margin: 0;
+		box-shadow: 0px 7px 15px -6px rgba(57,53,42,0.2);
   }
-  nav ul li:last-child a {
-    box-shadow: 0px 7px 15px -6px rgba(57,53,42,0.2);
-  }
+	nav ul li:first-child a {
+		padding-top: 0.2rem;
+	}
   .nav-dropdown {
     position: static;
   }
@@ -330,18 +341,6 @@ GRAPHICS
 	background-attachment: scroll;
 	background-position: 200px 130px;
 }
-/*
-@media only screen and (min-width: 45.1em) and (max-width: 60em) {
-	#bg-intro {
-		background-position: 180px 130px;
-	}
-}
-@media only screen and (min-width: 30.1em) and (max-width: 45em) {
-	#bg-intro {
-		background-position: 140px 130px;
-	}
-}
-*/
 @media only screen and (min-width: 30.1em) and (max-width: 60em) {
 	#bg-intro {
 		background-position: calc(20% + 120px) 130px;
@@ -352,7 +351,6 @@ GRAPHICS
 		background-position: 10px 60px;
 	}
 }
-
 #bg-feature {
   background: url(/theme/images/gfx-pattern-mint-bright.svg) center;
 }
