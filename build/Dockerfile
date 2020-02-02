@@ -8,6 +8,7 @@ ENV SITEURL=$siteurl
 ARG offenaccountid
 ENV OFFEN_ACCOUNT_ID=$offenaccountid
 
+RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
 RUN npm install -g postcss-cli@^6.1.3 autoprefixer@^9.7.0 svgo@^1.3.0
 RUN apt-get update \
 	&& apt-get install -y libjpeg-progs optipng \
