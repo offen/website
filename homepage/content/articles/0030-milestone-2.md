@@ -33,10 +33,10 @@ The current state of *Offen runs on this domain.* You should have noticed our co
 
 ### Testdrive on your system
 Whether you are a developer that want to contribute or a website operator that wants to test Offen. Have a demo up and running in no time on your local machine. Download and install a single binary file on Linux, Windows or MacOS.  
-[Download demo](https://github.com/offen/offen/releases/download/v0.1.0-alpha.1/offen-v0.1.0-alpha.1.tar.gz){: target="_blank" data-button="yellow"}
+[Download demo](https://github.com/offen/offen/releases/download/v0.1.0-alpha.2/offen-v0.1.0-alpha.2.tar.gz){: data-button="yellow"}
 
 ### Feeling adventurous?
-Offen is under active development but with the introduction of the user consent banner has become usable for the general public. If you are brave enough you can use our [very first alpha release](https://github.com/offen/offen/releases/tag/v0.1.0-alpha.1){: target="_blank"} in a production environment.
+Offen is under active development but with the introduction of the user consent banner has become usable for the general public. If you are brave enough you can use our [very first alpha release](https://github.com/offen/offen/releases/tag/v0.1.0-alpha.2){: target="_blank"} in a production environment.
 
 ### We need to talk about Safari
 Currently, the way we store encryption keys securely on the client side does not work in Apple's Safari browser. Fortunately, our improved opt-in flow will allow us to resume Safari support in milestone 3. Please bear with us until then.

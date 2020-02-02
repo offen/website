@@ -3,9 +3,9 @@
 {% set is_getstarted = 'true' %}
 
 {% block content %}
-<div class="w-100 mt5-ns cclr-mid-mint">
+<div class="w-100 mt5-ns" id="bg-feature">
   <div class="pv5 ph4">
-    <div class="mw8 center flex flex-column flex-row-ns">
+    <div class="mw8 center flex flex-column flex-row-ns mb5 cclr-mid-mint">
       <div class="w-100 w-60-ns">
         <h2 class="f25 normal tc tl-ns ma0 mb3">
           <em>Our alpha release</em>
@@ -18,17 +18,17 @@
         <p class="tc lh-title tracked-min ma0 mt3-ns mb2 white">
           Single binary file for <br>Linux, Windows or MacOS
         </p>
-        <a class="w-100 tc b link dim ph4 pv2 dib b--solid bw2 brd-cclr-mid-black mb2 fnt-cclr-mid-black" href="#" rel="noopener">Download</a>
+        <a class="w-100 tc b link dim ph4 pv2 dib b--solid bw2 brd-cclr-mid-black mb2 fnt-cclr-mid-black" href="{{ RELEASE_DIRECT_URL }}" rel="noopener">Download</a>
         <div class="tc">
-          <a class="w-100 tracked-min b link dim mb3 fnt-cclr-mint-bright" href="#" rel="noopener">Open GitHub release page</a>
+          <a class="w-100 tracked-min b link dim mb3 fnt-cclr-mint-bright" href="{{ RELEASE_URL }}" rel="noopener" target="_blank">Open GitHub release page</a>
         </div>
       </div>
     </div>
   </div>
 </div>
-<div class="w-100 cclr-mid-yellow">
+<div class="w-100" id="bg-outro">
   <div class="pv5 ph4">
-    <div class="mw8 center flex flex-column flex-row-ns mb3">
+    <div class="mw8 center flex flex-column flex-row-ns mb3 mb5 cclr-mid-yellow">
       <div class="w-100 w-60-ns">
         <h2 class="f25 normal tc tl-ns ma0 mb3">
           <em class="em-extra">
@@ -43,7 +43,7 @@
         <p class="tc lh-title tracked-min ma0 mt3-ns mb2 white">
           Details on how to run, use <br>and develop Offen
         </p>
-        <a class="w-100 tc b link dim ph4 pv2 dib b--solid bw2 brd-cclr-mid-black mb3 fnt-cclr-mid-black" href="#" rel="noopener">Open guides</a>
+        <a class="w-100 tc b link dim ph4 pv2 dib b--solid bw2 brd-cclr-mid-black mb3 fnt-cclr-mid-black" href="https://docs.offen.dev/" rel="noopener" target="_blank">Open guides</a>
       </div>
     </div>
   </div>
