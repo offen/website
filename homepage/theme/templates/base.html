@@ -37,9 +37,11 @@
     <div class="menu w-100 cclr-mid-yellow">
       <section class="nav-bar">
         <div class="nav-container">
-          <div class="icon">
-            <a href="/"><img src="/theme/images/offen-icon-white.svg" alt="Offen logo" width="37" height="40" class="logo"></a>
+          <div class="icon flex">
+            <a class="link dim" href="/"><img src="/theme/images/offen-icon-white.svg" alt="Offen logo" width="37" height="40" class="logo"></a>
+            <a class="link dim" href="/"><p class="f25 normal ma0 ml2 white">Offen</p></a>
           </div>
+          {% if is_getstarted != 'true' %}
           <nav>
             <div class="nav-mobile"><span id="nav-toggle"><span></span></span></div>
             <ul class="nav-list">
@@ -61,8 +63,12 @@
               <li>
                 <a class="b link dim fnt-cclr-mid-black" href="{{ PATREON_URL }}" rel="noopener" target="_blank">Patreon</a>
               </li>
+              <li>
+                <a class="b link dim" href="/get-started/">Get started</a>
+              </li>
             </ul>
           </nav>
+          {% endif %}
         </div>
       </section>
     </div>
@@ -74,6 +80,7 @@
         </div>
       {% endblock %}
 
+      {% if is_getstarted != 'true' %}
       {% block outro %}
         <div class="w-100 cclr-mid-yellow">
           <div class="pt3 pb6 ph3" id="bg-cta-bottom">
@@ -113,6 +120,7 @@
           </div>
         </div>
       {% endblock %}
+      {% endif %}
       <div class="w-100 cclr-mid-black gray ph4"> <!--footer-->
         <div class="flex flex-row-l flex-column w-100-l mw6-m center-m pt4 pb6">
           <div class="w-25-l mt3 mr3 fnt-cclr-mid-yellow">
@@ -123,6 +131,7 @@
             <p class="ma0">for everyone</p>
           </div>
           <div class="w-25-l mt3 mr3">
+            {% if is_getstarted != 'true' %}
             <p class="ma0">
               <a class="link b dim gray" href="mailto:{{ CONTACT_EMAIL }}">{{CONTACT_EMAIL}}</a>
             </p>
@@ -135,8 +144,10 @@
             <p class="ma0">
               <a class="link b dim gray" href="{{ PATREON_URL }}" rel="noopener" target="_blank">Patreon</a>
             </p>
+            {% endif %}
           </div>
           <div class="w-25-l mt3 mr3">
+            {% if is_getstarted != 'true' %}
             <p class="ma0">
               <a class="link b dim gray" href="{{ LINKEDIN_URL }}" rel="noopener" target="_blank">LinkedIn</a>
             </p>
@@ -146,6 +157,7 @@
             <p class="ma0">
               <a class="link b dim gray" href="/legal-notice/">Legal Notice</a>
             </p>
+            {% endif %}
           </div>
           <div class="w-25-l mt3 tr-l">
             {{ BUILD_DATE }}
