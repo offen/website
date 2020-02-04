@@ -3,7 +3,7 @@ description: Our key milestone 2 features are user consent, improved crypto impl
 date: 2020-01-31
 slug: collecting-data-securely
 sitemap_priority: 0.7
-sm_image_url: /theme/images/offen-blog-0030-milestone2.jpg
+sm_image_url: /theme/images/offen-blog-0030-milestone-2.jpg
 
 <figure class="larger-image mb5">
 <img alt="Milestone 2 - Collecting data securely" src="/theme/images/offen-blog-0030-milestone-2.jpg"/>
