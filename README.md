@@ -28,4 +28,7 @@ which should enable you to access the homepage at <http://localhost:8000/>.
 
 ### License
 
-MIT © [offen](https://www.offen.dev)
+The content of this website itself is licensed under the [Creative Commons Attribution 4.0 International (CC BY 4.0) License][cc-by-4], and the underlying source code used to format and display that content is licensed under the [GNU Affero General Public License v3.0][license].
+
+[cc-by-4]: https://creativecommons.org/licenses/by/4.0/
+[license]: https://github.com/offen/website/blob/development/LICENSE
