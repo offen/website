@@ -66,12 +66,13 @@ LAYOUT
   }
 }
 /* Custom Tachyons class */
+.w55-container,
 .w55 {
-  width: 18.5rem;
+  width: 20rem;
 }
 /* Custom media query - extra small */
-@media only screen and (max-width: 30em) {
-  .w55 {
+@media only screen and (max-width: 40em) {
+  .w55-container {
     width: 100%;
   }
 }
@@ -346,6 +347,10 @@ GRAPHICS
 	#bg-intro {
 		background-position: 10px 60px;
 	}
+}
+#bg-temp {
+  background: url(/theme/images/temp.png) center;
+	background-repeat: no-repeat;
 }
 #bg-feature {
   background: url(/theme/images/gfx-pattern-mint-bright.svg) center;
