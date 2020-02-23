@@ -19,7 +19,7 @@ We finished milestone 2. Here is what we' ve been doing for the last 8 weeks.
 A first approach to one of our major features is implemented. Websites that embed the Offen script now display a user consent banner. In case of user's deny, no other requests than loading the script are made from then on.  
 [Learn more](https://analytics.offen.dev/){: target="_blank" data-button="yellow"} 
 
-### Accidental leaks dont expose data
+### Accidental leaks don't expose data
 We encrypt all event data before it leaves the browser. [Two types](https://github.com/offen/offen/pull/270){: target="_blank"}  of crypto implementations are used for this. This allows us to handle user data from both https and http-only sites securely.
 
 ### What exactly happens on your website?
