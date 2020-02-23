@@ -22,7 +22,7 @@
   <link rel="canonical" href="{{ SITEURL }}/{{ href }}">
   {% endif %}
   <link rel="shortcut icon" type="image/x-icon" href="/theme/images/favicon.ico">
-  {% assets filters="postcss,cssmin", output="css/style.min.css", "css/tachyons.min.css", "css/fix.css", "css/fonts.css" %}
+  {% assets filters="postcss", output="css/style.min.css", "css/tachyons.min.css", "css/fix.css", "css/fonts.css" %}
     <link rel="stylesheet" href="/{{ ASSET_URL }}">
   {% endassets %}
   <link rel="preload" href="/theme/fonts/rubik-v9-latin-regular.woff2" as="font" crossorigin>
