@@ -35,6 +35,15 @@ COLORS
 .cclr-dark-white {
   background-color: #f9f7f2;
 }
+.mintA {
+  background-color: #BBD9D3;
+}
+.mintB {
+  background-color: #89B8AF;
+}
+.mintC {
+  background-color: #72A49A;
+}
 
 
 /* ---------------------------------------------------
@@ -348,10 +357,12 @@ GRAPHICS
 		background-position: 10px 60px;
 	}
 }
+/* --------------------------------------------- */
 #bg-temp {
   background: url(/theme/images/temp.png) center;
 	background-repeat: no-repeat;
 }
+/* --------------------------------------------- */
 #bg-feature {
   background: url(/theme/images/gfx-pattern-mint-bright.svg) center;
 }
