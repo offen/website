@@ -3,7 +3,7 @@
 {% block content %}
   <div class="w-100 mt5-ns cclr-mid-yellow">
     <div class="mw8 center" id="bg-intro">
-      <div class="flex justify-center pt6-ns pt5 ph4">
+      <div class="flex justify-center pt5 ph4">
         <div class="dn db-ns w-20 tr pr3 pb3">
           <img src="/theme/images/offen-icon-white.svg" alt="Offen logo" width="58" height="63">
         </div>
@@ -22,7 +22,7 @@
           <p class="ma0 mb4">
             Offen is a fair alternative to common web analytic tools. <span>Pay respect to your users while gaining insight into their behavior. </span>Self hosted, open source and free.
           </p>
-          <div class="pb6">
+          <div class="pb5 mb2">
             <a class="b link dim ph4 pv2 dib b--solid bw2 brd-cclr-mid-black fnt-cclr-mid-black" href="/get-started/" rel="noopener">Start now</a>
           </div>
         </div>
@@ -36,7 +36,9 @@
             <div class="flex justify-center w55-container" id="bg-feature-1">
               <div class="w56 tc pa3">
                 <h2 class="f25 normal lh-solid mt5 mb3">
-                  Free & Open
+                  <em class="em-mint-bright">
+                    Free & Open
+                  </em>
                 </h2>
                 <p class="ma0 mb5">
                   Our open source code can be fully audited by the community. It will always be available for free. Seriously.
@@ -46,7 +48,9 @@
             <div class="flex justify-center w55-container" id="bg-feature-3">
               <div class="w56 tc pa3">
                 <h2 class="f25 normal lh-solid mt6 mb3">
-                  Self hosted
+                  <em class="em-mint-bright">
+                    Self hosted
+                  </em>
                 </h2>
                 <p class="ma0">
                   Comply with GDPR guidelines. Don't share data with third parties. Your users have full access to their data.
@@ -56,7 +60,9 @@
             <div class="flex justify-center w55-container" id="bg-feature-2">
               <div class=" w56 tc pa3">
                 <h2 class="f25 normal lh-solid mt7 mb3">
-                  Fair & Secure
+                  <em class="em-mint-bright">
+                    Fair & Secure
+                  </em>
                 </h2>
                 <p class="ma0">
                   Pay respect to your website visitors. Gain valuable insights at the same time. All data is encrypted end-to-end.
@@ -112,17 +118,11 @@
         <p class="b tc lh-title tracked-min ma0 mt3 mb2">
           Single binary file <br>for Linux, Windows or MacOS
         </p>
-        <a class="w-100 tc b link dim ph4 pv2 dib b--solid bw2 brd-cclr-mid-black mb2 fnt-cclr-mid-black" href="{{ RELEASE_DIRECT_URL }}" rel="noopener">Download</a>
-        <div class="tc">
-          <a class="w-100 tracked-min b link dim mb3 fnt-cclr-mint-bright" href="{{ RELEASE_URL }}" rel="noopener" target="_blank">Open GitHub release page</a>
-        </div>
+        <a class="w-100 tc b link dim ph4 pv2 dib b--solid bw2 brd-cclr-mid-black mb3 fnt-cclr-mid-black" href="{{ RELEASE_DIRECT_URL }}" rel="noopener">Download</a>
         <p class="b tc lh-title tracked-min ma0 mt4 mb2">
-          Your own instance on Heroku
+          Your own Offen instance
         </p>
-        <a class="w-100 tc b link dim ph4 pv2 dib b--solid bw2 brd-cclr-mid-black mb2 fnt-cclr-mid-black" href="{{ HEROKU_DIRECT_URL }}" rel="noopener" target="_blank">Deploy</a>
-        <div class="tc">
-          <a class="w-100 tracked-min b link dim mb3 fnt-cclr-mint-bright" href="{{ HEROKU_URL }}" rel="noopener" target="_blank">Open GitHub configuration repository</a>
-        </div>
+        <a class="w-100 tc b link dim ph4 pv2 dib b--solid bw2 brd-cclr-mid-black mb2 fnt-cclr-mid-black" href="{{ HEROKU_DIRECT_URL }}" rel="noopener" target="_blank">Deploy to Heroku</a>
       </div>
     </div>
   </div>
@@ -132,7 +132,7 @@
     <div class="mw8 center flex flex-column flex-row-ns mb3 mb5 cclr-mid-yellow">
       <div class="w-100 w-60-ns">
         <h2 class="f25 normal tc tl-ns ma0 mb3">
-          <em class="em-extra">
+          <em class="em-mint">
             Get started now
           </em>
         </h2>

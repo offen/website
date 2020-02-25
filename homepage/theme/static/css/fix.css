@@ -109,8 +109,12 @@ em {
   background: linear-gradient(transparent 66%, #fde28c 66%);
   font-style: normal;
 }
-.em-extra {
+.em-mint {
   background: linear-gradient(transparent 66%, #BBD9D3 66%);
+  font-style: normal;
+}
+.em-mint-bright {
+  background: linear-gradient(transparent 66%, #CEEBE5 66%);
   font-style: normal;
 }
 hr {
@@ -339,11 +343,11 @@ GRAPHICS
   background: url(/theme/images/gfx-intro.svg);
 	background-repeat: no-repeat;
 	background-attachment: scroll;
-	background-position: 200px 130px;
+	background-position: 200px 80px;
 }
 @media only screen and (min-width: 30.1em) and (max-width: 60em) {
 	#bg-intro {
-		background-position: calc(20% + 120px) 130px;
+		background-position: calc(20% + 120px) 80px;
 	}
 }
 @media only screen and (max-width: 30em) {

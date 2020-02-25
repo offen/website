@@ -70,9 +70,7 @@ GPG_KEY_FILE = '74B041E23DB29D552644CEB1B18C633D6967FE3F.asc'
 PATREON_URL = 'https://www.patreon.com/offen'
 LINKEDIN_URL = 'https://www.linkedin.com/company/hioffen'
 TWITTER_URL = 'https://twitter.com/hioffen'
-RELEASE_URL = 'https://github.com/offen/offen/releases/latest/'
 RELEASE_DIRECT_URL = 'https://get.offen.dev'
-HEROKU_URL = 'https://github.com/offen/heroku'
 HEROKU_DIRECT_URL = 'https://heroku.com/deploy?template=https://github.com/offen/heroku/tree/master'
 
 OFFEN_ACCOUNT_ID = os.environ.get('OFFEN_ACCOUNT_ID', None)
