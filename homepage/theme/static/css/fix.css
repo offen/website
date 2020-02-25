@@ -66,16 +66,20 @@ LAYOUT
   }
 }
 /* Custom Tachyons class */
+.w55-container,
 .w55 {
-  width: 18.5rem;
+	width: 20rem;
+}
+.w56 {
+  width: 20rem;
+	height: 480px;
 }
 /* Custom media query - extra small */
-@media only screen and (max-width: 30em) {
-  .w55 {
+@media only screen and (max-width: 40em) {
+  .w55-container {
     width: 100%;
   }
 }
-
 
 /* ---------------------------------------------------
 TYPO AND LAYOUT ELEMENTS
@@ -105,8 +109,12 @@ em {
   background: linear-gradient(transparent 66%, #fde28c 66%);
   font-style: normal;
 }
-.em-extra {
+.em-mint {
   background: linear-gradient(transparent 66%, #BBD9D3 66%);
+  font-style: normal;
+}
+.em-mint-bright {
+  background: linear-gradient(transparent 66%, #CEEBE5 66%);
   font-style: normal;
 }
 hr {
@@ -335,11 +343,11 @@ GRAPHICS
   background: url(/theme/images/gfx-intro.svg);
 	background-repeat: no-repeat;
 	background-attachment: scroll;
-	background-position: 200px 130px;
+	background-position: 200px 80px;
 }
 @media only screen and (min-width: 30.1em) and (max-width: 60em) {
 	#bg-intro {
-		background-position: calc(20% + 120px) 130px;
+		background-position: calc(20% + 120px) 80px;
 	}
 }
 @media only screen and (max-width: 30em) {
@@ -347,6 +355,20 @@ GRAPHICS
 		background-position: 10px 60px;
 	}
 }
+/* --------------------------------------------- */
+#bg-feature-1 {
+  background: url(/theme/images/gfx-feature-1.png) center;
+	background-repeat: no-repeat;
+}
+#bg-feature-2 {
+  background: url(/theme/images/gfx-feature-2.png) center;
+	background-repeat: no-repeat;
+}
+#bg-feature-3 {
+  background: url(/theme/images/gfx-feature-3.png) center;
+	background-repeat: no-repeat;
+}
+/* --------------------------------------------- */
 #bg-feature {
   background: url(/theme/images/gfx-pattern-mint-bright.svg) center;
 }

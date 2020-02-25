@@ -22,7 +22,7 @@
   <link rel="canonical" href="{{ SITEURL }}/{{ href }}">
   {% endif %}
   <link rel="shortcut icon" type="image/x-icon" href="/theme/images/favicon.ico">
-  {% assets filters="postcss,cssmin", output="css/style.min.css", "css/tachyons.min.css", "css/fix.css", "css/fonts.css" %}
+  {% assets filters="postcss", output="css/style.min.css", "css/tachyons.min.css", "css/fix.css", "css/fonts.css" %}
     <link rel="stylesheet" href="/{{ ASSET_URL }}">
   {% endassets %}
   <link rel="preload" href="/theme/fonts/rubik-v9-latin-regular.woff2" as="font" crossorigin>
@@ -86,7 +86,7 @@
           <div class="pt3 pb6 ph3" id="bg-cta-bottom">
             <div class="mw8 center">
               <div class="flex flex-wrap justify-center">
-                <div class="w55 mh3 pt5 tc">
+                <div class="w55 ph3 pt5 tc">
                   <h2 class="f25 normal lh-solid ma0 mb3">
                     Participate
                   </h2>
@@ -96,7 +96,7 @@
                   <a class="b link dim ph4 pv2 dib b--solid bw2 brd-cclr-mid-black fnt-cclr-mid-black" href="{{GITHUB_ORG}}" rel="noopener" target="_blank">Get involved</a>
                 </div>
                 {% if is_article != 'true' %}
-                <div class="w55 mh3 pt5 tc">
+                <div class="w55 ph3 pt5 tc">
                   <h2 class="f25 normal lh-solid ma0 mb3">
                     In the making
                   </h2>
@@ -106,7 +106,7 @@
                   <a class="b link dim ph4 pv2 dib b--solid bw2 brd-cclr-mid-black fnt-cclr-mid-black" href="/blog/">Project status</a>
                 </div>
                 {% endif %}
-                <div class="w55 mh3 pt5 tc">
+                <div class="w55 ph3 pt5 tc">
                   <h2 class="f25 normal lh-solid ma0 mb3">
                     Ethical internet
                   </h2>
