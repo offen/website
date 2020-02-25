@@ -35,15 +35,6 @@ COLORS
 .cclr-dark-white {
   background-color: #f9f7f2;
 }
-.mintA {
-  background-color: #BBD9D3;
-}
-.mintB {
-  background-color: #89B8AF;
-}
-.mintC {
-  background-color: #72A49A;
-}
 
 
 /* ---------------------------------------------------
@@ -77,7 +68,11 @@ LAYOUT
 /* Custom Tachyons class */
 .w55-container,
 .w55 {
+	width: 20rem;
+}
+.w56 {
   width: 20rem;
+	height: 480px;
 }
 /* Custom media query - extra small */
 @media only screen and (max-width: 40em) {
@@ -85,7 +80,9 @@ LAYOUT
     width: 100%;
   }
 }
-
+.mt77 {
+	margin-top: 18rem;
+}
 
 /* ---------------------------------------------------
 TYPO AND LAYOUT ELEMENTS
@@ -358,8 +355,12 @@ GRAPHICS
 	}
 }
 /* --------------------------------------------- */
-#bg-temp {
-  background: url(/theme/images/temp.png) center;
+#bg-feature-1 {
+  background: url(/theme/images/gfx-feature-1.png) center;
+	background-repeat: no-repeat;
+}
+#bg-feature-2 {
+  background: url(/theme/images/gfx-feature-2.png) center;
 	background-repeat: no-repeat;
 }
 /* --------------------------------------------- */
