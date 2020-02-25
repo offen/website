@@ -80,9 +80,6 @@ LAYOUT
     width: 100%;
   }
 }
-.mt77 {
-	margin-top: 18rem;
-}
 
 /* ---------------------------------------------------
 TYPO AND LAYOUT ELEMENTS
@@ -361,6 +358,10 @@ GRAPHICS
 }
 #bg-feature-2 {
   background: url(/theme/images/gfx-feature-2.png) center;
+	background-repeat: no-repeat;
+}
+#bg-feature-3 {
+  background: url(/theme/images/gfx-feature-3.png) center;
 	background-repeat: no-repeat;
 }
 /* --------------------------------------------- */
