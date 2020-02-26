@@ -359,14 +359,17 @@ GRAPHICS
 #bg-feature-1 {
   background: url(/theme/images/gfx-feature-1.png) center;
 	background-repeat: no-repeat;
+	background-size: 640px 480px;
 }
 #bg-feature-2 {
   background: url(/theme/images/gfx-feature-2.png) center;
 	background-repeat: no-repeat;
+	background-size: 640px 480px;
 }
 #bg-feature-3 {
   background: url(/theme/images/gfx-feature-3.png) center;
 	background-repeat: no-repeat;
+	background-size: 640px 480px;
 }
 /* --------------------------------------------- */
 #bg-feature {
