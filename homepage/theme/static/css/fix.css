@@ -110,11 +110,7 @@ em {
   font-style: normal;
 }
 .em-mint {
-  background: linear-gradient(transparent 66%, #BBD9D3 66%);
-  font-style: normal;
-}
-.em-mint-bright {
-  background: linear-gradient(transparent 66%, #CEEBE5 66%);
+  background: linear-gradient(transparent 66%, #E5FDF8 66%);
   font-style: normal;
 }
 hr {

@@ -61,7 +61,7 @@
                 <a class="b link dim fnt-cclr-mid-black" href="{{ GITHUB_ORG }}" rel="noopener" target="_blank">GitHub</a>
               </li>
               <li>
-                <a class="b link dim fnt-cclr-mid-black" href="{{ PATREON_URL }}" rel="noopener" target="_blank">Patreon</a>
+                <a class="b link dim fnt-cclr-mid-black" href="{{ DOCS_URL }}" rel="noopener" target="_blank">Docs</a>
               </li>
               <li>
                 <a class="b link dim" href="/get-started/">Get started</a>
@@ -83,10 +83,10 @@
       {% if is_getstarted != 'true' %}
       {% block outro %}
         <div class="w-100 cclr-mid-yellow">
-          <div class="pt3 pb6 ph3" id="bg-cta-bottom">
+          <div class="pt3 pb4 ph3" id="bg-cta-bottom">
             <div class="mw8 center">
-              <div class="flex flex-wrap justify-center">
-                <div class="w55 ph3 pt5 tc">
+              <div class="flex flex-wrap justify-center pt3">
+                <div class="w55 ph3 pt4 pb5 tc cclr-mid-yellow">
                   <h2 class="f25 normal lh-solid ma0 mb3">
                     Participate
                   </h2>
@@ -96,7 +96,7 @@
                   <a class="b link dim ph4 pv2 dib b--solid bw2 brd-cclr-mid-black fnt-cclr-mid-black" href="{{GITHUB_ORG}}" rel="noopener" target="_blank">Get involved</a>
                 </div>
                 {% if is_article != 'true' %}
-                <div class="w55 ph3 pt5 tc">
+                <div class="w55 ph3 pt4 pb5 tc cclr-mid-yellow">
                   <h2 class="f25 normal lh-solid ma0 mb3">
                     In the making
                   </h2>
@@ -106,7 +106,7 @@
                   <a class="b link dim ph4 pv2 dib b--solid bw2 brd-cclr-mid-black fnt-cclr-mid-black" href="/blog/">Project status</a>
                 </div>
                 {% endif %}
-                <div class="w55 ph3 pt5 tc">
+                <div class="w55 ph3 pt4 pb5 tc cclr-mid-yellow">
                   <h2 class="f25 normal lh-solid ma0 mb3">
                     Ethical internet
                   </h2>
@@ -121,7 +121,7 @@
         </div>
       {% endblock %}
       {% endif %}
-      <div class="w-100 cclr-mid-black gray ph4"> <!--footer-->
+      <div class="w-100 cclr-mid-black gray ph4 pb4"> <!--footer-->
         <div class="flex flex-row-l flex-column w-100-l mw6-m center-m pt4 pb6">
           <div class="w-25-l mt3 mr3 fnt-cclr-mid-yellow">
             <p class="ma0">
@@ -139,22 +139,25 @@
               <a class="link b dim gray" target="_blank" href="/theme/{{ GPG_KEY_FILE }}">GPG Key</a>
             </p>
             <p class="ma0 mt2">
-              <a class="link b dim gray" href="{{ GITHUB_ORG }}" rel="noopener" target="_blank">GitHub</a>
+              <a class="link b dim gray" href="{{ DOCS_URL }}" rel="noopener" target="_blank">Docs</a>
             </p>
             <p class="ma0">
-              <a class="link b dim gray" href="{{ PATREON_URL }}" rel="noopener" target="_blank">Patreon</a>
+              <a class="link b dim gray" href="{{ GITHUB_ORG }}" rel="noopener" target="_blank">GitHub</a>
             </p>
             {% endif %}
           </div>
           <div class="w-25-l mt3 mr3">
             {% if is_getstarted != 'true' %}
             <p class="ma0">
+              <a class="link b dim gray" href="{{ PATREON_URL }}" rel="noopener" target="_blank">Patreon</a>
+            </p>
+            <p class="ma0">
               <a class="link b dim gray" href="{{ LINKEDIN_URL }}" rel="noopener" target="_blank">LinkedIn</a>
             </p>
             <p class="ma0">
               <a class="link b dim gray" href="{{ TWITTER_URL }}" rel="noopener" target="_blank">Twitter</a>
             </p>
-            <p class="ma0">
+            <p class="ma0 mt2">
               <a class="link b dim gray" href="/legal-notice/">Legal Notice</a>
             </p>
             {% endif %}
