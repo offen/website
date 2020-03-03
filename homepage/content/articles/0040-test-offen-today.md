@@ -23,7 +23,7 @@ Although we have dug very deep, things may still contain issues. Therefore, we r
 
 ---
 
-## Offen v0.1.0-alpha.?
+## Offen v0.1.0-alpha.3
 
 ##### Single binary file for Linux, Windows or MacOS
 [Download](https://get.offen.dev/){: data-button="black"}

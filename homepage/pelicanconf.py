@@ -67,6 +67,7 @@ DECORATE_CONTENT = {
     '[spacer-4]': ['ma0', 'mb4']
 }
 
+DOCS_URL = 'https://docs.offen.dev'
 GITHUB_ORG = 'https://github.com/offen'
 CONTACT_EMAIL = 'hioffen@posteo.de'
 GPG_KEY_FILE = '74B041E23DB29D552644CEB1B18C633D6967FE3F.asc'
