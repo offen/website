@@ -121,7 +121,8 @@
         </div>
       {% endblock %}
       {% endif %}
-      <div class="w-100 cclr-mid-black gray ph4 pb4"> <!--footer-->
+      {% if is_getstarted != 'true' %}
+      <div class="w-100 cclr-mid-black gray ph4 pb4">
         <div class="flex flex-row-l flex-column w-100-l mw6-m center-m pt4 pb6">
           <div class="w-25-l mt3 mr3 fnt-cclr-mid-yellow">
             <p class="ma0">
@@ -131,7 +132,6 @@
             <p class="ma0">for everyone</p>
           </div>
           <div class="w-25-l mt3 mr3">
-            {% if is_getstarted != 'true' %}
             <p class="ma0">
               <a class="link b dim gray" href="mailto:{{ CONTACT_EMAIL }}">{{CONTACT_EMAIL}}</a>
             </p>
@@ -144,10 +144,8 @@
             <p class="ma0">
               <a class="link b dim gray" href="{{ GITHUB_ORG }}" rel="noopener" target="_blank">GitHub</a>
             </p>
-            {% endif %}
           </div>
           <div class="w-25-l mt3 mr3">
-            {% if is_getstarted != 'true' %}
             <p class="ma0">
               <a class="link b dim gray" href="{{ PATREON_URL }}" rel="noopener" target="_blank">Patreon</a>
             </p>
@@ -160,13 +158,32 @@
             <p class="ma0 mt2">
               <a class="link b dim gray" href="/legal-notice/">Legal Notice</a>
             </p>
-            {% endif %}
           </div>
           <div class="w-25-l mt3 tr-l">
             {{ BUILD_DATE }}
           </div>
         </div>
       </div>
+      {% else %}
+      <div class="w-100 cclr-mid-mint gray ph4 pb4">
+        <div class="flex flex-row-l flex-column w-100-l mw6-m center-m pt4 pb6">
+          <div class="w-25-l mt3 mr3 fnt-cclr-mid-black">
+            <p class="ma0">
+              <a class="b link dim fnt-cclr-mid-black" href="/">Offen</a>
+            </p>
+            <p class="ma0">Transparent web analytics</p>
+            <p class="ma0">for everyone</p>
+          </div>
+          <div class="w-25-l mt3 mr3">
+          </div>
+          <div class="w-25-l mt3 mr3">
+          </div>
+          <div class="w-25-l mt3 tr-l">
+            {{ BUILD_DATE }}
+          </div>
+        </div>
+      </div>
+      {% endif %}
     </div>
     {% block scripts %}
       {% assets filters="rjsmin", output="scripts/packed.js", "scripts/jquery-3.4.1.min.js", "scripts/menu.js", "scripts/fade.js" %}
