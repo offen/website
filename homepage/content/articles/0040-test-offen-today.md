@@ -17,7 +17,7 @@ We’re excited to present our first version that is officially ready for testin
 
 After we released our initial Offen v0.1.0-alpha.1 in January this year, we've been busy working on a successor version for the last six weeks. Based on the initial feedback, we have made major adjustments in the front and backend area.
 
-We believe with these updates Offen has reached a level of functionality and stability that is ready for public testing. Your feedback is helping us take a step forward on our way to developing *a viable alternative to established web analytic tools.*
+We believe with these updates Offen has reached a level of functionality and stability that is ready for public testing. Your feedback is helping us take a step forward on our way to developing *a viable alternative to established web analytics tools.*
 
 Although we have dug very deep, things may still contain issues. Therefore, we recommend using Offen in a production environment only for the brave. Also be aware that the upgrade path may be broken with upcoming releases.  
 
