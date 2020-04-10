@@ -1,4 +1,4 @@
-FROM nikolaik/python-nodejs:python3.7-nodejs10
+FROM nikolaik/python-nodejs:python3.7-nodejs12
 
 ENV PATH "/root/.local/bin:$PATH"
 ENV NODE_PATH="/usr/lib/node_modules"
