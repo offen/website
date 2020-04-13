@@ -36,7 +36,7 @@ Our binaries are now signed with a GPG key. After downloading Offen, you can now
 [Learn more](https://docs.offen.dev/running-offen/downloads-distributions/#verifying-the-binaries-signatures){: target="_blank" data-button="yellow"} 
 
 ### Safari now fully supported
-At the end of milestone 2 we noticed problems with the way the Safari browser stores keys. We fixed this by adding a dedicated fallback mechanism. [Give it a try.](https://www.offen.dev)
+At the end of milestone 2 we noticed problems with the way the Safari browser stores keys. We fixed this by adding a dedicated fallback mechanism. [Give it a try.](https://analytics.offen.dev/){: target="_blank"}
 
 ### Ready in one minute
 Self-hosting is ideal for privacy focused software. Based on free resources, you can now deploy a production ready Offen instance to Heroku in a jiffy. 
