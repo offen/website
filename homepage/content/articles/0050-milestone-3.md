@@ -29,14 +29,14 @@ Using the command line can be a bit intimidating. This is why we have added an i
 <img class="screencast mt3 mb2" alt="browser setup" src="/theme/images/offen-blog-0050-browserSetup.gif"/> 
 
 ### Goodbye Choo, hello Preact
-[Choo](https://choo.io/){: target="_blank"} was a great choice to build dynamic UIs very quickly. But as the Auditorium grew, we noticed a lack of mechanisms to break interfaces into components. So we migrated the application to [Preact.](https://preactjs.com/){: target="_blank"} A good choice to use modern paradigms for programming interfaces.
+[Choo](https://choo.io/){: target="_blank"} was a great choice to build dynamic UIs very quickly. But as the Auditorium grew, we noticed a lack of mechanisms to break interfaces into components. So we migrated the application to [Preact.](https://preactjs.com/){: target="_blank"} A better way to use modern paradigms for programming interfaces.
 
 ### Ensuring integrity
 Our binaries are now signed with a GPG key. After downloading Offen, you can now check if the binary you want to use is the one we intend to distribute.
 [Learn more](https://docs.offen.dev/running-offen/downloads-distributions/#verifying-the-binaries-signatures){: target="_blank" data-button="yellow"} 
 
 ### Safari now fully supported
-At the end of milestone 2 we noticed problems with the way the Safari browser stores keys. We fixed this by adding a dedicated fallback mechanism. [Give it a try.](https://www.offen.dev/get-started/)
+At the end of milestone 2 we noticed problems with the way the Safari browser stores keys. We fixed this by adding a dedicated fallback mechanism. [Give it a try.](https://www.offen.dev)
 
 ### Ready in one minute
 Self-hosting is ideal for privacy focused software. Based on free resources, you can now deploy a production ready Offen instance to Heroku in a jiffy. 
