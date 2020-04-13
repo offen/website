@@ -318,6 +318,9 @@ IMAGES
   height: 109px;
   margin-bottom: -2rem;
 }
+.screencast {
+	border: 1px solid #DDDDDD;
+}
 /* Custom media query - extra small */
 @media only screen and (min-width: 30em) {
   .larger-image {
