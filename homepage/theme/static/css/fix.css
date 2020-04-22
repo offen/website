@@ -1,5 +1,36 @@
 /* ---------------------------------------------------
-COLORS
+COLORS NEW
+----------------------------------------------------*/
+/* Yellows */
+.cclr-bg-yellow-mid {
+	 background-color: #F7BF08;
+}
+.cclr-bg-yellow-bright {
+	 background-color: #FDE28C;
+}
+.cclr-bg-yellow-bright-very {
+	 background-color: #F9F7F2;
+}
+
+/* Mint */
+.cclr-bg-mint-dark {
+	 background-color: #9BC5BC;
+}
+.cclr-bg-mint-mid {
+	 background-color: #BBD9D3;
+}
+.cclr-bg-mint-bright {
+	 background-color: #DEF0ED;
+}
+
+/* White */
+.cclr-bg-white-fade {
+	background: linear-gradient(218.39deg, #FFFFFF 1.47%, rgba(255, 255, 255, 0) 98.24%), #F9F7F2;
+}
+
+
+/* ---------------------------------------------------
+COLORS OLD
 ----------------------------------------------------*/
 /* Custom Tachyons classes */
 .cclr-mid-yellow {
