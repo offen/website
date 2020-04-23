@@ -97,6 +97,7 @@ LAYOUT
   }
 }
 /* Custom Tachyons class */
+/* OLD */
 .w55-container,
 .w55 {
 	width: 20rem;
@@ -111,6 +112,21 @@ LAYOUT
     width: 100%;
   }
 }
+
+/* NEW */
+.wx28 {
+	width: 28rem;
+}
+.hx24 {
+	height: 24rem;
+}
+/* Tachyons breakpoints 30 & 60 */
+@media only screen and (max-width: 30em) {
+	.wx28 {
+		width: 100%;
+	}
+}
+
 
 /* ---------------------------------------------------
 TYPO AND LAYOUT ELEMENTS
