@@ -23,6 +23,17 @@ COLORS NEW
 	 background-color: #DEF0ED;
 }
 
+/* Black */
+.cclr-bg-black-mid {
+	 background-color: #39352A;
+}
+.cclr-fnt-black-mid {
+	 color: #39352A;
+}
+.cclr-brd-black-mid {
+	 color: #39352A;
+}
+
 /* White */
 .cclr-bg-white-fade {
 	background: linear-gradient(218.39deg, #FFFFFF 1.47%, rgba(255, 255, 255, 0) 98.24%), #F9F7F2;
@@ -114,16 +125,22 @@ LAYOUT
 }
 
 /* NEW */
-.wx28 {
-	width: 28rem;
+.wx24 {
+	width: 24rem;
 }
 .hx24 {
 	height: 24rem;
 }
+.hx30 {
+	height: 30rem;
+}
+.hx50 {
+	height: 50rem;
+}
 /* Tachyons breakpoints 30 & 60 */
 @media only screen and (max-width: 30em) {
-	.wx28 {
-		width: 100%;
+	.wx24 {
+		width: 86%;
 	}
 }
 
@@ -156,8 +173,12 @@ em {
   background: linear-gradient(transparent 66%, #fde28c 66%);
   font-style: normal;
 }
-.em-mint {
+.em-mint-1 {
   background: linear-gradient(transparent 66%, #E5FDF8 66%);
+  font-style: normal;
+}
+.em-mint-2 {
+  background: linear-gradient(transparent 66%, #BBD9D3 66%);
   font-style: normal;
 }
 hr {
