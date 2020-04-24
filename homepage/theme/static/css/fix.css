@@ -124,26 +124,55 @@ LAYOUT
   }
 }
 
+
+
 /* NEW */
 .wx24 {
-	width: 24rem;
-}
-.hx24 {
-	height: 24rem;
-}
-.hx30 {
-	height: 30rem;
-}
-.hx50 {
-	height: 50rem;
+	width: 86%;
 }
 /* Tachyons breakpoints 30 & 60 */
-@media only screen and (max-width: 30em) {
+@media only screen and (min-width: 30em) {
 	.wx24 {
-		width: 86%;
+		width: 24rem;
+	}
+	.hx24 {
+		height: 24rem;
+	}
+	.hx30 {
+		height: 30rem;
+	}
+	.hx50 {
+		height: 50rem;
+	}
+	.hx200 {
+		height: 200rem;
 	}
 }
 
+/* ---------------------------------------------------
+STACKING BOXES
+----------------------------------------------------*/
+/* Tachyons breakpoints 30 & 60 */
+@media only screen and (max-width: 30em) {
+
+}
+@media only screen and (min-width: 30em) and (max-width: 60em) {
+
+}
+@media only screen and (min-width: 60em) {
+	.stackbox-1 {
+		top: 8rem;
+		left: 4rem;
+		width: 24rem;
+		height: 24rem;
+	}
+	.stackbox-2 {
+		top: 20rem;
+		left: 20rem;
+		width: 24rem;
+		height: 24rem;
+	}
+}
 
 /* ---------------------------------------------------
 TYPO AND LAYOUT ELEMENTS
