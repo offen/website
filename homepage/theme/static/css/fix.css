@@ -162,35 +162,59 @@ STACKING BOXES
 ----------------------------------------------------*/
 /* Tachyons breakpoints 30 & 60 */
 .stackbox-1 img,
-.stackbox-2 img {
+.stackbox-2 img,
+.stackbox-3 img,
+.stackbox-4 img {
 	max-width: 100%;
 }
 .stackbox-1,
-.stackbox-2 {
+.stackbox-2,
+.stackbox-3,
+.stackbox-4 {
 	width: 86%;
 }
 @media only screen and (min-width: 30em) {
 	.stackbox-1 img,
-	.stackbox-2 img {
+	.stackbox-2 img,
+	.stackbox-3 img,
+	.stackbox-4 img {
 		max-width: none;
+	}
+	.stackbox-1,
+	.stackbox-2,
+	.stackbox-3,
+	.stackbox-4 {
+		width: 24rem;
 	}
 	.stackbox-1 {
 		top: 4rem;
-		left: 4rem;
-		width: 24rem;
+		left: 3rem;
 	}
 	.stackbox-2 {
-		top: 20rem;
-		left: 30rem;
-		width: 24rem;
+		top: 30rem;
+		left: calc(100% - 27rem)
+	}
+	.stackbox-3 {
+		top: 54rem;
+		left: 3rem;
+	}
+	.stackbox-4 {
+		top: 80rem;
+		left: calc(100% - 27rem)
 	}
 }
 @media only screen and (min-width: 60em) {
 	.stackbox-1 {
-		width: 34rem;
+		left: 10rem;
 	}
 	.stackbox-2 {
-		width: 24rem;
+		left: 30rem;
+	}
+	.stackbox-3 {
+		left: 10rem;
+	}
+	.stackbox-4 {
+		left: 30rem;
 	}
 }
 
