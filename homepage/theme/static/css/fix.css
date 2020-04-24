@@ -127,6 +127,18 @@ LAYOUT
 
 
 /* NEW */
+.hx24 {
+	height: 24rem;
+}
+.hx30 {
+	height: 30rem;
+}
+.hx50 {
+	height: 50rem;
+}
+.hx200 {
+	height: 200rem;
+}
 .wx24 {
 	width: 86%;
 }
@@ -135,42 +147,33 @@ LAYOUT
 	.wx24 {
 		width: 24rem;
 	}
-	.hx24 {
-		height: 24rem;
-	}
-	.hx30 {
-		height: 30rem;
-	}
-	.hx50 {
-		height: 50rem;
-	}
-	.hx200 {
-		height: 200rem;
-	}
 }
 
 /* ---------------------------------------------------
 STACKING BOXES
 ----------------------------------------------------*/
 /* Tachyons breakpoints 30 & 60 */
-@media only screen and (max-width: 30em) {
-
+.stackbox-1 img {
+	max-width: none;
 }
-@media only screen and (min-width: 30em) and (max-width: 60em) {
-
+.stackbox-1 {
+	top: 0;
+	left: 0;
+	width: 86%;
+	height: 86%;
+}
+@media only screen and (min-width: 30em) {
+	.stackbox-1 {
+		width: 24rem;
+		height: 24rem;
+	}
 }
 @media only screen and (min-width: 60em) {
 	.stackbox-1 {
 		top: 8rem;
 		left: 4rem;
-		width: 24rem;
-		height: 24rem;
-	}
-	.stackbox-2 {
-		top: 20rem;
-		left: 20rem;
-		width: 24rem;
-		height: 24rem;
+		width: 34rem;
+		height: 34rem;
 	}
 }
 
