@@ -529,6 +529,13 @@ IMAGES
 /* ---------------------------------------------------
 BACKROUND IMAGES
 ----------------------------------------------------*/
+#bg-compare-a-pfeil {
+	padding-top: 20px;
+  margin-top: -20px;
+  background: url(/theme/images/gfx-compare-a-pfeil.png) top center;
+	background-repeat: no-repeat;
+	background-size: 370px 120px;
+}
 #bg-feature-1 {
   background: url(/theme/images/gfx-feature-1.png) center;
 	background-repeat: no-repeat;
