@@ -1,8 +1,8 @@
 {% extends "page.html" %}
 
 {% block content %}
-  <div class="w-100 mt5-ns cclr-mid-yellow">
-    <div class="mw8 center" id="bg-intro">
+  <div class="w-100 mt5-ns cclr-bg-yellow-mid">
+    <div class="mw8 center">
       <div class="flex justify-center pt5 ph4">
         <div class="dn db-ns w-20 tr pr3 pb3">
           <img src="/theme/images/offen-icon-white.svg" alt="Offen logo" width="58" height="63">
@@ -23,7 +23,7 @@
             Offen is a fair alternative to common web analytics tools. <span>Pay respect to your users while gaining insight into their behavior. </span>Self hosted, open source and free.
           </p>
           <div class="pb5 mb2">
-            <a class="b link dim ph4 pv2 dib b--solid bw2 brd-cclr-mid-black fnt-cclr-mid-black" href="/get-started/" rel="noopener">Start now</a>
+            <a class="b link dim ph4 pv2 dib b--solid bw2 brd-cclr-mid-black fnt-cclr-mid-black" href="#bg-explainer" rel="noopener">Learn more</a>
           </div>
         </div>
       </div>
@@ -51,7 +51,7 @@
       <div class="w-100 w-third-l cclr-bg-mint-fade-b">
         <div class="hx-feature" id="bg-feature-2">
 
-          <h2 class="f25 normal lh-solid ma0 mb3 pt6">
+          <h2 class="f25 normal lh-solid ma0 mb3 ptx-feature-2">
             <em class="em-mint-1">
               Self hosted
             </em>
@@ -66,7 +66,7 @@
       <div class="w-100 w-third-l cclr-bg-mint-fade-b">
         <div class="hx-feature" id="bg-feature-3">
 
-          <h2 class="f25 normal lh-solid ma0 mb3 pt7">
+          <h2 class="f25 normal lh-solid ma0 mb3 ptx-feature-3">
             <em class="em-mint-1">
               Fair & Secure
             </em>
@@ -117,30 +117,27 @@
 
         <div class="w-100 hx24 dib cclr-bg-white-fade">
           <div class="wx24 center">
-            <div class="flex items-center mt4">
-              <img src="/theme/images/temp.svg" alt="temp" width="45" height="45">
-              <p class="ma0 ml3 mr4-ns">
-                Self host Offen and thereby comply with GDPR guidelines.
-              </p>
+
+            <div class="flex flex-wrap justify-center">
+              <div class="w-20 mt4">
+                <img src="/theme/images/gfx-compare-a.png" alt="numbers" width="75px" height="315px">
+              </div>
+              <div class="w-80 mt4">
+                <p class="ma0 ml3">
+                  Self host Offen and thereby comply with GDPR guidelines.
+                </p>
+                <p class="ma0 ml3 mt4">
+                  Integrate the code snippet into pages you want to track.
+                </p>
+                <p class="ma0 ml3 mt4">
+                  Make your users aware of the access to their data.
+                </p>
+                <p class="ma0 ml3 mt4 mb5">
+                  Improve your services with fair and transparent insights.
+                </p>
+              </div>
             </div>
-            <div class="flex items-center mt4">
-              <img src="/theme/images/temp.svg" alt="temp" width="45" height="45">
-              <p class="ma0 ml3 mr4-ns">
-                Integrate the code snippet into pages you want to track.
-              </p>
-            </div>
-            <div class="flex items-center mt4">
-              <img src="/theme/images/temp.svg" alt="temp" width="45" height="45">
-              <p class="ma0 ml3 mr4-ns">
-                Make your users aware of the access to their data.
-              </p>
-            </div>
-            <div class="flex items-center mt4">
-              <img src="/theme/images/temp.svg" alt="temp" width="45" height="45">
-              <p class="ma0 ml3 mr4-ns">
-                Improve your services with fair and transparent insights.
-              </p>
-            </div>
+
           </div>
         </div>
 
@@ -162,24 +159,25 @@
 
         <div class="w-100 hx24 dib cclr-bg-white-fade">
           <div class="wx24 center">
-            <div class="flex items-center mt4">
-              <img src="/theme/images/temp.svg" alt="temp" width="45" height="45">
-              <p class="ma0 ml3 mr4-ns">
-                Opt in to data collection or decide to not participate at all.
-              </p>
+
+            <div class="flex flex-wrap justify-center">
+              <div class="w-20 mt4">
+                <img src="/theme/images/gfx-compare-b.png" alt="ok" width="75px" height="315px">
+              </div>
+              <div class="w-80 mt4">
+                <p class="ma0 ml3">
+                  Opt in to data collection or decide to not participate at all.
+                </p>
+                <p class="ma0 ml3 mt4">
+                  Review own data with detailed explanations of metrics and terms.
+                </p>
+                <p class="ma0 ml3 mt4">
+                  Only delete usage data or opt out completly at any time.
+                </p>
+                <img src="/theme/images/gfx-compare-b-smile.png" alt="smile" width="300px" height="140px">
+              </div>
             </div>
-            <div class="flex items-center mt4 mb2">
-              <img src="/theme/images/temp.svg" alt="temp" width="45" height="45">
-              <p class="ma0 ml3 mr4-ns">
-                Review own data with detailed explanations of metrics and terms.
-              </p>
-            </div>
-            <div class="flex items-center mt4 mb2">
-              <img src="/theme/images/temp.svg" alt="temp" width="45" height="45">
-              <p class="ma0 ml3 mr4-ns">
-                Only delete usage data or opt out completly at any time.
-              </p>
-            </div>
+
           </div>
         </div>
 
@@ -309,29 +307,24 @@
               More features
             </p>
 
-            <div class="flex items-center mt4">
-              <img src="/theme/images/temp.svg" alt="temp" width="45" height="45">
-              <p class="ma0 ml3">
-                Accounts can be shared within a team.
-              </p>
-            </div>
-            <div class="flex items-center mt4">
-              <img src="/theme/images/temp.svg" alt="temp" width="45" height="45">
-              <p class="ma0 ml3">
-                User data is only stored for 6 months.
-              </p>
-            </div>
-            <div class="flex items-center mt4">
-              <img src="/theme/images/temp.svg" alt="temp" width="45" height="45">
-              <p class="ma0 ml3">
-                In-browser screen for an intuitive setup.
-              </p>
-            </div>
-            <div class="flex items-center mt4 mb5">
-              <img src="/theme/images/temp.svg" alt="temp" width="45" height="45">
-              <p class="ma0 ml3">
-                Detailed documentation is available.
-              </p>
+            <div class="flex flex-wrap justify-center">
+              <div class="w-20 mt4">
+                <img src="/theme/images/gfx-compare-e.png" alt="plus" width="75px" height="315px">
+              </div>
+              <div class="w-80 mt4">
+                <p class="ma0">
+                  All your accounts can be shared within your team.
+                </p>
+                <p class="ma0 mt4">
+                  User data is only stored for 6 months and then deleted.
+                </p>
+                <p class="ma0 mt4">
+                  Use the in-browser screen for an more intuitive setup.
+                </p>
+                <p class="ma0 mt4 mb5">
+                  A detailed documentation on how to run Offen is available.
+                </p>
+              </div>
             </div>
 
           </div>
@@ -350,8 +343,9 @@
             <p class="ma0 mt4 mr0 mr4-ns">
               Offen is installed on this website. Access your actual usage data now.
             </p>
-            <div class="mt4 mb6">
+            <div class="mt4">
               <a class="b link dim ph4 pv2 dib b--solid bw2 cclr-brd-black-mid cclr-fnt-black-mid" href="/deep-dive/" rel="noopener">Open Auditorium</a>
+              <img src="/theme/images/gfx-compare-f-scribble.png" alt="smile" width="300px" height="100px">
             </div>
           </div>
           <div class="w-100 dn db-l h4 bg-white">
