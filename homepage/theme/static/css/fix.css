@@ -22,6 +22,13 @@ COLORS NEW
 .cclr-bg-mint-bright {
 	 background-color: #DEF0ED;
 }
+.cclr-bg-mint-fade-a {
+	background: linear-gradient(207.34deg, rgba(222, 240, 237, 0.6) 11.24%, rgba(255, 255, 255, 0) 102.6%), #BBD9D3;
+}
+.cclr-bg-mint-fade-b {
+	background: linear-gradient(207.34deg, rgba(222, 240, 237, 0.6) 11.24%, rgba(255, 255, 255, 0) 102.6%), #BBD9D3;
+	transform: rotate(-180deg);
+}
 
 /* Black */
 .cclr-bg-black-mid {
@@ -86,11 +93,13 @@ COLORS OLD
 /* ---------------------------------------------------
 LAYOUT
 ----------------------------------------------------*/
+
+/* Menu - UPDATE!!!! */
 .menu {
   width: 100%;
   height: 4rem;  /* Tachyons mt5 */
   position: fixed;
-  z-index: 10;
+  z-index: 999;
   top: 0;
   right: 0;
 }
@@ -111,26 +120,29 @@ LAYOUT
     position: static;
   }
 }
-/* Custom Tachyons class */
+
+
+
 /* OLD */
-.w55-container,
 .w55 {
 	width: 20rem;
 }
-.w56 {
-  width: 20rem;
-	height: 480px;
-}
-/* Custom media query - extra small */
-@media only screen and (max-width: 40em) {
-  .w55-container {
-    width: 100%;
-  }
-}
-
 
 
 /* NEW */
+
+
+/* HWidths and heights */
+.hx-feature {
+	height: 30rem;
+}
+.wx18 {
+	width: 18rem;
+}
+.wx24,
+.wx24-metrics {
+	width: 86%;
+}
 .hx24 {
 	height: 24rem;
 }
@@ -144,91 +156,103 @@ LAYOUT
 .hx-metrics {
 	height: 100%;
 }
-.wx24,
-.wx24-metrics {
-	width: 86%;
-}
-/* Tachyons breakpoints 30 & 60 */
+
 @media only screen and (min-width: 30em) {
 	.hx-try-user {
-		height: 26rem;
+		height: 24rem;
 	}
 	.wx24,
 	.wx24-metrics {
 		width: 24rem;
 	}
 	.hx-metrics {
-		height: 118rem;
+		height: 124rem;
 	}
 }
+
 @media only screen and (min-width: 60em) {
 	.wx24-metrics {
 		width: 100%;
 	}
+	.hx-metrics {
+		height: 128rem;
+	}
 }
 
-
-/* ---------------------------------------------------
-STACKING BOXES
-----------------------------------------------------*/
-/* Tachyons breakpoints 30 & 60 */
-.stackbox-1 img,
-.stackbox-2 img,
-.stackbox-3 img,
-.stackbox-4 img {
+/* Stacking boxes */
+.stackbox-10 img,
+.stackbox-20 img,
+.stackbox-30 img,
+.stackbox-40 img,
+.stackbox-50 img {
 	max-width: 100%;
 }
-.stackbox-1,
-.stackbox-2,
-.stackbox-3,
-.stackbox-4 {
+.stackbox-10,
+.stackbox-20,
+.stackbox-30,
+.stackbox-40,
+.stackbox-50 {
 	width: 86%;
 }
 @media only screen and (min-width: 30em) {
-	.stackbox-1 img,
-	.stackbox-2 img,
-	.stackbox-3 img,
-	.stackbox-4 img {
+	.stackbox-10 img,
+	.stackbox-20 img,
+	.stackbox-30 img,
+	.stackbox-40 img,
+	.stackbox-50 img {
 		max-width: none;
 	}
-	.stackbox-1,
-	.stackbox-2,
-	.stackbox-3,
-	.stackbox-4 {
+	.stackbox-10,
+	.stackbox-20,
+	.stackbox-30,
+	.stackbox-40,
+	.stackbox-50 {
 		width: 24rem;
 	}
-	.stackbox-1 {
-		z-index : 1;
-		top: 4rem;
-		left: 3rem;
-	}
-	.stackbox-2 {
-		z-index : 3;
-		top: 20rem;
+	.stackbox-10 {
+		z-index : 110;
+		top: 2rem;
 		left: calc(100% - 27rem)
 	}
-	.stackbox-3 {
-		z-index : 2;
-		top: 45rem;
+	.stackbox-20 {
+		z-index : 120;
+		top: 12rem;
 		left: 3rem;
 	}
-	.stackbox-4 {
-		z-index : 4;
-		top: 64rem;
+	.stackbox-30 {
+		z-index : 140;
+		top: 33rem;
+		left: calc(100% - 27rem)
+	}
+	.stackbox-40 {
+		z-index : 130;
+		top: 52rem;
+		left: 3rem;
+	}
+	.stackbox-50 {
+		z-index : 148;
+		top: 74rem;
 		left: calc(100% - 27rem)
 	}
 }
 @media only screen and (min-width: 60em) {
-	.stackbox-1 {
+	.stackbox-10 {
+		left: 34rem;
+	}
+	.stackbox-20 {
+		top: 14rem;
 		left: 6rem;
 	}
-	.stackbox-2 {
+	.stackbox-30 {
+		top: 28rem;
 		left: 29rem;
 	}
-	.stackbox-3 {
+	.stackbox-40 {
+		top: 55rem;
 		left: 10rem;
 	}
-	.stackbox-4 {
+	.stackbox-50 {
+		top: 74rem;
 		left: 31rem;
 	}
 }
@@ -521,11 +545,13 @@ GRAPHICS
   background: url(/theme/images/gfx-feature-2.png) center;
 	background-repeat: no-repeat;
 	background-size: 640px 480px;
+	transform: rotate(180deg);
 }
 #bg-feature-3 {
   background: url(/theme/images/gfx-feature-3.png) center;
 	background-repeat: no-repeat;
 	background-size: 640px 480px;
+	transform: rotate(180deg);
 }
 /* --------------------------------------------- */
 #bg-feature {
