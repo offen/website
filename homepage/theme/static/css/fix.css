@@ -36,8 +36,12 @@ COLORS NEW
 
 /* White */
 .cclr-bg-white-fade {
-	background: linear-gradient(218.39deg, #FFFFFF 1.47%, rgba(255, 255, 255, 0) 98.24%), #F9F7F2;
+	background: linear-gradient(218.39deg, #FFFFFF 1.47%, rgba(255, 255, 255, 0) 98.24%), #F3F0E7;
 }
+.cclr-bg-white-fade-metrics {
+	background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #F3F0E7;
+}
+
 
 
 /* ---------------------------------------------------
@@ -130,14 +134,15 @@ LAYOUT
 .hx24 {
 	height: 24rem;
 }
-.hx30 {
+.hx-features,
+.hx-try-user {
 	height: 30rem;
 }
 .hx50 {
 	height: 50rem;
 }
-.hx150 {
-	height: 150rem;
+.hx-metrics {
+	height: 100%;
 }
 .wx24,
 .wx24-metrics {
@@ -145,11 +150,14 @@ LAYOUT
 }
 /* Tachyons breakpoints 30 & 60 */
 @media only screen and (min-width: 30em) {
+	.hx-try-user {
+		height: 26rem;
+	}
 	.wx24,
 	.wx24-metrics {
 		width: 24rem;
 	}
-	.hx150 {
+	.hx-metrics {
 		height: 118rem;
 	}
 }
@@ -521,14 +529,10 @@ GRAPHICS
 }
 /* --------------------------------------------- */
 #bg-feature {
-  background: url(/theme/images/gfx-pattern-mint-bright.svg) center;
+  background: url(/theme/images/gfx-bg-feature.svg) #BBD9D3 center;
 }
-#bg-cta-top {
-  background: url(/theme/images/gfx-object-white.svg) center;
-}
-#bg-outro {
-  background: url(/theme/images/gfx-pattern-yellow-bright.svg) center;
-}
-#bg-cta-bottom {
-  background: url(/theme/images/gfx-pattern-yellow-bright.svg) center;
+#bg-explainer {
+  background:
+		url(/theme/images/gfx-bg-explainer.svg) top center repeat-x,
+		url(/theme/images/gfx-bg-explainer.svg) bottom center repeat-x;
 }
