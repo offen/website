@@ -133,9 +133,6 @@ LAYOUT
 
 
 /* HWidths and heights */
-.hx-feature {
-	height: 30rem;
-}
 .wx18 {
 	width: 18rem;
 }
@@ -144,7 +141,13 @@ LAYOUT
 	width: 86%;
 }
 
-.hx-features, {
+.hx24 {
+	height: 24rem;
+}
+.hx-feature {
+	height: 30rem;
+}
+.hx-more {
 	height: 30rem;
 }
 .hx50 {
@@ -155,15 +158,13 @@ LAYOUT
 }
 
 @media only screen and (min-width: 30em) {
-	.hx24 {
-		height: 24rem;
-	}
-	.hx-try-user {
-		height: 24rem;
-	}
 	.wx24,
 	.wx24-metrics {
 		width: 24rem;
+	}
+
+	.hx-try-user {
+		height: 24rem;
 	}
 	.hx-metrics {
 		height: 124rem;
@@ -174,6 +175,7 @@ LAYOUT
 	.wx24-metrics {
 		width: 100%;
 	}
+
 	.hx-metrics {
 		height: 128rem;
 	}
@@ -523,6 +525,37 @@ IMAGES
     width: 350px;
     height: 190px;
   }
+}
+
+
+/* ---------------------------------------------------
+STACKING IMAGES
+----------------------------------------------------*/
+.bg-compare-a-pfeil {
+	top: -10rem;
+	left: 0;
+	z-index : 510;
+}
+.bg-compare-b-smile {
+	top: 17rem;
+	left: 6rem;
+	z-index : 520;
+}
+.bg-compare-c-pfeil {
+	top: -5rem;
+	left: 7rem;
+	z-index : 530;
+}
+
+@media only screen and (min-width: 30em) {
+		.bg-compare-c-pfeil {
+			top: -5rem;
+			left: 10rem;
+		}
+}
+
+@media only screen and (min-width: 60em) {
+
 }
 
 
