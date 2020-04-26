@@ -627,12 +627,11 @@ BACKROUND IMAGES
 	background-size: 640px 480px;
 	transform: rotate(180deg);
 }
-#bg-yellow-pattern {
-  background: url(/theme/images/gfx-bg-yellow-pattern.svg) #BBD9D3 14rem -1rem;
+
+#bg-pattern {
+  background: url(/theme/images/gfx-bg-pattern.svg) 1rem 2rem;
 }
-#bg-mint-pattern {
-  background: url(/theme/images/gfx-bg-mint-pattern.svg) #BBD9D3 1rem 2rem;
-}
+
 #bg-explainer {
   background:
 		url(/theme/images/gfx-bg-explainer.svg) top center repeat-x,
