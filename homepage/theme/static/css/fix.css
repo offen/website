@@ -41,6 +41,11 @@ COLORS NEW
 	 border-color: #39352A;
 }
 
+
+
+
+
+
 /* White */
 .cclr-bg-white-dark {
 	background-color: #f9f7f2;
@@ -51,6 +56,17 @@ COLORS NEW
 .cclr-bg-white-fade-metrics {
 	background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #F3F0E7;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -335,6 +351,12 @@ i {
 	font-style: normal;
 	color: #777777;
 }
+.inner-shaddow {
+	box-shadow: inset 0px 0px 4px 0px rgba(0,0,0,0.75);
+}
+
+
+
 
 
 /* ?????? */

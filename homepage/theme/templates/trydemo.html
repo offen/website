@@ -1,0 +1,56 @@
+{% extends "page.html" %}
+
+{% set funnel = 'true' %}
+
+{% block content %}
+<div class="w-100 mt5-ns cclr-bg-white-dark">
+  <div class="mw7 center pt5 pb5 ph4 bg-white">
+
+    <div class="w-100 center">
+
+      <h2 class="f1-ns f2 normal tc ma0 mb4">
+        Try demo
+      </h2>
+      <h3 class="f25 f2-ns normal tc ma0 mb5">
+        Test drive Offen on your system.
+      </h3>
+
+      <p class="lh-title ma0 mb3 gray">
+        Open your terminal and type:
+      </p>
+      <div class="flex flex-column items-center">
+        <div class="w-100 ph4 pv2 mb5 inner-shaddow bg-gray">
+          <code class="ma0 lh-solid word-wrap white">
+            curl https://demo.offen.dev | sh
+          </code>
+        </div>
+      </div>
+
+      <p class="lh-title ma0 mb3 gray">
+        With Docker use:
+      </p>
+      <div class="flex flex-column items-center">
+        <div class="w-100 ph4 pv2 mb5 inner-shaddow bg-gray">
+          <code class="ma0 lh-solid word-wrap white">
+            docker run --rm -it -p 9876:9876 offen/offen:latest demo -port 9876
+          </code>
+        </div>
+      </div>
+
+      <hr class="ma0 mb5 b--black-05">
+
+      <h3 class="f25 normal tc ma0 mb5">
+        Read the docs.
+      </h3>
+      <div class="flex flex-column items-center">
+        <p class="lh-title tc ma0 mb2 gray">
+          Details on how to<br> install and run Offen
+        </p>
+        <a class="w-100 w5-ns tc b link dim ph4 pv2 dib b--solid bw2 cclr-brd-black-mid mb5 cclr-fnt-black-mid" href="https://docs.offen.dev/" rel="noopener" target="_blank">Open Docs</a>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+{% endblock %}
