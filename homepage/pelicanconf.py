@@ -75,6 +75,7 @@ PATREON_URL = 'https://www.patreon.com/offen'
 LINKEDIN_URL = 'https://www.linkedin.com/company/hioffen'
 TWITTER_URL = 'https://twitter.com/hioffen'
 RELEASE_DIRECT_URL = 'https://get.offen.dev'
+DOCKER_DIRECT_URL = '#'
 HEROKU_DIRECT_URL = 'https://heroku.com/deploy?template=https://github.com/offen/heroku/tree/master'
 
 OFFEN_ACCOUNT_ID = os.environ.get('OFFEN_ACCOUNT_ID', None)
