@@ -168,7 +168,7 @@ LAYOUT
 		height: 24rem;
 	}
 	.hx-metrics {
-		height: 124rem;
+		height: 128rem;
 	}
 }
 
@@ -182,7 +182,7 @@ LAYOUT
 		height: 50rem;
 	}
 	.hx-metrics {
-		height: 128rem;
+		height: 132rem;
 	}
 }
 
@@ -254,11 +254,11 @@ LAYOUT
 }
 @media only screen and (min-width: 60em) {
 	.stackbox-10 {
-		top: -2rem;
+		top: -6rem;
 		left: 34rem;
 	}
 	.stackbox-20 {
-		top: 14rem;
+		top: 10rem;
 		left: 6rem;
 	}
 	.stackbox-30 {
@@ -328,6 +328,13 @@ ul {
     padding-inline-start: 1rem;
   }
 }
+i {
+	font-style: normal;
+	color: #777777;
+}
+
+
+/* ?????? */
 .tracked-min {
 	letter-spacing:  .03em;
 }
@@ -568,7 +575,7 @@ STACKING IMAGES
 	z-index : 530;
 }
 .bg-metrics-bulb {
-	top: 7rem;
+	top: 8.5rem;
 	left: calc(100% - 10rem);
 	z-index : 550;
 }
@@ -608,7 +615,7 @@ STACKING IMAGES
 		left: -50%;
 	}
 	.bg-metrics-bulb {
-		top: -1rem;
+		top: -3rem;
 		left: calc(100% - 20rem);
 	}
 	.bg-cta-pfeil {
@@ -629,7 +636,7 @@ BACKROUND IMAGES
 }
 
 #bg-pattern {
-  background: url(/theme/images/gfx-bg-pattern.svg) 1rem 2rem;
+  background: url(/theme/images/gfx-bg-pattern.svg) 8rem 2rem;
 }
 
 #bg-explainer {
