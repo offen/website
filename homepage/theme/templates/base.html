@@ -32,36 +32,36 @@
   {% endif %}
 </head>
 {% endblock %}
-<body class="{{ template }} f5 rubik lh-copy fnt-cclr-mid-black cclr-mid-black">
-  <div class="cclr-dark-white">
-    <div class="menu w-100 cclr-mid-yellow">
+<body class="{{ template }} f5 rubik lh-copy cclr-fnt-black-mid cclr-bg-black-mid">
+  <div class="cclr-bg-white-dark">
+    <div class="menu w-100 cclr-bg-yellow-mid">
       <section class="nav-bar">
         <div class="nav-container">
           <div class="icon flex">
             <a class="link dim" href="/"><img src="/theme/images/offen-icon-white.svg" alt="Offen logo" width="37" height="40" class="logo"></a>
             <a class="link dim" href="/"><p class="f25 normal ma0 ml2 white">Offen</p></a>
           </div>
-          {% if is_getstarted != 'true' %}
+          {% if funnel != 'true' %}
           <nav>
             <div class="nav-mobile"><span id="nav-toggle"><span></span></span></div>
             <ul class="nav-list">
               <li>
-                <a class="b link dim fnt-cclr-mid-black" href="/">Summary</a>
+                <a class="b link dim cclr-fnt-black-mid" href="/">Summary</a>
               </li>
               <li>
-                <a class="b link dim fnt-cclr-mid-black" href="/deep-dive/">Deep dive</a>
+                <a class="b link dim cclr-fnt-black-mid" href="/deep-dive/">Deep dive</a>
               </li>
               <li>
-                <a class="b link dim fnt-cclr-mid-black" href="/blog/">Status</a>
+                <a class="b link dim cclr-fnt-black-mid" href="/blog/">Blog</a>
               </li>
               <li>
-                <a class="b link dim fnt-cclr-mid-black" href="/about/">About</a>
+                <a class="b link dim cclr-fnt-black-mid" href="/about/">About</a>
               </li>
               <li>
-                <a class="b link dim fnt-cclr-mid-black" href="{{ GITHUB_ORG }}" rel="noopener" target="_blank">GitHub</a>
+                <a class="b link dim cclr-fnt-black-mid" href="{{ GITHUB_ORG }}" rel="noopener" target="_blank">GitHub</a>
               </li>
               <li>
-                <a class="b link dim fnt-cclr-mid-black" href="{{ DOCS_URL }}" rel="noopener" target="_blank">Docs</a>
+                <a class="b link dim cclr-fnt-black-mid" href="{{ DOCS_URL }}" rel="noopener" target="_blank">Docs</a>
               </li>
               <li>
                 <a class="b link dim" href="/get-started/">Get started</a>
@@ -82,39 +82,45 @@
 
       {% if funnel != 'true' %}
       {% block outro %}
-        <div class="w-100 cclr-mid-yellow">
-          <div class="pt3 pb4 ph3" id="bg-cta-bottom">
+        <div class="w-100 cclr-bg-yellow-mid">
+          <div class="pt3 pb4 ph3" id="bg-pattern">
             <div class="mw8 center">
-              <div class="flex flex-wrap justify-center pt3">
-                <div class="w55 ph3 pt4 pb5 tc cclr-mid-yellow">
+              <div class="flex flex-wrap justify-center tc pt3">
+
+                {% if cta_2 != 'true' %}
+                <div class="wx24 ph4-ns pt4 pb5 cclr-bg-yellow-mid">
                   <h2 class="f25 normal lh-solid ma0 mb3">
                     Participate
                   </h2>
                   <p class="ma0 mb3">
-                    Development of Offen has just started. Do not hesitate to make a contribution and help us handle data with respect.
+                    Audit our open source code and feel free to make a contribution.
                   </p>
-                  <a class="b link dim ph4 pv2 dib b--solid bw2 brd-cclr-mid-black fnt-cclr-mid-black" href="{{GITHUB_ORG}}" rel="noopener" target="_blank">Get involved</a>
+                  <a class="b link dim ph4 pv2 dib b--solid bw2 cclr-brd-black-mid cclr-fnt-black-mid" href="{{GITHUB_ORG}}" rel="noopener" target="_blank">Get involved</a>
                 </div>
-                {% if is_article != 'true' %}
-                <div class="w55 ph3 pt4 pb5 tc cclr-mid-yellow">
+                {% endif %}
+
+                {% if cta_1 != 'true' %}
+                <div class="wx24 ph4-ns pt4 pb5 cclr-bg-yellow-mid">
                   <h2 class="f25 normal lh-solid ma0 mb3">
                     In the making
                   </h2>
                   <p class="ma0 mb3">
-                    Offen is still in alpha. Discover what is already up and running and where we want to go in the coming months.
+                    Discover what is already up and running and where we want to go.
                   </p>
-                  <a class="b link dim ph4 pv2 dib b--solid bw2 brd-cclr-mid-black fnt-cclr-mid-black" href="/blog/">Project status</a>
+                  <a class="b link dim ph4 pv2 dib b--solid bw2 cclr-brd-black-mid cclr-fnt-black-mid" href="/blog/">Open blog</a>
                 </div>
                 {% endif %}
-                <div class="w55 ph3 pt4 pb5 tc cclr-mid-yellow">
+
+                <div class="wx24 ph4-ns pt4 pb5 cclr-bg-yellow-mid">
                   <h2 class="f25 normal lh-solid ma0 mb3">
                     Ethical internet
                   </h2>
                   <p class="ma0 mb3">
-                    We're working hard to ensure that Offen is independent and can be sustained for years to come.
+                    Help to ensure that Offen is independent and can be sustained.
                   </p>
-                  <a class="b link dim ph4 pv2 dib b--solid bw2 brd-cclr-mid-black fnt-cclr-mid-black" href="{{ PATREON_URL }}" rel="noopener" target="_blank">Support us</a>
+                  <a class="b link dim ph4 pv2 dib b--solid bw2 cclr-brd-black-mid cclr-fnt-black-mid" href="{{ PATREON_URL }}" rel="noopener" target="_blank">Support us</a>
                 </div>
+
               </div>
             </div>
           </div>
@@ -122,11 +128,11 @@
       {% endblock %}
       {% endif %}
       {% if funnel != 'true' %}
-      <div class="w-100 cclr-mid-black gray ph4 pb4">
+      <div class="w-100 cclr-bg-black-mid gray ph4 pb4">
         <div class="flex flex-row-l flex-column w-100-l mw6-m center-m pt4 pb6">
-          <div class="w-25-l mt3 mr3 fnt-cclr-mid-yellow">
+          <div class="w-25-l mt3 mr3 cclr-fnt-yellow-mid">
             <p class="ma0">
-              <a class="b link dim fnt-cclr-mid-yellow" href="/">Offen</a>
+              <a class="b link dim cclr-fnt-yellow-mid" href="/">Offen</a>
             </p>
             <p class="ma0">Transparent web analytics</p>
             <p class="ma0">for everyone</p>
@@ -139,6 +145,9 @@
               <a class="link b dim gray" target="_blank" href="/theme/{{ GPG_KEY_FILE }}">GPG Key</a>
             </p>
             <p class="ma0 mt2">
+              <a class="link b dim gray" href="/blog/">Blog</a>
+            </p>
+            <p class="ma0">
               <a class="link b dim gray" href="{{ DOCS_URL }}" rel="noopener" target="_blank">Docs</a>
             </p>
             <p class="ma0">
@@ -165,28 +174,25 @@
         </div>
       </div>
       {% else %}
-      <div class="w-100 cclr-mid-mint ph4 pb4">
+      <div class="w-100 cclr-bg-mint-mid ph4 pb4">
         <div id="bg-pattern">
 
-
-        <div class="flex flex-row-l flex-column w-100-l mw6-m center-m pt4 pb6">
-          <div class="w-25-l mt3 mr3 fnt-cclr-mid-black">
-            <p class="ma0">
-              <a class="b link dim fnt-cclr-mid-black" href="/">Offen</a>
-            </p>
-            <p class="ma0">Transparent web analytics</p>
-            <p class="ma0">for everyone</p>
+          <div class="flex flex-row-l flex-column w-100-l mw6-m center-m pt4 pb6">
+            <div class="w-25-l mt3 mr3 cclr-fnt-black-mid">
+              <p class="ma0">
+                <a class="b link dim cclr-fnt-black-mid" href="/">Offen</a>
+              </p>
+              <p class="ma0">Transparent web analytics</p>
+              <p class="ma0">for everyone</p>
+            </div>
+            <div class="w-25-l mt3 mr3">
+            </div>
+            <div class="w-25-l mt3 mr3">
+            </div>
+            <div class="w-25-l mt3 tr-l">
+              {{ BUILD_DATE }}
+            </div>
           </div>
-          <div class="w-25-l mt3 mr3">
-          </div>
-          <div class="w-25-l mt3 mr3">
-          </div>
-          <div class="w-25-l mt3 tr-l">
-            {{ BUILD_DATE }}
-          </div>
-        </div>
-
-
 
         </div>
       </div>

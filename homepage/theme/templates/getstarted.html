@@ -1,5 +1,4 @@
 {% extends "page.html" %}
-
 {% set funnel = 'true' %}
 
 {% block content %}
@@ -12,7 +11,7 @@
         Get started
       </h2>
       <h3 class="f25 f2-ns normal ma0 mb5 mh6-ns">
-        Choose your favorite way to self host Offen.
+        Choose your favorite way to self host Offen
       </h3>
 
       <div class="flex flex-column items-center">
@@ -22,16 +21,15 @@
         <a class="w-100 w5-ns tc b link dim ph4 pv2 dib b--solid bw2 cclr-brd-black-mid mb5 white cclr-bg-black-mid" href="{{ RELEASE_DIRECT_URL }}" rel="noopener">Download</a>
 
         <p class="lh-title ma0 mb2 gray">
-          Your own instance in Docker <br>development environment
+          Offen as a lightweight<br> Docker image
         </p>
-        <a class="w-100 w5-ns tc b link dim ph4 pv2 dib b--solid bw2 cclr-brd-black-mid mb5 white cclr-bg-black-mid" href="{{ DOCKER_DIRECT_URL }}" rel="noopener">Deploy with Docker</a>
+        <a class="w-100 w5-ns tc b link dim ph4 pv2 dib b--solid bw2 cclr-brd-black-mid mb5 white cclr-bg-black-mid" href="{{ DOCKER_DIRECT_URL }}" target="_blank" rel="noopener">Deploy with Docker</a>
 
         <p class="lh-title ma0 mb2 gray">
           Your own instance on Heroku
         </p>
-        <a class="w-100 w5-ns tc b link dim ph4 pv2 dib b--solid bw2 cclr-brd-black-mid mb6 white cclr-bg-black-mid" href="{{ HEROKU_DIRECT_URL }}" rel="noopener">Deploy to Heroku</a>
+        <a class="w-100 w5-ns tc b link dim ph4 pv2 dib b--solid bw2 cclr-brd-black-mid mb6 white cclr-bg-black-mid" href="{{ HEROKU_DIRECT_URL }}" target="_blank" rel="noopener">Deploy to Heroku</a>
       </div>
-
 
       <p class="tc ma0 mb4 mh5-ns gray">
         Be aware that things can still contain issues and that the upgrade path may be broken with upcoming releases.
@@ -40,17 +38,18 @@
       <hr class="ma0 mb5 b--black-05">
 
       <h3 class="f25 normal ma0 mb5">
-        Read the docs.
+        Read the docs
       </h3>
       <div class="flex flex-column items-center">
         <p class="lh-title ma0 mb2 gray">
           Details on how to<br> install and run Offen
         </p>
-        <a class="w-100 w5-ns tc b link dim ph4 pv2 dib b--solid bw2 cclr-brd-black-mid mb5 cclr-fnt-black-mid" href="https://docs.offen.dev/" rel="noopener" target="_blank">Open Docs</a>
+        <a class="w-100 w5-ns tc b link dim ph4 pv2 dib b--solid bw2 cclr-brd-black-mid mb5 cclr-fnt-black-mid" href="https://docs.offen.dev/" target="_blank" rel="noopener">Open Docs</a>
       </div>
 
     </div>
 
   </div>
 </div>
+
 {% endblock %}
