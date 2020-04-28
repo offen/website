@@ -19,7 +19,7 @@ Milestone 3 has been completed. This is what we have achieved in the last ten we
 The Auditorium for users is now annotated with explanations of all metrics as well as analytics-specific terms. It also contains an FAQ section. In general, new metrics were added and the UX was refined for users and operators.
 <img class="screencast mt3 mb2" alt="browser setup" src="/theme/images/offen-blog-0050-explainer.gif"/> 
 These updates are already *up and running in our own instance* for users. Opt in and open the Auditorium.  
-[Check it out](https://analytics.offen.dev/){: target="_blank" data-button="yellow"} 
+[Check it out](https://analytics.offen.dev/){: target="_blank" data-button="outline"} 
 
 ### Working in teams
 If you want to improve your services with transparent and fair web analytics, it is very likely that you collaborate in groups. Therefore, in a first draft we have added basic utilities for managing user logins and accounts. These tools will be further refined during milestone 4.
@@ -33,7 +33,7 @@ Using the command line can be a bit intimidating. This is why we have added an i
 
 ### Verifying download integrity
 Our binaries are now signed with a GPG key. After downloading Offen, you can now check if the binary you want to use is the one we intend to distribute.
-[Learn more](https://docs.offen.dev/running-offen/downloads-distributions/#verifying-the-binaries-signatures){: target="_blank" data-button="yellow"} 
+[Learn more](https://docs.offen.dev/running-offen/downloads-distributions/#verifying-the-binaries-signatures){: target="_blank" data-button="outline"} 
 
 ### Safari now fully supported
 At the end of milestone 2 we noticed problems with the way the Safari browser stores keys. We fixed this by adding a dedicated fallback mechanism. [Give it a try.](https://analytics.offen.dev/){: target="_blank"}
@@ -42,7 +42,7 @@ At the end of milestone 2 we noticed problems with the way the Safari browser st
 Self-hosting is ideal for privacy focused software. Based on free resources, you can now deploy a production ready Offen instance to Heroku in a jiffy. 
 <img class="screencast mt3 mb2" alt="browser setup" src="/theme/images/offen-blog-0050_oneClickDeploy.gif"/> 
 We are currently working on further 1-click options for platforms such as [DigitalOcean](https://github.com/offen/digitalocean){: target="_blank"} and YunoHost.  
-[Deploy to Heroku](https://heroku.com/deploy?template=https://github.com/offen/heroku/tree/maste){: target="_blank" data-button="yellow"}
+[Deploy to Heroku](https://heroku.com/deploy?template=https://github.com/offen/heroku/tree/maste){: target="_blank" data-button="outline"}
 
 ### Happy Birthday to us
 Offen is now [one year old.](https://github.com/offen/offen/commit/3a50763bbd93c9c655fad002e94c340a623ee613){: target="_blank"} We made some progress on our way to develop a self hosted and transparent alternative to established web analytics tools. 
@@ -56,4 +56,4 @@ But it is not yet the time for standing ovations. There is still a lot to be don
 
 ### Deep dive
 Interested in the details? Want to get your hands dirty? Take a look at our code.
-[Open GitHub repo](https://github.com/offen/offen){: target="_blank" data-button="black"}
+[Open GitHub repo](https://github.com/offen/offen){: target="_blank" data-button="full"}

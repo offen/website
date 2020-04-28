@@ -50,14 +50,14 @@ PLUGINS = ['decorate_content', 'assets']
 DECORATE_CONTENT = {
     '[data-button]': ['w-100', 'w-auto-ns', 'tc', 'tl-ns', 'dib', 'mt3', 'ph4', 'pv2', 'b--solid', 'bw2'],
     '[data-button-mb5]': ['w-100', 'w-auto-ns', 'tc', 'tl-ns', 'dib', 'mt3', 'mb5', 'ph4', 'pv2', 'b--solid', 'bw2'],
-    '[data-button="yellow"]': ['brd-cclr-mid-yellow', 'fnt-cclr-mid-yellow'],
-    '[data-button="black"]': ['brd-cclr-mid-black', 'fnt-cclr-mid-black'],
-    '[data-button-mb5="black"]': ['brd-cclr-mid-black', 'fnt-cclr-mid-black'],
+    '[data-button="outline"]': ['b--gray', 'gray'],
+    '[data-button="full"]': ['cclr-brd-black-mid', 'white', 'cclr-bg-black-mid'],
+    '[data-button-mb5="full"]': ['cclr-brd-black-mid', 'white', 'cclr-bg-black-mid'],
     'a': ['link', 'b', 'dim'],
     'a:not([data-button])': ['gray'],
     'h1': ['f2', 'normal', 'lh-title', 'mt4', 'ma0', 'mb3', 'light-silver'],
     'h2': ['f25', 'normal', 'lh-title', 'mt4', 'ma0', 'mb3', 'light-silver'],
-    'h3': ['f5', 'normal', 'mt5', 'ma0', 'mb3', 'fnt-cclr-mid-black'],
+    'h3': ['f5', 'normal', 'mt5', 'ma0', 'mb3', '.cclr-fnt-black-mid'],
     'h4': ['f5', 'normal', 'mt4', 'ma0', 'mb3'],
     'h5': ['f5', 'b', 'mt4', 'ma0', 'mb1'], # text over button
     'h6': ['f5', 'lh-solid', 'normal', 'ma0', 'mb3', 'light-silver'], # date
@@ -75,6 +75,8 @@ PATREON_URL = 'https://www.patreon.com/offen'
 LINKEDIN_URL = 'https://www.linkedin.com/company/hioffen'
 TWITTER_URL = 'https://twitter.com/hioffen'
 RELEASE_DIRECT_URL = 'https://get.offen.dev'
+DOCKER_DIRECT_URL = 'https://hub.docker.com/r/offen/offen'
 HEROKU_DIRECT_URL = 'https://heroku.com/deploy?template=https://github.com/offen/heroku/tree/master'
+OFFEN_AUDITORIUM_URL = 'https://analytics.offen.dev/auditorium'
 
 OFFEN_ACCOUNT_ID = os.environ.get('OFFEN_ACCOUNT_ID', None)
