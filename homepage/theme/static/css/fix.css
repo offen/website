@@ -290,6 +290,9 @@ i {
 	font-style: normal;
 	color: #777777;
 }
+.i-on-yellow {
+	color: #8c7839;
+}
 .inner-shaddow {
 	box-shadow: inset 0px 0px 4px 0px rgba(0,0,0,0.75);
 }

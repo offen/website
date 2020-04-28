@@ -77,6 +77,6 @@ TWITTER_URL = 'https://twitter.com/hioffen'
 RELEASE_DIRECT_URL = 'https://get.offen.dev'
 DOCKER_DIRECT_URL = 'https://hub.docker.com/r/offen/offen'
 HEROKU_DIRECT_URL = 'https://heroku.com/deploy?template=https://github.com/offen/heroku/tree/master'
-OFFEN_AUDITORIUM_URL = 'https://analytics.offen.dev/'
+OFFEN_AUDITORIUM_URL = 'https://analytics.offen.dev/auditorium'
 
 OFFEN_ACCOUNT_ID = os.environ.get('OFFEN_ACCOUNT_ID', None)
