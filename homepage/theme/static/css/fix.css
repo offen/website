@@ -1,55 +1,72 @@
 /* ---------------------------------------------------
 COLORS
 ----------------------------------------------------*/
-/* Custom Tachyons classes */
-.cclr-mid-yellow {
- background-color: #F7BF08;
+/* Yellows */
+.cclr-bg-yellow-mid {
+	 background-color: #F7BF08;
 }
-.fnt-cclr-mid-yellow {
-  color: #F7BF08;
+.cclr-fnt-yellow-mid {
+	 color: #F7BF08;
 }
-.brd-cclr-mid-yellow {
-  border-color: #F7BF08;
+.cclr-bg-yellow-bright {
+	 background-color: #FDE28C;
 }
-.cclr-yellow-bright {
-  background-color: #fde28c;
+.cclr-bg-yellow-bright-very {
+	 background-color: #F9F7F2;
 }
-.fnt-cclr-yellow-bright {
-  color: #fde28c;
+
+/* Mint */
+.cclr-bg-mint-dark {
+	 background-color: #9BC5BC;
 }
-.cclr-mid-mint {
-  background-color: #BBD9D3;
+.cclr-bg-mint-mid {
+	 background-color: #BBD9D3;
 }
-.fnt-cclr-mint-bright {
-  color: #E2F6F2;
+.cclr-bg-mint-bright {
+	 background-color: #DEF0ED;
 }
-.cclr-mid-black {
-  background-color: #39352A;
+.cclr-bg-mint-fade-a {
+	background: linear-gradient(207.34deg, rgba(222, 240, 237, 0.6) 11.24%, rgba(255, 255, 255, 0) 102.6%), #BBD9D3;
 }
-.fnt-cclr-mid-black {
-  color: #39352A;
+.cclr-bg-mint-fade-b {
+	background: linear-gradient(207.34deg, rgba(222, 240, 237, 0.6) 11.24%, rgba(255, 255, 255, 0) 102.6%), #BBD9D3;
+	transform: rotate(-180deg);
 }
-.brd-cclr-mid-black {
-  border-color: #39352A;
+
+/* Black */
+.cclr-bg-black-mid {
+	 background-color: #39352A;
 }
-.cclr-dark-white {
-  background-color: #f9f7f2;
+.cclr-fnt-black-mid {
+	 color: #39352A;
+}
+.cclr-brd-black-mid {
+	 border-color: #39352A;
+}
+
+/* White */
+.cclr-bg-white-dark {
+	background-color: #f9f7f2;
+}
+.cclr-bg-white-fade {
+	background: linear-gradient(218.39deg, #FFFFFF 1.47%, rgba(255, 255, 255, 0) 98.24%), #F3F0E7;
+}
+.cclr-bg-white-fade-metrics {
+	background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #F3F0E7;
 }
 
 
 /* ---------------------------------------------------
 LAYOUT
 ----------------------------------------------------*/
+/* Menu  */
 .menu {
   width: 100%;
   height: 4rem;  /* Tachyons mt5 */
   position: fixed;
-  z-index: 1;
+  z-index: 999;
   top: 0;
   right: 0;
-}
-.columns {
-  column-count: 1;
 }
 /* Custom media query */
 @media only screen and (min-width: 60rem) {
@@ -65,21 +82,143 @@ LAYOUT
     position: static;
   }
 }
-/* Custom Tachyons class */
-.w55-container,
-.w55 {
-	width: 20rem;
+
+/* HWidths and heights */
+.wx18 {
+	width: 18rem;
 }
-.w56 {
-  width: 20rem;
-	height: 480px;
+.wx24,
+.wx24-metrics {
+	width: 86%;
 }
-/* Custom media query - extra small */
-@media only screen and (max-width: 40em) {
-  .w55-container {
-    width: 100%;
-  }
+.hx24 {
+	height: 24rem;
 }
+.hx-feature {
+	height: 30rem;
+}
+.hx-more {
+	height: 30rem;
+}
+.hx-compare-c,
+.hx-compare-d {
+	height: 100%;
+}
+.hx-metrics {
+	height: 100%;
+}
+@media only screen and (min-width: 30em) {
+	.wx24,
+	.wx24-metrics {
+		width: 24rem;
+	}
+	.hx-try-user {
+		height: 24rem;
+	}
+	.hx-metrics {
+		height: 128rem;
+	}
+}
+@media only screen and (min-width: 60em) {
+	.wx24-metrics {
+		width: 100%;
+	}
+	.hx-compare-c,
+	.hx-compare-d {
+		height: 50rem;
+	}
+	.hx-metrics {
+		height: 132rem;
+	}
+}
+
+/* Margins an paddings */
+.ptx-feature-2 {
+	padding-top: 9rem;
+}
+.ptx-feature-3 {
+	padding-top: 18rem;
+}
+
+/* Stacking boxes */
+.stackbox-10 img,
+.stackbox-20 img,
+.stackbox-30 img,
+.stackbox-40 img,
+.stackbox-50 img {
+	max-width: 100%;
+}
+.stackbox-10,
+.stackbox-20,
+.stackbox-30,
+.stackbox-40,
+.stackbox-50 {
+	width: 86%;
+}
+@media only screen and (min-width: 30em) {
+	.stackbox-10 img,
+	.stackbox-20 img,
+	.stackbox-30 img,
+	.stackbox-40 img,
+	.stackbox-50 img {
+		max-width: none;
+	}
+	.stackbox-10,
+	.stackbox-20,
+	.stackbox-30,
+	.stackbox-40,
+	.stackbox-50 {
+		width: 24rem;
+	}
+	.stackbox-10 {
+		z-index : 110;
+		top: 2rem;
+		left: calc(100% - 27rem)
+	}
+	.stackbox-20 {
+		z-index : 120;
+		top: 12rem;
+		left: 3rem;
+	}
+	.stackbox-30 {
+		z-index : 140;
+		top: 33rem;
+		left: calc(100% - 27rem)
+	}
+	.stackbox-40 {
+		z-index : 130;
+		top: 52rem;
+		left: 3rem;
+	}
+	.stackbox-50 {
+		z-index : 148;
+		top: 74rem;
+		left: calc(100% - 27rem)
+	}
+}
+@media only screen and (min-width: 60em) {
+	.stackbox-10 {
+		top: -6rem;
+		left: 34rem;
+	}
+	.stackbox-20 {
+		top: 10rem;
+		left: 6rem;
+	}
+	.stackbox-30 {
+		top: 28rem;
+		left: 29rem;
+	}
+	.stackbox-40 {
+		top: 55rem;
+		left: 10rem;
+	}
+	.stackbox-50 {
+		top: 74rem;
+		left: 31rem;
+	}
+}
+
 
 /* ---------------------------------------------------
 TYPO AND LAYOUT ELEMENTS
@@ -87,10 +226,24 @@ TYPO AND LAYOUT ELEMENTS
 .link:focus {
     outline: none;
 }
+/* index logo */
+.intro-margin-a {
+	margin-top: 0.3rem;
+}
+.intro-margin-b {
+	margin-top: 0.7rem;
+}
+
 /* Break long word on mobile */
 body {
   overflow-wrap: break-word;
   overscroll-behavior: none;
+}
+/* font size iPhone 5 etc */
+@media only screen and (max-width: 20em) {
+	.f5 {
+	    font-size: 0.95rem;
+	}
 }
 /* Custom Tachyons class */
 .f25 {
@@ -109,8 +262,12 @@ em {
   background: linear-gradient(transparent 66%, #fde28c 66%);
   font-style: normal;
 }
-.em-mint {
+.em-mint-1 {
   background: linear-gradient(transparent 66%, #E5FDF8 66%);
+  font-style: normal;
+}
+.em-mint-2 {
+  background: linear-gradient(transparent 66%, #BBD9D3 66%);
   font-style: normal;
 }
 hr {
@@ -129,14 +286,145 @@ ul {
     padding-inline-start: 1rem;
   }
 }
-.tracked-min {
-	letter-spacing:  .03em;
+i {
+	font-style: normal;
+	color: #777777;
 }
-.intro-margin-a {
-	margin-top: 0.3rem;
+.i-on-yellow {
+	color: #8c7839;
 }
-.intro-margin-b {
-	margin-top: 0.7rem;
+.inner-shaddow {
+	box-shadow: inset 0px 0px 4px 0px rgba(0,0,0,0.75);
+}
+
+
+/* ---------------------------------------------------
+IMAGES
+----------------------------------------------------*/
+/* Put article image outside of container margins */
+.larger-image {
+  margin-top: -4rem;
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+.smaller-image {
+  width: 200px;
+  height: 109px;
+  margin-bottom: -2rem;
+}
+.screencast {
+	border: 1px solid #DDDDDD;
+}
+@media only screen and (min-width: 30em) {
+  .larger-image {
+    margin-top: -4rem;
+    margin-left: -4rem;
+    margin-right: -4rem;
+  }
+  .smaller-image {
+    width: 350px;
+    height: 190px;
+  }
+}
+
+
+/* ---------------------------------------------------
+STACKING IMAGES
+----------------------------------------------------*/
+.bg-feature-1 img,
+.bg-feature-3 img {
+	max-width: none;
+}
+.bg-feature-1 {
+	top: 0;
+	left: -25%;
+	z-index : 400;
+}
+.bg-feature-3 {
+	top: 0;
+	left: -35%;
+	z-index : 410;
+}
+.bg-compare-a-pfeil {
+	top: -10rem;
+	left: 0;
+	z-index : 510;
+}
+.bg-compare-b-smile {
+	top: 17rem;
+	left: 6rem;
+	z-index : 520;
+}
+.bg-compare-c-pfeil {
+	top: -5rem;
+	left: 7rem;
+	z-index : 530;
+}
+.bg-metrics-bulb {
+	top: 8.5rem;
+	left: calc(100% - 10rem);
+	z-index : 550;
+}
+.bg-cta-pfeil {
+	top: -11rem;
+	left: 66%;
+	z-index : 570;
+}
+@media only screen and (min-width: 30em) {
+	.bg-feature-1 {
+		left: calc(50% - 21rem);
+	}
+	.bg-feature-3 {
+		left: calc(50% - 18rem);
+	}
+	.bg-compare-c-pfeil {
+		top: -5rem;
+		left: 10rem;
+	}
+	.bg-metrics-bulb {
+		top: 11rem;
+		left: calc(100% - 30rem);
+		z-index : 550;
+	}
+	.bg-cta-pfeil {
+		top: -12rem;
+		left: 72%;
+	}
+}
+@media only screen and (min-width: 60em) {
+	.bg-feature-1 {
+		left: -50%;
+	}
+	.bg-feature-3 {
+		left: -50%;
+	}
+	.bg-metrics-bulb {
+		top: -3rem;
+		left: calc(100% - 20rem);
+	}
+	.bg-cta-pfeil {
+		top: -12rem;
+		left: 66%;
+	}
+}
+
+
+/* ---------------------------------------------------
+BACKROUND IMAGES
+----------------------------------------------------*/
+#bg-feature-2 {
+  background: url(/theme/images/gfx-feature-2.png) center;
+	background-repeat: no-repeat;
+	background-size: 640px 480px;
+	transform: rotate(180deg);
+}
+#bg-pattern {
+  background: url(/theme/images/gfx-bg-pattern.svg) 8rem 2rem;
+}
+#bg-explainer {
+  background:
+		url(/theme/images/gfx-bg-explainer.svg) top center repeat-x,
+		url(/theme/images/gfx-bg-explainer.svg) bottom center repeat-x;
 }
 
 
@@ -301,85 +589,4 @@ nav ul li ul li a {
 }
 #nav-toggle.active span:after {
   transform: rotate(-45deg);
-}
-
-
-/* ---------------------------------------------------
-IMAGES
-----------------------------------------------------*/
-/* Put article image outside of container margins */
-.larger-image {
-  margin-top: -4rem;
-  margin-left: -1rem;
-  margin-right: -1rem;
-}
-.smaller-image {
-  width: 200px;
-  height: 109px;
-  margin-bottom: -2rem;
-}
-.screencast {
-	border: 1px solid #DDDDDD;
-}
-/* Custom media query - extra small */
-@media only screen and (min-width: 30em) {
-  .larger-image {
-    margin-top: -4rem;
-    margin-left: -4rem;
-    margin-right: -4rem;
-  }
-  .smaller-image {
-    width: 350px;
-    height: 190px;
-  }
-}
-
-
-/* ---------------------------------------------------
-GRAPHICS
-----------------------------------------------------*/
-#bg-intro {
-  background: url(/theme/images/gfx-intro.svg);
-	background-repeat: no-repeat;
-	background-attachment: scroll;
-	background-position: 200px 80px;
-}
-@media only screen and (min-width: 30.1em) and (max-width: 60em) {
-	#bg-intro {
-		background-position: calc(20% + 120px) 80px;
-	}
-}
-@media only screen and (max-width: 30em) {
-	#bg-intro {
-		background-position: 10px 60px;
-	}
-}
-/* --------------------------------------------- */
-#bg-feature-1 {
-  background: url(/theme/images/gfx-feature-1.png) center;
-	background-repeat: no-repeat;
-	background-size: 640px 480px;
-}
-#bg-feature-2 {
-  background: url(/theme/images/gfx-feature-2.png) center;
-	background-repeat: no-repeat;
-	background-size: 640px 480px;
-}
-#bg-feature-3 {
-  background: url(/theme/images/gfx-feature-3.png) center;
-	background-repeat: no-repeat;
-	background-size: 640px 480px;
-}
-/* --------------------------------------------- */
-#bg-feature {
-  background: url(/theme/images/gfx-pattern-mint-bright.svg) center;
-}
-#bg-cta-top {
-  background: url(/theme/images/gfx-object-white.svg) center;
-}
-#bg-outro {
-  background: url(/theme/images/gfx-pattern-yellow-bright.svg) center;
-}
-#bg-cta-bottom {
-  background: url(/theme/images/gfx-pattern-yellow-bright.svg) center;
 }

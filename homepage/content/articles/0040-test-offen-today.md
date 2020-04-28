@@ -26,10 +26,10 @@ Although we have dug very deep, things may still contain issues. Therefore, we r
 ## Offen v0.1.0-alpha.3
 
 ##### Single binary file for Linux, Windows or MacOS
-[Download](https://get.offen.dev/){: data-button="black"}
+[Download](https://get.offen.dev/){: data-button="full"}
 
 ##### Your own Offen instance
-[Deploy to Heroku](https://heroku.com/deploy?template=https://github.com/offen/heroku/tree/master){: target="_blank" data-button-mb5="black"}
+[Deploy to Heroku](https://heroku.com/deploy?template=https://github.com/offen/heroku/tree/master){: target="_blank" data-button-mb5="full"}
 
 Download or deploy Offen today and give it a spin. *[Check our Docs](https://docs.offen.dev/){: target="_blank"} for detailed instructions.*
 
@@ -37,4 +37,4 @@ We appreciate any feedback. No matter if you have difficulties with the installa
 
 We look forward to hearing from you. Happy testing!
 
-[Give feedback](mailto:hioffen@posteo.de){: data-button="yellow"}
+[Give feedback](mailto:hioffen@posteo.de){: data-button="outline"}

@@ -1,8 +1,8 @@
 {% extends "page.html" %}
 
 {% block content %}
-  <div class="w-100 mt5-ns cclr-mid-yellow">
-    <div class="mw8 center" id="bg-intro">
+  <div class="w-100 mt5-ns cclr-bg-yellow-mid">
+    <div class="mw8 center">
       <div class="flex justify-center pt5 ph4">
         <div class="dn db-ns w-20 tr pr3 pb3">
           <img src="/theme/images/offen-icon-white.svg" alt="Offen logo" width="58" height="63">
@@ -23,131 +23,501 @@
             Offen is a fair alternative to common web analytics tools. <span>Pay respect to your users while gaining insight into their behavior. </span>Self hosted, open source and free.
           </p>
           <div class="pb5 mb2">
-            <a class="b link dim ph4 pv2 dib b--solid bw2 brd-cclr-mid-black fnt-cclr-mid-black" href="/get-started/" rel="noopener">Start now</a>
+            <a class="b link dim ph4 pv2 dib b--solid bw2 cclr-brd-black-mid cclr-fnt-black-mid" href="#bg-explainer" rel="noopener">Learn more</a>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="w-100" id="bg-feature">
-      <div class="center">
-          <div class="flex flex-wrap justify-center w-100">
-            <div class="flex justify-center w55-container" id="bg-feature-1">
-              <div class="w56 tc pa3">
-                <h2 class="f25 normal lh-solid mt5 mb3">
-                  <em class="em-mint">
-                    Free & Open
-                  </em>
-                </h2>
-                <p class="ma0 mb5">
-                  Our open source code can be fully audited by the community. It will always be available for free. Seriously.
+<!-- FEATURE -->
+  <div class="w-100 overflow-hidden cclr-bg-mint-mid">
+    <div id="bg-pattern">
+
+      <div class="mw8 flex flex-wrap justify-center center tc">
+
+        <div class="w-100 w-third-l cclr-bg-mint-fade-a">
+          <div class="hx-feature">
+
+            <div class="relative">
+              <div class="absolute bg-feature-1">
+                <img src="/theme/images/gfx-feature-1.png" alt="feature-2" width="640px" height="480px">
+              </div>
+            </div>
+
+            <h2 class="f2 normal lh-solid ma0 mb3 pt5">
+              <em class="em-mint-1">
+                Free & Open
+              </em>
+            </h2>
+            <p class="wx18 center ma0">
+              <i>Our</i> open source code <i>can be fully audited by the community. It will always be</i> available for free. <i>Seriously.</i>
+            </p>
+
+          </div>
+        </div>
+
+        <div class="w-100 w-third-l cclr-bg-mint-fade-b">
+          <div class="hx-feature" id="bg-feature-2">
+
+            <h2 class="f2 normal lh-solid ma0 mb3 ptx-feature-2">
+              <em class="em-mint-1">
+                Self hosted
+              </em>
+            </h2>
+            <p class="wx18 center ma0">
+              Comply with GDPR <i>guidelines. Don't share data with third parties. Your</i> users have full access <i>to their data.</i>
+            </p>
+          </div>
+
+        </div>
+
+        <div class="w-100 w-third-l cclr-bg-mint-fade-a">
+          <div class="hx-feature">
+
+            <div class="relative">
+              <div class="absolute bg-feature-3">
+                <img src="/theme/images/gfx-feature-3.png" alt="feature-3" width="640px" height="480px">
+              </div>
+            </div>
+
+            <div>
+            <h2 class="f2 normal lh-solid ma0 mb3 ptx-feature-3">
+              <em class="em-mint-1">
+                Fair & Secure
+              </em>
+            </h2>
+            <p class="wx18 center ma0">
+              Pay respect <i>to your website visitors. Gain valuable insights at the same time. All data is</i> encrypted end-to-end.
+            </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+<!-- INSIGHTS -->
+  <div class="w-100 dib bg-white">
+    <div class="tc mh4">
+      <p class="f1-ns f2 lh-solid ma0 mt6">
+        Gain insights in an ethical way
+      </p>
+      <div class="mw7 center">
+        <p class="f5 ma0 mt3 mb6 mh0 mh3-m mh5-l">
+          Web analytics <i>is still an unfair and impenetrable business.</i> A proper alternative to common tools <i>is missing. Therefore we develop one.</i> <a class="b link dim cclr-fnt-black-mid" href="/deep-dive/">Deep dive</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- COMPARE -->
+  <div class="w-100" id="bg-explainer">
+    <div class="mw8 center flex flex-wrap justify-center">
+
+      <!-- COMPARE A -->
+      <div class="w-50-l w-100 cclr-bg-yellow-mid">
+
+        <div class="w-100 dib">
+          <div class="wx24 center">
+
+            <div class="relative">
+              <div class="absolute bg-compare-a-pfeil">
+                <img src="/theme/images/gfx-compare-a-pfeil.png" alt="arrow" width="40px" height=="120px">
+              </div>
+            </div>
+
+            <p class="f25 lh-solid ma0 mt6 mb3">
+              Your job
+            </p>
+          </div>
+        </div>
+
+        <div class="w-100 hx24 dib cclr-bg-white-fade">
+          <div class="wx24 center">
+
+            <div class="flex flex-wrap justify-center">
+              <div class="w-20 mt4">
+                <img src="/theme/images/gfx-compare-a.png" alt="numbers" width="75px" height="315px">
+              </div>
+              <div class="w-80 mt4">
+                <p class="ma0 ml3">
+                  Self host <i>Offen in compliance with GDPR guidelines.</i>
+                </p>
+                <p class="ma0 ml3 mt4">
+                  <i>Integrate the</i> code snippet <i>into pages you want to track.</i>
+                </p>
+                <p class="ma0 ml3 mt4">
+                  <i>Make your</i> users aware <i>of the ability to access their data.</i>
+                </p>
+                <p class="ma0 ml3 mt4 mb5">
+                  <i>Improve your services with</i> fair and transparent insights.
                 </p>
               </div>
             </div>
-            <div class="flex justify-center w55-container" id="bg-feature-3">
-              <div class="w56 tc pa3">
-                <h2 class="f25 normal lh-solid mt6 mb3">
-                  <em class="em-mint">
-                    Self hosted
-                  </em>
-                </h2>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- COMPARE B -->
+      <div class="w-50-l w-100">
+
+        <div class="w-100 dn db-l h3 bg-white">
+        </div>
+
+        <div class="w-100 dib cclr-bg-mint-mid">
+          <div class="wx24 center">
+            <p class="f25 lh-solid ma0 mt5 mb3">
+              Benefits for your users
+            </p>
+          </div>
+        </div>
+
+        <div class="w-100 hx24 dib cclr-bg-white-fade">
+          <div class="wx24 center">
+
+            <div class="relative">
+              <div class="absolute bg-compare-b-smile">
+                <img src="/theme/images/gfx-compare-b-smile.png" alt="smile" width="210px" height="140px">
+              </div>
+            </div>
+
+            <div class="flex flex-wrap justify-center">
+
+              <div class="w-20 mt4">
+                <img src="/theme/images/gfx-compare-b.png" alt="ok" width="75px" height="315px">
+              </div>
+              <div class="w-80 mt4">
+                <p class="ma0 ml3">
+                  Opt in to data collection <i>or decide to not participate at all.</i>
+                </p>
+                <p class="ma0 ml3 mt4">
+                  Review own data <i>with detailed explanations of metrics and terms.</i>
+                </p>
+                <p class="ma0 ml3 mt4">
+                  Opt out completely <i>at any time or only delete existing usage data.</i>
+                </p>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- COMPARE C -->
+      <div class="w-50-l w-100">
+
+        <div class="w-100 hx-compare-c dib cclr-bg-white-fade">
+          <div class="h-100" id="bg-pattern">
+
+
+            <div class="wx24 center">
+              <p class="f25 lh-solid ma0 mt5 mb4">
+                <em>
+                  What you see
+                </em>
+              </p>
+              <p class="ma0 mb2 mr6-ns gray">
+                Data of all pages where your Offen installation is active.
+              </p>
+              <p class="ma0 mb4 gray">
+                For example:
+              </p>
+
+              <!-- BOX -->
+              <div class="w-100 dib br2 pa4 mb5 mb0-l shadow-4 cclr-fnt-black-mid bg-white">
+
+                <div class="relative">
+                  <div class="absolute bg-compare-c-pfeil">
+                    <img src="/theme/images/gfx-compare-c-pfeil.png" alt="arrow" width="150px" height="150px">
+                  </div>
+                </div>
+
+                <p class="f25 lh-solid ma0 mb2">
+                  478
+                </p>
+                <p class="f7 lh-solid ma0 mb4">
+                  Unique users
+                </p>
+                <p class="f25 lh-solid ma0 mb2">
+                  2.530
+                </p>
+                <p class="f7 lh-solid ma0 mb4">
+                  Unique sessions
+                </p>
+                <p class="f7 lh-solid pt2 ma0 mb3">
+                  Top pages
+                </p>
+                <table class="f7 collapse dt--fixed mb4">
+                  <tbody>
+                    <tr class="striped--near-white">
+                      <td class="truncate pv2 pl2 pr1">https://www.yourpage.org/</td>
+                    </tr>
+                    <tr class="striped--near-white">
+                      <td class="truncate pv2 pl2 pr1">https://www.yourpage.org/blog/</td>
+                    </tr>
+                    <tr class="striped--near-white">
+                      <td class="truncate pv2 pl2 pr1">https://www.yourpage.org/landing/</td>
+                    </tr>
+                    <tr class="striped--near-white">
+                      <td class="truncate pv2 pl2 pr1">https://www.yourpage.org/otherpage/</td>
+                    </tr>
+                    <tr class="striped--near-white">
+                      <td class="truncate pv2 pl2 pr1">https://sub.yourpage.org/</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- COMPARE D -->
+      <div class="w-50-l w-100">
+
+        <div class="w-100 hx-compare-d dib cclr-bg-white-fade">
+          <div class="h-100" id="bg-pattern">
+
+            <div class="wx24 center">
+              <p class="f25 lh-solid ma0 mt5 mb4">
+                <em class="em-mint-2">
+                  What your users see
+                </em>
+              </p>
+              <p class="ma0 mb2 mr5-ns gray">
+                Data of all pages a user has visited where your Offen installation is active.
+              </p>
+              <p class="ma0 mb4 gray">
+                For example:
+              </p>
+
+              <!-- BOX -->
+              <div class="w-100 dib br2 mb5 mb0-l pa4 shadow-4 cclr-fnt-black-mid bg-white">
+                <p class="f25 lh-solid ma0 mb2">
+                  1
+                </p>
+                <p class="f7 lh-solid ma0 mb4">
+                  Unique websites
+                </p>
+                <p class="f25 lh-solid ma0 mb2">
+                  5
+                </p>
+                <p class="f7 lh-solid ma0 mb4">
+                  Unique sessions
+                </p>
+                <p class="f7 lh-solid pt2 ma0 mb3">
+                  Top pages
+                </p>
+                <table class="f7 collapse dt--fixed mb4">
+                  <tbody>
+                    <tr class="striped--near-white">
+                      <td class="truncate pv2 pl2 pr1">https://www.yourpage.org/</td>
+                    </tr>
+                    <tr class="striped--near-white">
+                      <td class="truncate pv2 pl2 pr1">https://www.yourpage.org/blog/</td>
+                    </tr>
+                    <tr class="striped--near-white">
+                      <td class="truncate pv2 pl2 pr1">https://www.yourpage.org/otherpage/</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- COMPARE E -->
+      <div class="w-50-l w-100">
+
+        <div class="w-100 hx-more dib cclr-bg-yellow-mid">
+          <div class="wx24 center">
+
+            <p class="f25 lh-solid ma0 mt5">
+              More features
+            </p>
+
+            <div class="flex flex-wrap justify-center">
+              <div class="w-20 mt4">
+                <img src="/theme/images/gfx-compare-e.png" alt="plus" width="75px" height="315px">
+              </div>
+              <div class="w-80 mt4">
                 <p class="ma0">
-                  Comply with GDPR guidelines. Don't share data with third parties. Your users have full access to their data.
+                  All your accounts can be shared <i class="i-on-yellow">within your team.</i>
+                </p>
+                <p class="ma0 mt4">
+                  <i class="i-on-yellow">User</i> data is only stored for 6 months <i class="i-on-yellow">and then deleted.</i>
+                </p>
+                <p class="ma0 mt4">
+                  <i class="i-on-yellow">Use the</i> in-browser screen <i class="i-on-yellow">for a more intuitive setup.</i>
+                </p>
+                <p class="ma0 mt4 mb5">
+                  <i class="i-on-yellow">A</i> detailed documentation <i class="i-on-yellow">on how to run Offen is available.</i>
                 </p>
               </div>
             </div>
-            <div class="flex justify-center w55-container" id="bg-feature-2">
-              <div class=" w56 tc pa3">
-                <h2 class="f25 normal lh-solid mt7 mb3">
-                  <em class="em-mint">
-                    Fair & Secure
-                  </em>
-                </h2>
-                <p class="ma0">
-                  Pay respect to your website visitors. Gain valuable insights at the same time. All data is encrypted end-to-end.
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- COMPARE F -->
+      <div class="w-50-l w-100">
+
+        <div class="w-100 hx-try-user dib cclr-bg-mint-mid">
+          <div class="wx24 center">
+            <p class="f25 lh-solid ma0 mt5">
+              Try as user
+            </p>
+            <p class="ma0 mt4 mr0 mr4-ns">
+              <i>Offen is installed on this website. Access</i> your actual usage data <i>now.</i>
+            </p>
+            <div class="mt4">
+              <a class="b link dim ph4 pv2 dib b--solid bw2 cclr-brd-black-mid cclr-fnt-black-mid" href="{{ OFFEN_AUDITORIUM_URL }}" target="_blank" rel="noopener">Open Auditorium</a>
+              <img src="/theme/images/gfx-compare-f-scribble.png" alt="smile" width="300px" height="100px">
+            </div>
+          </div>
+          <div class="w-100 dn db-l h4 bg-white">
+          </div>
+        </div>
+
+      </div>
+
+      <!-- METRICS -->
+      <div class="w-100 hx-metrics dib cclr-bg-white-fade-metrics">
+        <div class="h-100" id="bg-pattern">
+
+          <div class="wx24-metrics center">
+
+            <div class="relative">
+              <div class="absolute bg-metrics-bulb">
+                <img src="/theme/images/gfx-metrics-bulb.png" alt="smile" width="170px" height="170px">
+              </div>
+            </div>
+
+            <p class="f25 lh-solid ma0 ml0 ml5-l mt5 mb4">
+              <em>
+                Essential metrics
+              </em>
+            </p>
+            <p class="ma0 ml0 ml5-l w-100 w-33-l mb5">
+              All important statistics <i>that help you to improve your service. Collected</i> without violating the privacy of your users.
+            </p>
+          </div>
+
+          <!-- BOX 10 Real -->
+          <div class="relative">
+            <div class="relative absolute-m absolute-l stackbox-10 center">
+              <div class="w-100 dib br2 pa4 shadow-4 mt4 mt0-ns cclr-fnt-black-mid bg-white">
+                <p class="lh-solid ma0 mb4">
+                  Real time
                 </p>
+                <img src="/theme/images/gfx-metrics-real.svg" alt="temp" width="320px" class="mb3">
               </div>
             </div>
           </div>
-      </div>
-  </div>
 
-  <div class="w-100 cclr-mid-black white">
-    <div class="pt3 pb6 ph4" id="bg-cta-top">
-      <div class="flex justify-end mw6 center pt5">
-        <div class="w55 tr">
-          <h2 class="f25 normal lh-solid ma0 mb3">
-            In the making
-          </h2>
-          <p class="ma0 mb4">
-            Offen is still in alpha. Discover what is already up and running and where we want to go in the coming months.
-          </p>
-          <a class="b link dim ph4 pv2 dib b--solid bw2 b--white white" href="/blog/">Project status</a>
+          <!-- BOX 20 Bars -->
+          <div class="relative">
+            <div class="relative absolute-m absolute-l stackbox-20 center">
+              <div class="w-100 dib br2 pa4 shadow-4 mt4 mt0-ns cclr-fnt-black-mid bg-white">
+                <p class="lh-solid ma0 mb4">
+                  Page views and users
+                </p>
+                <img src="/theme/images/gfx-metrics-bars.svg" alt="temp" width="320px" class="mb3">
+              </div>
+            </div>
+          </div>
+
+          <!-- BOX 30 Key -->
+          <div class="relative">
+            <div class="relative absolute-m absolute-l stackbox-30 center">
+              <div class="w-100 dib br2 pa4 shadow-4 mt4 mt0-ns cclr-fnt-black-mid bg-white">
+                <p class="lh-solid ma0 mb4">
+                  Key metrics
+                </p>
+                <img src="/theme/images/gfx-metrics-key.svg" alt="temp" width="320px" class="mb3">
+              </div>
+            </div>
+          </div>
+
+          <!-- BOX 40 Pages -->
+          <div class="relative">
+            <div class="relative absolute-m absolute-l stackbox-40 center">
+              <div class="w-100 dib br2 pa4 shadow-4 mt4 mt0-ns cclr-fnt-black-mid bg-white">
+                <p class="lh-solid ma0 mb4">
+                  Top pages
+                </p>
+                <img src="/theme/images/gfx-metrics-pages.svg" alt="temp" width="320px" class="mb3">
+              </div>
+            </div>
+          </div>
+
+          <!-- BOX 50 Retention -->
+          <div class="relative">
+            <div class="relative absolute-m absolute-l stackbox-50 center mb5 mb0-ns">
+              <div class="w-100 dib br2 pa4 shadow-4 mt4 mt0-ns cclr-fnt-black-mid bg-white">
+                <p class="lh-solid ma0 mb4">
+                  Weekly retention
+                </p>
+                <img src="/theme/images/gfx-metrics-retention.svg" alt="temp" width="320px" class="mb3">
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
+
     </div>
   </div>
 
-  <div class="w-100 bg-white gray">
-    <div class="flex flex-wrap justify-center pt4 pb5">
-      <div class="mw7 mw8-l center ph5-ns ph3">
-        <h2 class="f25 normal lh-solid">Summary</h2>
-        <div class="columns mb3">
-          {{ page.content }}
-          <a class="b link dim ph4 pv2 mt3 dib b--solid bw2 brd-cclr-mid-yellow fnt-cclr-mid-yellow" href="/deep-dive/">Deep dive</a>
+  <!-- CTA -->
+    <div class="w-100 dib bg-white">
+
+      <div class="tc mh4">
+
+        <div class="relative">
+          <div class="absolute bg-cta-pfeil">
+            <img src="/theme/images/gfx-cta-pfeil.png" alt="arrow" width="150px" height="150px">
+          </div>
         </div>
+
+        <p class="f1-ns f2 lh-solid ma0 mt6 mb5">
+          Switch to fair web analytics
+        </p>
+          <div class="flex flex flex-wrap justify-center">
+            <div class="mw5 mb5 mh0 mh4-ns">
+              <p class="tc f5 ma0 mb3 gray mh4">
+                Test drive Offen on your system today
+              </p>
+              <a class="w-100 b link dim ph4 pv2 dib b--solid bw2 cclr-brd-black-mid cclr-fnt-black-mid" href="/try-demo/" rel="noopener">Try demo</a>
+            </div>
+            <div class="mw5 mb7 mh0 mh4-ns">
+              <p class="tc f5 ma0 mb3 mh4">
+                All you need to use Offen in production
+              </p>
+              <a class="w-100 b link dim ph4 pv2 dib b--solid bw2 cclr-brd-black-mid white cclr-bg-black-mid" href="/get-started/" rel="noopener">Get started</a>
+            </div>
+          </div>
       </div>
     </div>
-  </div>
+
 {% endblock %}
 
 {% block outro %}
-<div class="w-100" id="bg-feature">
-  <div class="pa4">
-    <div class="mw8 center flex flex-column flex-row-ns mb5 pa3 cclr-mid-mint">
-      <div class="w-100 w-60-ns">
-        <h2 class="f1-ns f2 normal lh-title tc tl-ns ma0 mb3">
-          Test Offen today
-        </h2>
-        <p class="ma0 mb2 tc tl-ns">
-          Our alpha release is ready for testing. Offen is free and always will be.
-        </p>
-        <p class="ma0 mb3 tc tl-ns">
-          Be aware that things can still contain issues and that the upgrade path may be broken with upcoming releases.
-        </p>
-      </div>
-      <div class="w-100 w-40-ns ml4-m ml6-l">
-        <p class="b tc lh-title tracked-min ma0 mt3 mb2">
-          Single binary file <br>for Linux, Windows or MacOS
-        </p>
-        <a class="w-100 tc b link dim ph4 pv2 dib b--solid bw2 brd-cclr-mid-black mb3 white cclr-mid-black" href="{{ RELEASE_DIRECT_URL }}" rel="noopener">Download</a>
-        <p class="b tc lh-title tracked-min ma0 mt4 mb2">
-          Your own Offen instance
-        </p>
-        <a class="w-100 tc b link dim ph4 pv2 dib b--solid bw2 brd-cclr-mid-black mb2 white cclr-mid-black" href="{{ HEROKU_DIRECT_URL }}" rel="noopener" target="_blank">Deploy to Heroku</a>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="w-100" id="bg-outro">
-  <div class="pa4">
-    <div class="mw8 center flex flex-column flex-row-ns mb5 pa3 cclr-mid-yellow">
-      <div class="w-100 w-60-ns">
-        <h2 class="f25 normal tc tl-ns ma0 mb3">
-          Kick things off
-        </h2>
-        <p class="ma0 mb3 tc tl-ns">
-          Running a website and want to collect usage statistics? Like to contribute as a developer? Our Docs will help you kick off.
-        </p>
-      </div>
-      <div class="w-100 w-40-ns ml4-m ml6-l">
-        <p class="b tc lh-title tracked-min ma0 mt3 mb2">
-          Details on how to <br>run, use and develop Offen
-        </p>
-        <a class="w-100 tc b link dim ph4 pv2 dib b--solid bw2 brd-cclr-mid-black mb3 white cclr-mid-black" href="https://docs.offen.dev/" rel="noopener" target="_blank">Open Docs</a>
-      </div>
-    </div>
-  </div>
-</div>
 {% endblock %}
