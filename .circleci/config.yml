@@ -1,17 +1,14 @@
-version: 2
+version: 2.1
 
 jobs:
   deploy:
     docker:
-      - image: circleci/python:3.7
+      - image: cimg/python:3.7
     working_directory: ~/offen
     steps:
       - checkout
       - setup_remote_docker
-      - run:
-          name: Install deployment dependencies
-          command: |
-            sudo pip install -q awscli --upgrade
+      - aws-cli/install
       - run:
           name: Build and deploy to S3
           command: |
@@ -42,3 +39,6 @@ workflows:
               only:
                 - master
                 - development
+
+orbs:
+  aws-cli: circleci/aws-cli@1.0.0
