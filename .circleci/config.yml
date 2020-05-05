@@ -1,34 +1,40 @@
-version: 2
+version: 2.1
 
 jobs:
   deploy:
     docker:
-      - image: circleci/python:3.7
+      - image: cimg/python:3.7
     working_directory: ~/offen
     steps:
       - checkout
       - setup_remote_docker
+      - aws-cli/install
       - run:
-          name: Install deployment dependencies
-          command: |
-            sudo pip install -q awscli --upgrade
-      - run:
-          name: Build and deploy to S3
+          name: Set build environment depending on branch
           command: |
             if [ "${CIRCLE_BRANCH}" == "master" ]; then
-              export SITEURL="https://www.offen.dev"
-              export BUCKET="offen-dev-production"
-              export DISTRIBUTION="E2UP8XHLFOC3QC"
-              export ROBOTS_FILE="robots.txt.production"
-              export OFFEN_ACCOUNT_ID="5ec8345a-2a45-4eb9-92e5-8d9e5684db58"
+              cat >> $BASH_ENV \<< EOF
+            export SITEURL="https://www.offen.dev"
+            export BUCKET="offen-dev-production"
+            export DISTRIBUTION="E2UP8XHLFOC3QC"
+            export ROBOTS_FILE="robots.txt.production"
+            export OFFEN_ACCOUNT_ID="5ec8345a-2a45-4eb9-92e5-8d9e5684db58"
+            EOF
             else
-              export SITEURL="https://staging.offen.dev"
-              export BUCKET="offen-dev-staging"
-              export DISTRIBUTION="E13I20LK8ASYFH"
-              export ROBOTS_FILE="robots.txt.staging"
-              export OFFEN_ACCOUNT_ID="8f7ee44a-4cd8-47f2-a77e-8c7c98d46b89"
+              cat >> $BASH_ENV \<< EOF
+            export SITEURL="https://staging.offen.dev"
+            export BUCKET="offen-dev-staging"
+            export DISTRIBUTION="E13I20LK8ASYFH"
+            export ROBOTS_FILE="robots.txt.staging"
+            export OFFEN_ACCOUNT_ID="8f7ee44a-4cd8-47f2-a77e-8c7c98d46b89"
+            EOF
             fi
-            make build
+      - run:
+          name: Build
+          command: make build
+      - run:
+          name: Deploy to S3
+          command: |
             aws s3 sync --delete ./output/. s3://$BUCKET
             aws cloudfront create-invalidation --distribution-id $DISTRIBUTION --paths "/*"
 
@@ -42,3 +48,6 @@ workflows:
               only:
                 - master
                 - development
+
+orbs:
+  aws-cli: circleci/aws-cli@1.0.0

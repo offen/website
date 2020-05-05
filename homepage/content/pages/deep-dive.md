@@ -59,10 +59,9 @@ At runtime, Offen is just mediating exchange between users and operators. Usage 
 
 [^9]: Datensparsamkeit <https://martinfowler.com/bliki/Datensparsamkeit.html>
 
-The software itself, as well as *all the used tools are open source*, [project planning][pivotal-tracker]{: target="_blank"} and [technical specification][rfcs-repo]{: target="_blank"} take place in the open and actively solicit feedback from the general public. The infrastructure the service is deployed to is split into three isolated environments in order to minimize possible attack vectors.
+The software itself, as well as *all the used tools are open source*, [project planning and technical specification][github-org]{: target="_blank"} take place in the open and actively solicit feedback from the general public. The infrastructure the service is deployed to is split into three isolated environments in order to minimize possible attack vectors.
 
-[pivotal-tracker]: https://www.pivotaltracker.com/n/projects/2334535
-[rfcs-repo]: https://github.com/offen/rfcs
+[github-org]: https://github.com/offen
 
 Users and operators are given intuitive and accessibility-focused tools for analyzing and managing their data in the form of a web application and a browser extension. Operators deploy the service using a simple script tag. More sophisticated use cases are covered by a dedicated SDK.
 
