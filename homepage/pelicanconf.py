@@ -68,7 +68,7 @@ DECORATE_CONTENT = {
 }
 
 DOCS_URL = 'https://docs.offen.dev'
-GITHUB_ORG = 'https://github.com/offen'
+GITHUB_REPO = 'https://github.com/offen/offen'
 CONTACT_EMAIL = 'hioffen@posteo.de'
 GPG_KEY_FILE = '74B041E23DB29D552644CEB1B18C633D6967FE3F.asc'
 PATREON_URL = 'https://www.patreon.com/offen'
@@ -78,7 +78,7 @@ RELEASE_DIRECT_URL = 'https://get.offen.dev'
 DOCKER_DIRECT_URL = 'https://hub.docker.com/r/offen/offen'
 HEROKU_DIRECT_URL = 'https://heroku.com/deploy?template=https://github.com/offen/heroku/tree/master'
 OFFEN_AUDITORIUM_URL = 'https://analytics.offen.dev/auditorium'
-DOCS_GETSTARTED_URL ='https://docs.offen.dev/running-offen/'
-DOCS_TRYDEMO_URL ='https://docs.offen.dev/running-offen/test-drive/'
+DOCS_GETSTARTED_URL = 'https://docs.offen.dev/running-offen/'
+DOCS_TRYDEMO_URL = 'https://docs.offen.dev/running-offen/test-drive/'
 
 OFFEN_ACCOUNT_ID = os.environ.get('OFFEN_ACCOUNT_ID', None)
