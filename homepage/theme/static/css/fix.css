@@ -92,9 +92,10 @@ LAYOUT
 	width: 86%;
 }
 .wx-table-a {
-	width: 20%;
+	width: 27%;
 }
-.wx-table-b {
+.wx-table-b,
+.wx-table-c {
 	width: 16%;
 }
 .hx24 {
@@ -118,10 +119,13 @@ LAYOUT
 		width: 24rem;
 	}
 	.wx-table-a {
-		width: 30%;
+		width: 36%;
 	}
 	.wx-table-b {
 		width: 20%;
+	}
+	.wx-table-c {
+		width: 16%;
 	}
 	.hx-try-user {
 		height: 24rem;
@@ -134,7 +138,8 @@ LAYOUT
 	.wx24-metrics {
 		width: 100%;
 	}
-	.wx-table-b {
+	.wx-table-b,
+	.wx-table-c {
 		width: 25%;
 	}
 	.hx-compare-c,
