@@ -91,6 +91,13 @@ LAYOUT
 .wx24-metrics {
 	width: 86%;
 }
+.wx-table-a {
+	width: 27%;
+}
+.wx-table-b,
+.wx-table-c {
+	width: 16%;
+}
 .hx24 {
 	height: 24rem;
 }
@@ -101,16 +108,24 @@ LAYOUT
 	height: 30rem;
 }
 .hx-compare-c,
-.hx-compare-d {
-	height: 100%;
-}
-.hx-metrics {
+.hx-compare-d,
+.hx-metrics,
+.hx-difference {
 	height: 100%;
 }
 @media only screen and (min-width: 30em) {
 	.wx24,
 	.wx24-metrics {
 		width: 24rem;
+	}
+	.wx-table-a {
+		width: 36%;
+	}
+	.wx-table-b {
+		width: 20%;
+	}
+	.wx-table-c {
+		width: 16%;
 	}
 	.hx-try-user {
 		height: 24rem;
@@ -123,12 +138,19 @@ LAYOUT
 	.wx24-metrics {
 		width: 100%;
 	}
+	.wx-table-b,
+	.wx-table-c {
+		width: 25%;
+	}
 	.hx-compare-c,
 	.hx-compare-d {
 		height: 50rem;
 	}
 	.hx-metrics {
 		height: 132rem;
+	}
+	.hx-difference {
+		height: 33rem;
 	}
 }
 
@@ -296,7 +318,14 @@ i {
 .inner-shaddow {
 	box-shadow: inset 0px 0px 4px 0px rgba(0,0,0,0.75);
 }
-
+@media only screen and (max-width: 45em) {
+	.hscroll {
+	  overflow-x: auto;
+	}
+	.hscroll table {
+		width: 46rem;
+	}
+}
 
 /* ---------------------------------------------------
 IMAGES
