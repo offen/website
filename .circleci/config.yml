@@ -43,6 +43,7 @@ workflows:
   build_deploy:
     jobs:
       - deploy:
+          context: AWS
           filters:
             branches:
               only:
