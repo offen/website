@@ -337,9 +337,10 @@ i {
 	}
 	.hscroll {
 	  overflow-x: auto;
+		padding-left: 1.6rem;
 	}
 	.hscroll table {
-		width: 48rem;
+		width: 47rem;
 	}
 	.wx-table-d {
 		width: 8rem;
