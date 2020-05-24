@@ -95,7 +95,8 @@ LAYOUT
 	width: 27%;
 }
 .wx-table-b,
-.wx-table-c {
+.wx-table-c,
+.wx-table-d {
 	width: 16%;
 }
 .hx24 {
@@ -124,7 +125,8 @@ LAYOUT
 	.wx-table-b {
 		width: 20%;
 	}
-	.wx-table-c {
+	.wx-table-c,
+	.wx-table-d {
 		width: 16%;
 	}
 	.hx-try-user {
@@ -139,7 +141,8 @@ LAYOUT
 		width: 100%;
 	}
 	.wx-table-b,
-	.wx-table-c {
+	.wx-table-c,
+	.wx-table-d {
 		width: 25%;
 	}
 	.hx-compare-c,
@@ -318,12 +321,30 @@ i {
 .inner-shaddow {
 	box-shadow: inset 0px 0px 4px 0px rgba(0,0,0,0.75);
 }
+/* Table */
+	.bg-table {
+		display: none;
+	}
+.hscroll {
+	padding: 2rem;
+}
 @media only screen and (max-width: 45em) {
+	.bg-table {
+		display: inline-block;
+		top: 0;
+		right: 0;
+		z-index : 560;
+	}
 	.hscroll {
 	  overflow-x: auto;
+		padding-left: 1.6rem;
 	}
 	.hscroll table {
-		width: 46rem;
+		width: 47rem;
+	}
+	.wx-table-d {
+		width: 8rem;
+		padding-right: 4rem;
 	}
 }
 
@@ -395,10 +416,11 @@ STACKING IMAGES
 	z-index : 550;
 }
 .bg-cta-pfeil {
-	top: -11rem;
+	top: -13rem;
 	left: 66%;
 	z-index : 570;
 }
+
 @media only screen and (min-width: 30em) {
 	.bg-feature-1 {
 		left: calc(50% - 21rem);
@@ -413,10 +435,9 @@ STACKING IMAGES
 	.bg-metrics-bulb {
 		top: 11rem;
 		left: calc(100% - 30rem);
-		z-index : 550;
 	}
 	.bg-cta-pfeil {
-		top: -12rem;
+		top: -14rem;
 		left: 72%;
 	}
 }
