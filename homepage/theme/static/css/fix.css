@@ -324,6 +324,7 @@ i {
 /* Table */
 	.bg-table {
 		display: none;
+		pointer-events: none;
 	}
 .hscroll {
 	padding: 2rem;
