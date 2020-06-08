@@ -47,6 +47,15 @@ ARTICLE_SAVE_AS = 'blog/{slug}/index.html'
 PLUGIN_PATHS = ['./plugins']
 PLUGINS = ['decorate_content', 'assets']
 
+MARKDOWN = {
+    'extension_configs': {
+        'markdown.extensions.extra': {},
+        'markdown.extensions.meta': {},
+        'markdown.extensions.fenced_code': {},
+    },
+    'output_format': 'html5',
+}
+
 DECORATE_CONTENT = {
     '[data-button]': ['w-100', 'w-auto-ns', 'tc', 'tl-ns', 'dib', 'mt3', 'ph4', 'pv2', 'b--solid', 'bw2'],
     '[data-button-mb5]': ['w-100', 'w-auto-ns', 'tc', 'tl-ns', 'dib', 'mt3', 'mb5', 'ph4', 'pv2', 'b--solid', 'bw2'],
@@ -55,16 +64,16 @@ DECORATE_CONTENT = {
     '[data-button-mb5="full"]': ['cclr-brd-black-mid', 'white', 'cclr-bg-black-mid'],
     'a': ['link', 'b', 'dim'],
     'a:not([data-button])': ['gray'],
+    'h5 a': ['normal', 'moon-gray'],
     'h1': ['f2', 'normal', 'lh-title', 'mt4', 'ma0', 'mb3', 'light-silver'],
     'h2': ['f25', 'normal', 'lh-title', 'mt4', 'ma0', 'mb3', 'light-silver'],
     'h3': ['f5', 'normal', 'mt5', 'ma0', 'mb3', '.cclr-fnt-black-mid'],
-    'h4': ['f5', 'normal', 'mt4', 'ma0', 'mb3'],
-    'h5': ['f5', 'b', 'mt4', 'ma0', 'mb1'], # text over button
+    'h4': ['f5', 'b', 'mt4', 'ma0', 'mb1'], # text over button
+    'h5': ['f7', 'normal', 'ma0', 'nt5', 'mb5', 'moon-gray'], # image credits
     'h6': ['f5', 'lh-solid', 'normal', 'ma0', 'mb3', 'light-silver'], # date
     'p': ['ma0', 'pb3'],
     'blockquote': ['f5', 'i', 'ma0', 'ml4-ns', 'ml3'],
     'hr': ['mt5', 'mb3', 'b--black-05'],
-    '[spacer-4]': ['ma0', 'mb4']
 }
 
 DOCS_URL = 'https://docs.offen.dev'
