@@ -318,9 +318,6 @@ i {
 .i-on-yellow {
 	color: #8c7839;
 }
-.inner-shaddow {
-	box-shadow: inset 0px 0px 4px 0px rgba(0,0,0,0.75);
-}
 /* Table */
 	.bg-table {
 		display: none;
@@ -348,6 +345,23 @@ i {
 		padding-right: 4rem;
 	}
 }
+pre {
+	overflow-x: auto;
+	padding: 3rem 2rem 3rem 2rem;
+	color: #39352A;
+	background-color: #EEEEEE;
+}
+code {
+	border-radius: 3px;
+  font-size: 85%;
+	padding: 0.2em 0.4em;
+	color: #39352A;
+	background-color: #EEEEEE;
+}
+pre code {
+	padding: 0;
+}
+
 
 /* ---------------------------------------------------
 IMAGES
