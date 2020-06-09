@@ -9,7 +9,7 @@ sm_image_url: /theme/images/offen-blog-0060-milestone-4.jpg
 <img alt="Milestone 4 - Managing data" src="/theme/images/offen-blog-0060-milestone-4.jpg"/>
 </figure>
 
-##### [Photo](https://www.flickr.com/photos/wocintechchat/25926651781/in/album-72157664006621903/){: target="_blank"} by WOCinTechChat / [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/) 
+##### [Photo](https://www.flickr.com/photos/wocintechchat/25926651781/in/album-72157664006621903/){: target="_blank"} by WOCinTechChat / [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/){: target="_blank"}
 
 ###### 09 Jun 2020, Frederik Ring
 # [Episode Four  — Managing data](/blog/managing-data/)
