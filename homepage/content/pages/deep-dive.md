@@ -7,13 +7,13 @@ sitemap_priority: 0.7
 
 ### What is this thing called "my data" and why does seemingly everyone want to get hold of it?
 
-It has a ring, gives a slight spine-chilling sensation and generates a whole lot of clicks: consumer magazines like German "Computer Bild" caution about "Google espionage" [^1] just like the internet has countless tutorials on turning off numerous "data leeches"[^2].  Interestingly, diving into these realms will have you accidentally catching the next toolbar, malware infection or even worse [^3].
+It has a ring, gives a slight spine-chilling sensation and generates a whole lot of clicks: consumer magazines like German "Computer Bild" caution about "Google espionage" [^1] just like the internet has countless tutorials on turning off numerous "data leeches"[^2]. Interestingly, diving into these realms will have you accidentally catching the next toolbar, malware infection or even worse [^3].
 
 [^1]: Gegen Google-Spionage wehren <https://www.computerbild.de/artikel/cb-Ratgeber-Kurse-Wissen-Was-weiss-Google-ueber-Sie-2799009.html>
 [^2]: Datenkrake Windows 10: So schalten Sie auff&auml;llige Funktionen ab <https://praxistipps.chip.de/datenkrake-windows-10-so-schalten-sie-auffaellige-funktionen-ab_99652>
 [^3]: Pick a Download, Any Download! <https://blog.malwarebytes.com/cybercrime/2012/10/pick-a-download-any-download/>
 
-Yet, many internet users still don't know what really is happening to their data. Public relation activities trying to calm the public - as undertaken by Facebook for example [^4] - end up being rather disturbing instead of creating transparency, or adding real value to the public debate. Denelle Dixon, COO of Mozilla, just publicly warned the European Commission [^5] about the dangerous effects an opaque apparatus such as Facebook can have on society. Updated Terms and Conditions only parenthetically mention that newly created Google accounts will now hand over real names to third parties for advertising purposes [^6].
+Yet, many internet users still do not know what really is happening to their data. Public relation activities trying to calm the public - as recently undertaken by Facebook for example [^4] - end up being rather disturbing instead of creating transparency or adding any value to the public debate. Denelle Dixon, COO of Mozilla, just publicly warned the European Commission [^5] about the dangerous effects an opaque apparatus such as Facebook can have on society. Updated Terms and Conditions only parenthetically mention that newly created Google accounts will now hand over real names to third parties for advertising purposes [^6].
 
 [^4]: Sometimes People Assume Facebook Does Things It Doesn't Do <https://www.zeit.de/digital/datenschutz/2019-01/social-media-facebook-mark-zuckerberg-ads-privacy-business-model-transparency>
 [^5]: Mozilla Raises Concerns Over Facebook's Lack of Transparency <https://blog.mozilla.org/blog/2019/01/31/mozilla-raises-concerns-over-facebooks-lack-of-transparency/>
@@ -33,9 +33,7 @@ We would like to turn the tables on this much quoted statement and apply it to t
 
 ### For users
 
-Visiting a website or using a web application that utilizes Offen, the user gains access to and ownership of the usage data collected. The cookie used by Offen allows viewing all of the associated metrics, the users can *assert themselves what is being collected and what isn't*. Data is being displayed in an accessible and articulate manner and each metric comes with explanations about its usage, relevance and possible privacy implications.
-
-Users can choose to export their data, delete it selectively or in its entirety.
+Visiting a website or using a web application that utilizes Offen, the user gains access to and ownership of the usage data collected. As a guiding principle, data collection is Opt-In only. Consent can be revoked at any time, just like users can choose delete their data retroactively. The cookie used by Offen allows viewing all of the associated metrics so that users can *assert themselves what is being collected and what isn't*. Data is being displayed in an accessible and articulate manner and each metric comes with explanations about its usage, relevance and possible privacy implications.
 
 ### For operators
 
@@ -55,18 +53,18 @@ We want to exemplify that it is time to depart the age of "data capitalism" [^8]
 
 ### Offen as a technology
 
-At runtime, Offen is just mediating exchange between users and operators. Usage data is collected in conformance to GDPR and with the concept of "Datensparsamkeit" [^9] in mind. All user data is encrypted in the browser so that it can only be accessed by the users themselves or the matching operator. While being collected in the context of a website or application, neither operators nor third party scripts have any possibilty to access the usage data. Offen itself doesn't have any way of decrypting, processing or even selling the gathered data at any point.
+At runtime, Offen is just mediating exchange between users and operators. Usage data is collected in conformance to GDPR and with the concept of "Datensparsamkeit" [^9] in mind. All user data is encrypted in the browser so that it can only ever be accessed by the users themselves or the matching operator. While being collected in the context of a website or application, neither operators nor third party scripts have any possibilty to access the usage data. Offen itself doesn't have any way of decrypting, processing or even selling the gathered data at any point.
 
 [^9]: Datensparsamkeit <https://martinfowler.com/bliki/Datensparsamkeit.html>
 
-The software itself, as well as *all the used tools are open source*, [project planning and technical specification][github-org]{: target="_blank"} take place in the open and actively solicit feedback from the general public. The infrastructure the service is deployed to is split into three isolated environments in order to minimize possible attack vectors.
+The software itself, as well as *all the used tools are open source*, [project planning and technical specification][github-org]{: target="_blank"} take place in the open and actively solicit feedback from the general public.
 
 [github-org]: https://github.com/offen
 
-Users and operators are given intuitive and accessibility-focused tools for analyzing and managing their data in the form of a web application and a browser extension. Operators deploy the service using a simple script tag. More sophisticated use cases are covered by a dedicated SDK.
+Users and operators are given intuitive and accessibility-focused tools for analyzing and managing their data in the form of a web application and a browser extension. Operators deploy the service using a simple script tag.
 
 ---
 
 ### Modus Operandi
 
-Developing and running Offen can only work out when it is entirely *free of any kind of economic constraints or goals* and its only objective is *contributing to the common good*. Development of a prototype is reliant on public grants or similar funding sources. Long term operation of the software, just like its maintenance and continued development, is tied to resources granted by foundations or being donated by the public.
+Developing and running Offen can only work out when it is entirely *free of any kind of economic constraints or goals* and its only objective is *contributing to the common good*. Development of a prototype is reliant on public grants or similar funding sources. Long term development and maintenance of the software is tied to resources granted by foundations or being donated by the public.
