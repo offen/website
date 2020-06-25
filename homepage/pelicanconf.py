@@ -59,6 +59,7 @@ MARKDOWN = {
 DECORATE_CONTENT = {
     '[data-button]': ['w-100', 'w-auto-ns', 'tc', 'tl-ns', 'dib', 'mt3', 'ph4', 'pv2', 'b--solid', 'bw2'],
     '[data-button-mb5]': ['w-100', 'w-auto-ns', 'tc', 'tl-ns', 'dib', 'mt3', 'mb5', 'ph4', 'pv2', 'b--solid', 'bw2'],
+    '[data-button-mb3]': ['w-100', 'w-auto-ns', 'tc', 'tl-ns', 'dib', 'mt3', 'mb3', 'ph4', 'pv2', 'b--solid', 'bw2'],
     '[data-button="outline"]': ['b--gray', 'gray'],
     '[data-button="full"]': ['cclr-brd-black-mid', 'white', 'cclr-bg-black-mid'],
     '[data-button-mb5="full"]': ['cclr-brd-black-mid', 'white', 'cclr-bg-black-mid'],
