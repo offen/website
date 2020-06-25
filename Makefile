@@ -19,6 +19,7 @@ update:
 	@docker-compose run homepage pip install --user -r requirements.txt
 	@echo "Successfully built containers and installed dependencies."
 
+KEYBASE_FILE ?= keybase.txt
 ROBOTS_FILE ?= robots.txt.staging
 SITEURL ?= http://localhost:8000
 
@@ -28,6 +29,7 @@ build:
 	@docker create --entrypoint=bash -it --name assets offen/website
 	@docker cp assets:/code/homepage/output/. ./output/
 	@cp build/${ROBOTS_FILE} ./output/robots.txt
+	@cp build/${KEYBASE_FILE} ./output/keybase.txt
 	@docker rm assets
 
 .PHONY: setup build up

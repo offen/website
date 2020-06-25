@@ -1,0 +1,69 @@
+==================================================================
+https://keybase.io/hioffen
+--------------------------------------------------------------------
+
+I hereby claim:
+
+	* I am an admin of https://www.offen.dev
+	* I am hioffen (https://keybase.io/hioffen) on keybase.
+	* I have a public key with fingerprint F20D 4074 068C 636D 58B5  3F46 FD60 FBED C90B 8DA1
+
+To do so, I am signing this object:
+
+{
+	"body": {
+		"key": {
+			"eldest_kid": "01014941216dde783944f2d8561a04d5999a7401ddcacafda88cdb60efb2afd2963c0a",
+			"fingerprint": "f20d4074068c636d58b53f46fd60fbedc90b8da1",
+			"host": "keybase.io",
+			"key_id": "fd60fbedc90b8da1",
+			"kid": "01014941216dde783944f2d8561a04d5999a7401ddcacafda88cdb60efb2afd2963c0a",
+			"uid": "006fe1a6390f8d2f5b1eb41eabec0f19",
+			"username": "hioffen"
+		},
+		"service": {
+			"hostname": "www.offen.dev",
+			"protocol": "https:"
+		},
+		"type": "web_service_binding",
+		"version": 1
+	},
+	"ctime": 1593069298,
+	"expire_in": 157680000,
+	"prev": "62cdb6fcc087033fd78e3ab0452674dfe1091ecf1ddf3497f80f1197fb360a21",
+	"seqno": 4,
+	"tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+
+owGtUmtsFFUY3b54bFmrLRQjqbFjiD/cbu6d185sCmtoJQGrBVJMaRp2Z+be247t
+zqw7012hbIIPwAZoRGjFNmCLmCpNakhpIaCxPLJaEFMRTZAmiiH4SMpaUsS2NPVO
+hX/+9P75cr+cc77znXzveLJc7oyZ8PTYcO7e7oxLv6uuzRMvTTUzqom2MIFmpgHP
+FdyIsGWHGnTEBBgAAeRlHrJQRAj7JU7mecIiSRChAngkyLKs+HkAEdIUTSFIkSQN
+qSLARGXpl5VFTgMK42WIbtThWDSmGzaVJSxAPKBEUdJETkSCpAoc4UWCREBUjDQZ
+qBJSICXWm5bDoOZUxcI+3aQ9+gnN2fsP/P/su+lfOSASDBWRkwGREEsEFWKVh1hR
+sQYIlB2ghWOGEsEUXa+bhGCDSXoZ2ozrGnZydRZ5AEgkEr45iA/hOOVGY6Ztamaj
+w7XtqBVwqPaW6BwWq6EHKiFVNxDNkTLiOGbppsEEIEVqtu7IQkHmgCizsuRl8GtR
+PYZDuoMQ/KIE6HPm0HEBRmSdXUm1pgHJDziOIL+EOUUFvMCKfh7RVYEMsUZoPITj
+ZT+R6JKQVpUTgcI6MVv4VcNkAjz1qdRRTUuvMxS7KYaZpLsloz/bleF2FRUWZ9/x
+PGfP26NFqgeCqx/eXk6mc3gu98JHH3Ymz+Tez2u7scJ+4YjRvjNIxj2hdwterJp/
+KX2sEo6CWe1+2dvzopuiZWsmnn/j53hBa86F/KmK779O13dW1czyv1X3PvPFyPKl
+6ZLe3amORde+WZMKjw52HbjX5a17rP6zhif3nVxsFhe1r8pald3RMtx8+eXPl3CF
+J6eXbczsj3QO82EsVXdMJG7HD1nBkSU9x37ZBgIjzz6Syr36q1WUNVU2e2PHwdM/
+RAq37l9bWlI6ffjaxbVt+2rPV1adV1q+2543s0drXLeh+fa9lYPrztV0H/Ukx8o7
+p1KbDsWu9PhO5ZeHP/zWU5mAx/X9LRUljSVvjT0xszj/08llNbtvLjjySdmGgVcm
+by0K5wwdPL4z1MN2TbqbfInu9s5g6m7x9dG25Z7NR2999Gfm+hOvr8QDle9tXVHQ
+0QouPvXjXzebPv5AGl9/eKgPpr9Kv78jL3ll/tLS3tm+66W1A74+78ZIcFv/371D
+F4K73jw1vf3c5V1PW+jLqp8G1atnxxcKrWczk+V7Kwb9teYf+uOr/wE=
+=3W9z
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/hioffen
+
+==================================================================
