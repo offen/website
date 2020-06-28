@@ -1,6 +1,6 @@
 title: Hosting Offen on a budget | Offen
 description: These are some real world options for hosting Offen on a budget. Let's compare how they relate in terms of ease of deployment, performance and pricing.
-date: 2020-06-30
+date: 2020-06-28
 slug: hosting-offen-on-budget
 sitemap_priority: 0.7
 sm_image_url: /theme/images/offen-blog-0070-budget.jpg
@@ -9,7 +9,7 @@ sm_image_url: /theme/images/offen-blog-0070-budget.jpg
 <img alt="Hosting on a budget" src="/theme/images/offen-blog-0070-budget.jpg"/>
 </figure>
 
-###### 30 Jun 2020, Frederik Ring
+###### 28 Jun 2020, Frederik Ring
 # [Hosting Offen on a budget](/blog/hosting-offen-on-budget/)
 
 Using self-hosted software like Offen when you're on a budget can seem daunting as you usually don't know too much about the performance requirements of the software you are planning to use beforehand. Once you do know, you might have locked in yourself already.
@@ -18,7 +18,7 @@ In this article we collect a few real world options and scenarios for hosting Of
 
 ---
 
-*Prerequisite:* All of the below assumes you have registered one or multiple domains on which you run your applications and websites, and can set [A](https://en.wikipedia.org/wiki/List_of_DNS_record_types#A) or [CNAME records](https://en.wikipedia.org/wiki/CNAME_record) for these. If you do not know what this means exactly: it is a default feature in almost all packages that let you register a domain. We, your provider or registrar surely can help you with further support if you need any.
+*Prerequisite:* All of the below assumes you have registered one or multiple domains on which you run your applications and websites, and can set [A](https://en.wikipedia.org/wiki/List_of_DNS_record_types#A) or [CNAME records](https://en.wikipedia.org/wiki/CNAME_record) for these. If you do not know what this means exactly: it is a default feature in almost all packages that let you register a domain. Your provider or registrar surely can help you with further support if you need any. Read more about it in our [dedicated subdomain tutorial.](https://docs.offen.dev/running-offen/setting-up-using-subdomains/)
 
 ## Scenarios where Offen is a good fit
 
