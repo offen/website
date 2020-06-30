@@ -1,5 +1,5 @@
 title: Hosting Offen on a budget | Offen
-description: These are some real world options for hosting Offen on a budget. Let's compare how they relate in terms of ease of deployment, performance and pricing.
+description: Here are some real world options for hosting Offen on a budget. Let's compare how they relate in terms of ease of deployment, performance and pricing.
 date: 2020-06-30
 slug: hosting-offen-on-budget
 sitemap_priority: 0.7
