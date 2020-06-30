@@ -1,6 +1,6 @@
 title: Hosting Offen on a budget | Offen
 description: These are some real world options for hosting Offen on a budget. Let's compare how they relate in terms of ease of deployment, performance and pricing.
-date: 2020-06-28
+date: 2020-06-30
 slug: hosting-offen-on-budget
 sitemap_priority: 0.7
 sm_image_url: /theme/images/offen-blog-0070-budget.jpg
@@ -9,7 +9,7 @@ sm_image_url: /theme/images/offen-blog-0070-budget.jpg
 <img alt="Hosting on a budget" src="/theme/images/offen-blog-0070-budget.jpg"/>
 </figure>
 
-###### 28 Jun 2020, Frederik Ring
+###### 30 Jun 2020, Frederik Ring
 # [Hosting Offen on a budget](/blog/hosting-offen-on-budget/)
 
 Using self-hosted software like Offen when you're on a budget can seem daunting as you usually don't know too much about the performance requirements of the software you are planning to use beforehand. Once you do know, you might have locked in yourself already.
