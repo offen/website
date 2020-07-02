@@ -9,8 +9,12 @@ sm_image_url: /theme/images/offen-blog-0070-budget.jpg
 <img alt="Hosting on a budget" src="/theme/images/offen-blog-0070-budget.jpg"/>
 </figure>
 
+<!-- PELICAN_BEGIN_SUMMARY -->
+
 ###### 30 Jun 2020, Frederik Ring
 # [Hosting Offen on a budget](/blog/hosting-offen-on-budget/)
+
+<!-- PELICAN_END_SUMMARY -->
 
 Using self-hosted software like Offen when you're on a budget can seem daunting as you usually don't know too much about the performance requirements of the software you are planning to use beforehand. Once you do know, you might have locked in yourself already.
 
