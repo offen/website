@@ -71,8 +71,8 @@ DECORATE_CONTENT = {
     'h4 a': ['link', 'b', 'dim'],
     'h5 a': ['normal', 'moon-gray'],
     'a:not([data-button])': ['gray'],
-    'h1': ['f2', 'normal', 'lh-title', 'mt3', 'ma0', 'mb3', 'light-silver'],
-    'h2': ['f25', 'normal', 'lh-title', 'mt4', 'ma0', 'mb3', 'light-silver'],
+    'h1': ['f2', 'normal', 'lh-title', 'mt3', 'ma0', 'mb3'],
+    'h2': ['f25', 'normal', 'lh-title', 'mt4', 'ma0', 'mb3'],
     'h3': ['f5', 'normal', 'mt5', 'ma0', 'mb3', '.cclr-fnt-black-mid'],
     'h4': ['f5', 'b', 'mt4', 'ma0', 'mb1'], # text over button
     'h5': ['f7', 'normal', 'ma0', 'nt5', 'mb5', 'moon-gray'], # image credits
