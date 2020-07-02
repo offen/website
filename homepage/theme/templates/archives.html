@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% set title = 'Fair analytics blog | Offen' %}
-{% set description = 'Developing Offen. A free and open source analytics software for websites and web applications that allows respectful handling of data.' %}
+{% set description = 'Developing an open alternative to common web analytics tools. Gain insights while your users have full access to their data. Lightweight, self hosted and free.' %}
 {% set href = 'blog/' %}
 {% set no_stats = False %}
 {% set template = 'archives' %}
@@ -14,7 +14,17 @@
     {% endif %}
     <div class="w-100 mt5-ns gray">
       <div class="mw7 center pt5 pb5 ph3 ph5-ns bg-white">
-          {{ article.content }}
+          <figure class="larger-image mb4">
+            <a href="{{ article.slug }}">
+              <img alt="{{ article.title }}" src="{{ article.sm_image_url }}"/>
+            </a>
+          </figure>
+          <h1 class="f2 normal lh-title mt3 ma0 mb3 light-silver">
+            <a href="{{ article.slug }}" class="link b dim gray">{{ article.title }}</a>
+          </h1>
+          <p class="">
+            {{ article.description }} <a href="{{ article.slug }}" class="link b dim gray">Read more</a>
+          </p>
       </div>
     </div>
     {% endfor %}

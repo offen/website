@@ -1,4 +1,4 @@
-title: Displaying data | Offen
+title: Displaying data
 description: Our milestone 3 achievements include an improved UX, a Heroku deploy option and full Safari support.
 date: 2020-04-13
 slug: displaying-data
@@ -10,7 +10,7 @@ sm_image_url: /theme/images/offen-blog-0050-milestone-3.jpg
 </figure>
 
 ###### 14 Apr 2020, Frederik Ring
-# [Episode Three  — Displaying data](/blog/displaying-data/)
+# Episode Three  — Displaying data
 
 In the middle of strange times Milestone 3 - "Displaying Data" - is done. This means we focused on how we aggregate and display the data Offen collects in a way that operators can use it to improve their services and users can understand what is being collected and what it means for their privacy.
 
