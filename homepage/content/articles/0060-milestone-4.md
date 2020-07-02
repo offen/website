@@ -1,10 +1,9 @@
-title: Managing data | Offen
+title: Managing data
 description: Milestone 4 comes with enhanced account management, UX improvements and an updated demo version.
 date: 2020-06-09
 slug: managing-data
 sitemap_priority: 0.7
 sm_image_url: /theme/images/offen-blog-0060-milestone-4.jpg
-summary_title: Managing data
 
 <figure class="larger-image mb5">
 <img alt="Milestone 4 - Managing data" src="/theme/images/offen-blog-0060-milestone-4.jpg"/>

@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% set title = article.title %}
+{% set title = article.title + "| Offen" %}
 {% set description = article.description %}
 {% set href = article.save_as.replace('index.html', '') %}
 {% set sm_image_url = article.sm_image_url %}
@@ -8,4 +8,3 @@
 {% set template = article.template %}
 {% set content = article.content %}
 {% set cta_1 = 'true' %}
-{% set summary_title = article.summary_title %}

@@ -1,10 +1,9 @@
-title: Hosting Offen on a budget | Offen
+title: Hosting Offen on a budget
 description: Here are some real world options for hosting Offen on a budget. Let's compare how they relate in terms of ease of deployment, performance and pricing.
 date: 2020-06-30
 slug: hosting-offen-on-budget
 sitemap_priority: 0.7
 sm_image_url: /theme/images/offen-blog-0070-budget.jpg
-summary_title: Hosting Offen on a budget
 
 <figure class="larger-image mb5">
 <img alt="Hosting on a budget" src="/theme/images/offen-blog-0070-budget.jpg"/>
