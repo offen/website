@@ -45,9 +45,7 @@ PAGE_SAVE_AS = '{slug}/index.html'
 ARTICLE_SAVE_AS = 'blog/{slug}/index.html'
 
 PLUGIN_PATHS = ['./plugins']
-PLUGINS = ['decorate_content', 'assets', 'summary']
-
-SUMMARY_USE_FIRST_PARAGRAPH = True
+PLUGINS = ['decorate_content', 'assets']
 
 MARKDOWN = {
     'extension_configs': {

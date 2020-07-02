@@ -19,7 +19,9 @@
               <img alt="{{ article.title }}" src="{{ article.sm_image_url }}"/>
             </a>
           </figure>
-          {{ article.summary }}
+          <h1 class="f2 normal lh-title mt3 ma0 mb3 light-silver">
+            <a href="{{ article.slug }}" class="link b dim gray">{{ article.summary_title }}</a>
+          </h1>
           <p class="">
             {{ article.description }} <a href="{{ article.slug }}" class="link b dim gray">Read more</a>
           </p>

@@ -4,13 +4,15 @@ date: 2020-03-04
 slug: test-offen-today
 sitemap_priority: 0.7
 sm_image_url: /theme/images/offen-blog-0040-test-offen-today.jpg
+summary_title: Test Offen today
 
 <figure class="larger-image mb5">
 <img alt="Test Offen today" src="/theme/images/offen-blog-0040-test-offen-today.jpg"/>
 </figure>
 
 ###### 04 Mar 2020, Hendrik Niefeld
-# [Test Offen today](/blog/test-offen-today/)
+# Test Offen today
+
 We’re excited to present our first version that is officially ready for testing.
 
 ---
