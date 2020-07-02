@@ -1,4 +1,4 @@
-title: Managing data | Offen
+title: Managing data
 description: Milestone 4 comes with enhanced account management, UX improvements and an updated demo version.
 date: 2020-06-09
 slug: managing-data
@@ -12,7 +12,7 @@ sm_image_url: /theme/images/offen-blog-0060-milestone-4.jpg
 ##### [Photo](https://www.flickr.com/photos/wocintechchat/25926651781/in/album-72157664006621903/){: target="_blank"} by WOCinTechChat / [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/){: target="_blank"}
 
 ###### 09 Jun 2020, Frederik Ring
-# [Episode Four  — Managing data](/blog/managing-data/)
+# Episode Four  — Managing data
 
 Milestone 4 - "Managing data" - has been an important one for us. Finishing it means Offen is now close to being feature complete in the scope of our initial plans, and we can start transitioning into a Beta state, meaning we can finally offer a stable product for users to use in production environments.
 
