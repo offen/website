@@ -3,8 +3,12 @@
 {% set title = article.title + " | Offen" %}
 {% set description = article.description %}
 {% set href = article.save_as.replace('index.html', '') %}
-{% set sm_image_url = article.sm_image_url %}
+{% set image_url = article.image_url %}
+{% set image_caption = article.image_caption %}
 {% set no_stats = article.no_stats %}
 {% set template = article.template %}
 {% set content = article.content %}
+{% set date = article.date %}
+{% set author = article.author %}
+{% set modified = article.modified %}
 {% set cta_1 = 'true' %}

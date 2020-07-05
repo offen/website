@@ -15,7 +15,7 @@
   <meta property="og:description" content="{{ description }}">
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ SITEURL }}/{{ href }}">
-  <meta property="og:image" content="{{ SITEURL }}{{ sm_image_url or '/theme/images/offen-logo-social-media.jpg' }}">
+  <meta property="og:image" content="{{ SITEURL }}{{ image_url or '/theme/images/offen-logo-social-media.jpg' }}">
   <meta name="twitter:image:alt" content="Offen logo">
   <meta name="twitter:card" content="summary_large_image">
   {% if template != 'archives' %}
@@ -74,8 +74,25 @@
     </div>
       {% block content %}
         <div class="w-100 mt5-ns gray">
-          <div class="mw7 center pt5 pb5 ph3 ph5-ns bg-white">
-            {{ content }}
+          <div class="mw7 center pb5 bg-white">
+            {% if image_url %}
+              <figure class="ma0">
+                <img alt="{{ title }}" src="{{ image_url }}"/>
+                {% if image_caption %}
+                  <figcaption class="ph3 ph5-ns f7 normal moon-gray">
+                    {{ image_caption }}
+                  </figcaption>
+                {% endif %}
+              </figure>
+            {% endif %}
+            <div class="ph3 ph5-ns mt5">
+              {% if date and author %}
+                <h6 class="f5 lh-solid normal ma0 light-silver">
+                  {{ date | strftime('%d %b %Y') }}{% if modified %}(updated {{ modified | strftime('%d %b %Y') }}){% endif %}, {{ author }}
+                </h6>
+              {% endif %}
+              {{ content }}
+            </div>
           </div>
         </div>
       {% endblock %}

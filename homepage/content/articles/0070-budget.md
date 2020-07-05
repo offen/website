@@ -3,13 +3,8 @@ description: Here are some real world options for hosting Offen on a budget. Let
 date: 2020-06-30
 slug: hosting-offen-on-budget
 sitemap_priority: 0.7
-sm_image_url: /theme/images/offen-blog-0070-budget.jpg
-
-<figure class="larger-image mb5">
-<img alt="Hosting on a budget" src="/theme/images/offen-blog-0070-budget.jpg"/>
-</figure>
-
-###### 30 Jun 2020, Frederik Ring
+image_url: /theme/images/offen-blog-0070-budget.jpg
+author: Frederik Ring
 
 # Hosting Offen on a budget
 

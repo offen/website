@@ -3,13 +3,9 @@ description: Our milestone 1 achievements include extensible architecture, a loc
 date: 2019-12-12
 slug: laying-foundation-for-fair-web-analytics
 sitemap_priority: 0.7
-sm_image_url: /theme/images/offen-blog-0010-milestone1.jpg
+image_url: /theme/images/offen-blog-0010-milestone1.jpg
+author: Hendrik Niefeld
 
-<figure class="larger-image mb5">
-<img alt="Milestone 1 - Laying the foundation for fair web analytics" src="/theme/images/offen-blog-0010-milestone1.jpg"/>
-</figure>
-
-###### 12 Dec 2019, Hendrik Niefeld
 # Episode One — Laying the foundation for fair web analytics
 
 Milestone 1 is completed. This is what we've achieved in the last six weeks.
