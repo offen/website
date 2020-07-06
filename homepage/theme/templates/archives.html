@@ -16,9 +16,12 @@
       <div class="mw7 center pt5 pb5 ph3 ph5-ns bg-white">
           <figure class="larger-image mb4">
             <a href="{{ article.slug }}">
-              <img alt="{{ article.title }}" src="{{ article.sm_image_url }}"/>
+              <img alt="{{ article.title }}" src="{{ article.image_url }}"/>
             </a>
           </figure>
+          <h6 class="f5 lh-solid normal ma0 light-silver">
+            {{ article.date | strftime('%d %b %Y') }}{% if article.modified %}(article.updated {{ article.modified | strftime('%d %b %Y') }}){% endif %}, {{ article.author }}
+          </h6>
           <h1 class="f2 normal lh-title mt3 ma0 mb3 light-silver">
             <a href="{{ article.slug }}" class="link b dim gray">{{ article.title }}</a>
           </h1>

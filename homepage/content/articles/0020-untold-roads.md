@@ -3,13 +3,9 @@ description: Onboarding users onto a product that is still in development needs 
 date: 2020-01-19
 slug: untold-roads-versioning-early-stage-software
 sitemap_priority: 0.7
-sm_image_url: /theme/images/offen-blog-0020-untoldRoads.jpg
+image_url: /theme/images/offen-blog-0020-untoldRoads.jpg
+author: Frederik Ring
 
-<figure class="larger-image mb5">
-<img alt="Untold roads" src="/theme/images/offen-blog-0020-untoldRoads.jpg"/>
-</figure>
-
-###### 19 Jan 2020, Frederik Ring
 # Untold roads to v1.0
 
 After a lot of experimenting, taking detours and having unanticipated revelations while building the foundation for Offen over the last months, the state of the project is starting to settle, and we are eager to get ready for users to install our software, and use it for transparently collecting usage statistics for their websites and applications.
