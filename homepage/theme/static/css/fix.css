@@ -348,6 +348,7 @@ i {
 pre {
 	overflow-x: auto;
 	padding: 3rem 2rem 3rem 2rem;
+	margin: 0 0 3rem 0;
 	color: #39352A;
 	background-color: #EEEEEE;
 }
