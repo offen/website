@@ -79,7 +79,7 @@ DECORATE_CONTENT = {
     'h6': ['f5', 'lh-solid', 'normal', 'ma0', 'light-silver'], # date
     'p': ['ma0', 'pb3'],
     'blockquote': ['f5', 'i', 'ma0', 'ml4-ns', 'ml3'],
-    'hr': ['mt5', 'mb3', 'b--black-05'],
+    'hr': ['mt5', 'mb3', 'b--black-05']
 }
 
 DOCS_URL = 'https://docs.offen.dev'
