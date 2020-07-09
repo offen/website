@@ -1,36 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 {% block head %}
-<head>
-  <title>
-    {% block title %}{{ title }}{% endblock %}
-  </title>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="{{ description }}">
-  <meta property="og:site_name" content="{{ SITENAME }}">
-  <meta property="og:locale" content="{{ DEFAULT_LANG }}">
-  <meta property="og:title" content="{{ title }}">
-  <meta property="og:description" content="{{ description }}">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="{{ SITEURL }}/{{ href }}">
-  <meta property="og:image" content="{{ SITEURL }}{{ image_url or '/theme/images/offen-logo-social-media.jpg' }}">
-  <meta name="twitter:image:alt" content="Offen logo">
-  <meta name="twitter:card" content="summary_large_image">
-  {% if template != 'archives' %}
-  <link rel="canonical" href="{{ SITEURL }}/{{ href }}">
-  {% endif %}
-  <link rel="shortcut icon" type="image/x-icon" href="/theme/images/favicon.ico">
-  {% assets filters="postcss", output="css/style.min.css", "css/tachyons.min.css", "css/fix.css", "css/fonts.css" %}
-    <link rel="stylesheet" href="/{{ ASSET_URL }}">
-  {% endassets %}
-  <link rel="preload" href="/theme/fonts/rubik-v9-latin-regular.woff2" as="font" crossorigin>
-  <link rel="preload" href="/theme/fonts/rubik-v9-latin-500.woff2" as="font" crossorigin>
-  {% if OFFEN_ACCOUNT_ID and not no_stats %}
-    <script async src="https://analytics.offen.dev/script.js" data-account-id="{{ OFFEN_ACCOUNT_ID }}"></script>
-  {% endif %}
-</head>
+  <head>
+    <title>
+      {% block title %}{{ title }}{% endblock %}
+    </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="{{ description }}">
+    <meta property="og:site_name" content="{{ SITENAME }}">
+    <meta property="og:locale" content="{{ DEFAULT_LANG }}">
+    <meta property="og:title" content="{{ title }}">
+    <meta property="og:description" content="{{ description }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ SITEURL }}/{{ href }}">
+    <meta property="og:image" content="{{ SITEURL }}{{ image_url or '/theme/images/offen-logo-social-media.jpg' }}">
+    <meta name="twitter:image:alt" content="Offen logo">
+    <meta name="twitter:card" content="summary_large_image">
+    {% if template != 'archives' %}
+      <link rel="canonical" href="{{ SITEURL }}/{{ href }}">
+    {% endif %}
+    <link rel="shortcut icon" type="image/x-icon" href="/theme/images/favicon.ico">
+    {% assets filters="postcss", output="css/style.min.css", "css/tachyons.min.css", "css/fix.css", "css/fonts.css" %}
+      <link rel="stylesheet" href="/{{ ASSET_URL }}">
+    {% endassets %}
+    <link rel="preload" href="/theme/fonts/rubik-v9-latin-regular.woff2" as="font" crossorigin>
+    <link rel="preload" href="/theme/fonts/rubik-v9-latin-500.woff2" as="font" crossorigin>
+    {% if OFFEN_ACCOUNT_ID and not no_stats %}
+      <script async src="https://analytics.offen.dev/script.js" data-account-id="{{ OFFEN_ACCOUNT_ID }}"></script>
+    {% endif %}
+  </head>
 {% endblock %}
 <body class="{{ template }} f5 rubik lh-copy cclr-fnt-black-mid cclr-bg-black-mid">
   <div class="cclr-bg-white-dark">
@@ -41,182 +41,158 @@
             <a class="link dim" href="/"><img src="/theme/images/offen-icon-white.svg" alt="Offen logo" width="37" height="40" class="logo"></a>
             <a class="link dim" href="/"><p class="f25 normal ma0 ml2 white">Offen</p></a>
           </div>
-          {% if funnel != 'true' %}
-          <nav>
-            <div class="nav-mobile"><span id="nav-toggle"><span></span></span></div>
-            <ul class="nav-list">
-              <li>
-                <a class="b link dim cclr-fnt-black-mid" href="/">Summary</a>
-              </li>
-              <li>
-                <a class="b link dim cclr-fnt-black-mid" href="/deep-dive/">Deep dive</a>
-              </li>
-              <li>
-                <a class="b link dim cclr-fnt-black-mid" href="/blog/">Blog</a>
-              </li>
-              <li>
-                <a class="b link dim cclr-fnt-black-mid" href="/about/">About</a>
-              </li>
-              <li>
-                <a class="b link dim cclr-fnt-black-mid" href="{{ GITHUB_REPO }}" rel="noopener" target="_blank">GitHub</a>
-              </li>
-              <li>
-                <a class="b link dim cclr-fnt-black-mid" href="{{ DOCS_URL }}" rel="noopener" target="_blank">Docs</a>
-              </li>
-              <li>
-                <a class="b link dim" href="/get-started/">Get started</a>
-              </li>
-            </ul>
-          </nav>
+          {% if not funnel %}
+            <nav>
+              <div class="nav-mobile"><span id="nav-toggle"><span></span></span></div>
+              <ul class="nav-list">
+                <li>
+                  <a class="b link dim cclr-fnt-black-mid" href="/">Summary</a>
+                </li>
+                <li>
+                  <a class="b link dim cclr-fnt-black-mid" href="/deep-dive/">Deep dive</a>
+                </li>
+                <li>
+                  <a class="b link dim cclr-fnt-black-mid" href="/blog/">Blog</a>
+                </li>
+                <li>
+                  <a class="b link dim cclr-fnt-black-mid" href="/about/">About</a>
+                </li>
+                <li>
+                  <a class="b link dim cclr-fnt-black-mid" href="{{ GITHUB_REPO }}" rel="noopener" target="_blank">GitHub</a>
+                </li>
+                <li>
+                  <a class="b link dim cclr-fnt-black-mid" href="{{ DOCS_URL }}" rel="noopener" target="_blank">Docs</a>
+                </li>
+                <li>
+                  <a class="b link dim" href="/get-started/">Get started</a>
+                </li>
+              </ul>
+            </nav>
           {% endif %}
         </div>
       </section>
     </div>
-      {% block content %}
-        <div class="w-100 mt5-ns gray">
-          <div class="mw7 center pb5 bg-white">
-            {% if image_url %}
-              <figure class="ma0">
-                <img alt="{{ title }}" src="{{ image_url }}"/>
-                {% if image_caption %}
-                  <figcaption class="ph3 ph5-ns f7 normal moon-gray">
-                    {{ image_caption }}
-                  </figcaption>
-                {% endif %}
-              </figure>
-            {% endif %}
-            <div class="ph3 ph5-ns pt5">
-              {% if date and author %}
-                <h6 class="f5 lh-solid normal ma0 light-silver">
-                  {{ date | strftime('%d %b %Y') }}{% if modified %}(updated {{ modified | strftime('%d %b %Y') }}){% endif %}, {{ author }}
-                </h6>
-              {% endif %}
-              {{ content }}
-            </div>
-          </div>
-        </div>
-      {% endblock %}
 
-      {% if funnel != 'true' %}
-      {% block outro %}
-        <div class="w-100 cclr-bg-yellow-mid">
-          <div class="pt3 pb4 ph3" id="bg-pattern">
-            <div class="mw8 center">
-              <div class="flex flex-wrap justify-center tc pt3">
+    {% block content %}{% endblock %}
 
-                {% if cta_2 != 'true' %}
-                <div class="wx24 ph4-ns pt4 pb5 cclr-bg-yellow-mid">
-                  <h2 class="f25 normal lh-solid ma0 mb3">
-                    Participate
-                  </h2>
-                  <p class="ma0 mb3">
-                    Audit our open source code and feel free to make a contribution.
-                  </p>
-                  <a class="b link dim ph4 pv2 dib b--solid bw2 cclr-brd-black-mid cclr-fnt-black-mid" href="{{ GITHUB_REPO }}" rel="noopener" target="_blank">Get involved</a>
-                </div>
-                {% endif %}
-
-                {% if cta_1 != 'true' %}
-                <div class="wx24 ph4-ns pt4 pb5 cclr-bg-yellow-mid">
-                  <h2 class="f25 normal lh-solid ma0 mb3">
-                    In the making
-                  </h2>
-                  <p class="ma0 mb3">
-                    Discover what is already up and running and where we want to go.
-                  </p>
-                  <a class="b link dim ph4 pv2 dib b--solid bw2 cclr-brd-black-mid cclr-fnt-black-mid" href="/blog/">Open blog</a>
-                </div>
-                {% endif %}
-
-                <div class="wx24 ph4-ns pt4 pb5 cclr-bg-yellow-mid">
-                  <h2 class="f25 normal lh-solid ma0 mb3">
-                    Ethical internet
-                  </h2>
-                  <p class="ma0 mb3">
-                    Help to ensure that Offen is independent and can be sustained.
-                  </p>
-                  <a class="b link dim ph4 pv2 dib b--solid bw2 cclr-brd-black-mid cclr-fnt-black-mid" href="{{ PATREON_URL }}" rel="noopener" target="_blank">Support us</a>
-                </div>
-
+    <footer>
+      {% if funnel %}
+        <footer class="w-100 cclr-bg-mint-mid ph4 pb4">
+          <div id="bg-pattern">
+            <div class="flex flex-row-l flex-column w-100-l mw6-m center-m pt4 pb6">
+              <div class="w-25-l mt3 mr3 cclr-fnt-black-mid">
+                <p class="ma0">
+                  <a class="b link dim cclr-fnt-black-mid" href="/">Offen</a>
+                </p>
+                <p class="ma0">Fair web analytics</p>
+              </div>
+              <div class="w-25-l mt3 mr3">
+              </div>
+              <div class="w-25-l mt3 mr3">
+              </div>
+              <div class="w-25-l mt3 tr-l">
+                {{ BUILD_DATE | strftime('%B %Y') }}
               </div>
             </div>
           </div>
         </div>
-      {% endblock %}
-      {% endif %}
-      {% if funnel != 'true' %}
-      <div class="w-100 cclr-bg-black-mid gray ph4 pb4">
-        <div class="flex flex-row-l flex-column w-100-l mw6-m center-m pt4 pb6">
-          <div class="w-25-l mt3 mr3 cclr-fnt-yellow-mid">
-            <p class="ma0">
-              <a class="b link dim cclr-fnt-yellow-mid" href="/">Offen</a>
-            </p>
-            <p class="ma0">Fair web analytics</p>
-          </div>
-          <div class="w-25-l mt3 mr3">
-            <p class="ma0">
-              <a class="link b dim gray" href="mailto:{{ CONTACT_EMAIL }}">{{CONTACT_EMAIL}}</a>
-            </p>
-            <p class="ma0">
-              <a class="link b dim gray" target="_blank" href="/theme/{{ PGP_KEY_FILE }}">PGP Key</a>
-            </p>
-            <p class="ma0 mt2">
-              <a class="link b dim gray" href="/blog/">Blog</a>
-            </p>
-            <p class="ma0">
-              <a class="link b dim gray" href="{{ DOCS_URL }}" rel="noopener" target="_blank">Docs</a>
-            </p>
-            <p class="ma0">
-              <a class="link b dim gray" href="{{ GITHUB_REPO }}" rel="noopener" target="_blank">GitHub</a>
-            </p>
-          </div>
-          <div class="w-25-l mt3 mr3">
-            <p class="ma0">
-              <a class="link b dim gray" href="{{ PATREON_URL }}" rel="noopener" target="_blank">Patreon</a>
-            </p>
-            <p class="ma0">
-              <a class="link b dim gray" href="{{ LINKEDIN_URL }}" rel="noopener" target="_blank">LinkedIn</a>
-            </p>
-            <p class="ma0">
-              <a class="link b dim gray" href="{{ TWITTER_URL }}" rel="noopener" target="_blank">Twitter</a>
-            </p>
-            <p class="ma0 mt2">
-              <a class="link b dim gray" href="/legal-notice/">Legal Notice</a>
-            </p>
-          </div>
-          <div class="w-25-l mt3 tr-l">
-            {{ BUILD_DATE }}
-          </div>
-        </div>
-      </div>
       {% else %}
-      <div class="w-100 cclr-bg-mint-mid ph4 pb4">
-        <div id="bg-pattern">
+        {% block outro %}
+          <div class="w-100 cclr-bg-yellow-mid">
+            <div class="pt3 pb4 ph3" id="bg-pattern">
+              <div class="mw8 center">
+                <div class="flex flex-wrap justify-center tc pt3">
 
+                  {% if cta_1 %}
+                    <div class="wx24 ph4-ns pt4 pb5 cclr-bg-yellow-mid">
+                      <h2 class="f25 normal lh-solid ma0 mb3">
+                        Participate
+                      </h2>
+                      <p class="ma0 mb3">
+                        Audit our open source code and feel free to make a contribution.
+                      </p>
+                      <a class="b link dim ph4 pv2 dib b--solid bw2 cclr-brd-black-mid cclr-fnt-black-mid" href="{{ GITHUB_REPO }}" rel="noopener" target="_blank">Get involved</a>
+                    </div>
+                  {% endif %}
+
+                  {% if cta_2 %}
+                    <div class="wx24 ph4-ns pt4 pb5 cclr-bg-yellow-mid">
+                      <h2 class="f25 normal lh-solid ma0 mb3">
+                        In the making
+                      </h2>
+                      <p class="ma0 mb3">
+                        Discover what is already up and running and where we want to go.
+                      </p>
+                      <a class="b link dim ph4 pv2 dib b--solid bw2 cclr-brd-black-mid cclr-fnt-black-mid" href="/blog/">Open blog</a>
+                    </div>
+                  {% endif %}
+
+                  <div class="wx24 ph4-ns pt4 pb5 cclr-bg-yellow-mid">
+                    <h2 class="f25 normal lh-solid ma0 mb3">
+                      Ethical internet
+                    </h2>
+                    <p class="ma0 mb3">
+                      Help to ensure that Offen is independent and can be sustained.
+                    </p>
+                    <a class="b link dim ph4 pv2 dib b--solid bw2 cclr-brd-black-mid cclr-fnt-black-mid" href="{{ PATREON_URL }}" rel="noopener" target="_blank">Support us</a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        {% endblock %}
+        <div class="w-100 cclr-bg-black-mid gray ph4 pb4">
           <div class="flex flex-row-l flex-column w-100-l mw6-m center-m pt4 pb6">
-            <div class="w-25-l mt3 mr3 cclr-fnt-black-mid">
+            <div class="w-25-l mt3 mr3 cclr-fnt-yellow-mid">
               <p class="ma0">
-                <a class="b link dim cclr-fnt-black-mid" href="/">Offen</a>
+                <a class="b link dim cclr-fnt-yellow-mid" href="/">Offen</a>
               </p>
               <p class="ma0">Fair web analytics</p>
             </div>
             <div class="w-25-l mt3 mr3">
+              <p class="ma0">
+                <a class="link b dim gray" href="mailto:{{ CONTACT_EMAIL }}">{{CONTACT_EMAIL}}</a>
+              </p>
+              <p class="ma0">
+                <a class="link b dim gray" target="_blank" href="/theme/{{ PGP_KEY_FILE }}">PGP Key</a>
+              </p>
+              <p class="ma0 mt2">
+                <a class="link b dim gray" href="/blog/">Blog</a>
+              </p>
+              <p class="ma0">
+                <a class="link b dim gray" href="{{ DOCS_URL }}" rel="noopener" target="_blank">Docs</a>
+              </p>
+              <p class="ma0">
+                <a class="link b dim gray" href="{{ GITHUB_REPO }}" rel="noopener" target="_blank">GitHub</a>
+              </p>
             </div>
             <div class="w-25-l mt3 mr3">
+              <p class="ma0">
+                <a class="link b dim gray" href="{{ PATREON_URL }}" rel="noopener" target="_blank">Patreon</a>
+              </p>
+              <p class="ma0">
+                <a class="link b dim gray" href="{{ LINKEDIN_URL }}" rel="noopener" target="_blank">LinkedIn</a>
+              </p>
+              <p class="ma0">
+                <a class="link b dim gray" href="{{ TWITTER_URL }}" rel="noopener" target="_blank">Twitter</a>
+              </p>
+              <p class="ma0 mt2">
+                <a class="link b dim gray" href="/legal-notice/">Legal Notice</a>
+              </p>
             </div>
             <div class="w-25-l mt3 tr-l">
-              {{ BUILD_DATE }}
+              {{ BUILD_DATE | strftime('%B %Y') }}
             </div>
           </div>
-
         </div>
-      </div>
       {% endif %}
-    </div>
-    {% block scripts %}
-      {% assets filters="rjsmin", output="scripts/packed.js", "scripts/jquery-3.4.1.min.js", "scripts/menu.js", "scripts/fade.js", "scripts/clipboard.min.js", "scripts/click-to-copy.js" %}
-        <script src="/{{ ASSET_URL }}"></script>
-      {% endassets %}
-    {% endblock %}
-  </body>
+    </footer>
+  </div>
+  {% block scripts %}
+    {% assets filters="rjsmin", output="scripts/packed.js", "scripts/jquery-3.4.1.min.js", "scripts/menu.js", "scripts/fade.js", "scripts/clipboard.min.js", "scripts/click-to-copy.js" %}
+      <script src="/{{ ASSET_URL }}"></script>
+    {% endassets %}
+  {% endblock %}
+</body>
 </html>

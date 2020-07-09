@@ -5,14 +5,14 @@
 {% set href = 'blog/' %}
 {% set no_stats = False %}
 {% set template = 'archives' %}
-{% set cta_1 = 'true' %}
+{% set cta_1 = True %}
 
 {% block content %}
-    {% for article in articles %}
+  {% for article in articles %}
     {% if loop.index != 1 %}
       <hr class="mb5 b--none">
     {% endif %}
-    <div class="w-100 mt5-ns gray">
+    <article class="w-100 mt5-ns gray">
       <div class="mw7 center pt5 pb5 ph3 ph5-ns bg-white">
           <figure class="larger-image mb4">
             <a href="{{ article.slug }}">
@@ -29,6 +29,6 @@
             {{ article.description }} <a href="{{ article.slug }}" class="link b dim gray">Read more</a>
           </p>
       </div>
-    </div>
+    </article>
     {% endfor %}
 {% endblock %}

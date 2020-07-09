@@ -4,11 +4,27 @@
 {% set description = article.description %}
 {% set href = article.save_as.replace('index.html', '') %}
 {% set image_url = article.image_url %}
-{% set image_caption = article.image_caption %}
 {% set no_stats = article.no_stats %}
 {% set template = article.template %}
-{% set content = article.content %}
-{% set date = article.date %}
-{% set author = article.author %}
-{% set modified = article.modified %}
-{% set cta_1 = 'true' %}
+{% set cta_1 = True %}
+
+{% block content %}
+  <main class="w-100 mt5-ns gray">
+    <div class="mw7 center pb5 bg-white">
+      <figure class="ma0">
+        <img alt="{{ title }}" src="{{ image_url }}"/>
+        {% if article.image_caption %}
+          <figcaption class="ph3 ph5-ns f7 normal moon-gray">
+            {{ article.image_caption }}
+          </figcaption>
+        {% endif %}
+      </figure>
+      <div class="ph3 ph5-ns pt5">
+        <h6 class="f5 lh-solid normal ma0 light-silver">
+          {{ article.date | strftime('%d %b %Y') }}{% if article.modified %}(updated {{ article.modified | strftime('%d %b %Y') }}){% endif %}, {{ article.author }}
+        </h6>
+        {{ article.content }}
+      </div>
+    </div>
+  </main>
+{% endblock %}

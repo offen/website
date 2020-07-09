@@ -1,6 +1,5 @@
 import os
 from datetime import datetime
-from calendar import month_name
 # If your site is available via HTTPS, make sure SITEURL begins with https://
 RELATIVE_URLS = False
 
@@ -10,7 +9,7 @@ PATH = 'content'
 TIMEZONE = 'Europe/Berlin'
 DEFAULT_LANG = 'en'
 
-BUILD_DATE = '{} {}'.format(month_name[datetime.today().month], datetime.today().year)
+BUILD_DATE = datetime.now()
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -93,7 +92,7 @@ TWITTER_URL = 'https://twitter.com/hioffen'
 RELEASE_DIRECT_URL = 'https://get.offen.dev'
 DOCKER_DIRECT_URL = 'https://hub.docker.com/r/offen/offen'
 HEROKU_DIRECT_URL = 'https://heroku.com/deploy?template=https://github.com/offen/heroku/tree/master'
-OFFEN_AUDITORIUM_URL = 'https://analytics.offen.dev/auditorium'
+OFFEN_AUDITORIUM_URL = 'https://analytics.offen.dev/auditorium/'
 DOCS_GETSTARTED_URL = 'https://docs.offen.dev/running-offen/'
 DOCS_TRYDEMO_URL = 'https://docs.offen.dev/running-offen/test-drive/'
 
