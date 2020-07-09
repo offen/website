@@ -3,4 +3,4 @@ Disallow: /vault/
 Disallow: /auditorium/
 Disallow: /legal-notice/
 
-Sitemap: /sitemap.xml
+Sitemap: https://www.offen.dev/sitemap.xml

@@ -478,16 +478,18 @@ STACKING IMAGES
 /* ---------------------------------------------------
 BACKROUND IMAGES
 ----------------------------------------------------*/
-#bg-feature-2 {
+.bg-feature-2 {
   background: url(/theme/images/gfx-feature-2.png) center;
 	background-repeat: no-repeat;
 	background-size: 640px 480px;
 	transform: rotate(180deg);
 }
-#bg-pattern {
+
+.bg-pattern {
   background: url(/theme/images/gfx-bg-pattern.svg) 8rem 2rem;
 }
-#bg-explainer {
+
+.bg-explainer {
   background:
 		url(/theme/images/gfx-bg-explainer.svg) top center repeat-x,
 		url(/theme/images/gfx-bg-explainer.svg) bottom center repeat-x;
