@@ -6,7 +6,7 @@ sitemap_priority: 0.6
 image_url: /theme/images/offen-blog-0030-milestone-2.jpg
 author: Hendrik Niefeld
 
-# Episode Two  — Collecting data securely
+# Episode Two — Collecting data securely
 
 We finished milestone 2. Here is what we' ve been doing for the last 8 weeks.
 

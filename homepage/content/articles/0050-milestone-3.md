@@ -6,7 +6,7 @@ sitemap_priority: 0.6
 image_url: /theme/images/offen-blog-0050-milestone-3.jpg
 author: Frederik Ring
 
-# Episode Three  — Displaying data
+# Episode Three — Displaying data
 
 In the middle of strange times Milestone 3 - "Displaying Data" - is done. This means we focused on how we aggregate and display the data Offen collects in a way that operators can use it to improve their services and users can understand what is being collected and what it means for their privacy.
 
