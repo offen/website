@@ -7,7 +7,7 @@ image_url: /theme/images/offen-blog-0060-milestone-4.jpg
 image_caption: <a class="link b dim moon-gray" target="_blank" href="https://www.flickr.com/photos/wocintechchat/25926651781/in/album-72157664006621903/">Photo</a> by WOCinTechChat / <a class="link b dim moon-gray" href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>
 author: Frederik Ring
 
-# Episode Four  — Managing data
+# Episode Four — Managing data
 
 Milestone 4 - "Managing data" - has been an important one for us. Finishing it means Offen is now close to being feature complete in the scope of our initial plans, and we can start transitioning into a Beta state, meaning we can finally offer a stable product for users to use in production environments.
 
