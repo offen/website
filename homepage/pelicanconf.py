@@ -92,7 +92,7 @@ TWITTER_URL = 'https://twitter.com/hioffen'
 RELEASE_DIRECT_URL = 'https://get.offen.dev'
 DOCKER_DIRECT_URL = 'https://hub.docker.com/r/offen/offen'
 HEROKU_DIRECT_URL = 'https://heroku.com/deploy?template=https://github.com/offen/heroku/tree/master'
-OFFEN_AUDITORIUM_URL = 'https://analytics.offen.dev/auditorium/'
+OFFEN_AUDITORIUM_URL = 'https://offen.offen.dev/auditorium/'
 DOCS_GETSTARTED_URL = 'https://docs.offen.dev/running-offen/'
 DOCS_TRYDEMO_URL = 'https://docs.offen.dev/running-offen/test-drive/'
 
