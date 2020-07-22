@@ -39,7 +39,7 @@ Relevant PRs are: [399](https://github.com/offen/offen/pull/399), [400](https://
 
 With help from the FSFE, we adopted [REUSE](https://reuse.software/){: target="_blank"}, a standard and tooling around the handling of licensing in non-small repositories. Having integrated a dedicated check for REUSE compliance into our CI pipeline allows us to stop worrying we have forgotten something, and will give everyone access to all licensing information needed to use or reuse Offen in all scenarios.
 
-In addition to that we now also automatically generate a NOTICE file from our dependency tree that we can include in our binary distributions, making sure every dependency is properly attributed when others download and use Offen. You can see it in action being served from our own Offen instance here: [analytics.offen.dev/NOTICE.txt](https://analytics.offen.dev/NOTICE.txt)
+In addition to that we now also automatically generate a NOTICE file from our dependency tree that we can include in our binary distributions, making sure every dependency is properly attributed when others download and use Offen. You can see it in action being served from our own Offen instance here: [offen.offen.dev/NOTICE.txt](https://offen.offen.dev/NOTICE.txt)
 
 Relevant PRs are: [383](https://github.com/offen/offen/pull/388), [414](https://github.com/offen/offen/pull/414), [415](https://github.com/offen/offen/pull/415)
 
