@@ -45,7 +45,7 @@ The command line can seem daunting when you don't use it regularly. This is why 
 
 ### Goodbye, Choo
 
-We started out with using Choo as our frontend framework and it was a great choice as it allowed us to build dynamic UIs very rapidly. But as Offen's Auditorium was growing over the last few months we noticed its lack of mechanisms for breaking interfaces into components was starting to slow us down signficantly and made simple changes cumbersome to implement.
+We started out with using Choo as our frontend framework and it was a great choice as it allowed us to build dynamic UIs very rapidly. But as Offen's Auditorium was growing over the last few months we noticed its lack of mechanisms for breaking interfaces into components was starting to slow us down significantly and made simple changes cumbersome to implement.
 
 This is why - before starting work on the annotated Auditorium - we migrated the application to use Preact in [PR 289](https://github.com/offen/offen/pull/289). Preact is a great choice as it allows us to use modern paradigms for programming interfaces without having to buy into a Facebook-dominated ecosystem. The library is distributed under a MIT license.
 

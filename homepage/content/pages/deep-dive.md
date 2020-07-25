@@ -53,7 +53,7 @@ We want to exemplify that it is time to depart the age of "data capitalism" [^8]
 
 ### Offen as a technology
 
-At runtime, Offen is just mediating exchange between users and operators. Usage data is collected in conformance to GDPR and with the concept of "Datensparsamkeit" [^9] in mind. All user data is encrypted in the browser so that it can only ever be accessed by the users themselves or the matching operator. While being collected in the context of a website or application, neither operators nor third party scripts have any possibilty to access the usage data. Offen itself doesn't have any way of decrypting, processing or even selling the gathered data at any point.
+At runtime, Offen is just mediating exchange between users and operators. Usage data is collected in conformance to GDPR and with the concept of "Datensparsamkeit" [^9] in mind. All user data is encrypted in the browser so that it can only ever be accessed by the users themselves or the matching operator. While being collected in the context of a website or application, neither operators nor third party scripts have any possibility to access the usage data. Offen itself doesn't have any way of decrypting, processing or even selling the gathered data at any point.
 
 [^9]: Datensparsamkeit <https://martinfowler.com/bliki/Datensparsamkeit.html>
 
