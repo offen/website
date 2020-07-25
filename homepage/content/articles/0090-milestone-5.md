@@ -97,7 +97,7 @@ Then, fire up a demo instance of Offen on your machine. This is really easy usin
 curl -sSL https://demo.offen.dev | bash
 ```
 
-When done, this will tell you about a port that has been openend on your `localhost`, which we will now use for the load test.
+When done, this will tell you about a port that has been opened on your `localhost`, which we will now use for the load test.
 
 Let's start with something really simple, load testing the (static) index page:
 
