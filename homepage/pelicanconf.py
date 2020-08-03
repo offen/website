@@ -85,11 +85,13 @@ DECORATE_CONTENT = {
 
 DOCS_URL = 'https://docs.offen.dev'
 GITHUB_REPO = 'https://github.com/offen/offen'
+ROADMAP = 'https://github.com/offen/offen/projects/1'
 CONTACT_EMAIL = 'hioffen@posteo.de'
 PGP_KEY_FILE = '74B041E23DB29D552644CEB1B18C633D6967FE3F.asc'
 PATREON_URL = 'https://www.patreon.com/offen'
 LINKEDIN_URL = 'https://www.linkedin.com/company/hioffen'
 TWITTER_URL = 'https://twitter.com/hioffen'
+MASTODON_URL = 'https://fosstodon.org/@offen'
 RELEASE_DIRECT_URL = 'https://get.offen.dev'
 DOCKER_DIRECT_URL = 'https://hub.docker.com/r/offen/offen'
 HEROKU_DIRECT_URL = 'https://heroku.com/deploy?template=https://github.com/offen/heroku/tree/master'
