@@ -14,7 +14,7 @@ Offen is created by [Frederik Ring][frederik-ring]{: target="_blank"} and [Hendr
 
 [![NLnet Foundation](/theme/images/nlnet-logo.svg){:width="160px" height="60px" class="mt4"}](https://nlnet.nl/){: target="_blank"}
 
-We are happy to work with [NLnet Foundation][nlnet-foundation]{: target="_blank"} who complement our activities within their [Next Generation Internet][next-generation-internet]{: target="_blank"} initiative.
+We are happy to work with [NLnet Foundation,][nlnet-foundation]{: target="_blank"} which actively supports our efforts as part of its [Next Generation Internet][next-generation-internet]{: target="_blank"} initiative.
 
 [nlnet-foundation]: https://nlnet.nl/
 [next-generation-internet]: https://nlnet.nl/NGI/
