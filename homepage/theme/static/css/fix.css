@@ -84,6 +84,9 @@ LAYOUT
 }
 
 /* HWidths and heights */
+.wx64 {
+	width: 100%;
+}
 .wx18 {
 	width: 18rem;
 }
@@ -156,7 +159,11 @@ LAYOUT
 		height: 33rem;
 	}
 }
-
+@media only screen and (min-width: 64em) {
+	.wx64 {
+		width: 64rem;
+	}
+}
 /* Margins an paddings */
 .ptx-feature-2 {
 	padding-top: 9rem;
