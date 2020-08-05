@@ -399,6 +399,12 @@ IMAGES
     height: 190px;
   }
 }
+@media only screen and (min-width: 60em) {
+  .larger-image {
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+}
 
 
 /* ---------------------------------------------------
