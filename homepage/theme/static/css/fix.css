@@ -362,7 +362,7 @@ pre {
 code {
 	border-radius: 3px;
   font-size: 85%;
-	padding: 0.2em 0.4em;
+	padding: 0.2em 0;
 	color: #39352A;
 	background-color: #EEEEEE;
 }
