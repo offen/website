@@ -54,8 +54,14 @@ COLORS
 .cclr-bg-white-fade-metrics {
 	background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #F3F0E7;
 }
-
-
+.cclr-bg-white-responsive {
+	background-color: #f9f7f2;
+}
+@media only screen and (min-width: 60rem) {
+	.cclr-bg-white-responsive {
+		background-color: #ffffff;
+	}
+}
 /* ---------------------------------------------------
 LAYOUT
 ----------------------------------------------------*/
@@ -280,6 +286,19 @@ body {
 /* Custom Tachyons class */
 .f25 {
   font-size: 1.9rem;
+}
+.f26 {
+  font-size: 1.9rem;
+}
+@media only screen and (min-width: 60em) {
+	.f26 {
+	  font-size: 2.25rem;
+	}
+}
+@media only screen and (min-width: 60em) {
+	.f26 {
+	  font-size: 1.9rem;
+	}
 }
 span {
   display: table;
