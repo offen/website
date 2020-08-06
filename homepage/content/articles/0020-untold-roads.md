@@ -5,6 +5,7 @@ slug: untold-roads-versioning-early-stage-software
 sitemap_priority: 0.7
 image_url: /theme/images/offen-blog-0020-untoldRoads.jpg
 author: Frederik Ring
+bottom_cta: blog
 
 # Untold roads to v1.0
 

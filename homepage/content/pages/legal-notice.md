@@ -2,6 +2,7 @@ title: Legal Notice | Offen
 description: Information in accordance with Section 5 TMG
 slug: legal-notice
 exclude_from_sitemap: true
+bottom_cta: fair
 
 ## Legal Notice
 

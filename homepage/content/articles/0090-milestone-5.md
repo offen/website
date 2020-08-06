@@ -5,6 +5,7 @@ slug: resilience-documentation
 sitemap_priority: 0.6
 image_url: /theme/images/offen-blog-0090-milestone-5.jpg
 author: Frederik Ring
+bottom_cta: blog
 
 # Episode Five — Resilience and documentation
 

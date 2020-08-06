@@ -5,6 +5,7 @@ slug: collecting-data-securely
 sitemap_priority: 0.6
 image_url: /theme/images/offen-blog-0030-milestone-2.jpg
 author: Hendrik Niefeld
+bottom_cta: blog
 
 # Episode Two — Collecting data securely
 

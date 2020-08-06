@@ -5,6 +5,7 @@ slug: laying-foundation-for-fair-web-analytics
 sitemap_priority: 0.6
 image_url: /theme/images/offen-blog-0010-milestone1.jpg
 author: Hendrik Niefeld
+bottom_cta: blog
 
 # Episode One — Laying the foundation for fair web analytics
 

@@ -5,6 +5,7 @@ slug: test-offen-today
 sitemap_priority: 0.7
 image_url: /theme/images/offen-blog-0040-test-offen-today.jpg
 author: Hendrik Niefeld
+bottom_cta: blog
 
 # Test Offen today
 

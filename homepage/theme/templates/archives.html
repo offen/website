@@ -5,30 +5,36 @@
 {% set href = 'blog/' %}
 {% set no_stats = False %}
 {% set template = 'archives' %}
-{% set cta_1 = True %}
+{% set bottom_cta = 'index' %}
 
 {% block content %}
-  {% for article in articles %}
-    {% if loop.index != 1 %}
-      <hr class="mb5 b--none">
-    {% endif %}
-    <article class="w-100 mt5-ns gray">
-      <div class="mw7 center pt5 pb5 ph3 ph5-ns bg-white">
-          <figure class="larger-image mb4">
-            <a href="{{ article.slug }}">
-              <img alt="{{ article.title }}" src="{{ article.image_url }}"/>
-            </a>
-          </figure>
-          <h6 class="f5 lh-solid normal ma0 light-silver">
-            {{ article.date | strftime('%d %b %Y') }}{% if article.modified %}(article.updated {{ article.modified | strftime('%d %b %Y') }}){% endif %}, {{ article.author }}
-          </h6>
-          <h1 class="f2 normal lh-title mt3 ma0 mb3 light-silver">
-            <a href="{{ article.slug }}" class="link b dim gray">{{ article.title }}</a>
-          </h1>
-          <p class="">
-            {{ article.description }} <a href="{{ article.slug }}" class="link b dim gray">Read more</a>
-          </p>
+  <div class="mw8 center cclr-bg-white-responsive pr5-l">
+    <div class="flex flex-wrap mt0 mt5-l">
+    {% for article in articles %}
+      <div class="w-100 w-50-l">
+        {% if loop.index != 1 %}
+          <hr class="mb5 b--none db dn-l">
+        {% endif %}
+        <article class="w-100 mt5-m mt0-l gray">
+          <div class="mw8 center pv5 ph3 ph5-m pr0-l pl5-l bg-white">
+              <figure class="larger-image mb4">
+                <a href="{{ article.slug }}">
+                  <img alt="{{ article.title }}" src="{{ article.image_url }}"/>
+                </a>
+              </figure>
+              <h6 class="f5 lh-solid normal ma0 light-silver">
+                {{ article.date | strftime('%d %b %Y') }}{% if article.modified %}(article.updated {{ article.modified | strftime('%d %b %Y') }}){% endif %}, {{ article.author }}
+              </h6>
+              <h1 class="f26 normal lh-title mt3 ma0 mb3 light-silver">
+                <a href="{{ article.slug }}" class="link b dim gray">{{ article.title }}</a>
+              </h1>
+              <p class="">
+                {{ article.description }} <a href="{{ article.slug }}" class="link b dim gray">Read more</a>
+              </p>
+          </div>
+        </article>
       </div>
-    </article>
     {% endfor %}
+    </div>
+  </div>
 {% endblock %}

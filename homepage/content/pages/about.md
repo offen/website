@@ -1,9 +1,9 @@
 title: About | Offen
 description: Who we are, who supports us and how you can can get in touch.
 slug: about
+bottom_cta: fair
 
 ## About
-
 
 ### Status Quo
 
