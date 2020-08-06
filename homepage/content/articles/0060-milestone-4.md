@@ -6,6 +6,7 @@ sitemap_priority: 0.6
 image_url: /theme/images/offen-blog-0060-milestone-4.jpg
 image_caption: <a class="link b dim moon-gray" target="_blank" href="https://www.flickr.com/photos/wocintechchat/25926651781/in/album-72157664006621903/">Photo</a> by WOCinTechChat / <a class="link b dim moon-gray" href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>
 author: Frederik Ring
+bottom_cta: blog
 
 # Episode Four — Managing data
 

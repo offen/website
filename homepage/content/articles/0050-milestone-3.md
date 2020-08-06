@@ -5,6 +5,7 @@ slug: displaying-data
 sitemap_priority: 0.6
 image_url: /theme/images/offen-blog-0050-milestone-3.jpg
 author: Frederik Ring
+bottom_cta: blog
 
 # Episode Three — Displaying data
 

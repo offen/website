@@ -54,8 +54,14 @@ COLORS
 .cclr-bg-white-fade-metrics {
 	background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #F3F0E7;
 }
-
-
+.cclr-bg-white-responsive {
+	background-color: #f9f7f2;
+}
+@media only screen and (min-width: 60rem) {
+	.cclr-bg-white-responsive {
+		background-color: #ffffff;
+	}
+}
 /* ---------------------------------------------------
 LAYOUT
 ----------------------------------------------------*/
@@ -281,6 +287,19 @@ body {
 .f25 {
   font-size: 1.9rem;
 }
+.f26 {
+  font-size: 1.9rem;
+}
+@media only screen and (min-width: 30em) {
+	.f26 {
+	  font-size: 2.25rem;
+	}
+}
+@media only screen and (min-width: 60em) {
+	.f26 {
+	  font-size: 1.9rem;
+	}
+}
 span {
   display: table;
 }
@@ -362,7 +381,7 @@ pre {
 code {
 	border-radius: 3px;
   font-size: 85%;
-	padding: 0.2em 0.4em;
+	padding: 0.2em 0;
 	color: #39352A;
 	background-color: #EEEEEE;
 }
@@ -397,6 +416,12 @@ IMAGES
   .smaller-image {
     width: 350px;
     height: 190px;
+  }
+}
+@media only screen and (min-width: 60em) {
+  .larger-image {
+    margin-left: 0rem;
+    margin-right: 0rem;
   }
 }
 
@@ -535,7 +560,7 @@ nav ul li {
 nav ul li a,
 nav ul li a:visited {
   display: block;
-  padding: 0 1.4rem;
+  padding: 0 1.2rem;
   line-height: 4rem;
   text-decoration: none;
   font-weight: 700;
