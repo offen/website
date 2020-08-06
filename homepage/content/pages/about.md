@@ -1,7 +1,7 @@
 title: About | Offen
 description: Who we are, who supports us and how you can can get in touch.
 slug: about
-cta_blog_article: fair
+bottom_cta: fair
 
 ## About
 
