@@ -18,7 +18,7 @@
         <article class="w-100 mt5-m mt0-l gray">
           <div class="mw8 center pv5 ph3 ph5-m pr0-l pl5-l bg-white">
               <figure class="larger-image mb4">
-                <a href="{{ article.slug }}">
+                <a href="/blog/{{ article.slug }}/">
                   <img alt="{{ article.title }}" src="{{ article.image_url }}"/>
                 </a>
               </figure>
@@ -26,10 +26,10 @@
                 {{ article.date | strftime('%d %b %Y') }}{% if article.modified %}(article.updated {{ article.modified | strftime('%d %b %Y') }}){% endif %}, {{ article.author }}
               </h6>
               <h1 class="f26 normal lh-title mt3 ma0 mb3 light-silver">
-                <a href="{{ article.slug }}" class="link b dim gray">{{ article.title }}</a>
+                <a href="/blog/{{ article.slug }}/" class="link b dim gray">{{ article.title }}</a>
               </h1>
-              <p class="">
-                {{ article.description }} <a href="{{ article.slug }}" class="link b dim gray">Read more</a>
+              <p>
+                {{ article.description }} <a href="/blog/{{ article.slug }}/" class="link b dim gray">Read more</a>
               </p>
           </div>
         </article>
