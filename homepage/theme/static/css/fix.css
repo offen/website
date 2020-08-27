@@ -408,20 +408,13 @@ IMAGES
 	border: 1px solid #DDDDDD;
 }
 @media only screen and (min-width: 30em) {
-  .larger-image {
-    margin-top: -4rem;
-    margin-left: -4rem;
-    margin-right: -4rem;
+	.larger-image {
+    margin-left: 0rem;
+    margin-right: 0rem;
   }
   .smaller-image {
     width: 350px;
     height: 190px;
-  }
-}
-@media only screen and (min-width: 60em) {
-  .larger-image {
-    margin-left: 0rem;
-    margin-right: 0rem;
   }
 }
 

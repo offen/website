@@ -43,8 +43,6 @@ To complete the package, the app allows to manage several websites with one logi
 
 Our strict focus on data protection also means that there are some Matomo features we will never offer. This includes the export of data and public access to reports without prior login. Furthermore due to the integrated end-to-end encryption Offen does not provide access to the raw data.
 
----
-
 ### Switch to fair web analytics
 
 We hope this overview helps you to get a better insight into the topic of fair web analytics. If you are passionate about ethical software and want *a truly lightweight and privacy focused alternative to Matomo* you should give Offen a try. Why not let both run parallel for a while and then see how it feels? We are looking forward to your [feedback.](mailto:hioffen@posteo.de)
