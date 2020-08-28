@@ -25,7 +25,7 @@ On the technical side, the following issues are particularly apparent. Installin
 
 ## Operators and users as equal parties
 
-To address the above mentioned issues we develop a fair and lightweigt web analytics tool that treats operators and users as equal parties. It is called Offen and [available as a beta version.](https://www.offen.dev/get-started/)
+To address the above mentioned issues we develop a fair and lightweigt web analytics tool that treats operators and users as equal parties. It is called Offen and is [available as a beta version.](https://www.offen.dev/get-started/)
 
 *Offen's default is to NOT collect any data.* Usage data is collected after opt in only. If users choose to opt in, they have full access to their data. They can delete it any time or opt out completly.
 
