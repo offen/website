@@ -20,6 +20,10 @@ Yet, many internet users still do not know what really is happening to their dat
 [^5]: Mozilla Raises Concerns Over Facebook's Lack of Transparency <https://blog.mozilla.org/blog/2019/01/31/mozilla-raises-concerns-over-facebooks-lack-of-transparency/>
 [^6]: Google Has Quietly Dropped Ban on Personally Identifiable Web Tracking <https://www.propublica.org/article/google-has-quietly-dropped-ban-on-personally-identifiable-web-tracking>
 
+<div class="flex justify-end pb5">
+<img class="smaller-image" alt="Detour" src="/theme/images/gfx-deepdive-A.png"/>
+</div>
+
 As a regular user of the internet, are you really being spied upon? *What exactly is "my data"?* Can a website operator see my name when I'm using it? Does it know about my Email address or my phone number? Does it know which other websites I have been visiting, which search query led me to the site in the first place, what I have recently purchased online, or who I am acquainted with?
 
 > If you have something that you don't want anyone to know, maybe you shouldn't be doing it in the first place. [^7]
@@ -36,6 +40,8 @@ We would like to turn the tables on this much quoted statement and apply it to t
 
 Visiting a website or using a web application that utilizes Offen, the user gains access to and ownership of the usage data collected. As a guiding principle, data collection is Opt-In only. Consent can be revoked at any time, just like users can choose delete their data retroactively. The cookie used by Offen allows viewing all of the associated metrics so that users can *assert themselves what is being collected and what isn't*. Data is being displayed in an accessible and articulate manner and each metric comes with explanations about its usage, relevance and possible privacy implications.
 
+<img class="smaller-image-2 mt3" alt="Lots of ways to break your software" src="/theme/images/gfx-deepdive-B.png"/>
+
 ### For operators
 
 Operators of small and mid-sized websites and web applications are faced with growing challenges not only since the introduction of GDPR: how do they gain insights into what users are interested in and which of the features offered are being used? Is it possible to showcase *transparent and considerate handling of user data* - i.e. neither being spy or data leech - without surrendering and abandoning usage metrics altogether?
@@ -50,7 +56,9 @@ We want to exemplify that it is time to depart the age of "data capitalism" [^8]
 
 [^8]: Vielleicht wird in Zukunft auch mit Gewalt um Daten gek&auml;mpft <https://www.zeit.de/digital/datenschutz/2019-01/datenschutz-nick-couldry-datenkolonialismus-datenhandel/komplettansicht>
 
----
+<div class="flex justify-end">
+<img class="smaller-image mt2" alt="Detour" src="/theme/images/gfx-deepdive-C.png"/>
+</div>
 
 ### Offen as a technology
 

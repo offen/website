@@ -404,6 +404,11 @@ IMAGES
   height: 109px;
   margin-bottom: -2rem;
 }
+.smaller-image-2 {
+  width: 200px;
+  height: 109px;
+  margin-bottom: -4rem;
+}
 .screencast {
 	border: 1px solid #DDDDDD;
 }
@@ -412,7 +417,8 @@ IMAGES
     margin-left: 0rem;
     margin-right: 0rem;
   }
-  .smaller-image {
+  .smaller-image,
+	.smaller-image-2 {
     width: 350px;
     height: 190px;
   }
