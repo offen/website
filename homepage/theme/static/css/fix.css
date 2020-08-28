@@ -404,24 +404,23 @@ IMAGES
   height: 109px;
   margin-bottom: -2rem;
 }
+.smaller-image-2 {
+  width: 200px;
+  height: 109px;
+  margin-bottom: -4rem;
+}
 .screencast {
 	border: 1px solid #DDDDDD;
 }
 @media only screen and (min-width: 30em) {
-  .larger-image {
-    margin-top: -4rem;
-    margin-left: -4rem;
-    margin-right: -4rem;
-  }
-  .smaller-image {
-    width: 350px;
-    height: 190px;
-  }
-}
-@media only screen and (min-width: 60em) {
-  .larger-image {
+	.larger-image {
     margin-left: 0rem;
     margin-right: 0rem;
+  }
+  .smaller-image,
+	.smaller-image-2 {
+    width: 350px;
+    height: 190px;
   }
 }
 
