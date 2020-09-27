@@ -3,27 +3,26 @@ version: 2.1
 jobs:
   deploy:
     docker:
-      - image: cimg/python:3.7
-    working_directory: ~/offen
+      - image: cimg/base:2020.09
+    working_directory: ~/website
     steps:
       - checkout
       - setup_remote_docker
-      - aws-cli/install
+      - install_mc
       - run:
           name: Set build environment depending on branch
           command: |
             if [ "${CIRCLE_BRANCH}" == "master" ]; then
               cat >> $BASH_ENV \<< EOF
             export SITEURL="https://www.offen.dev"
-            export BUCKET="offen-dev-production"
-            export DISTRIBUTION="E2UP8XHLFOC3QC"
+            export BUCKET="web-production"
             export ROBOTS_FILE="robots.txt.production"
             export OFFEN_ACCOUNT_ID="5ec8345a-2a45-4eb9-92e5-8d9e5684db58"
             EOF
             else
               cat >> $BASH_ENV \<< EOF
             export SITEURL="https://staging.offen.dev"
-            export BUCKET="offen-dev-staging"
+            export BUCKET="web-staging"
             export DISTRIBUTION="E13I20LK8ASYFH"
             export ROBOTS_FILE="robots.txt.staging"
             export OFFEN_ACCOUNT_ID="8f7ee44a-4cd8-47f2-a77e-8c7c98d46b89"
@@ -33,22 +32,31 @@ jobs:
           name: Build
           command: make build
       - run:
-          name: Deploy to S3
+          name: Deploy to Storage
           command: |
-            aws s3 sync --delete ./output/. s3://$BUCKET
-            aws cloudfront create-invalidation --distribution-id $DISTRIBUTION --paths "/*"
+            mc mirror --remove --overwrite ./output/ offen/$BUCKET
 
 workflows:
   version: 2
   build_deploy:
     jobs:
       - deploy:
-          context: AWS
+          context: Storage
           filters:
             branches:
               only:
                 - master
                 - development
 
-orbs:
-  aws-cli: circleci/aws-cli@1.0.0
+commands:
+  install_mc:
+    description: Install MinIO client
+    steps:
+      - run:
+          name: Download client
+          working_directory: '~'
+          command: |
+            curl https://dl.min.io/client/mc/release/linux-amd64/mc -o mc
+            chmod +x mc
+            sudo mv mc /usr/local/bin/mc
+            command -v mc
