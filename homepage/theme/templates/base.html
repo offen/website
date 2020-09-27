@@ -239,7 +239,7 @@
     </footer>
   </div>
   {% block scripts %}
-    {% assets filters="rjsmin", output="scripts/packed.js", "scripts/jquery-3.4.1.min.js", "scripts/menu.js", "scripts/fade.js", "scripts/clipboard.min.js", "scripts/click-to-copy.js" %}
+    {% assets filters="rjsmin", output="scripts/packed.js", "scripts/jquery-3.4.1.min.js", "scripts/menu.js", "scripts/fade.js" %}
       <script src="/{{ ASSET_URL }}"></script>
     {% endassets %}
   {% endblock %}
