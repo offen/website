@@ -5,7 +5,7 @@ slug: displaying-data
 sitemap_priority: 0.6
 image_url: /theme/images/offen-blog-0050-milestone-3.jpg
 author: Frederik Ring
-bottom_cta: blog
+bottom_cta: Matomo
 
 # Episode Three — Displaying data
 
@@ -30,7 +30,7 @@ The Auditorium is where both users and operators access and manage usage data. O
 
 The user facing Auditorium is now annotated with explanations for each metric and also explains analytics-specific terms and answers frequently asked questions. This has been implemented in [PR 339](https://github.com/offen/offen/pull/339).
 
-<img class="screencast mt3 mb2" alt="browser setup" src="/theme/images/offen-blog-0050-explainer.gif"/> 
+<img class="screencast mt3 mb2" alt="browser setup" src="/theme/images/offen-blog-0050-explainer.gif"/>
 
 In addition to that we added new metrics and improved the overall user experience for both users and operators alike. Relevant PRs are [331](https://github.com/offen/offen/pull/331), [328](https://github.com/offen/offen/pull/328), [327](https://github.com/offen/offen/pull/327), [324](https://github.com/offen/offen/pull/324), [319](https://github.com/offen/offen/pull/319), [317](https://github.com/offen/offen/pull/317), [291](https://github.com/offen/offen/pull/291)
 
@@ -42,7 +42,7 @@ Operators that are using Offen to improve their services are likely to work in t
 
 The command line can seem daunting when you don't use it regularly. This is why we added an in-browser setup screen for Offen. Instead of performing the initial setup using the `offen setup` command from the CLI, operators who prefer to do so can now use their browser to navigate to the `/setup` URL of their installation and perform the initial setup there. We hope this helps us gaining further traction with semi-technical users that want to use privacy friendly tools. This has been implemented in [PR 299](https://github.com/offen/offen/pull/299).
 
-<img class="screencast mt3 mb2" alt="browser setup" src="/theme/images/offen-blog-0050-browserSetup.gif"/> 
+<img class="screencast mt3 mb2" alt="browser setup" src="/theme/images/offen-blog-0050-browserSetup.gif"/>
 
 ### Goodbye, Choo
 
@@ -67,7 +67,7 @@ Offen generates client side keys for encrypting data for each user. At the end o
 
 Self hosted software is a great fit for privacy focused software like Offen. Yet, it can seem daunting to non-technical users and make them stick to established SaaS solutions longer than needed. This is why we put a lot of effort into finding easy "1-click" options to deploy an Offen instance. In Milestone 3 we have created a 1-click solution for deploying Offen to Heroku: [https://github.com/offen/heroku](https://github.com/offen/heroku). Using free resources only, people interested in running Offen can now deploy a production ready instance to Heroku in less than 1 minute. We hope this encourages website operator to consider self-hosted software and Offen as a real option. Required changes for this were implemented in [PR 287](https://github.com/offen/offen/pull/287).
 
-<img class="screencast mt3 mb2" alt="browser setup" src="/theme/images/offen-blog-0050_oneClickDeploy.gif"/> 
+<img class="screencast mt3 mb2" alt="browser setup" src="/theme/images/offen-blog-0050_oneClickDeploy.gif"/>
 
 To offer even more options we are also looking into building a 1-click option for other platforms like YunoHost and DigitalOcean very soon.
 

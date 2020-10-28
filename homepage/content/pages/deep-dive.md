@@ -2,7 +2,7 @@ title: Deep dive | Offen
 description: What do users know about their data? How can they access it? Do operators benefit from a careful handling of user data? Does Offen work in accordance with GDPR?
 slug: deep-dive
 sitemap_priority: 0.7
-bottom_cta: budget
+bottom_cta: quality
 
 ## Deep dive
 
