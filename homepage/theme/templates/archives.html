@@ -1,40 +1,52 @@
 {% extends "base.html" %}
 
-{% set title = 'Fair analytics blog | Offen' %}
-{% set description = 'Developing an open alternative to common web analytics tools. Gain insights while your users have full access to their data. Lightweight, self hosted and free.' %}
+{% set title = 'Blog | Offen' %}
+{% set description = 'We are Frederik and Hendrik. Here we post about how we are building a fair and open web analytics tool and what we discovered along the way.' %}
 {% set href = 'blog/' %}
 {% set no_stats = False %}
 {% set template = 'archives' %}
 {% set bottom_cta = 'index' %}
 
 {% block content %}
-  <div class="mw8 center cclr-bg-white-responsive pr5-l">
-    <div class="flex flex-wrap mt0 mt5-l">
-    {% for article in articles %}
-      <div class="w-100 w-50-l">
-        {% if loop.index != 1 %}
-          <hr class="mb5 b--none db dn-l">
-        {% endif %}
-        <article class="w-100 mt5-m mt0-l gray">
-          <div class="mw8 center pv5 ph3 ph5-m pr0-l pl5-l bg-white">
-              <figure class="larger-image mb4">
-                <a href="/blog/{{ article.slug }}/">
-                  <img alt="{{ article.title }}" src="{{ article.image_url }}"/>
-                </a>
-              </figure>
-              <h6 class="f5 lh-solid normal ma0 light-silver">
-                {{ article.date | strftime('%d %b %Y') }}{% if article.modified %}(article.updated {{ article.modified | strftime('%d %b %Y') }}){% endif %}, {{ article.author }}
-              </h6>
-              <h1 class="f26 normal lh-title mt3 ma0 mb3 light-silver">
-                <a href="/blog/{{ article.slug }}/" class="link b dim gray">{{ article.title }}</a>
-              </h1>
-              <p>
-                {{ article.description }} <a href="/blog/{{ article.slug }}/" class="link b dim gray">Read more</a>
-              </p>
-          </div>
-        </article>
+  <div class="mw8 center cclr-bg-white-responsive mt5-ns">
+    <div class="dib gray bg-white ph3 ph5-ns pt5">
+      <h2 class="f25 normal lh-title ma0 mt4 mb3">
+        Offen Blog
+      </h2>
+      <div class="w-75-l">
+        <p class="ma0 mb5">
+          Hi there. We are Frederik and Hendrik. Here we post about how we are building a fair and open web analytics tool and what we discovered along the way.
+        </p>
       </div>
-    {% endfor %}
+    </div>
+    <div class="pr5-l">
+      <div class="flex flex-wrap">
+        {% for article in articles %}
+          <div class="w-100 w-50-l">
+            {% if loop.index != 1 %}
+              <hr class="b--none db dn-l">
+            {% endif %}
+            <article class="w-100 mt5 mt0-l mt0-l gray">
+              <div class="mw8 center pv5 ph3 ph5-m pr0-l pl5-l bg-white">
+                  <figure class="larger-image mb4">
+                    <a href="/blog/{{ article.slug }}/">
+                      <img alt="{{ article.title }}" src="{{ article.image_url }}"/>
+                    </a>
+                  </figure>
+                  <h6 class="f5 lh-solid normal ma0 light-silver">
+                    {{ article.date | strftime('%d %b %Y') }}{% if article.modified %}(article.updated {{ article.modified | strftime('%d %b %Y') }}){% endif %}, {{ article.author }}
+                  </h6>
+                  <h1 class="f26 normal lh-title mt3 ma0 mb3 light-silver">
+                    <a href="/blog/{{ article.slug }}/" class="link b dim gray">{{ article.title }}</a>
+                  </h1>
+                  <p>
+                    {{ article.description }} <a href="/blog/{{ article.slug }}/" class="link b dim gray">Read more</a>
+                  </p>
+              </div>
+            </article>
+          </div>
+        {% endfor %}
+      </div>
     </div>
   </div>
 {% endblock %}
