@@ -1,9 +1,13 @@
 version: '3'
 
 services:
-  homepage:
+  proxy:
+    image: nginx:1.17-alpine
+    volumes:
+      - output:/usr/share/nginx/html
     ports:
-      - 8000:8000
+      - 8000:80
+  homepage:
     build:
       context: '.'
       dockerfile: ./Dockerfile.python
@@ -11,9 +15,11 @@ services:
     volumes:
       - .:/website
       - homepagedeps:/root/.local
-    command: make devserver
+      - output:/website/homepage/output
+    command: make regenerate
     environment:
       DEBUG: 1
 
 volumes:
   homepagedeps:
+  output:
