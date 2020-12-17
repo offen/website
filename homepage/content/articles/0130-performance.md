@@ -5,7 +5,7 @@ slug: performance-awareness
 sitemap_priority: 0.6
 image_url: /theme/images/offen-blog-0130-performance-awareness.jpg
 author: Hendrik Niefeld
-bottom_cta: quality
+bottom_cta: blog
 
 # Episode Seven — Performance and Awareness
 
