@@ -17,9 +17,9 @@ Yet, many internet users still do not know what really is happening to their dat
 
 As a regular user of the internet, are you really being spied upon? *What exactly is "my data"?* Can a website operator see my name when I'm using it? Does it know about my Email address or my phone number? Does it know which other websites I have been visiting, which search query led me to the site in the first place, what I have recently purchased online, or who I am acquainted with?
 
-> [If you have something that you don't want anyone to know, maybe you shouldn't be doing it in the first place.](https://www.eff.org/de/deeplinks/2009/12/google-ceo-eric-schmidt-dismisses-privacy){: target="_blank"}
+> "If you have something that you don't want anyone to know, maybe you shouldn't be doing it in the first place."
 >
-> Eric Schmidt (at this time CEO of Google), 2009
+> [Eric Schmidt](https://www.eff.org/de/deeplinks/2009/12/google-ceo-eric-schmidt-dismisses-privacy){: target="_blank"} (at this time CEO of Google), 2009
 
 We would like to turn the tables on this much quoted statement and apply it to the operators of services and websites instead of their users. The analytics software Offen *transparently and uncompromisingly discloses what data is being collected and what it is being used for* to the users.
 

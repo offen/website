@@ -74,12 +74,13 @@ DECORATE_CONTENT = {
     'a:not([data-button])': ['gray'],
     'h1': ['f2', 'normal', 'lh-title', 'mt3', 'ma0', 'mb3'],
     'h2': ['f25', 'normal', 'lh-title', 'mt4', 'ma0', 'mb3'],
-    'h3': ['f5', 'normal', 'mt5', 'ma0', 'mb3', '.cclr-fnt-black-mid'],
-    'h4': ['f5', 'normal', 'mt4', 'ma0', 'mb1'], # text over button
-    'h5': ['f5', 'normal', 'mt2', 'ma0', 'mb1'], # not used
+    'h3': ['f4', 'normal', 'mt5', 'ma0', 'mb3'],
+    'h4': ['f5', 'normal', 'mt4', 'ma0', 'mb3'],
+    'h5': ['f5', 'normal', 'mt5', 'ma0', 'mb1'], # text over button
     'h6': ['f5', 'lh-solid', 'normal', 'ma0', 'light-silver'], # not used
     'p': ['ma0', 'pb3'],
-    'blockquote': ['f5', 'i', 'ma0', 'ml4-ns', 'ml3'],
+    'blockquote': ['f4', 'ma0', 'ph4-ns', 'pv3'],
+    'blockquote p': ['nb2'],
     'hr': ['mt5', 'mb3', 'b--black-05']
 }
 
