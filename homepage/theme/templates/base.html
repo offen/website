@@ -47,9 +47,11 @@
             <nav>
               <div class="nav-mobile"><span id="nav-toggle"><span></span></span></div>
               <ul class="nav-list">
+                {% if not index %}
                 <li>
                   <a class="b link dim cclr-fnt-black-mid" href="/">Summary</a>
                 </li>
+                {% endif %}
                 <li>
                   <a class="b link dim cclr-fnt-black-mid" href="/blog/">Blog</a>
                 </li>
@@ -63,7 +65,7 @@
                   <a class="b link dim cclr-fnt-black-mid" href="{{ GITHUB_REPO }}" rel="noopener" target="_blank">GitHub</a>
                 </li>
                 <li>
-                  <a class="b link dim cclr-fnt-black-mid" href="{{ DOCS_URL_CAMPAIGN_TOP }}" rel="noopener" target="_blank">Docs</a>
+                  <a class="b link dim cclr-fnt-black-mid" href="{{ DOCS_URL }}" rel="noopener" target="_blank">Docs</a>
                 </li>
                 <li>
                   <a class="b link dim" href="/get-started/">Get started</a>
@@ -258,7 +260,7 @@
                 <a class="link b dim gray" href="/blog/">Blog</a>
               </p>
               <p class="ma0">
-                <a class="link b dim gray" href="{{ DOCS_URL_CAMPAIGN_BOTTOM }}" rel="noopener" target="_blank">Docs</a>
+                <a class="link b dim gray" href="{{ DOCS_URL }}" rel="noopener" target="_blank">Docs</a>
               </p>
               <p class="ma0">
                 <a class="link b dim gray" href="{{ GITHUB_REPO }}" rel="noopener" target="_blank">GitHub</a>
