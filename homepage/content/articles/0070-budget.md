@@ -5,6 +5,7 @@ slug: hosting-offen-on-budget
 sitemap_priority: 0.7
 image_url: /theme/images/offen-blog-0070-budget.jpg
 author: Frederik Ring
+must_read: True
 bottom_cta: blog
 
 # Hosting Offen on a budget

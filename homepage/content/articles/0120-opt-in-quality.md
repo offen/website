@@ -5,6 +5,7 @@ slug: opt-in-quality
 sitemap_priority: 0.7
 image_url: /theme/images/offen-blog-0120-opt-in-quality.jpg
 author: Hendrik Niefeld
+must_read: True
 bottom_cta: matomo
 
 # Opt in for quality insights
