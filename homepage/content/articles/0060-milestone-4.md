@@ -51,7 +51,7 @@ This is why we built a downloadable demo of Offen that you can run on your local
 - A demo is now populated with randomly generated usage data at start, so that users will get an idea of how an install that is already in use will look like, instead of having to generate usage data themselves beforehand.
 - We added a dedicated landing page for demo users that explains them how to use the demo from both a user's and an operator's perspective.
 
-<img class="screencast mt3 mb2" alt="Demo" src="/theme/images/offen-blog-0060-demo.gif"/> 
+<img class="screencast mt3 mb2" alt="Demo" src="/theme/images/offen-blog-0060-demo.gif"/>
 
 You can try using the demo yourself by running the following snippet:
 
@@ -65,7 +65,7 @@ Relevant PRs are: [367](https://github.com/offen/offen/pull/367), [346](https://
 
 An ongoing part of our work on Offen is implementing features and fixes that come from our own experience with running our own Offen instance. This is why Milestone 4 contains a few UX improvements and fixes regarding the operator facing Auditorium. Among others, we improved the referrer stats, improved the mobile UX for tabular data and fixed issues with the user flow for resetting your password.
 
-Relevant PRs are [361](https://github.com/offen/offen/pull/361), [363](https://github.com/offen/offen/pull/363), [364](https://github.com/offen/offen/pull/361https://github.com/offen/offen/pull/364), 
+Relevant PRs are [361](https://github.com/offen/offen/pull/361), [363](https://github.com/offen/offen/pull/363), [364](https://github.com/offen/offen/pull/361https://github.com/offen/offen/pull/364),
 
 ---
 
@@ -122,7 +122,7 @@ describe('Consent', function () {
 Now that we have a basic idea of how such a test looks like, let's add  interaction and check for their immediate effects on the UI:
 
 ```jsx
-it('displays a link to the Auditorium after opt in only', function () {
+it('displays a link to the Auditorium after opt-in only', function () {
   cy.visit('/')
   cy.contains('Open Auditorium').should('not.exist')
   cy.contains('Yes please').click()
@@ -151,10 +151,10 @@ it('allows users to opt out and delete all of their data', function () {
   cy.contains('Open Auditorium').click()
   cy.url().should('include', '/auditorium/')
 
-  cy.contains('Opt out').should('exist')
-  cy.contains('Opt out').click()
+  cy.contains('Opt-out').should('exist')
+  cy.contains('Opt-out').click()
 
-  cy.contains('Opt out').should('not.exist')
+  cy.contains('Opt-out').should('not.exist')
   cy.contains('Unique websites').prev('p').should('eq', '0')
 })
 ```
