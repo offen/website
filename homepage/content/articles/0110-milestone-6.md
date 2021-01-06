@@ -11,7 +11,7 @@ bottom_cta: blog
 
 It feels a little surreal to write this, but: this post marks the end of Milestone 6, which is the last one defined in our initial product plan defining the scope of our support by the [NGI Zero PET initiative](https://nlnet.nl/thema/NGIZeroPET.html){: target="_blank"}.
 
-In these last weeks we focused on packaging and testing, which - who would have thought - uncovered some issues we didn't know about yet. But it also felt very rewarding to see the work of the last ~9 months paying off, now that we and others can deploy and use Offen easily. Having designed Offen as a self-hosted solution from the start, we managed to establish a unique characteristic when comparing Offen with other solutions out there: if you're looking to self host your analytics software, it won't get much easier. If you are unsure about that claim, check out the rest of this post to see what that actually means.
+In these last weeks we focused on packaging and testing, which - who would have thought - uncovered some issues we didn't know about yet. But it also felt very rewarding to see the work of the last ~9 months paying off, now that we and others can deploy and use Offen easily. Having designed Offen as a self hosted solution from the start, we managed to establish a unique characteristic when comparing Offen with other solutions out there: if you're looking to self host your analytics software, it won't get much easier. If you are unsure about that claim, check out the rest of this post to see what that actually means.
 
 During Milestone 6 we have released the following versions:
 

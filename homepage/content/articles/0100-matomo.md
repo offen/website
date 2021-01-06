@@ -13,11 +13,11 @@ bottom_cta: fair
 
 Matomo was started around 2007 as a successor to phpMyVisites and *open-source alternative to Google Analytics.* The project founded by Matthieu Aubry used to be called Piwik until it was rebranded to its current name in 2018. According to Wikipedia it is installed on about 1.5 million websites, making it one of the best known open source web analytics applications on the market.
 
-Operators interested in open and privacy friendly web analytics particularly appreciate Matomo's ability to be self-hosted. The respective app variant called "Matomo On-Premise" has no license costs, but paid plugins are necessary for extensive use.
+Operators interested in open and privacy friendly web analytics particularly appreciate Matomo's ability to be self hosted. The respective app variant called "Matomo On-Premise" has no license costs, but paid plugins are necessary for extensive use.
 
 ### Room for improvement
 
-Despite the general popularity, there are some problems with Matomo's decisions regarding privacy. By default, the software only offers an opt out feature for website users. This way, *consent is practically a preset.* In addition, access to usage data is not automated and therefore can be very complex and laborious for users. A common problem which the GDPR mandates explicitly under the heading ["Rights of the data subject"](https://en.wikipedia.org/wiki/General_Data_Protection_Regulation#III_Rights_of_the_data_subject){: target="_blank"}.
+Despite the general popularity, there are some problems with Matomo's decisions regarding privacy. By default, the software only offers an opt-out feature for website users. This way, *consent is practically a preset.* In addition, access to usage data is not automated and therefore can be very complex and laborious for users. A common problem which the GDPR mandates explicitly under the heading ["Rights of the data subject"](https://en.wikipedia.org/wiki/General_Data_Protection_Regulation#III_Rights_of_the_data_subject){: target="_blank"}.
 
 On the technical side, the following issues are particularly apparent. Installing Matomo can be a bit of a pain as there are many dependencies that must be pre-installed on the system. This also applies to the requirement to use a dedicated MySQL database, which makes installation even more complex. Last but not least, the tracking script that Matomo uses is extensive and therefore delays the loading of the pages considerably.
 
@@ -27,7 +27,7 @@ On the technical side, the following issues are particularly apparent. Installin
 
 To address the above mentioned issues we develop a fair and lightweigt web analytics tool that treats operators and users as equal parties. It is called Offen and is [available as a beta version.](https://www.offen.dev/get-started/)
 
-*Offen's default is to NOT collect any data.* Usage data is collected after opt in only. If users choose to opt in, they have full access to their data. They can delete it any time or opt out completly.
+*Offen's default is to NOT collect any data.* Usage data is collected after opt-in only. If users choose to opt in, they have full access to their data. They can delete it any time or opt out completly.
 
 The collected data is presented to users with explanations that describe why a particular metric is relevant and what the privacy implications are. This helps to strengthen trust in operators.
 

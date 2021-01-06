@@ -5,11 +5,12 @@ slug: hosting-offen-on-budget
 sitemap_priority: 0.7
 image_url: /theme/images/offen-blog-0070-budget.jpg
 author: Frederik Ring
+must_read: True
 bottom_cta: blog
 
 # Hosting Offen on a budget
 
-Using self-hosted software like Offen when you're on a budget can seem daunting as you usually don't know too much about the performance requirements of the software you are planning to use beforehand. Once you do know, you might have locked in yourself already.
+Using self hosted software like Offen when you're on a budget can seem daunting as you usually don't know too much about the performance requirements of the software you are planning to use beforehand. Once you do know, you might have locked in yourself already.
 
 In this article we collect a few real world options and scenarios for hosting Offen on a budget and compare how they relate in terms of ease of deployment, performance and pricing.
 
