@@ -1,6 +1,5 @@
 import os
 from datetime import datetime
-from pelican_decorate_content import decorate_content
 # If your site is available via HTTPS, make sure SITEURL begins with https://
 RELATIVE_URLS = False
 
@@ -27,7 +26,8 @@ DEFAULT_PAGINATION = False
 THEME = './theme'
 
 # Delete the output directory before generating new files.
-DELETE_OUTPUT_DIRECTORY = True
+DELETE_OUTPUT_DIRECTORY = False
+CACHE_CONTENT = True
 
 DIRECT_TEMPLATES = ['sitemap', 'archives']
 
@@ -45,7 +45,7 @@ PAGE_SAVE_AS = '{slug}/index.html'
 ARTICLE_SAVE_AS = 'blog/{slug}/index.html'
 
 PLUGIN_PATHS = ['./plugins']
-PLUGINS = [decorate_content, 'assets']
+PLUGINS = ['decorate_content', 'assets']
 
 MARKDOWN = {
     'extension_configs': {
@@ -74,12 +74,13 @@ DECORATE_CONTENT = {
     'a:not([data-button])': ['gray'],
     'h1': ['f2', 'normal', 'lh-title', 'mt3', 'ma0', 'mb3'],
     'h2': ['f25', 'normal', 'lh-title', 'mt4', 'ma0', 'mb3'],
-    'h3': ['f5', 'normal', 'mt5', 'ma0', 'mb3', '.cclr-fnt-black-mid'],
-    'h4': ['f5', 'normal', 'mt4', 'ma0', 'mb1'], # text over button
-    'h5': ['f5', 'normal', 'mt2', 'ma0', 'mb1'], # not used
+    'h3': ['f4', 'normal', 'mt5', 'ma0', 'mb3'],
+    'h4': ['f5', 'normal', 'mt4', 'ma0', 'mb3'],
+    'h5': ['f5', 'normal', 'mt5', 'ma0', 'mb1'], # text over button
     'h6': ['f5', 'lh-solid', 'normal', 'ma0', 'light-silver'], # not used
     'p': ['ma0', 'pb3'],
-    'blockquote': ['f5', 'i', 'ma0', 'ml4-ns', 'ml3'],
+    'blockquote': ['f4', 'ma0', 'ph4-ns', 'pv3'],
+    'blockquote p': ['nb2'],
     'hr': ['mt5', 'mb3', 'b--black-05']
 }
 
@@ -97,8 +98,7 @@ HEROKU_DIRECT_URL = 'https://heroku.com/deploy?template=https://github.com/offen
 UBERSPACE_DIRECT_URL = 'https://lab.uberspace.de/guide_offen.html'
 YUNOHOST_DIRECT_URL = 'https://github.com/offen/offen_ynh'
 OFFEN_AUDITORIUM_URL = 'https://offen.offen.dev/auditorium/'
-DOCS_URL_CAMPAIGN_TOP = 'https://docs.offen.dev/?utm_campaign=top'
-DOCS_URL_CAMPAIGN_BOTTOM = 'https://docs.offen.dev/?utm_campaign=bottom'
+DOCS_URL = 'https://docs.offen.dev/'
 DOCS_GETSTARTED_URL = 'https://docs.offen.dev/running-offen/'
 DOCS_GETSTARTED_URL_CAMPAIGN = 'https://docs.offen.dev/running-offen/?utm_campaign=get-started'
 DOCS_TRYDEMO_URL = 'https://docs.offen.dev/running-offen/test-drive/'
