@@ -13,7 +13,7 @@ bottom_cta: fair
 
 Matomo was started around 2007 as a successor to phpMyVisites and *open-source alternative to Google Analytics.* The project founded by Matthieu Aubry used to be called Piwik until it was rebranded to its current name in 2018. According to Wikipedia it is installed on about 1.5 million websites, making it one of the best known open source web analytics applications on the market.
 
-Operators interested in open and privacy friendly web analytics particularly appreciate Matomo's ability to be self-hosted. The respective app variant called "Matomo On-Premise" has no license costs, but paid plugins are necessary for extensive use.
+Operators interested in open and privacy friendly web analytics particularly appreciate Matomo's ability to be self hosted. The respective app variant called "Matomo On-Premise" has no license costs, but paid plugins are necessary for extensive use.
 
 ### Room for improvement
 

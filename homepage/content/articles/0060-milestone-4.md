@@ -44,7 +44,7 @@ This has been implemented in PRs [362](https://github.com/offen/offen/pull/362),
 
 ### Improved demo
 
-For self-hosted software like Offen, giving potential users an idea of what the software looks like without having to do a proper install. Many softwares do this by sharing the credentials for a demo account on their website, but in the case of Offen we do not want to do this as it would expose the usage data of our real world users - which is what we are trying to protect with Offen.
+For self hosted software like Offen, giving potential users an idea of what the software looks like without having to do a proper install. Many softwares do this by sharing the credentials for a demo account on their website, but in the case of Offen we do not want to do this as it would expose the usage data of our real world users - which is what we are trying to protect with Offen.
 
 This is why we built a downloadable demo of Offen that you can run on your local machine. This demo exists for a while now, but with Milestone 4 we made major improvements to this feature:
 
