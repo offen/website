@@ -1,5 +1,7 @@
 import os
 from datetime import datetime
+from pelican_decorate_content import decorate_content
+
 # If your site is available via HTTPS, make sure SITEURL begins with https://
 RELATIVE_URLS = False
 
@@ -45,7 +47,7 @@ PAGE_SAVE_AS = '{slug}/index.html'
 ARTICLE_SAVE_AS = 'blog/{slug}/index.html'
 
 PLUGIN_PATHS = ['./plugins']
-PLUGINS = ['decorate_content', 'assets']
+PLUGINS = [decorate_content, 'assets']
 
 MARKDOWN = {
     'extension_configs': {
