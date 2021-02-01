@@ -120,6 +120,7 @@ LAYOUT
 .hx-compare-c,
 .hx-compare-d,
 .hx-metrics,
+.hx-localize,
 .hx-difference {
 	height: 100%;
 }
@@ -160,6 +161,9 @@ LAYOUT
 	}
 	.hx-metrics {
 		height: 132rem;
+	}
+	.hx-localize {
+		height: 19rem;
 	}
 	.hx-difference {
 		height: 33rem;
@@ -464,6 +468,11 @@ STACKING IMAGES
 	left: calc(100% - 10rem);
 	z-index : 550;
 }
+.bg-localize {
+	top: -7rem;
+	left: 3rem;
+	z-index : 560;
+}
 .bg-cta-pfeil {
 	top: -13rem;
 	left: 66%;
@@ -485,6 +494,10 @@ STACKING IMAGES
 		top: 11rem;
 		left: calc(100% - 30rem);
 	}
+	.bg-localize {
+		top: -7rem;
+		left: calc(100% - 25rem);
+	}
 	.bg-cta-pfeil {
 		top: -14rem;
 		left: 72%;
@@ -500,6 +513,10 @@ STACKING IMAGES
 	.bg-metrics-bulb {
 		top: -3rem;
 		left: calc(100% - 20rem);
+	}
+	.bg-localize {
+		top: -2rem;
+		left: 35rem;
 	}
 	.bg-cta-pfeil {
 		top: -12rem;
