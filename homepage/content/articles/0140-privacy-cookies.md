@@ -2,6 +2,7 @@ title: Privacy focus? Consider the cookie
 description: Using cookies does not necessarily equal tracking your users. Learn how you can use cookies to respect the privacy of your users.
 date: 2021-01-06
 slug: privacy-cookies
+url: /blog/privacy-cookies/
 sitemap_priority: 0.7
 image_url: /theme/images/offen-blog-0140-privacy-cookies.jpg
 author: Frederik Ring

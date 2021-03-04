@@ -2,6 +2,7 @@ title: Resilience and documentation
 description: With milestone 5 we finally got rid of the alpha label, improved testing as well as licensing and upgraded our documentation.
 date: 2020-07-22
 slug: resilience-documentation
+url: /blog/resilience-documentation/
 sitemap_priority: 0.6
 image_url: /theme/images/offen-blog-0090-milestone-5.jpg
 author: Frederik Ring

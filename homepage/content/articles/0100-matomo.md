@@ -2,6 +2,7 @@ title: Why Offen is a valid Matomo alternative
 description: This brief comparison of both tools gives you a first insight into the field of fair and lightweight web analytics.
 date: 2020-08-28
 slug: matomo-alternative
+url: /blog/matomo-alternative/
 sitemap_priority: 0.7
 image_url: /theme/images/offen-blog-0100-Matomo.jpg
 author: Hendrik Niefeld

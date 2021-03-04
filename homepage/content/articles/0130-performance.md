@@ -2,6 +2,7 @@ title: Performance and Awareness
 description: In the last three months, we have significantly improved query performance, added onboarding to our Auditorium, and updated our Docs.
 date: 2020-12-17
 slug: performance-awareness
+url: /blog/performance-awareness/
 sitemap_priority: 0.6
 image_url: /theme/images/offen-blog-0130-performance-awareness.jpg
 author: Hendrik Niefeld

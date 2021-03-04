@@ -2,6 +2,7 @@ title: Test our alpha release today
 description: Help us take a step forward. Download or deploy Offen today and give it a spin. Any feedback is appreciated.
 date: 2020-03-04
 slug: test-offen-today
+url: /blog/test-offen-today/
 sitemap_priority: 0.7
 image_url: /theme/images/offen-blog-0040-test-offen-today.jpg
 author: Hendrik Niefeld

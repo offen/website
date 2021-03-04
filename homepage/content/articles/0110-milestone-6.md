@@ -2,6 +2,7 @@ title: Packaging and testing
 description: For Milestone 6 we have tested our app intensively and added several new installation options and tutorials for popular hosters.
 date: 2020-09-14
 slug: packaging-testing
+url: /blog/packaging-testing/
 sitemap_priority: 0.6
 image_url: /theme/images/offen-blog-0110-milestone-6.jpg
 author: Frederik Ring

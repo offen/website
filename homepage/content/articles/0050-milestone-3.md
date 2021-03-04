@@ -2,6 +2,7 @@ title: Displaying data
 description: Our milestone 3 achievements include an improved UX, a Heroku deploy option and full Safari support.
 date: 2020-04-13
 slug: displaying-data
+url: /blog/displaying-data/
 sitemap_priority: 0.6
 image_url: /theme/images/offen-blog-0050-milestone-3.jpg
 author: Frederik Ring
