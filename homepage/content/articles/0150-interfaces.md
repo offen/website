@@ -2,6 +2,7 @@ title: Improving interfaces
 description: Our key achievements in the last six weeks are a German locale and customizable time intervals for the Auditorium.
 date: 2021-02-07
 slug: interfaces
+url: /blog/interfaces/
 sitemap_priority: 0.6
 image_url: /theme/images/offen-blog-0150-interfaces.jpg
 author: Hendrik Niefeld

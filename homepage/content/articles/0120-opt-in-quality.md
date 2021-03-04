@@ -2,6 +2,7 @@ title: Opt-in for quality insights
 description: Collecting data only with user consent has a less obvious implication: the quality of insights from web analytics increases.
 date: 2020-10-28
 slug: opt-in-quality
+url: /blog/opt-in-quality/
 sitemap_priority: 0.7
 image_url: /theme/images/offen-blog-0120-opt-in-quality.jpg
 author: Hendrik Niefeld

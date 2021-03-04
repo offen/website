@@ -2,6 +2,7 @@ title: Untold roads to v1.0
 description: Onboarding users onto a product that is still in development needs a thorough plan. These are our conclusions as we work our way to a v1.0 release of Offen.
 date: 2020-01-19
 slug: untold-roads-versioning-early-stage-software
+url: /blog/untold-roads-versioning-early-stage-software/
 sitemap_priority: 0.7
 image_url: /theme/images/offen-blog-0020-untoldRoads.jpg
 author: Frederik Ring
