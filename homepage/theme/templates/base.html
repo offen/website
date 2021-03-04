@@ -32,6 +32,8 @@
     {% if OFFEN_ACCOUNT_ID and not no_stats %}
       <script async src="https://offen.offen.dev/script.js" data-account-id="{{ OFFEN_ACCOUNT_ID }}"></script>
     {% endif %}
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="/feeds/all.rss.xml">
+    <link rel="alternate" type="application/atom+xml" title="Atom" href="/feeds/all.atom.xml">
   </head>
 {% endblock %}
 <body class="{{ template }} f5 rubik lh-copy cclr-fnt-black-mid cclr-bg-black-mid">
