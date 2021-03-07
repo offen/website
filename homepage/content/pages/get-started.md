@@ -4,6 +4,6 @@ slug: get-started
 template: getstarted
 sitemap_priority: 0.8
 
-We optimize Offen to be as simple and easy for everyone to self host. No additional software is required to run an instance and hardware requirements are minimal. A basic VPS or even a Raspberry Pi will be all you need to get started.
+We optimize Offen to be as simple and easy for everyone to self host. *No additional software is required to run an instance* and hardware requirements are minimal. A basic VPS or even a Raspberry Pi will be all you need to get started.
 
-__Choose your preferred way of running Offen__ below and __check out our documentation__.
+Choose your preferred way of running Offen below. Be sure to check out our documentation as well. [Let us know if there are any questions.](mailto:hioffen@posteo.de)
