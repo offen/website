@@ -1,6 +1,6 @@
 title: Our story so far
 description: All about why and how we develop a fair and open source web analytics software.
-date: 2021-03-08
+date: 2021-03-09
 slug: our-story-so-far
 url: /blog/our-story-so-far/
 sitemap_priority: 0.7
