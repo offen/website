@@ -3,7 +3,7 @@ version: 2.1
 jobs:
   deploy:
     docker:
-      - image: cimg/base:2020.09
+      - image: cimg/base:2021.03
     working_directory: ~/website
     steps:
       - checkout
@@ -23,7 +23,6 @@ jobs:
               cat >> $BASH_ENV \<< EOF
             export SITEURL="https://staging.offen.dev"
             export BUCKET="web-staging"
-            export DISTRIBUTION="E13I20LK8ASYFH"
             export ROBOTS_FILE="robots.txt.staging"
             export OFFEN_ACCOUNT_ID="8f7ee44a-4cd8-47f2-a77e-8c7c98d46b89"
             EOF

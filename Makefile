@@ -1,28 +1,40 @@
+.PHONY: help
+help: # @HELP Print this message
 help:
-	@echo "    setup"
-	@echo "        Build the development containers and install dependencies."
-	@echo "    update"
-	@echo "        Install / update dependencies in the development containers."
-	@echo "    build"
-	@echo "        Build the production assets."
+	@echo "TARGETS:"
+	@grep -E '^.*: *# *@HELP' $(MAKEFILE_LIST)    \
+	    | awk '                                   \
+	        BEGIN {FS = ": *# *@HELP"};           \
+	        { printf "  %-20s %s\n", $$1, $$2 };  \
+	    '
 
+.PHONY: setup
+setup: # @HELP Build the development containers and install dependencies
 setup: dev-build update
 
+.PHONY: dev-build
+dev-build: # @HELP Build the development containers
 dev-build:
 	@docker-compose build
 
-up:
-	@docker-compose up
-
+.PHONY: update
+update: # @HELP Install Python dependencies
 update:
 	@echo "Installing / updating dependencies ..."
 	@docker-compose run homepage pip install --user -r requirements.txt
 	@echo "Successfully built containers and installed dependencies."
 
+.PHONY: up
+up: # @HELP Start the dev server
+up:
+	@docker-compose up
+
 KEYBASE_FILE ?= keybase.txt
 ROBOTS_FILE ?= robots.txt.staging
 SITEURL ?= http://localhost:8000
 
+.PHONY: build
+build: # @HELP Build the production assets
 build:
 	@docker build --build-arg siteurl=${SITEURL} --build-arg offenaccountid=${OFFEN_ACCOUNT_ID} -t offen/website -f build/Dockerfile .
 	@rm -rf output && mkdir output
@@ -31,5 +43,3 @@ build:
 	@cp build/${ROBOTS_FILE} ./output/robots.txt
 	@cp build/${KEYBASE_FILE} ./output/keybase.txt
 	@docker rm assets
-
-.PHONY: setup build up
