@@ -23,21 +23,21 @@ As always, you can download the latest release from [get.offen.dev](https://get.
 
 ---
 
-## Achievements
+### Achievements
 
-### Accessibility Audit
+#### Accessibility Audit
 
 As an NGI Zero project we are lucky enough to have great people in our network by default. This time Stichting Accessibility helped us with an A11y audit of Offen. This audit resulted in helpful feedback and action points for us to improve upon the A11y aspects of the Offen Auditorium and make Offen an analytics tool for everyone.
 
 Relevant PRs are: [386](https://github.com/offen/offen/pull/386), [387](https://github.com/offen/offen/pull/387), [389](https://github.com/offen/offen/pull/389), [393](https://github.com/offen/offen/pull/393)
 
-### Security Audit
+#### Security Audit
 
 Another really helpful experience was having Offen audited from a security perspective by the wonderful people from Radically Open Security. We had a great time looking at Offen together, checking for exploits, leaky crypto, security issues and discussing general design questions that came up while working on Offen. We did not find major flaws, but instead came up with a couple of very good ideas about how to make Offen more secure and harden the server even further. These have been implemented by now and are included in the latest release, so make sure to update.
 
 Relevant PRs are: [399](https://github.com/offen/offen/pull/399), [400](https://github.com/offen/offen/pull/400), [401](https://github.com/offen/offen/pull/401), [405](https://github.com/offen/offen/pull/405), [406](https://github.com/offen/offen/pull/406)
 
-### Community approved handling of licensing
+#### Community approved handling of licensing
 
 With help from the FSFE, we adopted [REUSE](https://reuse.software/){: target="_blank"}, a standard and tooling around the handling of licensing in non-small repositories. Having integrated a dedicated check for REUSE compliance into our CI pipeline allows us to stop worrying we have forgotten something, and will give everyone access to all licensing information needed to use or reuse Offen in all scenarios.
 
@@ -45,13 +45,13 @@ In addition to that we now also automatically generate a NOTICE file from our de
 
 Relevant PRs are: [383](https://github.com/offen/offen/pull/388), [414](https://github.com/offen/offen/pull/414), [415](https://github.com/offen/offen/pull/415)
 
-### Integration tests
+#### Integration tests
 
 Putting more effort into an ongoing effort, we added more integration tests using the setup from Milestone 4. We now cover users and operators, so we'll hopefully ship fewer and fewer regressions with each test added. Also, we now run integration tests against all supported database backends (SQLite, MySQL, Postgres) so we can be sure all installation methods are always considered.
 
 Relevant PRs are: [395](https://github.com/offen/offen/pull/395), [413](https://github.com/offen/offen/pull/413), [394](https://github.com/offen/offen/pull/394)
 
-### Improved documentation
+#### Improved documentation
 
 Improving our documentation has been an important part of this milestone as it means our move to a non-alpha version is supported by making Offen even more accessible to developers and operator that want to install Offen or hack on it.
 
@@ -61,17 +61,17 @@ Relevant PRs are: [392](https://github.com/offen/offen/pull/392), [396](https://
 
 ---
 
-## Next up
+### Next up
 
-### More deployment targets and tests
+#### More deployment targets and tests
 
 Offen's deployment story as a single binary file and no external database required is relatively easy, yet there is always room to improve, especially for a non-technical audience. While we already have tested installing Offen successfully on a multitude of providers, ranging from industry leaders like AWS to offbeat offerings like Uberspace, we want to look into more options. While doing so we will share our findings with the public so they can use our experience when installing Offen themselves. We will also look into how we can make running Offen even easier. Maybe this one configuration value isn't even needed. Maybe creating your first account can be even easier. Let's find out.
 
-### Reaching out to the community
+#### Reaching out to the community
 
 When the last months it has been the two of us working on Offen exclusively, moving into Beta is a good time to get the community involved. We want to know where our users would like to see us heading, and when want to know how we can make Offen more accessible for external contributors. Now that we have defined the foundation, Offen can serve the community better the more that it's a community effort.
 
-### Defining where we want to head next
+#### Defining where we want to head next
 
 Upcoming Milestone 6 will be the last one in our current funding round by NGI Zero PET. It's been an incredibly supportive and inspiring journey which taught us a lot, one thing being that we are onto something with Offen.
 
@@ -81,9 +81,9 @@ Once this is defined, we will apply for new funds. Let us know if you know of an
 
 ---
 
-## Getting your hands dirty
+### Getting your hands dirty
 
-### Load testing the hardened Offen server
+#### Load testing the hardened Offen server
 
 An important part of Milestone 5 was hardening the HTTP interface of Offen, which in most cases will be exposed to the internet directly, without any reverse proxy or similar in front. So why not do a load test and see how far we can take it?
 
@@ -141,7 +141,7 @@ Now, let's try doing something more interesting: trying to flood the login endpo
 Now, we can run the actual test:
 
 ```
-$ echo "POST http://localhost:40125/api/login" | vegeta attack -body=login.json -duration=5s | vegeta report 
+$ echo "POST http://localhost:40125/api/login" | vegeta attack -body=login.json -duration=5s | vegeta report
 
 Requests      [total, rate, throughput]         250, 50.20, 0.00
 Duration      [total, attack, wait]             29.095s, 4.98s, 24.115s
@@ -164,6 +164,6 @@ Load testing gets even more interesting when you look at sending events. If you 
 
 ---
 
-## Feedback? Found a bug?
+### Feedback? Found a bug?
 
 If you have any feedback, comment or bug report on this milestone release, we'd love to hear from you. [Open an issue](https://github.com/offen/offen/issues) or send us an email at [hioffen@posteo.de.](mailto:hioffen@posteo.de)

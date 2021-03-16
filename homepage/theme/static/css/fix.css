@@ -288,29 +288,29 @@ body {
 	}
 }
 /* Custom Tachyons class */
-.f25 {
+.fLogo {
   font-size: 1.9rem;
-}
-.f26 {
-  font-size: 1.9rem;
-}
-@media only screen and (min-width: 30em) {
-	.f26 {
-	  font-size: 2.25rem;
-	}
-}
-@media only screen and (min-width: 60em) {
-	.f26 {
-	  font-size: 1.9rem;
-	}
 }
 span {
   display: table;
 }
 /* Custom media query - medium small - neutralize span line braks */
-@media only screen and (max-width: 34em) {
+@media only screen and (max-width: 40em) {
   p span {
     display: initial;
+  }
+}
+.pitchMargin {
+	margin-right: 2rem;
+}
+@media only screen and (min-width: 25em) and (max-width: 30em) {
+  .pitchMargin {
+    margin-right: 3rem;
+  }
+}
+@media only screen and (min-width: 30em) {
+  .pitchMargin {
+    margin-right: 0;
   }
 }
 em {

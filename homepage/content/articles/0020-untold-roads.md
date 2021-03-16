@@ -18,7 +18,7 @@ While there is lots of theory and writing about how to version and release softw
 
 ---
 
-## Happy hacking in Alpha
+### Happy hacking in Alpha
 
 In the earliest stage of any project, you will still be figuring out the interfaces your software has to the outside world. Requirements will evolve, be defined and change yet again - and so will your interfaces. Which is fine for quite a while: as long as your development setup allows you to recreate a fresh environment to work against easily, you are free to break basically anything with every commit.
 
@@ -28,23 +28,23 @@ The only decision that affects the outside world at this point is the following:
 
 <img class="smaller-image mt4" alt="Lots of ways to break your software" src="/theme/images/offen-blog-0020-untoldRoads-A.png"/>
 
-## Lots of ways to break your software
+### Lots of ways to break your software
 
 Another thing you will need to think about before you can even start versioning your software are the interfaces you expect your users to use, and those that your users will actually use. Just because you do not document a method of your library, it doesn't necessarily mean it will not be used in the wild. And just because your database migration script assumes a well defined set of tables in the application database, it doesn't mean some user might have started storing other data in there. Applications like Offen will have different constraints than libraries or developer tools do. It's important to know if *you need to interface with data, code or humans* as all of these interfaces come with their own set of constraints.
 
 Steering the code being written and the interfaces exposed into a direction where its usage is as unambiguous as possible will pay off when it comes to knowing what you can actually break with a release. If you explicitly consider something to be unstable and internal, communicating this clearly will be of great help to anyone who's trying to use your product or build upon it.
 
-## When do you even start versioning?
+### When do you even start versioning?
 
 If you develop software, you want others to use it. If you're a user, you want your software to be reliably versioned and updated. This means that at some point, a project will have to start versioning, and its *users will start to project their expectations onto the version numbers being applied*.
 
 When exactly you choose to start doing this depends on what you are focusing on.
 
-### Feature completeness
+#### Feature completeness
 
 Depending on your product, it might not make sense to use it before all of the features you are planning to build are included. Venturing down this path, it's a good opportunity for deferring versioning a little longer. If the lack of features makes adoption impossible anyways, you won't hurt it any further if you don't release versioned software.
 
-### Establishing a userbase
+#### Establishing a userbase
 
 Alternatively - assuming your product allows you to do so - you might also want to start shipping way before you are feature complete, establish a userbase, and gain understanding on what these users are doing with your product. These insights come with a price: you need to start versioning. Users that don't have clear and documented ways of upgrading their software without any unexpected surprises stop being users once the version they are using stops being on par with what both you and others are offering. If it's just as easy to install something else as it would be to upgrade to a newer version, why should your users stick?
 
@@ -54,7 +54,7 @@ Just like when working without any approach to versioning *communicating what yo
 <img class="smaller-image mt4" alt="Detour" src="/theme/images/offen-blog-0020-untoldRoads-B.png"/>
 </div>
 
-## Detour: What's in a version number
+### Detour: What's in a version number
 
 If you're planning to label a release with a version number any time soon, it's a good idea to reflect on what this new version number actually means. Both to you, and to your users.
 
@@ -70,21 +70,21 @@ If this appeals to you, and makes versioning sound like a solved problem for you
 
 Another important factor to consider here is which target audience you are actually serving. Will non-technical people really value a version number that tells them about API stability, upgrade paths and such? Could a product like Microsoft Windows really work with such a purely technical versioning scheme? If your audience is far, far away from implementation details, they are probably just interested in you making it work for them.
 
-### SemVer and early stage software
+#### SemVer and early stage software
 
 For what their spec calls "initial development", SemVer uses `0.x.x` versions that come with no guarantees at all, which in the scope of this article doesn't leave us with much but the underlying concepts of *breaking changes, features and patches*. Certain scenarios might want to map these to a pre-v1 scheme or at least adopt the same vocabulary when communicating about the changes included in a new release in your changelog.
 
 ---
 
-## Flexibility vs Stability
+### Flexibility vs Stability
 
-Moving towards a v1.0 every slightly larger project will find itself oscillating between these two goals. What makes decisions in this regard even harder is the fact that both opposites are of equal importance to your project. *Adding new features to a product requires flexibility and stability* at the same time. 
+Moving towards a v1.0 every slightly larger project will find itself oscillating between these two goals. What makes decisions in this regard even harder is the fact that both opposites are of equal importance to your project. *Adding new features to a product requires flexibility and stability* at the same time.
 
 A common approach towards solving this antagonism is the introduction of budgets for both sides. Maybe each iteration has a dedicated budget for breakage and experimenting, just like it has a budget for areas that remain stable and will only change when their interfaces can be guaranteed to stay the same. Maybe every other iteration will focus on stability while the alternating ones will allow for breakage and experimenting. The latter is a concept adopted early on by the Node.js project where an odd version number will signal "punk rock", i.e. unstable and rapid progress, and even version numbers will signal "Fortune 500", i.e. stability.
 
-Whatever approach a project picks, finding a suitable way of balancing these two requirements will be a major enabler of adoption. 
+Whatever approach a project picks, finding a suitable way of balancing these two requirements will be a major enabler of adoption.
 
-## Migration plans and pains
+### Migration plans and pains
 
 Sometimes, breakage you want to or have to introduce, can be cushioned softly when you are able to supply *scripts and tooling for users* to adjust their setup so that is is compatible with a new version.
 
@@ -94,7 +94,7 @@ The same can be done for configuration changes. If an update requires new or cha
 
 <img class="smaller-image mt4" alt="Eat your own dogfood" src="/theme/images/offen-blog-0020-untoldRoads-C.png"/>
 
-## Eat your own dogfood
+### Eat your own dogfood
 
 While this is a scenario you cannot easily create just for its own sake, a setup where *you are a user of your own product* - a.k.a. dogfooding - will be pretty insightful in this context.
 
@@ -102,7 +102,7 @@ You as a user will certainly cover only a single use case, yet this one use case
 
 Keep in mind though that when you represent one usecase, the first hand knowledge your userbase has can give you the big picture. If your project allows, reach out to them and gain understanding on what they actually do and how it compares to what you think they do.
 
-## 1.0 like you mean it
+### 1.0 like you mean it
 
 It's impossible to tell how your project will get to a v1.0, but it's very likely it will do so at some point. This will likely feel very good, but *putting that label onto a piece of software will come with certain expectations*.
 
@@ -110,7 +110,7 @@ If you can embrace v1.0 and all the new requirements it brings, they will allow 
 
 ---
 
-## How we are going to version Offen
+### How we are going to version Offen
 
 Offen's main channel of distribution will be via packaged binary files. Users can run them supervised or unsupervised against a supported set of OSes and database solutions. While we are indeed planning to enable the use Offen's code as the building blocks for other developers to create tailor made, privacy friendly analytics solutions, versioning the code-level interfaces is a non-goal for us at the moment.
 
@@ -123,11 +123,11 @@ Upgrade paths for our users will mostly be bound to the event and key data that 
 - The `/script.js` URI exposed by the web server is locked so that pages that embed the script can always expect a sensible response. We will try to keep the rest of the exposed routes stable, yet if it helps us improving the product in some way, we will change these too.
 - The development setup is kept subject to change at any time. Renaming a `make` target may be annoying to contributors once, but we prefer to keep things lean in this regard, and we hope our contributors will do the same.
 
-### Initial development
+#### Initial development
 
 Right now, Offen is still in the stages of initial development. During this period we will *release an alpha version on each milestone* we hit. We invite users to start using Offen by deploying these releases (or by building any revision themselves), but we also need to make sure that while we are still in initial development, we will possibly *introduce breaking changes* or changes that are *hard to upgrade*.
 
-### From v0.1 to v1.0
+#### From v0.1 to v1.0
 
 Once all features we deem necessary for Offen to be used in the wild are included, we are planning to continue as following: kicking off, we will release an officially supported *v0.1.0*.
 
@@ -145,6 +145,6 @@ We definitely do invite you to start experimenting with Offen right now and also
 
 ---
 
-## Where are we right now?
+### Where are we right now?
 
 Laying out detailed plans for the future is one thing, seeing how they came into life and changed is yet another. If you want to see how we managed to translate the plans described above into reality check our [GitHub repository](https://github.com/offen/offen) and the [releases we have done by now](https://github.com/offen/offen/releases).
