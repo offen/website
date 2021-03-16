@@ -9,7 +9,7 @@ author: Hendrik Niefeld
 must_read: True
 bottom_cta: matomo
 
-# Opt-in for quality insights
+## Opt-in for quality insights
 
 ### Fair web analytics
 

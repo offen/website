@@ -8,7 +8,7 @@ image_url: /theme/images/offen-blog-0040-test-offen-today.jpg
 author: Hendrik Niefeld
 bottom_cta: blog
 
-# Test Offen today
+## Test Offen today
 
 We’re excited to present our first version that is officially ready for testing.
 
@@ -22,7 +22,7 @@ Although we have dug very deep, things may still contain issues. Therefore, we r
 
 ---
 
-## Offen v0.1.0-alpha.3
+### Offen v0.1.0-alpha.3
 
 ##### Single binary file for Linux, Windows or MacOS
 [Download](https://get.offen.dev/){: data-button="full"}
