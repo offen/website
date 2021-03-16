@@ -8,7 +8,7 @@ image_url: /theme/images/offen-blog-0020-untoldRoads.jpg
 author: Frederik Ring
 bottom_cta: blog
 
-## Untold roads to v1.0
+# Untold roads to v1.0
 
 After a lot of experimenting, taking detours and having unanticipated revelations while building the foundation for Offen over the last months, the state of the project is starting to settle, and we are eager to get ready for users to install our software, and use it for transparently collecting usage statistics for their websites and applications.
 

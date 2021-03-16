@@ -8,7 +8,7 @@ image_url: /theme/images/offen-blog-0010-milestone1.jpg
 author: Hendrik Niefeld
 bottom_cta: blog
 
-## Episode One — Laying the foundation for fair web analytics
+# Episode One — Laying the foundation for fair web analytics
 
 Milestone 1 is completed. This is what we've achieved in the last six weeks.
 

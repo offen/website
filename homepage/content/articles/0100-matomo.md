@@ -8,7 +8,7 @@ image_url: /theme/images/offen-blog-0100-Matomo.jpg
 author: Hendrik Niefeld
 bottom_cta: fair
 
-## Why Offen is a valid Matomo alternative
+# Why Offen is a valid Matomo alternative
 
 #### Matomo at a glance
 

@@ -8,7 +8,7 @@ image_url: /theme/images/offen-blog-0090-milestone-5.jpg
 author: Frederik Ring
 bottom_cta: blog
 
-## Episode Five — Resilience and documentation
+# Episode Five — Resilience and documentation
 
 Maybe the most exciting milestone in our current journey, Milestone 5 ends with Offen finally stripping off that `alpha` label we have been carrying around for quite a while now, and which admittedly might have scared away some potential users. The good thing about keeping it this long though is that we can feel pretty confident to release working software. We'll still defer the 1.0 for a while and start with `v0.1.0`, but from now on we really mean it: Install Offen in production, we are confident it'll be a good choice.
 

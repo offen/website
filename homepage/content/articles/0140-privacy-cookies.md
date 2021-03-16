@@ -9,7 +9,7 @@ author: Frederik Ring
 must_read: True
 bottom_cta: quality
 
-## Privacy focus? Consider the cookie
+# Privacy focus? Consider the cookie
 
 Whoever [drafted the idea for HTTP cookies](https://tools.ietf.org/html/rfc2109){: target="_blank"} back in 1997 likely did not anticipate having created a technology that is as disputed, discussed and also disliked as it is today. A non-technical user of the internet might be under the impression that cookies are an utterly useless privacy disaster that bring you nothing but consent banners filled with dark patterns, and enable advertisers to track you on literally every website ever.
 

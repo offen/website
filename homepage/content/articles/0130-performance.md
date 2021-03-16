@@ -8,7 +8,7 @@ image_url: /theme/images/offen-blog-0130-performance-awareness.jpg
 author: Hendrik Niefeld
 bottom_cta: blog
 
-## Episode Seven — Performance and Awareness
+# Episode Seven — Performance and Awareness
 
 Some time has passed after [NGI Zero PET Initiative](https://nlnet.nl/thema/NGIZeroPET.html){: target="_blank"} funding ended, we want to recap the results of our work with this blog post.
 

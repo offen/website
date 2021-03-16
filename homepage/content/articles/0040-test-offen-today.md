@@ -8,7 +8,7 @@ image_url: /theme/images/offen-blog-0040-test-offen-today.jpg
 author: Hendrik Niefeld
 bottom_cta: blog
 
-## Test Offen today
+# Test Offen today
 
 We’re excited to present our first version that is officially ready for testing.
 

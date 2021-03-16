@@ -8,7 +8,7 @@ image_url: /theme/images/offen-blog-0150-interfaces.jpg
 author: Hendrik Niefeld
 bottom_cta: blog
 
-## Episode Eight — Improving interfaces
+# Episode Eight — Improving interfaces
 
 Like last year, we want to keep you updated on the current status of our project at regular intervals. So these are the highlights of our work over the last six weeks. With version v0.3.0 now officially out, we've added some great additions to our interfaces.
 

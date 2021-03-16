@@ -9,7 +9,7 @@ author: Frederik Ring
 must_read: True
 bottom_cta: blog
 
-## Hosting Offen on a budget
+# Hosting Offen on a budget
 
 Using self hosted software like Offen when you're on a budget can seem daunting as you usually don't know too much about the performance requirements of the software you are planning to use beforehand. Once you do know, you might have locked in yourself already.
 

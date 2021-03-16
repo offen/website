@@ -295,9 +295,22 @@ span {
   display: table;
 }
 /* Custom media query - medium small - neutralize span line braks */
-@media only screen and (max-width: 34em) {
+@media only screen and (max-width: 40em) {
   p span {
     display: initial;
+  }
+}
+.pitchMargin {
+	margin-right: 2rem;
+}
+@media only screen and (min-width: 25em) and (max-width: 30em) {
+  .pitchMargin {
+    margin-right: 3rem;
+  }
+}
+@media only screen and (min-width: 30em) {
+  .pitchMargin {
+    margin-right: 0;
   }
 }
 em {

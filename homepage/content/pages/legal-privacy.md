@@ -4,7 +4,7 @@ slug: legal-privacy
 exclude_from_sitemap: true
 bottom_cta: quality
 
-## Legal & Privacy
+# Legal & Privacy
 
 ### Website Analytics
 We use [Offen](https://offen.offen.dev/) for collecting usage data on this website and only access your usage data with your consent. Your data always remains yours. You can review and delete it at any time. Opt out again whenever you want.

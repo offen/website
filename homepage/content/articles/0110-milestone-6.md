@@ -8,7 +8,7 @@ image_url: /theme/images/offen-blog-0110-milestone-6.jpg
 author: Frederik Ring
 bottom_cta: blog
 
-## Episode Six — Packaging and testing
+# Episode Six — Packaging and testing
 
 It feels a little surreal to write this, but: this post marks the end of Milestone 6, which is the last one defined in our initial product plan defining the scope of our support by the [NGI Zero PET initiative](https://nlnet.nl/thema/NGIZeroPET.html){: target="_blank"}.
 

@@ -10,9 +10,9 @@
 {% block content %}
   <div class="mw8 center cclr-bg-white-responsive mt5-ns">
     <div class="dib gray bg-white ph3 ph5-ns pt5">
-      <h2 class="f2 normal lh-title ma0 mt4 mb3">
+      <h1 class="f2 normal lh-title ma0 mt3 mb3">
         Fair Analytics Blog
-      </h2>
+      </h1>
       <div class="w-75-l">
         <p class="ma0 mb5">
           Hi there. We are Frederik and Hendrik. Here we post about how we are building a fair and open web analytics tool and what we discovered along the way.
@@ -33,7 +33,7 @@
                   <h6 class="f5 lh-solid normal ma0 light-silver">
                     {{ article.date | strftime('%d %b %Y') }}{% if article.modified %}(article.updated {{ article.modified | strftime('%d %b %Y') }}){% endif %}, {{ article.author }}
                   </h6>
-                    <h1 class="f3 normal lh-title mt3 ma0 mb3 light-silver">
+                    <h2 class="f3 normal lh-title mt3 ma0 mb3 light-silver">
                       {% if not article.must_read %}
                         <a href="/blog/{{ article.slug }}/" class="link b dim gray">{{ article.title }}</a>
                       {% else %}
@@ -41,7 +41,7 @@
                           <a href="/blog/{{ article.slug }}/" class="link b dim gray">{{ article.title }}</a>
                         </em>
                       {% endif %}
-                    </h1>
+                    </h2>
                   <p>
                     {{ article.description }} <a href="/blog/{{ article.slug }}/" class="link b dim gray">Read more</a>
                   </p>
