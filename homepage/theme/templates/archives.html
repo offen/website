@@ -10,7 +10,7 @@
 {% block content %}
   <div class="mw8 center cclr-bg-white-responsive mt5-ns">
     <div class="dib gray bg-white ph3 ph5-ns pt5">
-      <h2 class="f25 normal lh-title ma0 mt4 mb3">
+      <h2 class="f2 normal lh-title ma0 mt4 mb3">
         Fair Analytics Blog
       </h2>
       <div class="w-75-l">
@@ -33,7 +33,7 @@
                   <h6 class="f5 lh-solid normal ma0 light-silver">
                     {{ article.date | strftime('%d %b %Y') }}{% if article.modified %}(article.updated {{ article.modified | strftime('%d %b %Y') }}){% endif %}, {{ article.author }}
                   </h6>
-                    <h1 class="f26 normal lh-title mt3 ma0 mb3 light-silver">
+                    <h1 class="f3 normal lh-title mt3 ma0 mb3 light-silver">
                       {% if not article.must_read %}
                         <a href="/blog/{{ article.slug }}/" class="link b dim gray">{{ article.title }}</a>
                       {% else %}

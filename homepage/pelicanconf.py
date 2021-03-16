@@ -75,7 +75,7 @@ DECORATE_CONTENT = {
     'li a': ['link', 'b', 'dim'],
     'a:not([data-button])': ['gray'],
     'h1': ['f2', 'normal', 'lh-title', 'mt3', 'ma0', 'mb3'],
-    'h2': ['f25', 'normal', 'lh-title', 'mt4', 'ma0', 'mb3'],
+    'h2': ['f2', 'normal', 'lh-title', 'mt4', 'ma0', 'mb3'],
     'h3': ['f4', 'normal', 'mt5', 'ma0', 'mb3'],
     'h4': ['f5', 'normal', 'mt4', 'ma0', 'mb3'],
     'h5': ['f5', 'normal', 'mt5', 'ma0', 'mb1'], # text over button
