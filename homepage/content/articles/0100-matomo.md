@@ -10,7 +10,7 @@ bottom_cta: fair
 
 # Why Offen is a valid Matomo alternative
 
-### Matomo at a glance
+#### Matomo at a glance
 
 Matomo was started around 2007 as a successor to phpMyVisites and *open-source alternative to Google Analytics.* The project founded by Matthieu Aubry used to be called Piwik until it was rebranded to its current name in 2018. According to Wikipedia it is installed on about 1.5 million websites, making it one of the best known open source web analytics applications on the market.
 
@@ -24,7 +24,7 @@ On the technical side, the following issues are particularly apparent. Installin
 
 ---
 
-## Operators and users as equal parties
+### Operators and users as equal parties
 
 To address the above mentioned issues we develop a fair and lightweigt web analytics tool that treats operators and users as equal parties. It is called Offen and is [available as a beta version.](https://www.offen.dev/get-started/)
 

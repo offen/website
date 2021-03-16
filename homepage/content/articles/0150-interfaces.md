@@ -25,9 +25,9 @@ As usual, you can download the latest release from [https://get.offen.dev](https
 
 ---
 
-## Achievements
+### Achievements
 
-### Localize it
+#### Localize it
 
 Offen is now also available in English and German. Our consent banner and the Auditorium for operators as well as users can be displayed in the respective locale.
 
@@ -35,13 +35,13 @@ To run Offen in a non-default locale, you need to set `OFFEN_APP_LOCALE` to the 
 
 Our translation workflow featuring [POEditor](https://poeditor.com){: target="_blank"} is up and running and ready to be applied to other languages. A further locale, Indonesian, is currently in the works. If you want to support fair web analytics by contributing French, Spanish or other language versions, don't hesitate to [request an invite.](mailto:hioffen@posteo.de)
 
-### About time
+#### About time
 
 In order to evolve Offen into a fully competitive analytics tool, we still have some significant UX improvements in mind. Over the last few weeks, we have implemented one of them.
 
 Now you can easily display custom intervals of the existing data. Furthermore, we have revised the selection of standard time periods. As always, we are happy to hear feedback on its usability from you.
 
-### Experimental JS API
+#### Experimental JS API
 
 For all of you who would like to have a little more precision in the way user consent is exercised, we have good news.
 
@@ -49,17 +49,17 @@ Offen automatically acquires a user consent decision and collect pageviews in ca
 
 ---
 
-## Next up
+### Next up
 
-### Cohorts
+#### Cohorts
 
 In the UX realm, we will next be dealing with cohorts. We plan to add a flexible drill-down workflow to the Auditorium that will provide better insight into the performance of data subsets. This will allow operators to compare user subgroups with each other, e.g. how page depth behaves depending on the refferer.
 
-### Views
+#### Views
 
 We will also further optimize the general display options and bring them closer to real-world workflows. We aim to display more functions above the fold on desktop devices and to optimise for clarity on mobile devices.
 
-### Reach out
+#### Reach out
 
 We have already made progress in terms of the visibility of our project in the relevant public sphere. Nevertheless, there is still a lot to be done. As we did at the beginning of last year, we will again directly address stakeholders in the privacy field and try to draw their attention to our fair approach to web analytics.
 
@@ -67,7 +67,7 @@ You got someone in mind we should urgently talk to? [Let us know.](mailto:hioffe
 
 ---
 
-## Already using Offen?
+### Already using Offen?
 
 We're happy to feature your project in our GitHub [README.](https://github.com/offen/offen/blob/development/README.md) Send a PR adding your site or app to [this](https://github.com/offen/offen/blob/development/README.md#whos-using-offen) section.
 

@@ -26,9 +26,9 @@ As always, you can download the latest release from [https://get.offen.dev](http
 
 ---
 
-## Achievements
+### Achievements
 
-### Offen runs almost everywhere
+#### Offen runs almost everywhere
 
 One of the design goals of Offen is to make it really easy to install. Nevertheless, using self hosted software can be daunting if you haven't done it before, or you are not well versed with using the CLI. To help people unsure about what to do getting started, we published a lot of options and contributed to community resources:
 
@@ -48,7 +48,7 @@ One of the design goals of Offen is to make it really easy to install. Neverthel
 
 In case you know of another great target for installing Offen, let us know and we'll check out the option right away.
 
-### deb package for easier setup
+#### deb package for easier setup
 
 Installing Offen from our binary distributions hasn't been too complicated already, but starting with version 0.1.6 we now also ship Offen as a `deb` package. This means, installation on Ubuntu or Debian servers is now as easy as:
 
@@ -61,43 +61,43 @@ sudo systemctl start offen
 
 We also updated our [installation tutorials](https://docs.offen.dev/running-offen/tutorials/) to reflect this. Packaging code lives in the [offen/deb](https://github.com/offen/deb) repository. A nice side effect of this is that we'd be pretty much ready to set up a repository for people to install Offen using the `apt` package manager in case this is requested.
 
-### Helping others to install and run Offen
+#### Helping others to install and run Offen
 
 While we've been doing a lot of test installations of Offen ourselves in the past weeks, we've also seen others starting to install of Offen. We've seen some expected teething troubles we've fixed along the way, but more importantly we've gained further insights on how people deploy and use Offen, allowing us to further optimize for the relevant use cases.
 
-### Helping others to start contributing to Offen
+#### Helping others to start contributing to Offen
 
 Offen is free and open for everyone to use with no strigs attached. There is no business model like a hosted version or similar behind it. This is why it's important for us to open up the development of Offen to the community now that we've set the foundation. To kick this off, we will be participating in this year's [Hacktoberfest](https://hacktoberfest.digitalocean.com/){: target="_blank"}. Check out the [relevant issues on our repository](https://github.com/offen/offen/issues?q=is%3Aissue+is%3Aopen+label%3AHacktoberfest), forward this to whoever might be interested, or start hacking on Offen yourself right away. We are also happy about any kind of feedback on our [roadmap](https://github.com/offen/offen/projects/1).
 
 ---
 
-## Next up
+### Next up
 
-### Spreading the word
+#### Spreading the word
 
 We've built a unique analytics software, and we sense the time is just about right for shifting paradigms when it comes to collecting and handling data. However, if noone knows about Offen, noone can use it. Now that we have a working beta, we can start marketing Offen more aggressively all across the internet. If you have ideas for a good fit in terms of audience, let us know.
 
-### Performance improvements
+#### Performance improvements
 
 Securing the data collected as much as possible has always been (and will always stay) the most important aspect when developing Offen. This makes having Offen perform well on large datasets (i.e. sites with a lot of traffic) is hard. While it's already usable in these scenarios - and it's an obvious tradeoff where we have a clear priority - there is still room for improvement.
 
 This is why we'd like to look into ways of making Offen faster while still satisfying the strict privacy and security requirements we have. Check [this issue](https://github.com/offen/offen/issues/448) for ideas about how we plan to implement this.
 
-### Defining the future of Offen
+#### Defining the future of Offen
 
 This post is closing Milestone 6 out of 6. This means we have successfully built and shipped a working beta version of Offen. It also means it's up to us to define what we want to do next.
 
 The obvious path is further extending and maintaining Offen, which we will continue to do. Yet, we'd also like to work on ideas about how we can make the tech, and also the ethical principles that Offen is built upon available to the public. In the end, Offen is a lot more than just an analytics tool.
 
-### Adding a second locale
+#### Adding a second locale
 
 Localizing software at an early stage is hard, so we developed Offen as English-only up until now. Luckily, we already placed all the hooks need for localizing Offen in our codebase. Now that Offen has become more stable and mature, we think it's a good time to start adding a second locale. In our case, German is the obvious choice, so we are planning to make Offen available in German as well in the next months. If you're interested in helping us localize Offen in the language of your choice, we'd be happy to hear from you [in the corresponding issue on GitHub](https://github.com/offen/offen/issues/453). Vielen Dank.
 
 ---
 
-## Getting your hands dirty
+### Getting your hands dirty
 
-### Packaging Offen as a snap
+#### Packaging Offen as a snap
 
 [Snapcraft](https://snapcraft.io/){: target="_blank"} is a relatively recent way of packaging apps for use across all Linux distributions. While it has also received its fair share of criticism, it also provides a really simple way of packaging and distributing apps like Offen.
 
@@ -177,6 +177,6 @@ And that's it, your system is now ready to use Offen, but more importantly, this
 
 ---
 
-## Feedback? Found a bug?
+### Feedback? Found a bug?
 
 If you have any feedback, comment or bug report on this milestone release, we'd love to hear from you. [Open an issue](https://github.com/offen/offen/issues) or send us an email at [hioffen@posteo.de.](mailto:hioffen@posteo.de)

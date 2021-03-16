@@ -3,7 +3,7 @@ description: Who we are, what we do, who supports us and how you can can get in 
 slug: about
 bottom_cta: fair
 
-## About
+# About
 
 ### What is this thing called "my data" and why does seemingly everyone want to get hold of it?
 

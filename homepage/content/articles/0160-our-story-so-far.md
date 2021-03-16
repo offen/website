@@ -8,7 +8,7 @@ image_url: /theme/images/offen-blog-0160-our-story-so-far.jpg
 author: Hendrik Niefeld
 bottom_cta: cookie
 
-## Our story so far
+# Our story so far
 
 Hi there. This is our story on how we develop fair and open source web analytics software. A note first. This story is not finished yet. We are just about to take the next major step. But more about that later.
 
