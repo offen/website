@@ -54,6 +54,10 @@ MARKDOWN = {
         'markdown.extensions.extra': {},
         'markdown.extensions.meta': {},
         'markdown.extensions.fenced_code': {},
+        'markdown_link_attr_modifier': {
+            'auto_title': 'on',
+            'new_tab': 'external_only',
+        },
     },
     'output_format': 'html5',
 }

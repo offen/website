@@ -2,3 +2,4 @@ pelican==4.5.4
 markdown==3.1.1
 git+git://github.com/miracle2k/webassets#d1f3455e383446ca4ab0c644f326ee937e68e809
 pelican-decorate-content==0.1.1
+markdown-link-attr-modifier==0.2.0
