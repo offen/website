@@ -479,8 +479,9 @@ STACKING IMAGES
 	z-index : 550;
 }
 .bg-localize {
-	top: -7rem;
-	left: 3rem;
+	top: -2.2rem;
+	left: 8rem;
+	width: 220px;
 	z-index : 560;
 }
 .bg-cta-pfeil {
@@ -505,8 +506,7 @@ STACKING IMAGES
 		left: calc(100% - 30rem);
 	}
 	.bg-localize {
-		top: -7rem;
-		left: calc(100% - 25rem);
+		left: calc(100% - 22rem);
 	}
 	.bg-cta-pfeil {
 		top: -14rem;
@@ -525,8 +525,9 @@ STACKING IMAGES
 		left: calc(100% - 20rem);
 	}
 	.bg-localize {
-		top: -2rem;
-		left: 35rem;
+		top: 6rem;
+		left: 43rem;
+		width: 300px;
 	}
 	.bg-cta-pfeil {
 		top: -12rem;
