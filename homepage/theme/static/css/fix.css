@@ -44,6 +44,12 @@ COLORS
 	 border-color: #39352A;
 }
 
+/* Gray */
+.cclr-fnt-gray-mid {
+	 color: #777777;
+}
+
+
 /* White */
 .cclr-bg-white-dark {
 	background-color: #f9f7f2;
@@ -120,7 +126,8 @@ LAYOUT
 .hx-compare-c,
 .hx-compare-d,
 .hx-metrics,
-.hx-localize,
+.hx-localize-a,
+.hx-localize-b,
 .hx-difference {
 	height: 100%;
 }
@@ -162,8 +169,11 @@ LAYOUT
 	.hx-metrics {
 		height: 132rem;
 	}
-	.hx-localize {
-		height: 19rem;
+	.hx-localize-a {
+		height: 14rem;
+	}
+	.hx-localize-b {
+		height: 17rem;
 	}
 	.hx-difference {
 		height: 33rem;
