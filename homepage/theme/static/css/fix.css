@@ -480,9 +480,14 @@ STACKING IMAGES
 }
 .bg-localize {
 	top: -2.2rem;
-	left: 8rem;
+	left: calc(100% - 16rem);
 	width: 220px;
 	z-index : 560;
+}
+.bg-localize-marker {
+	top: 2rem;
+	left: -1.8rem;
+	z-index : 561;
 }
 .bg-cta-pfeil {
 	top: -13rem;
@@ -508,6 +513,10 @@ STACKING IMAGES
 	.bg-localize {
 		left: calc(100% - 22rem);
 	}
+	.bg-localize-marker {
+		top: 1rem;
+		left: -2rem;
+	}
 	.bg-cta-pfeil {
 		top: -14rem;
 		left: 72%;
@@ -528,6 +537,10 @@ STACKING IMAGES
 		top: 6rem;
 		left: 43rem;
 		width: 300px;
+	}
+	.bg-localize-marker {
+		top: -0.5rem;
+		left: 4rem;
 	}
 	.bg-cta-pfeil {
 		top: -12rem;
