@@ -1,6 +1,4 @@
 User-agent: *
-Disallow: /vault/
-Disallow: /auditorium/
-Disallow: /legal-notice/
+Disallow: /legal-privacy/
 
 Sitemap: https://www.offen.dev/sitemap.xml

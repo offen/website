@@ -2,6 +2,7 @@ title: About | Offen
 description: Who we are, what we do, who supports us and how you can can get in touch.
 slug: about
 bottom_cta: fair
+sitemap_priority: 0.3
 
 # About
 
