@@ -1,18 +1,19 @@
 title: Why Offen is a valid Matomo alternative
 description: This brief comparison of both tools gives you a first insight into the field of fair and lightweight web analytics.
 date: 2020-08-28
+modified: 20.4.2021
 slug: matomo-alternative
 url: /blog/matomo-alternative/
 sitemap_priority: 0.7
 image_url: /theme/images/offen-blog-0100-Matomo.jpg
 author: Hendrik Niefeld
-bottom_cta: fair
+bottom_cta: budget
 
 # Why Offen is a valid Matomo alternative
 
 #### Matomo at a glance
 
-Matomo was started around 2007 as a successor to phpMyVisites and *open-source alternative to Google Analytics.* The project founded by Matthieu Aubry used to be called Piwik until it was rebranded to its current name in 2018. According to Wikipedia it is installed on about 1.5 million websites, making it one of the best known open source web analytics applications on the market.
+Matomo was started around 2007 as a successor to phpMyVisites and open-source alternative to Google Analytics. The project founded by Matthieu Aubry used to be called Piwik until it was rebranded to its current name in 2018. According to Wikipedia it is installed on about 1.5 million websites, making it one of the best known open source web analytics applications on the market.
 
 Operators interested in open and privacy friendly web analytics particularly appreciate Matomo's ability to be self hosted. The respective app variant called "Matomo On-Premise" has no license costs, but paid plugins are necessary for extensive use.
 
@@ -26,7 +27,7 @@ On the technical side, the following issues are particularly apparent. Installin
 
 ### Operators and users as equal parties
 
-To address the above mentioned issues we develop a fair and lightweigt web analytics tool that treats operators and users as equal parties. It is called Offen and is [available as a beta version.](https://www.offen.dev/get-started/)
+To address the above mentioned issues we develop a fair, self hosted and lightweigt web analytics tool that treats operators and users as equal parties. It is called Offen and is [available as a production ready version.](https://www.offen.dev/get-started/)
 
 *Offen's default is to NOT collect any data.* Usage data is collected after opt-in only. If users choose to opt in, they have full access to their data. They can delete it any time or opt out completly.
 
@@ -49,4 +50,13 @@ Our strict focus on data protection also means that there are some Matomo featur
 We hope this overview helps you to get a better insight into the topic of fair web analytics. If you are passionate about ethical software and want *a truly lightweight and privacy focused alternative to Matomo* you should give Offen a try. Why not let both run parallel for a while and then see how it feels? We are looking forward to your [feedback.](mailto:hioffen@posteo.de)
 
 
-Find further information in our [explainer](https://www.offen.dev/#bg-explainer) or head to our [get started](https://www.offen.dev/get-started/) section.
+Find further information in our [explainer](https://www.offen.dev/#bg-explainer), test it on your system or get everything you need to use Offen in production.
+
+<div class="flex flex-wrap justify-center mt4 mb6">
+  <div class="w-100 w-40-ns mh0 mb3 mb0-ns mr3-ns">
+    <a class="w-100 tc b link dim ph4 pv2 dib b--solid bw2 cclr-brd-black-mid cclr-fnt-black-mid" href="/try-demo/" rel="noopener">Try demo</a>
+  </div>
+  <div class="w-100 w-50-ns mh0 ml3-ns">
+    <a class="w-100 tc b link dim ph4 pv2 dib b--solid bw2 cclr-brd-black-mid white cclr-bg-black-mid" href="/get-started/" rel="noopener">Get started</a>
+  </div>
+</div>

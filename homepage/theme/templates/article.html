@@ -26,8 +26,13 @@
       </figure>
       <div class="ph3 ph5-ns pt5">
         <h6 class="f5 lh-solid normal ma0 light-silver">
-          {{ article.date | strftime('%d %b %Y') }}{% if article.modified %}(updated {{ article.modified | strftime('%d %b %Y') }}){% endif %}, {{ article.author }}
+          {{ article.date | strftime('%d %b %Y') }}, {{ article.author }}
         </h6>
+        {% if article.modified %}
+          <h6 class="f5 lh-solid normal ma0 mt2 light-silver">
+            Revised on {{ article.modified | strftime('%d %b %Y') }}
+          </h6>
+        {% endif %}
         {{ article.content }}
       </div>
     </div>
