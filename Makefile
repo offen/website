@@ -31,6 +31,8 @@ up:
 
 KEYBASE_FILE ?= keybase.txt
 ROBOTS_FILE ?= robots.txt.staging
+ANALYTICSTXT_FILE ?= analytics.txt
+SECURITYTXT_FILE ?= security.txt
 SITEURL ?= http://localhost:8000
 
 .PHONY: build
@@ -42,4 +44,7 @@ build:
 	@docker cp assets:/code/homepage/output/. ./output/
 	@cp build/${ROBOTS_FILE} ./output/robots.txt
 	@cp build/${KEYBASE_FILE} ./output/keybase.txt
+	@mkdir -p ./output/.well-known
+	@cp build/${ANALYTICSTXT_FILE} ./output/.well-known/analytics.txt
+	@cp build/${SECURITYTXT_FILE} ./output/.well-known/security.txt
 	@docker rm assets
