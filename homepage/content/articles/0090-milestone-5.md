@@ -39,7 +39,7 @@ Relevant PRs are: [399](https://github.com/offen/offen/pull/399), [400](https://
 
 #### Community approved handling of licensing
 
-With help from the FSFE, we adopted [REUSE](https://reuse.software/){: target="_blank"}, a standard and tooling around the handling of licensing in non-small repositories. Having integrated a dedicated check for REUSE compliance into our CI pipeline allows us to stop worrying we have forgotten something, and will give everyone access to all licensing information needed to use or reuse Offen in all scenarios.
+With help from the FSFE, we adopted [REUSE](https://reuse.software/), a standard and tooling around the handling of licensing in non-small repositories. Having integrated a dedicated check for REUSE compliance into our CI pipeline allows us to stop worrying we have forgotten something, and will give everyone access to all licensing information needed to use or reuse Offen in all scenarios.
 
 In addition to that we now also automatically generate a NOTICE file from our dependency tree that we can include in our binary distributions, making sure every dependency is properly attributed when others download and use Offen. You can see it in action being served from our own Offen instance here: [offen.offen.dev/NOTICE.txt](https://offen.offen.dev/NOTICE.txt)
 
@@ -87,7 +87,7 @@ Once this is defined, we will apply for new funds. Let us know if you know of an
 
 An important part of Milestone 5 was hardening the HTTP interface of Offen, which in most cases will be exposed to the internet directly, without any reverse proxy or similar in front. So why not do a load test and see how far we can take it?
 
-The tools we'll be using to perform the load test is called [vegeta](https://github.com/tsenart/vegeta){: target="_blank"}, which you can install using `go get` (or you download the binaries from GitHub):
+The tools we'll be using to perform the load test is called [vegeta](https://github.com/tsenart/vegeta), which you can install using `go get` (or you download the binaries from GitHub):
 
 ```
 go get -u github.com/tsenart/vegeta

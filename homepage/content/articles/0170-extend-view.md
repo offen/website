@@ -1,6 +1,6 @@
 title: Extend the view
 description: Over the last eight weeks, we have further optimized our display options, added a French locale, and made our Docker image more safe.
-date: 2021-04-16
+date: 2021-04-20
 slug: extend-view
 url: /blog/extend-view/
 sitemap_priority: 0.6

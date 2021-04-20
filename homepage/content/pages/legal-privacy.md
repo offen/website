@@ -28,7 +28,7 @@ Our banner serves two purposes: We ask you to access your usage data and would l
 Yes, in particular cookies are used to store your decision about granting access to your usage data. If you opt in, we also use cookies to store a user and a session ID for you.
 
 #### How does it all work?
-After opening a website where an Offen installation is active, you can explicitly opt in to the data collection and thereby help to improve the services you use. Only then you will be assigned a user and a session ID using a cookie. Offen handles these IDs in an unrecognizable form. [Learn more about cookies here.](https://en.wikipedia.org/wiki/HTTP_cookie){: target="_blank"}
+After opening a website where an Offen installation is active, you can explicitly opt in to the data collection and thereby help to improve the services you use. Only then you will be assigned a user and a session ID using a cookie. Offen handles these IDs in an unrecognizable form. [Learn more about cookies here.](https://en.wikipedia.org/wiki/HTTP_cookie)
 
 ### External hosting
 This website is hosted by an external service provider. Non-personal data on requests to this website are stored on the hoster's servers and automatically deleted after 7 days. Responsible for hosting this website is:
@@ -38,7 +38,7 @@ Industriestr. 25
 91710 Gunzenhausen, Germany
 
 E-mail: [info@hetzner.com](mailto:info@hetzner.com)  
-Internet address: [www.hetzner.com](https://www.hetzner.com/){: target="_blank"}
+Internet address: [www.hetzner.com](https://www.hetzner.com/)
 
 ### Data processing / Information in accordance with Section 5 TMG
 Data processing on this website is handled by the website operator. If you have any questions about data protection, please feel free to contact us at any time. Responsible for data processing and general contact for this website is:
@@ -54,7 +54,7 @@ Internet address: [www.offen.dev](http://www.offen.dev)
 If you contact us by e-mail, your request including all resulting personal data (name, request) will be stored by us for the purpose of processing your request. We will not disclose your data without your consent. It remains stored with us until you request us to delete it or revoke your consent to store it.
 
 ### License
-The content of this website itself is licensed under the [Creative Commons Attribution 4.0 International (CC BY 4.0) License](https://creativecommons.org/licenses/by/4.0/){: target="_blank"}, and the underlying source code used to format and display that content is licensed under the [GNU Affero General Public License v3.0](https://github.com/offen/website/blob/development/LICENSE){: target="_blank"}.
+The content of this website itself is licensed under the [Creative Commons Attribution 4.0 International (CC BY 4.0) License](https://creativecommons.org/licenses/by/4.0/), and the underlying source code used to format and display that content is licensed under the [GNU Affero General Public License v3.0](https://github.com/offen/website/blob/development/LICENSE).
 
 ### Graphics and Image Sources
-NLNet Logo [https://nlnet.nl/logo/](https://nlnet.nl/logo/){: target="_blank"}
+NLNet Logo [https://nlnet.nl/logo/](https://nlnet.nl/logo/)

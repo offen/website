@@ -19,7 +19,7 @@ Operators interested in open and privacy friendly web analytics particularly app
 
 ### Room for improvement
 
-Despite the general popularity, there are some problems with Matomo's decisions regarding privacy. By default, the software only offers an opt-out feature for website users. This way, *consent is practically a preset.* In addition, access to usage data is not automated and therefore can be very complex and laborious for users. A common problem which the GDPR mandates explicitly under the heading ["Rights of the data subject"](https://en.wikipedia.org/wiki/General_Data_Protection_Regulation#III_Rights_of_the_data_subject){: target="_blank"}.
+Despite the general popularity, there are some problems with Matomo's decisions regarding privacy. By default, the software only offers an opt-out feature for website users. This way, *consent is practically a preset.* In addition, access to usage data is not automated and therefore can be very complex and laborious for users. A common problem which the GDPR mandates explicitly under the heading ["Rights of the data subject"](https://en.wikipedia.org/wiki/General_Data_Protection_Regulation#III_Rights_of_the_data_subject).
 
 On the technical side, the following issues are particularly apparent. Installing Matomo can be a bit of a pain as there are many dependencies that must be pre-installed on the system. This also applies to the requirement to use a dedicated MySQL database, which makes installation even more complex. Last but not least, the tracking script that Matomo uses is extensive and therefore delays the loading of the pages considerably.
 
@@ -39,7 +39,7 @@ Offen is open source and will always be available for free with no hidden costs 
 
 The installation is relatively simple and supports the use of SQLite files as well. The tracking script is reduced to a bare minimum and allows pages to load much faster.
 
-To complete the package, the app allows to manage several websites with one login. All website accounts can be shared within teams. A [detailed documentation](https://docs.offen.dev/){: target="_blank"} assists with the installation and daily operation.
+To complete the package, the app allows to manage several websites with one login. All website accounts can be shared within teams. A [detailed documentation](https://docs.offen.dev/) assists with the installation and daily operation.
 
 ### Confidential by design
 
