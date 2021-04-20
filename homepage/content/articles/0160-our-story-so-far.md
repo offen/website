@@ -48,7 +48,7 @@ We had already started looking for support in late 2018. And as we delved deeper
 
 In our experience, the key to preparing is to find out as much as possible about the intention of a funding program. Who are the funding backers? Which people decide on the granting? Which projects have been funded so far? Does my project really fits into this whole constellation? Based on these factors you have to make a honest decision. Is the effort of an application really worth it?
 
-With this approach we were able to focus on one German and a few international calls. And by summer 2019 we had submitted a handful of applications. To our great pleasure our proposal to the [NGI Zero Privacy & Trust Fund of the Dutch NLnet Foundation](https://nlnet.nl/PET/){: target="_blank"} was then successful.
+With this approach we were able to focus on one German and a few international calls. And by summer 2019 we had submitted a handful of applications. To our great pleasure our proposal to the [NGI Zero Privacy & Trust Fund of the Dutch NLnet Foundation](https://nlnet.nl/PET/) was then successful.
 
 > *We were surprised how many funding sources for the development of open source software exist worldwide.*
 
@@ -87,7 +87,7 @@ This will involve enhancing the UX to a level that can fully compete with other 
 
 Furthermore, by factoring out tools from our code we will create an open access for all developers interested in the topic of fair data transfer. In addition to that we want to formalize the general approach we use in Offen and define a protocol spec that others can adopt, ideally generating an ecosystem of compatible client and server implementations.
 
-NLnet is willing to support us once again in these ambitions. This time from the [NGI Zero Search and Discovery Fund.](https://nlnet.nl/discovery/){: target="_blank"} We are of course more than happy about this and would like to take this opportunity to thank the whole NLnet team for their confidence in our work.
+NLnet is willing to support us once again in these ambitions. This time from the [NGI Zero Search and Discovery Fund.](https://nlnet.nl/discovery/) We are of course more than happy about this and would like to take this opportunity to thank the whole NLnet team for their confidence in our work.
 
 > *We want to formalize the general approach we use in Offen and define a protocol spec that others can adopt, ideally generating an ecosystem of compatible client and server implementations.*
 
@@ -95,4 +95,4 @@ NLnet is willing to support us once again in these ambitions. This time from the
 
 Do you have feedback on the latest Offen release or our next steps? What is your experience in developing open source tools? Are you as enthusiastic about fair data transfer as we are?
 
-Drop us a [tweet](https://twitter.com/hioffen){: target="_blank"} or [email](mailto:hioffen@posteo.de) and feel invited to work together to drive this idea forward.
+Drop us a [tweet](https://twitter.com/hioffen) or [email](mailto:hioffen@posteo.de) and feel invited to work together to drive this idea forward.

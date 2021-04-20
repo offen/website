@@ -8,9 +8,9 @@ sitemap_priority: 0.3
 
 ### What is this thing called "my data" and why does seemingly everyone want to get hold of it?
 
-It has a ring, gives a slight spine-chilling sensation and generates a whole lot of clicks: consumer magazines like German "Computer Bild" caution about ["Google espionage"](https://www.computerbild.de/artikel/cb-Ratgeber-Kurse-Wissen-Was-weiss-Google-ueber-Sie-2799009.html){: target="_blank"} just like the internet has countless tutorials on turning off numerous ["data leeches"](https://praxistipps.chip.de/datenkrake-windows-10-so-schalten-sie-auffaellige-funktionen-ab_99652){: target="_blank"}. Interestingly, diving into these realms will have you accidentally catching the next toolbar, malware infection or [even worse](https://blog.malwarebytes.com/cybercrime/2012/10/pick-a-download-any-download/){: target="_blank"}.
+It has a ring, gives a slight spine-chilling sensation and generates a whole lot of clicks: consumer magazines like German "Computer Bild" caution about ["Google espionage"](https://www.computerbild.de/artikel/cb-Ratgeber-Kurse-Wissen-Was-weiss-Google-ueber-Sie-2799009.html) just like the internet has countless tutorials on turning off numerous ["data leeches"](https://praxistipps.chip.de/datenkrake-windows-10-so-schalten-sie-auffaellige-funktionen-ab_99652). Interestingly, diving into these realms will have you accidentally catching the next toolbar, malware infection or [even worse](https://blog.malwarebytes.com/cybercrime/2012/10/pick-a-download-any-download/).
 
-Yet, many internet users still do not know what really is happening to their data. Public relation activities trying to calm the public - as recently undertaken by Facebook [for example](https://www.zeit.de/digital/datenschutz/2019-01/social-media-facebook-mark-zuckerberg-ads-privacy-business-model-transparency){: target="_blank"} - end up being rather disturbing instead of creating transparency or adding any value to the public debate. Denelle Dixon, COO of Mozilla, just publicly [warned the European Commission](https://blog.mozilla.org/blog/2019/01/31/mozilla-raises-concerns-over-facebooks-lack-of-transparency/){: target="_blank"} about the dangerous effects an opaque apparatus such as Facebook can have on society. Updated Terms and Conditions only parenthetically mention that newly created Google accounts will now hand over real names to third parties for [advertising purposes](https://www.propublica.org/article/google-has-quietly-dropped-ban-on-personally-identifiable-web-tracking){: target="_blank"}.
+Yet, many internet users still do not know what really is happening to their data. Public relation activities trying to calm the public - as recently undertaken by Facebook [for example](https://www.zeit.de/digital/datenschutz/2019-01/social-media-facebook-mark-zuckerberg-ads-privacy-business-model-transparency) - end up being rather disturbing instead of creating transparency or adding any value to the public debate. Denelle Dixon, COO of Mozilla, just publicly [warned the European Commission](https://blog.mozilla.org/blog/2019/01/31/mozilla-raises-concerns-over-facebooks-lack-of-transparency/) about the dangerous effects an opaque apparatus such as Facebook can have on society. Updated Terms and Conditions only parenthetically mention that newly created Google accounts will now hand over real names to third parties for [advertising purposes](https://www.propublica.org/article/google-has-quietly-dropped-ban-on-personally-identifiable-web-tracking).
 
 <div class="flex justify-end pb5">
 <img class="smaller-image" alt="Detour" src="/theme/images/gfx-deepdive-A.png"/>
@@ -20,7 +20,7 @@ As a regular user of the internet, are you really being spied upon? *What exactl
 
 > "If you have something that you don't want anyone to know, maybe you shouldn't be doing it in the first place."
 >
-> [Eric Schmidt](https://www.eff.org/de/deeplinks/2009/12/google-ceo-eric-schmidt-dismisses-privacy){: target="_blank"} (at this time CEO of Google), 2009
+> [Eric Schmidt](https://www.eff.org/de/deeplinks/2009/12/google-ceo-eric-schmidt-dismisses-privacy) (at this time CEO of Google), 2009
 
 We would like to turn the tables on this much quoted statement and apply it to the operators of services and websites instead of their users. The analytics software Offen *transparently and uncompromisingly discloses what data is being collected and what it is being used for* to the users.
 
@@ -42,7 +42,7 @@ Choosing Offen, websites and web applications obtain a free, open and robust too
 
 Transparently handling usage data in the open creates mutual trust while still enabling operators to collect needed usage statistics. Offen is designed to be a mediating agent only, and does not side with either users or operators. Sharing knowledge between the two parties creates opportunities for an *open and fact based discussion* about user data and privacy. Users gain insights into what data is being collected and what these data points are used for, just like they learn about which kind of data is not part of the collection. They are enabled to reach self-determined decisions about what they consent with and what they disagree with when it comes to privacy on the web, also in other contexts than analytics.
 
-We want to exemplify that it is time to depart the age of ["data capitalism"](https://www.zeit.de/digital/datenschutz/2019-01/datenschutz-nick-couldry-datenkolonialismus-datenhandel/komplettansicht){: target="_blank"} and to create *technologies and infrastructure that are transparent, open and oriented towards the common good*
+We want to exemplify that it is time to depart the age of ["data capitalism"](https://www.zeit.de/digital/datenschutz/2019-01/datenschutz-nick-couldry-datenkolonialismus-datenhandel/komplettansicht) and to create *technologies and infrastructure that are transparent, open and oriented towards the common good*
 
 <div class="flex justify-end">
 <img class="smaller-image mt2" alt="Detour" src="/theme/images/gfx-deepdive-C.png"/>
@@ -50,9 +50,9 @@ We want to exemplify that it is time to depart the age of ["data capitalism"](ht
 
 ### Offen as a technology
 
-At runtime, Offen is just mediating exchange between users and operators. Usage data is collected in conformance to GDPR and with the concept of ["Datensparsamkeit"](https://martinfowler.com/bliki/Datensparsamkeit.html){: target="_blank"} in mind. All user data is encrypted in the browser so that it can only ever be accessed by the users themselves or the matching operator. While being collected in the context of a website or application, neither operators nor third party scripts have any possibility to access the usage data. Offen itself doesn't have any way of decrypting, processing or even selling the gathered data at any point.
+At runtime, Offen is just mediating exchange between users and operators. Usage data is collected in conformance to GDPR and with the concept of ["Datensparsamkeit"](https://martinfowler.com/bliki/Datensparsamkeit.html) in mind. All user data is encrypted in the browser so that it can only ever be accessed by the users themselves or the matching operator. While being collected in the context of a website or application, neither operators nor third party scripts have any possibility to access the usage data. Offen itself doesn't have any way of decrypting, processing or even selling the gathered data at any point.
 
-The software itself, as well as *all the used tools are open source*, [project planning and technical specification](https://github.com/offen/offen){: target="_blank"} take place in the open and actively solicit feedback from the general public.
+The software itself, as well as *all the used tools are open source*, [project planning and technical specification](https://github.com/offen/offen) take place in the open and actively solicit feedback from the general public.
 
 Users and operators are given intuitive and accessibility-focused tools for analyzing and managing their data in the form of a web application and a browser extension. Operators deploy the service using a simple script tag.
 
@@ -64,11 +64,11 @@ Developing and running Offen can only work out when it is entirely *free of any 
 
 ### Status Quo
 
-Offen is created by [Frederik Ring](https://www.frederikring.com/){: target="_blank"} and [Hendrik Niefeld](http://niefeld.com/){: target="_blank"} and is currently being conceptually designed and in active development, both as a product as well as as a software.
+Offen is created by [Frederik Ring](https://www.frederikring.com/) and [Hendrik Niefeld](http://niefeld.com/) and is currently being conceptually designed and in active development, both as a product as well as as a software.
 
-[![NLnet Foundation](/theme/images/nlnet-logo.svg){:width="160px" height="60px" class="mt4"}](https://nlnet.nl/){: target="_blank"}
+[![NLnet Foundation](/theme/images/nlnet-logo.svg){:width="160px" height="60px" class="mt4"}](https://nlnet.nl/)
 
-We are happy to work with [NLnet Foundation,](https://nlnet.nl/){: target="_blank"} which actively supports our efforts as part of its [Next Generation Internet](https://nlnet.nl/NGI/){: target="_blank"} initiative.
+We are happy to work with [NLnet Foundation,](https://nlnet.nl/) which actively supports our efforts as part of its [Next Generation Internet](https://nlnet.nl/NGI/) initiative.
 
 
 ### Contact
@@ -76,4 +76,4 @@ We are happy to work with [NLnet Foundation,](https://nlnet.nl/){: target="_blan
 *Feel free to contact us with any kind of feedback.* From criticism and praise to contributions or support, everything is welcome. Get in touch.
 
 [hioffen@posteo.de](mailto:hioffen@posteo.de)  
-[PGP Key](/theme/74B041E23DB29D552644CEB1B18C633D6967FE3F.asc){: target="_blank"}
+[PGP Key](/theme/74B041E23DB29D552644CEB1B18C633D6967FE3F.asc)

@@ -33,7 +33,7 @@ Offen is now also available in English and German. Our consent banner and the Au
 
 To run Offen in a non-default locale, you need to set `OFFEN_APP_LOCALE` to the desired value. In the case of German that'd be `de` for example. [Check the docs about configuring the application](https://docs.offen.dev/running-offen/configuring-the-application/#application).
 
-Our translation workflow featuring [POEditor](https://poeditor.com){: target="_blank"} is up and running and ready to be applied to other languages. A further locale, Indonesian, is currently in the works. If you want to support fair web analytics by contributing French, Spanish or other language versions, don't hesitate to [request an invite.](mailto:hioffen@posteo.de)
+Our translation workflow featuring [POEditor](https://poeditor.com) is up and running and ready to be applied to other languages. A further locale, Indonesian, is currently in the works. If you want to support fair web analytics by contributing French, Spanish or other language versions, don't hesitate to [request an invite.](mailto:hioffen@posteo.de)
 
 #### About time
 

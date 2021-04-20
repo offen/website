@@ -17,7 +17,7 @@ In this article we collect a few real world options and scenarios for hosting Of
 
 ---
 
-*Prerequisite:* All of the below assumes you have registered one or multiple domains on which you run your applications and websites, and can set [A](https://en.wikipedia.org/wiki/List_of_DNS_record_types#A){: target="_blank"} or [CNAME records](https://en.wikipedia.org/wiki/CNAME_record){: target="_blank"} for these. If you do not know what this means exactly: it is a default feature in almost all packages that let you register a domain. Your provider or registrar surely can help you with further support if you need any. Read more about it in our [dedicated subdomain tutorial.](https://docs.offen.dev/running-offen/setting-up-using-subdomains/){: target="_blank"}
+*Prerequisite:* All of the below assumes you have registered one or multiple domains on which you run your applications and websites, and can set [A](https://en.wikipedia.org/wiki/List_of_DNS_record_types#A) or [CNAME records](https://en.wikipedia.org/wiki/CNAME_record) for these. If you do not know what this means exactly: it is a default feature in almost all packages that let you register a domain. Your provider or registrar surely can help you with further support if you need any. Read more about it in our [dedicated subdomain tutorial.](https://docs.offen.dev/running-offen/setting-up-using-subdomains/)
 
 ### Scenarios where Offen is a good fit
 
@@ -39,9 +39,9 @@ If you are working on a bigger project with a lot of traffic, you might consider
 
 ### Some available hosting providers
 
-This list is a non-exhaustive collection of hosting providers that we happen to know and have used ourselves. We are in no way affiliated with any of these, don't earn any money when you install Offen there, and definitely don't want to push you anywhere. We do want you to use Offen though, of course, but it's always your choice where to run it. If you know of any other good option, tweet them our way [@hioffen](https://twitter.com/hioffen){: target="_blank"}.
+This list is a non-exhaustive collection of hosting providers that we happen to know and have used ourselves. We are in no way affiliated with any of these, don't earn any money when you install Offen there, and definitely don't want to push you anywhere. We do want you to use Offen though, of course, but it's always your choice where to run it. If you know of any other good option, tweet them our way [@hioffen](https://twitter.com/hioffen).
 
-#### [AWS](https://aws.amazon.com/){: target="_blank"}
+#### [AWS](https://aws.amazon.com/)
 
 The obvious choice for hosting your Offen instance in the AWS ecosystem is probably using EC2 (which is a virtual server). For handling Offen in any of the above scenarios a `t3.nano` instance is sufficient, which - at the time of writing - bills at *USD 3.90 per month*. In case you have just recently signed up for AWS, you could also run Offen using the *free tier usage plan* that gives you one free `t2.micro` (this, by the way, is also how we are currently running our own instance).
 
@@ -56,11 +56,11 @@ The lowdown on AWS:
 
 ---
 
-#### [Heroku](https://www.heroku.com/){: target="_blank"}
+#### [Heroku](https://www.heroku.com/)
 
 Heroku is famous for making deployment of web based software as easy as possible, and it indeed lets you deploy Offen from within your browser using our Heroku preset.
 
-[Open Heroku preset](https://github.com/offen/heroku){: target="_blank" data-button-mb3="outline"}
+[Open Heroku preset](https://github.com/offen/heroku){: data-button-mb3="outline"}
 
 Heroku has a free tier that theoretically lets you deploy Offen and a database for free. The only caveat with this is that you will need to provide your own SSL certificate in this scenario, which makes it relatively complicated to get going. In addition to that Dynos (this is Heroku's name for a virtual server) on the free plan fall asleep when they are not used, so applications tend to be relatively sluggish when going down that route.
 
@@ -76,11 +76,11 @@ The lowdown on Heroku:
 
 ---
 
-#### [DigitalOcean](https://www.digitalocean.com/){: target="_blank"}
+#### [DigitalOcean](https://www.digitalocean.com/)
 
 DigitalOcean provides virtual servers in a product they call Droplets. The cheapest variant - which is enough to host Offen for one of the above scenarios - costs *USD 5.00 per month*. On this droplet you can install Offen yourself in whatever fashion you prefer (Docker, systemd, something else) or use our prebuilt image.
 
-[Open prebuilt DigitalOcean image](https://github.com/offen/digitalocean){: target="_blank" data-button-mb3="outline"}
+[Open prebuilt DigitalOcean image](https://github.com/offen/digitalocean){: data-button-mb3="outline"}
 
 If you need a dedicated database server, you can either use the managed Postgres offering (which is relatively expensive) or add another Droplet, installing a prebuilt PostgreSQL or MySQL image.
 
@@ -93,7 +93,7 @@ The lowdown on DigitalOcean:
 
 ---
 
-#### [Linode](https://www.linode.com/){: target="_blank"}
+#### [Linode](https://www.linode.com/)
 
 Feeling "close to the metal" in a good way, Linode offers virtual servers on shared instances. At *USD 5.00 per month* you get a Linux server that you can use to install and serve your Offen instance. There is no dedicated database offering, so if you wanted to use a dedicated database you would need to install MySQL or PostgreSQL on another shared instance. Presets are available for these.
 
@@ -108,4 +108,4 @@ The lowdown on Linode:
 
 ### Where to head next
 
-If you made a choice and want to deploy your own Offen instance, head over to our [Installation tutorials](https://docs.offen.dev/running-offen/tutorials/){: target="_blank"} where you will get further guidance on what to do next and how to get your instance up and running. And in case you get stuck or need help, file an [issue](https://github.com/offen/offen/issues){: target="_blank"}, [tweet](https://twitter.com/hioffen){: target="_blank"} or [email](mailto:hioffen@posteo.de){: target="_blank"}.
+If you made a choice and want to deploy your own Offen instance, head over to our [Installation tutorials](https://docs.offen.dev/running-offen/tutorials/) where you will get further guidance on what to do next and how to get your instance up and running. And in case you get stuck or need help, file an [issue](https://github.com/offen/offen/issues), [tweet](https://twitter.com/hioffen) or [email](mailto:hioffen@posteo.de).
