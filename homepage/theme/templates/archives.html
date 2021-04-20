@@ -31,7 +31,7 @@
                     </a>
                   </figure>
                   <h6 class="f5 lh-solid normal ma0 light-silver">
-                    {{ article.date | strftime('%d %b %Y') }}{% if article.modified %}(article.updated {{ article.modified | strftime('%d %b %Y') }}){% endif %}, {{ article.author }}
+                    {{ article.date | strftime('%d %b %Y') }}, {{ article.author }}
                   </h6>
                     <h2 class="f3 normal lh-title mt3 ma0 mb3 light-silver">
                       {% if not article.must_read %}

@@ -10,7 +10,7 @@ bottom_cta: blog
 
 # Episode Six — Packaging and testing
 
-It feels a little surreal to write this, but: this post marks the end of Milestone 6, which is the last one defined in our initial product plan defining the scope of our support by the [NGI Zero PET initiative](https://nlnet.nl/thema/NGIZeroPET.html){: target="_blank"}.
+It feels a little surreal to write this, but: this post marks the end of Milestone 6, which is the last one defined in our initial product plan defining the scope of our support by the [NGI Zero PET initiative](https://nlnet.nl/thema/NGIZeroPET.html).
 
 In these last weeks we focused on packaging and testing, which - who would have thought - uncovered some issues we didn't know about yet. But it also felt very rewarding to see the work of the last ~9 months paying off, now that we and others can deploy and use Offen easily. Having designed Offen as a self hosted solution from the start, we managed to establish a unique characteristic when comparing Offen with other solutions out there: if you're looking to self host your analytics software, it won't get much easier. If you are unsure about that claim, check out the rest of this post to see what that actually means.
 
@@ -32,17 +32,17 @@ As always, you can download the latest release from [https://get.offen.dev](http
 
 One of the design goals of Offen is to make it really easy to install. Nevertheless, using self hosted software can be daunting if you haven't done it before, or you are not well versed with using the CLI. To help people unsure about what to do getting started, we published a lot of options and contributed to community resources:
 
-- There is a tutorial for installing Offen on [Uberspace](https://uberspace.de/){: target="_blank"}: [https://lab.uberspace.de/guide_offen.html](https://lab.uberspace.de/guide_offen.html){: target="_blank"}
+- There is a tutorial for installing Offen on [Uberspace](https://uberspace.de/): [https://lab.uberspace.de/guide_offen.html](https://lab.uberspace.de/guide_offen.html)
 
-- We packaged Offen for [YunoHost](https://yunohost.org/#/){: target="_blank"} (an operating system tailored towards self hosting): [https://github.com/offen/offen_ynh](https://github.com/offen/offen_ynh){: target="_blank"}
+- We packaged Offen for [YunoHost](https://yunohost.org/#/) (an operating system tailored towards self hosting): [https://github.com/offen/offen_ynh](https://github.com/offen/offen_ynh)
 
-- We wrote a tutorial for how to host your static website alongside Offen: [https://github.com/hetzneronline/community-content/pull/257](https://github.com/hetzneronline/community-content/pull/257){: target="_blank"}
+- We wrote a tutorial for how to host your static website alongside Offen: [https://github.com/hetzneronline/community-content/pull/257](https://github.com/hetzneronline/community-content/pull/257)
 
 - You can deploy Offen to Heroku with a single click: [https://github.com/offen/heroku](https://github.com/offen/heroku)
 
 - There is also a prebuilt image for DigitalOcean: [https://github.com/offen/digitalocean](https://github.com/offen/digitalocean)
 
-- In case Docker is something you are using, here's our image: [https://hub.docker.com/r/offen/offen](https://hub.docker.com/r/offen/offen){: target="_blank"}
+- In case Docker is something you are using, here's our image: [https://hub.docker.com/r/offen/offen](https://hub.docker.com/r/offen/offen)
 
 - Raspberry Pis can run Offen just fine: [https://docs.offen.dev/running-offen/downloads-distributions/#building-offen-for-architectures-other-than-amd64](https://docs.offen.dev/running-offen/downloads-distributions/#building-offen-for-architectures-other-than-amd64)
 
@@ -67,7 +67,7 @@ While we've been doing a lot of test installations of Offen ourselves in the pas
 
 #### Helping others to start contributing to Offen
 
-Offen is free and open for everyone to use with no strigs attached. There is no business model like a hosted version or similar behind it. This is why it's important for us to open up the development of Offen to the community now that we've set the foundation. To kick this off, we will be participating in this year's [Hacktoberfest](https://hacktoberfest.digitalocean.com/){: target="_blank"}. Check out the [relevant issues on our repository](https://github.com/offen/offen/issues?q=is%3Aissue+is%3Aopen+label%3AHacktoberfest), forward this to whoever might be interested, or start hacking on Offen yourself right away. We are also happy about any kind of feedback on our [roadmap](https://github.com/offen/offen/projects/1).
+Offen is free and open for everyone to use with no strigs attached. There is no business model like a hosted version or similar behind it. This is why it's important for us to open up the development of Offen to the community now that we've set the foundation. To kick this off, we will be participating in this year's [Hacktoberfest](https://hacktoberfest.digitalocean.com/). Check out the [relevant issues on our repository](https://github.com/offen/offen/issues?q=is%3Aissue+is%3Aopen+label%3AHacktoberfest), forward this to whoever might be interested, or start hacking on Offen yourself right away. We are also happy about any kind of feedback on our [roadmap](https://github.com/offen/offen/projects/1).
 
 ---
 
@@ -99,7 +99,7 @@ Localizing software at an early stage is hard, so we developed Offen as English-
 
 #### Packaging Offen as a snap
 
-[Snapcraft](https://snapcraft.io/){: target="_blank"} is a relatively recent way of packaging apps for use across all Linux distributions. While it has also received its fair share of criticism, it also provides a really simple way of packaging and distributing apps like Offen.
+[Snapcraft](https://snapcraft.io/) is a relatively recent way of packaging apps for use across all Linux distributions. While it has also received its fair share of criticism, it also provides a really simple way of packaging and distributing apps like Offen.
 
 To build a snap from Offen, first install `snapcraft`. If you're on Ubuntu or Debian, you can use `snap` to install it:
 

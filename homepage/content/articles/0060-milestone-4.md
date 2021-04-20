@@ -37,9 +37,9 @@ Relevant PRs are: [349](https://github.com/offen/offen/pull/349), [355](https://
 
 In Milestone 5, we want to add integration test coverage for all of our user-facing features. To prepare for this, we did research on what tools we can use and how to integrate them into our existing development and CI setup.
 
-We ended up choosing and implementing a setup using [Cypress](https://www.cypress.io/){: target="_blank"}, which is a popular MIT-licensed tool that can run tests in multiple browsers like Chromium and Firefox.
+We ended up choosing and implementing a setup using [Cypress](https://www.cypress.io/), which is a popular MIT-licensed tool that can run tests in multiple browsers like Chromium and Firefox.
 
-Another great thing about this setup is that is allows us to run automated Accessibility and performance audits (for example using [Lighthouse](https://developers.google.com/web/tools/lighthouse){: target="_blank"} or [Pa11y](https://pa11y.org/){: target="_blank"}.
+Another great thing about this setup is that is allows us to run automated Accessibility and performance audits (for example using [Lighthouse](https://developers.google.com/web/tools/lighthouse) or [Pa11y](https://pa11y.org/).
 
 This has been implemented in PRs [362](https://github.com/offen/offen/pull/362), [365](https://github.com/offen/offen/pull/365) and [368](https://github.com/offen/offen/pull/368)
 
@@ -102,7 +102,7 @@ Offen tries to be a slim and lightweight solution but nevertheless, crucial user
 
 Offen collects data only after opt-in. In addition to the consent banner that is shown on websites that embed Offen, the Auditorium itself allows users to manage their consent status. As an exercise, let's write a test where a user first grants consent, reviews the Auditorium and then opts out again, seeing that data has been deleted.
 
-As noted above integration tests are written using [Cypress](https://www.cypress.io/){: target="_blank"} which has a `mocha`-esque DSL for writing tests. In the `offen/offen` repository, create a new file called `integration/cypress/integration/consent.spec.js`. We're ready to write a basic test now.
+As noted above integration tests are written using [Cypress](https://www.cypress.io/) which has a `mocha`-esque DSL for writing tests. In the `offen/offen` repository, create a new file called `integration/cypress/integration/consent.spec.js`. We're ready to write a basic test now.
 
 N.B.: these examples use `.contains('some text')` for selecting elements as this is very obvious in the context of an example. Our real world tests will use dedicated `data-testid` selectors for targeting DOM elements.*
 

@@ -10,7 +10,7 @@ bottom_cta: blog
 
 # Episode Seven — Performance and Awareness
 
-Some time has passed after [NGI Zero PET Initiative](https://nlnet.nl/thema/NGIZeroPET.html){: target="_blank"} funding ended, we want to recap the results of our work with this blog post.
+Some time has passed after [NGI Zero PET Initiative](https://nlnet.nl/thema/NGIZeroPET.html) funding ended, we want to recap the results of our work with this blog post.
 
 Wrapping up what has been a challenging year for everyone, we have been working steadily over the past three months to further enhance our product. The most important aspect of this was a significant improvement in query performance. An update that is particularly beneficial for operators of high-traffic websites who want to analyse user behavior over long periods of time.
 
@@ -52,7 +52,7 @@ For operators who want to migrate an older running Offen instance to another har
 
 #### Localization
 
-As already mentioned in our last milestone, localization ranks at the top of our bucket list. Thanks to the kind support of the folks at [POEditor](https://poeditor.com/){: target="_blank"}, we now have a proper workflow in place and the translation may begin. Not surprisingly, German will be the second locale we tackle. Let us know if you can you help us out with French, Spanish or any other mother tongue.
+As already mentioned in our last milestone, localization ranks at the top of our bucket list. Thanks to the kind support of the folks at [POEditor](https://poeditor.com/), we now have a proper workflow in place and the translation may begin. Not surprisingly, German will be the second locale we tackle. Let us know if you can you help us out with French, Spanish or any other mother tongue.
 
 #### Easily accessible analytics data
 
