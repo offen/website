@@ -543,17 +543,14 @@ STACKING IMAGES
 	.bg-customize-a {
 		top: 14rem;
 		left: calc(30% - 6rem);
-		width: 250px;
 	}
 	.bg-customize-b {
 		top: 17.5rem;
 		left: calc(30% + 5rem);
-		width: 250px;
 	}
 	.bg-customize-c {
 		top: 21.7rem;
 		left: calc(30% + 1rem);
-		width: 250px;
 	}
 	.bg-cta-pfeil {
 		top: -14rem;
@@ -579,17 +576,17 @@ STACKING IMAGES
 	.bg-customize-a {
 		top: 5rem;
 		left: 28rem;
-		width: 330px;
+		width: 300px;
 	}
 	.bg-customize-b {
 		top: 10.5rem;
-		left: 48rem;
-		width: 330px;
+		left: 46rem;
+		width: 300px;
 	}
 	.bg-customize-c {
-		top: 16rem;
+		top: 15.5rem;
 		left: 22rem;
-		width: 330px;
+		width: 300px;
 	}
 	.bg-cta-pfeil {
 		top: -12rem;
