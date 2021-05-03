@@ -14,7 +14,6 @@ COLORS
 .cclr-bg-yellow-bright-very {
 	 background-color: #F9F7F2;
 }
-
 /* Mint */
 .cclr-bg-mint-dark {
 	 background-color: #9BC5BC;
@@ -51,6 +50,9 @@ COLORS
 
 
 /* White */
+.cclr-bg-white-fade-end {
+	background-color: #f3f0e7;
+}
 .cclr-bg-white-dark {
 	background-color: #f9f7f2;
 }
@@ -126,10 +128,13 @@ LAYOUT
 .hx-compare-c,
 .hx-compare-d,
 .hx-metrics,
-.hx-localize-a,
-.hx-localize-b,
+.hx-localize,
+.hx-customize,
 .hx-difference {
 	height: 100%;
+}
+.mx-customize {
+	margin: 0 0 19.5rem 0;
 }
 @media only screen and (min-width: 30em) {
 	.wx24,
@@ -152,6 +157,9 @@ LAYOUT
 	.hx-metrics {
 		height: 128rem;
 	}
+	.mx-customize {
+		margin: 0 0 18rem 0;
+	}
 }
 @media only screen and (min-width: 60em) {
 	.wx24-metrics {
@@ -169,11 +177,14 @@ LAYOUT
 	.hx-metrics {
 		height: 132rem;
 	}
-	.hx-localize-a {
-		height: 14rem;
+	.hx-localize {
+		height: 24rem;
 	}
-	.hx-localize-b {
-		height: 17rem;
+	.hx-customize {
+		height: 28rem;
+	}
+	.mx-customize {
+		margin: 0;
 	}
 	.hx-difference {
 		height: 33rem;
@@ -479,20 +490,34 @@ STACKING IMAGES
 	z-index : 550;
 }
 .bg-localize {
-	top: -2.2rem;
+	top: -3.3rem;
 	left: calc(100% - 16rem);
-	width: 220px;
+	width: 250px;
 	z-index : 560;
 }
-.bg-localize-marker {
-	top: 2rem;
-	left: -1.8rem;
-	z-index : 561;
+.bg-customize-a {
+	top: 14rem;
+	left: 7%;
+	width: 250px;
+	z-index : 572;
+}
+.bg-customize-b {
+	top: 18.5rem;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 250px;
+	z-index : 571;
+}
+.bg-customize-c {
+	top: 22.8rem;
+	right: 7%;
+	width: 250px;
+	z-index : 570;
 }
 .bg-cta-pfeil {
 	top: -13rem;
 	left: 66%;
-	z-index : 570;
+	z-index : 580;
 }
 
 @media only screen and (min-width: 30em) {
@@ -511,11 +536,21 @@ STACKING IMAGES
 		left: calc(100% - 30rem);
 	}
 	.bg-localize {
-		left: calc(100% - 22rem);
+		top: -4.3rem;
+		left: calc(100% - 26rem);
+		width: 300px;
 	}
-	.bg-localize-marker {
-		top: 1rem;
-		left: -2rem;
+	.bg-customize-a {
+		top: 14rem;
+		left: calc(30% - 6rem);
+	}
+	.bg-customize-b {
+		top: 17.5rem;
+		left: calc(30% + 5rem);
+	}
+	.bg-customize-c {
+		top: 21.7rem;
+		left: calc(30% + 1rem);
 	}
 	.bg-cta-pfeil {
 		top: -14rem;
@@ -534,13 +569,24 @@ STACKING IMAGES
 		left: calc(100% - 20rem);
 	}
 	.bg-localize {
-		top: 6rem;
-		left: 43rem;
+		top: 4.5rem;
+		left: 35rem;
+		width: 400px;
+	}
+	.bg-customize-a {
+		top: 5rem;
+		left: 28rem;
 		width: 300px;
 	}
-	.bg-localize-marker {
-		top: -0.5rem;
-		left: 4rem;
+	.bg-customize-b {
+		top: 10.5rem;
+		left: 46rem;
+		width: 300px;
+	}
+	.bg-customize-c {
+		top: 15.5rem;
+		left: 22rem;
+		width: 300px;
 	}
 	.bg-cta-pfeil {
 		top: -12rem;
