@@ -6,7 +6,7 @@
       {% block title %}{{ title }}{% endblock %}
     </title>
     <meta charset="UTF-8">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' *.offen.dev; frame-src 'self' *.offen.dev; style-src 'self' 'unsafe-inline'">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-eval' *.offen.dev; frame-src 'self' *.offen.dev; style-src 'self' 'unsafe-inline'">
     <meta name="referrer" content="origin">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
@@ -41,16 +41,20 @@
     <div class="menu w-100 cclr-bg-yellow-mid">
       <section class="nav-bar">
         <div class="nav-container">
-          <div class="icon flex">
+          <div class="icon flex" v-bind:style="{ opacity: progress }">
             <a class="link dim" href="/"><img src="/theme/images/offen-icon-white.svg" alt="Offen logo" width="37" height="40" class="logo"></a>
             <header>
               <a class="link dim" href="/"><p class="fLogo normal ma0 ml2 white">Offen</p></a>
             </header>
           </div>
           {% if not funnel %}
-            <nav>
-              <div class="nav-mobile"><span id="nav-toggle"><span></span></span></div>
-              <ul class="nav-list">
+            <nav id="navigation">
+              <div class="nav-mobile">
+                <span id="nav-toggle" v-on:click="toggle" v-bind:class="{ active: active }">
+                  <span></span>
+                </span>
+              </div>
+              <ul class="nav-list" v-bind:class="{ active: active }">
                 {% if not index %}
                 <li>
                   <a class="b link dim cclr-fnt-black-mid" href="/">Summary</a>
@@ -323,7 +327,7 @@
     </footer>
   </div>
   {% block scripts %}
-    {% assets filters="rjsmin", output="scripts/packed.js", "scripts/jquery-3.4.1.min.js", "scripts/menu.js", "scripts/fade.js" %}
+    {% assets filters="rjsmin", output="scripts/packed.js", "scripts/vue.min.js", "scripts/menu.js", "scripts/fade.js" %}
       <script src="/{{ ASSET_URL }}"></script>
     {% endassets %}
   {% endblock %}

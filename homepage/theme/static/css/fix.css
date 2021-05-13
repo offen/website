@@ -698,6 +698,12 @@ nav ul li ul li a {
 @media only screen and (max-width: 60rem) {
   .nav-list {
     margin: 0;
+    height: 0;
+    overflow: hidden;
+    transition: all .6s;
+  }
+  .nav-list.active {
+    height: 280px;
   }
   .nav-mobile {
     display: block;
@@ -706,9 +712,6 @@ nav ul li ul li a {
     width: 100%;
     padding: 0;
     padding-top: 4rem;
-  }
-  nav ul {
-    display: none;
   }
   nav ul li {
     float: none;
