@@ -702,9 +702,13 @@ nav ul li ul li a {
     overflow: hidden;
     transition: all .6s;
   }
-  .nav-list.active {
+  body.no-js .nav-list {
+    transition: none;
+  }
+  .nav-list.active, body.no-js .nav-list {
     height: 280px;
   }
+
   .nav-mobile {
     display: block;
   }
