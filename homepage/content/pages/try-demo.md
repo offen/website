@@ -8,7 +8,7 @@ Offen always respects your data, which is why *we don't offer a live demo showin
 
 If you get stuck or need help, [file an issue][gh-issues], [tweet (@hioffen)][twitter] or [email][email]. Be sure to check out our [Docs][Docs] as well.
 
-[Docs]: https://docs.offen.dev/running-offen/?utm_campaign=get-started
+[Docs]: https://docs.offen.dev/running-offen
 [gh-issues]: https://github.com/offen/offen/issues
 [twitter]: https://twitter.com/hioffen
 [email]: mailto:hioffen@posteo.de
