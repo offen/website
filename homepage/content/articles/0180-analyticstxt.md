@@ -1,6 +1,6 @@
 title: Disclose what you collect
 description: Why we drafted a standard that allows you to disclose information about your use of analytics software and user tracking.
-date: 2021-05-20
+date: 2021-05-24
 slug: analytics-txt
 url: /blog/analytics-txt/
 sitemap_priority: 0.7
@@ -10,7 +10,7 @@ bottom_cta: cookie
 
 # Disclose what you collect
 
-The variety of data protection regulations and the range of methods used to collect usage data make web analytics a confusing field. A well-defined way for websites to indicate their use of analytics and tracking software is still missing. We started working on such a standard and gave it the name `analytics.txt` .
+The variety of data protection regulations and the range of methods used to collect usage data make web analytics a confusing field. A well-defined way for websites to indicate their use of analytics and tracking software is still missing. Earlier this year we started working on such a standard and gave it the name `analytics.txt` .
 
 ### Learning from building Offen
 
