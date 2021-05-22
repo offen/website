@@ -6,6 +6,7 @@ url: /blog/analytics-txt/
 sitemap_priority: 0.7
 image_url: /theme/images/offen-blog-0180-analyticstxt.jpg
 author: Hendrik Niefeld
+must_read: True
 bottom_cta: cookie
 
 # Disclose what you collect
