@@ -181,7 +181,7 @@ LAYOUT
 		height: 24rem;
 	}
 	.hx-customize {
-		height: 28rem;
+		height: 26rem;
 	}
 	.mx-customize {
 		margin: 0;
@@ -466,7 +466,7 @@ STACKING IMAGES
 }
 .bg-feature-3 {
 	top: 0;
-	left: -35%;
+	left: -50%;
 	z-index : 410;
 }
 .bg-compare-a-pfeil {
@@ -525,7 +525,7 @@ STACKING IMAGES
 		left: calc(50% - 21rem);
 	}
 	.bg-feature-3 {
-		left: calc(50% - 18rem);
+		left: calc(50% - 28rem);
 	}
 	.bg-compare-c-pfeil {
 		top: -5rem;
