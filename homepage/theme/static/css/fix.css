@@ -175,7 +175,7 @@ LAYOUT
 		height: 50rem;
 	}
 	.hx-metrics {
-		height: 132rem;
+		height: 122rem;
 	}
 	.hx-localize {
 		height: 24rem;
@@ -245,7 +245,7 @@ LAYOUT
 	}
 	.stackbox-30 {
 		z-index : 140;
-		top: 33rem;
+		top: 36rem;
 		left: calc(100% - 27rem)
 	}
 	.stackbox-40 {
@@ -255,7 +255,7 @@ LAYOUT
 	}
 	.stackbox-50 {
 		z-index : 148;
-		top: 74rem;
+		top: 73.8rem;
 		left: calc(100% - 27rem)
 	}
 }
@@ -265,7 +265,7 @@ LAYOUT
 		left: 34rem;
 	}
 	.stackbox-20 {
-		top: 10rem;
+		top: 6rem;
 		left: 6rem;
 	}
 	.stackbox-30 {
@@ -274,11 +274,11 @@ LAYOUT
 	}
 	.stackbox-40 {
 		top: 55rem;
-		left: 10rem;
+		left: 6rem;
 	}
 	.stackbox-50 {
-		top: 74rem;
-		left: 31rem;
+		top: 64rem;
+		left: 34rem;
 	}
 }
 
@@ -485,7 +485,7 @@ STACKING IMAGES
 	z-index : 530;
 }
 .bg-metrics-bulb {
-	top: 8.5rem;
+	top: 10rem;
 	left: calc(100% - 10rem);
 	z-index : 550;
 }
@@ -565,7 +565,7 @@ STACKING IMAGES
 		left: -50%;
 	}
 	.bg-metrics-bulb {
-		top: -3rem;
+		top: -2rem;
 		left: calc(100% - 20rem);
 	}
 	.bg-localize {
