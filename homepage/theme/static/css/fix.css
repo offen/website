@@ -245,7 +245,7 @@ LAYOUT
 	}
 	.stackbox-30 {
 		z-index : 140;
-		top: 36rem;
+		top: 37rem;
 		left: calc(100% - 27rem)
 	}
 	.stackbox-40 {
@@ -255,7 +255,7 @@ LAYOUT
 	}
 	.stackbox-50 {
 		z-index : 148;
-		top: 73.8rem;
+		top: 75rem;
 		left: calc(100% - 27rem)
 	}
 }
@@ -273,7 +273,7 @@ LAYOUT
 		left: 29rem;
 	}
 	.stackbox-40 {
-		top: 55rem;
+		top: 50rem;
 		left: 6rem;
 	}
 	.stackbox-50 {

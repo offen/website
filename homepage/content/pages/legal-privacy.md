@@ -16,7 +16,7 @@ For data to be collected you need to opt in first. [You can do this in the conse
 Only page views, sessions, referrer and visited URLs are collected. From this, other metrics such as the bounce rate are calculated.
 
 #### What data isn't collected?
-Location data, device information and engagement are not collected. There are also no fingerprinting technologies in use.
+Device information and engagement are not collected. There are also no fingerprinting technologies in use.
 
 #### How is my data handled?
 Your usage data is encrypted end-to-end. It will be automatically deleted after 6 months. You can delete your usage data yourself at any time.
