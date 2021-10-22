@@ -70,6 +70,11 @@ Offen is created by [Frederik Ring](https://www.frederikring.com/) and [Hendrik 
 
 We are happy to work with [NLnet Foundation,](https://nlnet.nl/) which actively supports our efforts as part of its [Next Generation Internet](https://nlnet.nl/NGI/) initiative.
 
+### Beyond Offen
+
+Taking Offen as a reference point, we are proposing a standard named [analytics.txt](https://www.analyticstxt.org/) that allows websites and services to disclose information about their use of analytics software and user tracking.
+
+Furthermore, we have outlined a new [protocol](https://offen.github.io/protocol/) that supports the discoverable exchange of data over a single HTTP endpoint.
 
 ### Contact
 
