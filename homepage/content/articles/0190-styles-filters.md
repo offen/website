@@ -14,8 +14,8 @@ Once again, we would like to share some of the highlights of our recent work. Ov
 
 Since our last update we have published two new versions:
 
-- [v0.4.0](https://github.com/offen/offen/releases/tag/v0.4.2)
-- [v0.4.1](https://github.com/offen/offen/releases/tag/v0.4.3)
+- [v0.4.2](https://github.com/offen/offen/releases/tag/v0.4.2)
+- [v0.4.3](https://github.com/offen/offen/releases/tag/v0.4.3)
 
 You can download the latest release from [https://get.offen.dev](https://get.offen.dev/) or pull it from Docker Hub.
 
