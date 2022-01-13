@@ -83,11 +83,12 @@ DECORATE_CONTENT = {
     'h3': ['f3', 'normal', 'mt5', 'ma0', 'mb3'],
     'h4': ['f5', 'normal', 'mt4', 'ma0', 'mb3'],
     'h5': ['f5', 'normal', 'mt5', 'ma0', 'mb1'], # text over button
-    'h6': ['f5', 'normal', 'ma0'], # Not used
+    'h6': ['f5', 'normal','i', 'ma0'], # Not used
     'p': ['ma0', 'pb3'],
     'blockquote': ['f4', 'ma0', 'ph4-ns', 'pv3', 'mb3'],
     'blockquote p': ['nb2'],
     'hr': ['mt5', 'mb3', 'b--black-05'],
+    'ol': ['pb3']
 }
 
 GITHUB_REPO = 'https://github.com/offen/offen'
