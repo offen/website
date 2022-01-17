@@ -1,6 +1,6 @@
 title: Introducing the Offen Protocol
 description: A new vocabulary for software that aims to handle usage data in a transparent manner.
-date: 2022-01-13
+date: 2022-01-17
 slug: offen-protocol
 url: /blog/offen-protocol/
 sitemap_priority: 0.7
