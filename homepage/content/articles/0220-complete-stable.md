@@ -1,6 +1,6 @@
 title: Complete and stable
 description: Yay! Offen and its configuration APIs are now available in version v1.0.0.
-date: 2022-03-24
+date: 2022-04-03
 slug: complete-stable
 url: /blog/complete-stable/
 sitemap_priority: 0.6
