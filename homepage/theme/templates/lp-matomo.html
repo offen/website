@@ -2,49 +2,133 @@
 {% set funnel = True %}
 
 {% block content %}
-<div class="w-100 mt5-ns cclr-bg-white-dark">
-  <div class="mw8 center gray bg-white">
+<div class="w-100 mt5-ns cclr-bg-white-fade-end">
+
+  <div class="mw8 center bg-white">
     <div class="flex justify-center pt3 ph4">
+      <div class="w-100 w-80-m w-60-l">
 
-      <div class="w-100 w-80-m w-60-l flex flex-column">
-
-
-        <h1 class="f3 normal ma0 mb3">
-          A truly privacy focused Matomo alternative.
-        </h1>
-
-        <ul class="list pa0 ma0 mb3">
-          <li class="mb2">
-            Users actively give their consent to data collection.
-          </li>
-          <li class="mb2">
-            They can delete it or opt out at any time with full data access.
-          </li>
-          <li>
-            Offen is open source, lightweight, self hosted and free.
-          </li >
-        </ul>
-
-
-
-        <div class="flex flex-wrap justify-between">
-          <p class="f3 normal ma0">
-            Switch today!
-          </p>
-          <div class="flex flex-wrap tc">
-            <a class="w-100 w-auto-ns b link dim ph4 pv2 dib b--solid bw2 cclr-brd-black-mid cclr-fnt-black-mid mr0 mr2-ns" href="/try-demo/" rel="noopener">Try demo</a>
-            <a class="w-100 w-auto-ns b link dim ph4 pv2 dib b--solid bw2 cclr-brd-black-mid white cclr-bg-black-mid" href="/get-started/" rel="noopener">Get started</a>
+        <div class="flex flex-column mt4 mb6">
+          <h1 class="f2 normal ma0 mb3">
+            A truly privacy focused <span>Matomo alternative</span>
+          </h1>
+          <ul class="w-100 w-80-ns list pa0 ma0 mb4">
+            <li class="mb2">
+              Users actively give their consent <i>to collection of data.</i>
+            </li>
+            <li class="mb2">
+              <i>They can delete it or </i>opt out at any time with full data access.
+            </li>
+            <li>
+              <i>Offen is open source, lightweight, </i>self hosted and free.
+            </li >
+          </ul>
+          <div class="flex flex-wrap justify-between">
+            <p class="f3 normal ma0 mt2 mb2 mb0-ns">
+              Switch today!
+            </p>
+            <div class="flex flex-wrap tc">
+              <a class="w-100 w-auto-ns b link dim ph4 pv2 dib b--solid bw2 cclr-brd-black-mid cclr-fnt-black-mid mr0 mr2-ns mb2 mb0-ns" href="/try-demo/" rel="noopener">Try demo</a>
+              <a class="w-100 w-auto-ns b link dim ph4 pv2 dib b--solid bw2 cclr-brd-black-mid white cclr-bg-black-mid" href="/get-started/" rel="noopener">Get started</a>
+            </div>
           </div>
         </div>
 
-
-
-
-
       </div>
-
     </div>
   </div>
+
+  <div class="mw8 center cclr-bg-white-dark">
+    <div class="flex justify-center pt5 ph4">
+      <div class="w-100 w-80-m w-60-l mb3">
+
+        <p class="gray ma0 mb2">
+          Room for improvement
+        </p>
+        <h2 class="f3 normal ma0 mb2">
+          There are some concerns with Matomos decisions regarding privacy.
+        </h2>
+        <ul class="w-100 w-80-ns pa0 pl3 ma0">
+          <li class="mb2">
+            Consent is practically a preset. <i>By default, Matomo only offers an opt-out feature.</i>
+          </li>
+          <li class="mb3">
+            <i>Access to usage data is </i>not automated and tedious.
+          </li>
+        </ul>
+
+        <h2 class="f3 normal ma0 mb2">
+          The installation and daily operation of Matomo is quite complex.
+        </h2>
+        <ul class="w-100 w-80-ns pa0 pl3 ma0">
+          <li class="mb2">
+            Many system dependencies <i>have to be pre-installed.</i>
+          </li>
+          <li class="mb5">
+            <i>The tracking script used is very extensive and </i>delays the loading of pages.
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="mw8 center cclr-bg-white-semi-dark">
+    <div class="flex justify-center pt5 ph4">
+      <div class="w-100 w-80-m w-60-l mb3">
+
+        <p class="gray ma0 mb2">
+          Balanced between operator and user
+        </p>
+        <h2 class="f3 normal ma0 mb2">
+          Offen is a web analytics tool that treats operators and users as equal parties.
+        </h2>
+        <ul class="w-100 w-80-ns pa0 pl3 ma0">
+          <li class="mb2">
+            <i>Offen's default is to </i>NOT collect any data. <i>Usage data is collected after </i>opt-in only.
+          </li>
+          <li class="mb2">
+            <i>Users have </i>full access to their data. <i>They can delete it any time or opt out completely.</i>
+          </li>
+          <li class="mb5">
+            <i>With all essential metrics you can </i>gain valuable insights in an ethical way.
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="mw8 center cclr-bg-white-dark">
+    <div class="flex justify-center pt5 ph4">
+      <div class="w-100 w-80-m w-60-l mb5">
+
+        <p class="gray ma0 mb2">
+          Make a difference
+        </p>
+        <h2 class="f3 normal ma0 mb2">
+          Run your own free and lightweight web analytics.
+        </h2>
+        <ul class="w-100 w-80-ns pa0 pl3 ma0">
+          <li class="mb2">
+            <i>Offen is fully open source and will </i>always be available for free. <i>No “Pro Plans” lurking.</i>
+          </li>
+          <li class="mb2">
+            <i>You self host and </i>don’t transfer any data <i>to third parties.</i>
+          </li>
+          <li class="mb2">
+            The installation is relatively simple <i>and the tracking script is reduced to a minimum.</i>
+          </li>
+          <li class="mb5">
+            Detailed documentation <i>assists with the installation and daily operation.</i>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+
 </div>
 
 {% endblock %}
