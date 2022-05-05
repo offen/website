@@ -56,6 +56,9 @@ COLORS
 .cclr-bg-white-dark {
 	background-color: #f9f7f2;
 }
+.cclr-bg-white-semi-dark {
+	background-color: #fffdf9;
+}
 .cclr-bg-white-fade {
 	background: linear-gradient(218.39deg, #FFFFFF 1.47%, rgba(255, 255, 255, 0) 98.24%), #F3F0E7;
 }
