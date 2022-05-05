@@ -110,5 +110,7 @@ DOCS_GETSTARTED_URL = 'https://docs.offen.dev/running-offen/'
 DOCS_GETSTARTED_URL_CAMPAIGN = 'https://docs.offen.dev/running-offen/?utm_campaign=get-started'
 DOCS_TRYDEMO_URL = 'https://docs.offen.dev/running-offen/test-drive/'
 DOCS_TRYDEMO_URL_CAMPAIGN = 'https://docs.offen.dev/running-offen/test-drive/?utm_campaign=try-demo'
+LP_MATOMO_URL_TRY = ''
+LP_MATOMO_URL_DOWNLOAD = ''
 
 OFFEN_ACCOUNT_ID = os.environ.get('OFFEN_ACCOUNT_ID', None)
