@@ -53,44 +53,36 @@ Your analytics tool thinks it doesn't need a consent request? There are tweets e
 
 Well, we have developed a tool for these needs. Say hello and give it a try. We used it to conditionally embed the following Tweet.
 
-<div class="consent-container w-100 flex justify-center mt3">  
-</div>
-<div class="tweet-container mb4">  
-</div>
+<div class="consent-container w-100 flex justify-center mt3"></div>
+<div class="tweet-container mb4"></div>
 
-<script async src="https://consent.offen.dev/client.js"></script>
+<script src="https://consent.offen.dev/client.js"></script>
 <script>
-  const waitFor = window.setInterval(() => {
-    if (!window.ConsentClient) {
-      return
+  const client = new window.ConsentClient({
+    host: document.querySelector('.consent-container'),
+    ui: {
+      styles: {
+        position: 'relative'
+      }
     }
-    window.clearInterval(waitFor)
-    const client = new window.ConsentClient({
-      host: document.querySelector('.consent-container'),
-      ui: {
-        styles: {
-          position: 'relative'
-        }
+  })
+  client.acquire('twitter')
+    .then(function (result) {
+      if (result && result.decisions && result.decisions.twitter) {
+
+        const blockquote = document.createElement('blockquote')
+        blockquote.classList.add('twitter-tweet')
+        blockquote.innerHTML = '<a href="https://twitter.com/hioffen/status/1510854517092491270?ref_src=twsrc%5Etfw"></a>'
+
+        document.querySelector('.tweet-container').appendChild(blockquote)
+        const script = document.createElement('script')
+        script.src = 'https://platform.twitter.com/widgets.js'
+        document.querySelector('.tweet-container').appendChild(script)
       }
     })
-    client.acquire('twitter')
-      .then(function (result) {
-        if (result && result.decisions && result.decisions.twitter) {
-
-          const blockquote = document.createElement('blockquote')
-          blockquote.classList.add('twitter-tweet')
-          blockquote.innerHTML = '<a href="https://twitter.com/hioffen/status/1510854517092491270?ref_src=twsrc%5Etfw"></a>'
-
-          document.querySelector('.tweet-container').appendChild(blockquote)
-          const script = document.createElement('script')
-          script.src = 'https://platform.twitter.com/widgets.js'
-          document.querySelector('.tweet-container').appendChild(script)
-        }
-      })
-      .catch(function (err) {
-        console.error(err)
-      })
-  }, 7)
+    .catch(function (err) {
+      console.error(err)
+    })
 </script>
 
 The *Offen Consent Tool* keeps your data footprint small by never storing data about consent decisions on your end. As a lightweight solution for managing user consent on websites, it focuses on these objectives:
