@@ -6,6 +6,27 @@ sitemap_priority: 0.3
 
 # About
 
+Hi, we are [Frederik Ring](https://www.frederikring.com/) and [Hendrik Niefeld.](http://niefeld.com/) These are our tools to make the web a better place.
+
+#### *[Offen Web Analytics](/#bg-explainer)*
+
+The fair web analytics tool. Let your users access their data and gain valuable insights at the same time. Open source, lightweight, self hosted and free. [Learn more.](/#bg-explainer)
+
+#### *[analytics.txts](https://www.analyticstxt.org/)*
+
+A proposed standard which allows websites and services to disclose information about their usage of analytics software and user tracking. [Learn more.](https://www.analyticstxt.org/)
+
+#### *[Offen Protocol](/blog/offen-protocol/)*
+
+A specification for the discoverable exchange of data over a single HTTP endpoint. [Learn more.](/blog/offen-protocol/)
+
+#### *[Offen Consent Tool](/blog/consent-tool/)*
+
+A lightweight solution for managing user consent on websites. [Learn more.](/blog/consent-tool/)
+
+
+---
+
 ### What is this thing called "my data" and why does seemingly everyone want to get hold of it?
 
 It has a ring, gives a slight spine-chilling sensation and generates a whole lot of clicks: consumer magazines like German "Computer Bild" caution about ["Google espionage"](https://www.computerbild.de/artikel/cb-Ratgeber-Kurse-Wissen-Was-weiss-Google-ueber-Sie-2799009.html) just like the internet has countless tutorials on turning off numerous ["data leeches"](https://praxistipps.chip.de/datenkrake-windows-10-so-schalten-sie-auffaellige-funktionen-ab_99652). Interestingly, diving into these realms will have you accidentally catching the next toolbar, malware infection or [even worse](https://blog.malwarebytes.com/cybercrime/2012/10/pick-a-download-any-download/).
@@ -23,8 +44,6 @@ As a regular user of the internet, are you really being spied upon? *What exactl
 > [Eric Schmidt](https://www.eff.org/de/deeplinks/2009/12/google-ceo-eric-schmidt-dismisses-privacy) (at this time CEO of Google), 2009
 
 We would like to turn the tables on this much quoted statement and apply it to the operators of services and websites instead of their users. The analytics software Offen *transparently and uncompromisingly discloses what data is being collected and what it is being used for* to the users.
-
----
 
 ### For users
 
@@ -48,9 +67,9 @@ We want to exemplify that it is time to depart the age of ["data capitalism"](ht
 <img class="smaller-image mt2" alt="Detour" src="/theme/images/gfx-deepdive-C.png"/>
 </div>
 
-### Offen as a technology
+###  Technology
 
-At runtime, Offen is just mediating exchange between users and operators. Usage data is collected in conformance to GDPR and with the concept of ["Datensparsamkeit"](https://martinfowler.com/bliki/Datensparsamkeit.html) in mind. All user data is encrypted in the browser so that it can only ever be accessed by the users themselves or the matching operator. While being collected in the context of a website or application, neither operators nor third party scripts have any possibility to access the usage data. Offen itself doesn't have any way of decrypting, processing or even selling the gathered data at any point.
+At runtime, Offen Web Analytics is just mediating exchange between users and operators. Usage data is collected in conformance to GDPR and with the concept of ["Datensparsamkeit"](https://martinfowler.com/bliki/Datensparsamkeit.html) in mind. All user data is encrypted in the browser so that it can only ever be accessed by the users themselves or the matching operator. While being collected in the context of a website or application, neither operators nor third party scripts have any possibility to access the usage data. Offen itself doesn't have any way of decrypting, processing or even selling the gathered data at any point.
 
 The software itself, as well as *all the used tools are open source*, [project planning and technical specification](https://github.com/offen/offen) take place in the open and actively solicit feedback from the general public.
 
@@ -62,19 +81,9 @@ Users and operators are given intuitive and accessibility-focused tools for anal
 
 Developing and running Offen can only work out when it is entirely *free of any kind of economic constraints or goals* and its only objective is *contributing to the common good*. Development of a prototype is reliant on public grants or similar funding sources. Long term development and maintenance of the software is tied to resources granted by foundations or being donated by the public.
 
-### Status Quo
-
-Offen is created by [Frederik Ring](https://www.frederikring.com/) and [Hendrik Niefeld](http://niefeld.com/) and is currently being conceptually designed and in active development, both as a product as well as as a software.
-
 [![NLnet Foundation](/theme/images/nlnet-logo.svg){:width="160px" height="60px" class="mt4"}](https://nlnet.nl/)
 
 We are happy to work with [NLnet Foundation,](https://nlnet.nl/) which actively supports our efforts as part of its [Next Generation Internet](https://nlnet.nl/NGI/) initiative.
-
-### Beyond Offen
-
-Taking Offen as a reference point, we are proposing a standard named [analytics.txt](https://www.analyticstxt.org/) that allows websites and services to disclose information about their use of analytics software and user tracking.
-
-Furthermore, we have outlined a new [protocol](https://offen.github.io/protocol/) that supports the discoverable exchange of data over a single HTTP endpoint.
 
 ### Contact
 
