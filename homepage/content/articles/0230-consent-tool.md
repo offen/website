@@ -58,32 +58,39 @@ Well, we have developed a tool for these needs. Say hello and give it a try. We 
 <div class="tweet-container mb4">  
 </div>
 
-<script src="https://consent.offen.dev/client.js"></script>
+<script async src="https://consent.offen.dev/client.js"></script>
 <script>
-  const client = new window.ConsentClient({
-    host: document.querySelector('.consent-container'),
-    ui: {
-      styles: {
-        position: 'relative'
-      }
+  const waitFor = window.setInterval(() => {
+    if (!window.ConsentClient) {
+      return
     }
-  })
-  client.acquire('twitter')
-    .then(function (result) {
-      if (result && result.decisions && result.decisions.twitter) {
-
-        const blockquote = document.createElement('div')
-        blockquote.innerHTML = '<blockquote class="twitter-tweet"><a href="https://twitter.com/hioffen/status/1510854517092491270?ref_src=twsrc%5Etfw"></a></blockquote>'
-
-        document.querySelector('.tweet-container').appendChild(blockquote)
-        const script = document.createElement('script')
-        script.src = 'https://platform.twitter.com/widgets.js'
-        document.querySelector('.tweet-container').appendChild(script)
+    window.clearInterval(waitFor)
+    const client = new window.ConsentClient({
+      host: document.querySelector('.consent-container'),
+      ui: {
+        styles: {
+          position: 'relative'
+        }
       }
     })
-    .catch(function (err) {
-      console.error(err)
-    })
+    client.acquire('twitter')
+      .then(function (result) {
+        if (result && result.decisions && result.decisions.twitter) {
+
+          const blockquote = document.createElement('blockquote')
+          blockquote.classList.add('twitter-tweet')
+          blockquote.innerHTML = '<a href="https://twitter.com/hioffen/status/1510854517092491270?ref_src=twsrc%5Etfw"></a>'
+
+          document.querySelector('.tweet-container').appendChild(blockquote)
+          const script = document.createElement('script')
+          script.src = 'https://platform.twitter.com/widgets.js'
+          document.querySelector('.tweet-container').appendChild(script)
+        }
+      })
+      .catch(function (err) {
+        console.error(err)
+      })
+  }, 7)
 </script>
 
 The *Offen Consent Tool* keeps your data footprint small by never storing data about consent decisions on your end. As a lightweight solution for managing user consent on websites, it focuses on these objectives:
@@ -103,7 +110,7 @@ The *Offen Consent Tool* is using 1st Party Cookies to store user's consent dec
 Next deploy the application to a domain like `consent.example.com`. On the host site `www.example.com` embed the client script:
 
 ```jsx
-<script src="[https://consent.example.com/client.js](https://consent.example.com/client.js)">
+<script src="https://consent.example.com/client.js">
 ```
 
 which exposed `window.ConsentClient`. In your client side code, construct a new client instance pointing at your deployment and request user consent for the desired scope(s):
