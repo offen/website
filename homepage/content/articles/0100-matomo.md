@@ -27,7 +27,7 @@ On the technical side, the following issues are particularly apparent. Installin
 
 ### Operators and users as equal parties
 
-To address the above mentioned issues we develop a fair, self hosted and lightweigt web analytics tool that treats operators and users as equal parties. It is called Offen and is [available as a production ready version.](https://www.offen.dev/get-started/)
+To address the above mentioned issues we develop a fair, self hosted and lightweigt web analytics tool that treats operators and users as equal parties. It is called Offen and is [available as a production ready version.](/get-started/)
 
 *Offen's default is to NOT collect any data.* Usage data is collected after opt-in only. If users choose to opt in, they have full access to their data. They can delete it any time or opt out completly.
 
@@ -50,7 +50,7 @@ Our strict focus on data protection also means that there are some Matomo featur
 We hope this overview helps you to get a better insight into the topic of fair web analytics. If you are passionate about ethical software and want *a truly lightweight and privacy focused alternative to Matomo* you should give Offen a try. Why not let both run parallel for a while and then see how it feels? We are looking forward to your [feedback.](mailto:hioffen@posteo.de)
 
 
-Find further information in our [explainer](https://www.offen.dev/#bg-explainer), test it on your system or get everything you need to use Offen in production.
+Find further information in our [explainer](/#bg-explainer), test it on your system or get everything you need to use Offen in production.
 
 <div class="flex flex-wrap justify-center mt4 mb6">
   <div class="w-100 w-40-ns mh0 mb3 mb0-ns mr3-ns">

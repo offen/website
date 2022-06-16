@@ -55,7 +55,7 @@ The Offen Protocol is designed to be used in a server/client setup where both th
 
 The Offen Protocol explicitly does not prescribe anything about what kind of data is being shared between clients and the server and how the server models and stores the data itself. The only hard requirement is the use of a user identifier that is handled using HTTP cookies. This also means the protocol is not a good fit when the client is not a browser.
 
-Using cookies might sound invasive at first sight, yet if you evaluate the options on the table without any bias, it is [the most privacy friendly, secure and robust option](https://www.offen.dev/blog/privacy-cookies/) there is. Collection of usage data requires the user to consent in any case, so to us, there is no reason not to use this approach.
+Using cookies might sound invasive at first sight, yet if you evaluate the options on the table without any bias, it is [the most privacy friendly, secure and robust option](/blog/privacy-cookies/) there is. Collection of usage data requires the user to consent in any case, so to us, there is no reason not to use this approach.
 
 ### The specification
 

@@ -15,7 +15,7 @@ The variety of data protection regulations and the range of methods used to coll
 
 ### Learning from building Offen
 
-We recently drafted a standards proposal that allows websites and services to disclose information about their use of analytics software and user tracking. As this is related to our work on [Offen](https://www.offen.dev/), we wanted to provide some insight here into our motives, implementation and state of affairs on this matter.
+We recently drafted a standards proposal that allows websites and services to disclose information about their use of analytics software and user tracking. As this is related to our work on [Offen](/), we wanted to provide some insight here into our motives, implementation and state of affairs on this matter.
 
 Offen is a fair web analytics software that treats operators and users as equal parties. Operators can self-host Offen and gain insights about how users interact with their services while ensuring that users remain in full control over their data.
 
@@ -27,7 +27,7 @@ In the course of the development of our software, we came across a fundamental p
 
 ### What today's web lacks
 
-Sure, terms like "data protection", "privacy-focused" or "privacy-friendly" are widespread and appear reliably in consent banners and privacy statements of of websites and services. But what do they actually [stand for?](https://www.offen.dev/blog/privacy-friendly-and-fair-web/)
+Sure, terms like "data protection", "privacy-focused" or "privacy-friendly" are widespread and appear reliably in consent banners and privacy statements of of websites and services. But what do they actually [stand for?](/blog/privacy-friendly-and-fair-web/)
 
 In many cases, users still don't know what data is being collected and how it is being used. This leaves them confused about their situation and does not help to reduce the underlying mistrust towards operators and the web in general.
 
