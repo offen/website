@@ -108,17 +108,17 @@ Next deploy the application to a domain like `consent.example.com`. On the host
 which exposed `window.ConsentClient`. In your client side code, construct a new client instance pointing at your deployment and request user consent for the desired scope(s):
 
 ```jsx
-const client = new window.ConsentClient({ url: '[https://consent.example.com](https://consent.example.com/)' })
+const client = new window.ConsentClient({ url: 'https://consent.example.com' })
 client
-.acquire('analytics', 'marketing')
-.then((decisions) => {
-if (decisions.analytics) {
-// load analytics data
-}
-if (decisions.marketing) {
-// trigger marketing tools
-}
-})
+  .acquire('analytics', 'marketing')
+  .then((decisions) => {
+    if (decisions.analytics) {
+    // load analytics data
+    }
+    if (decisions.marketing) {
+    // trigger marketing tools
+    }
+  })
 ```
 
 ##### The *Offen Consent Tool* further allows you to create the binary yourself and provides a development setup. It can also be used as a library and be integrated into any web server written in Golang.
