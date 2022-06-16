@@ -56,7 +56,7 @@ Well, we have developed a tool for these needs. Say hello and give it a try. We 
 <div class="consent-container w-100 flex justify-center mt3"></div>
 <div class="tweet-container mb4"></div>
 
-<script src="https://subdomain.offen.dev/client.js"></script>
+<script src="https://consent.offen.dev/client.js"></script>
 <script>
   const client = new window.ConsentClient({
     host: document.querySelector('.consent-container'),
