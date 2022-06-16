@@ -9,7 +9,7 @@ author: Frederik Ring
 must_read: True
 bottom_cta: cookie
 
-# Say Hi to the Offen Protocol
+# Introducing the Offen Protocol
 
 The most unique feature Offen has to offer is the ability of users to discover their data and manage it in a "self-service" fashion. This might seem like a highly unique feature at first glance, it's also a requirement mandated by GDPR for everyone that collects data. The “rights of the data subject” are defined as:
 
