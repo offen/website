@@ -56,7 +56,7 @@ Well, we have developed a tool for these needs. Say hello and give it a try. We 
 <div class="consent-container w-100 flex justify-center mt3"></div>
 <div class="tweet-container mb4"></div>
 
-<script src="https://consent.offen.dev/client.js"></script>
+<script src="https://subdomain.offen.dev/client.js"></script>
 <script>
   const client = new window.ConsentClient({
     host: document.querySelector('.consent-container'),
@@ -69,7 +69,6 @@ Well, we have developed a tool for these needs. Say hello and give it a try. We 
   client.acquire('twitter')
     .then(function (result) {
       if (result && result.decisions && result.decisions.twitter) {
-
         const blockquote = document.createElement('blockquote')
         blockquote.classList.add('twitter-tweet')
         blockquote.innerHTML = '<a href="https://twitter.com/hioffen/status/1510854517092491270?ref_src=twsrc%5Etfw"></a>'
