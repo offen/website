@@ -8,21 +8,21 @@ sitemap_priority: 0.3
 
 Hi, we are [Frederik Ring](https://www.frederikring.com/) and [Hendrik Niefeld.](http://niefeld.com/) We want to make the web a better place. Here are a few tools we have developed that may help with this.
 
-#### *[Offen Web Analytics](/#bg-explainer)*
+#### *[Offen Fair Web Analytics](/#bg-explainer)*
 
-The fair web analytics tool. Let your users access their data and gain valuable insights at the same time. Open source, lightweight, self hosted and free. [Learn more.](/#bg-explainer)
+The fair web analytics tool. Let your users access their data and gain valuable insights at the same time. Open source, lightweight, self hosted and free. [Learn more](/#bg-explainer)
 
-#### *[analytics.txts](https://www.analyticstxt.org/)*
+#### *[analytics.txt](https://www.analyticstxt.org/)*
 
-A proposed standard which allows websites and services to disclose information about their usage of analytics software and user tracking. [Learn more.](https://www.analyticstxt.org/)
+A proposed standard which allows websites and services to disclose information about their usage of analytics software and user tracking. [Learn more](https://www.analyticstxt.org/)
 
 #### *[Offen Protocol](/blog/offen-protocol/)*
 
-A specification for the discoverable exchange of data over a single HTTP endpoint. [Learn more.](/blog/offen-protocol/)
+A specification for the discoverable exchange of data over a single HTTP endpoint. [Learn more](/blog/offen-protocol/)
 
 #### *[Offen Consent Tool](/blog/consent-tool/)*
 
-A lightweight solution for managing user consent on websites. [Learn more.](/blog/consent-tool/)
+A lightweight solution for managing user consent on websites. [Learn more](/blog/consent-tool/)
 
 
 ---
@@ -69,7 +69,7 @@ We want to exemplify that it is time to depart the age of ["data capitalism"](ht
 
 ###  Technology
 
-At runtime, Offen Web Analytics is just mediating exchange between users and operators. Usage data is collected in conformance to GDPR and with the concept of ["Datensparsamkeit"](https://martinfowler.com/bliki/Datensparsamkeit.html) in mind. All user data is encrypted in the browser so that it can only ever be accessed by the users themselves or the matching operator. While being collected in the context of a website or application, neither operators nor third party scripts have any possibility to access the usage data. Offen itself doesn't have any way of decrypting, processing or even selling the gathered data at any point.
+At runtime, Offen Fair Web Analytics is just mediating exchange between users and operators. Usage data is collected in conformance to GDPR and with the concept of ["Datensparsamkeit"](https://martinfowler.com/bliki/Datensparsamkeit.html) in mind. All user data is encrypted in the browser so that it can only ever be accessed by the users themselves or the matching operator. While being collected in the context of a website or application, neither operators nor third party scripts have any possibility to access the usage data. Offen Fair Web Analytics itself doesn't have any way of decrypting, processing or even selling the gathered data at any point.
 
 The software itself, as well as *all the used tools are open source*, [project planning and technical specification](https://github.com/offen/offen) take place in the open and actively solicit feedback from the general public.
 
