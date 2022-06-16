@@ -53,7 +53,7 @@ Your analytics tool thinks it doesn't need a consent request? There are tweets e
 
 Well, we have developed a tool for these needs. Say hello and give it a try. We used it to conditionally embed the following Tweet.
 
-<div class="consent-container w-100 flex justify-center">  
+<div class="consent-container w-100 flex justify-center mt3">  
 </div>
 <div class="tweet-container mb4">  
 </div>
@@ -72,7 +72,7 @@ Well, we have developed a tool for these needs. Say hello and give it a try. We 
     .then(function (result) {
       if (result && result.decisions && result.decisions.twitter) {
 
-        const blockquote = document.createElement('p')
+        const blockquote = document.createElement('div')
         blockquote.innerHTML = '<blockquote class="twitter-tweet"><a href="https://twitter.com/hioffen/status/1510854517092491270?ref_src=twsrc%5Etfw"></a></blockquote>'
 
         document.querySelector('.tweet-container').appendChild(blockquote)

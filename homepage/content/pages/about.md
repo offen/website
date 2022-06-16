@@ -6,7 +6,7 @@ sitemap_priority: 0.3
 
 # About
 
-Hi, we are [Frederik Ring](https://www.frederikring.com/) and [Hendrik Niefeld.](http://niefeld.com/) These are our tools to make the web a better place.
+Hi, we are [Frederik Ring](https://www.frederikring.com/) and [Hendrik Niefeld.](http://niefeld.com/) We want to make the web a better place. Here are a few tools we have developed that may help with this.
 
 #### *[Offen Web Analytics](/#bg-explainer)*
 
