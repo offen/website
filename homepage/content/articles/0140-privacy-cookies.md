@@ -37,7 +37,7 @@ In case your conclusion is that you do need to collect the data, don't be afraid
 
 Regulations around data protection and collection often distinguish essential and non-essential features, and this makes a lot of sense. If a user can log in to your service and you have to store a session identifier in a cookie to enable this, it is perfectly fine to do so without consent. Having to provide credentials over and over again for every request made against your server would render your service unusable, hence it is an essential feature.
 
-Non-essential features are usually revolving around performance and analytics. Collecting analytics data for a website definitely is not required for the user to use your service. This means it is non-essential usage and you should be asking for consent before doing so. Regulations around this topic only cover cookies, but taking privacy seriously, you would apply this principle to all techniques. On a side note, [quantity does not necessarily mean quality in web analytics](https://www.offen.dev/blog/opt-in-quality/).
+Non-essential features are usually revolving around performance and analytics. Collecting analytics data for a website definitely is not required for the user to use your service. This means it is non-essential usage and you should be asking for consent before doing so. Regulations around this topic only cover cookies, but taking privacy seriously, you would apply this principle to all techniques. On a side note, [quantity does not necessarily mean quality in web analytics](/blog/opt-in-quality/).
 
 Most importantly, both essential and non-essential segments require making sure their technical implementation is secure and respects user privacy as much as possible.
 
