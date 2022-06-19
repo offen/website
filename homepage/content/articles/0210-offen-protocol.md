@@ -9,7 +9,7 @@ author: Frederik Ring
 must_read: True
 bottom_cta: cookie
 
-# Say Hi to the Offen Protocol
+# Introducing the Offen Protocol
 
 The most unique feature Offen has to offer is the ability of users to discover their data and manage it in a "self-service" fashion. This might seem like a highly unique feature at first glance, it's also a requirement mandated by GDPR for everyone that collects data. The “rights of the data subject” are defined as:
 
@@ -55,7 +55,7 @@ The Offen Protocol is designed to be used in a server/client setup where both th
 
 The Offen Protocol explicitly does not prescribe anything about what kind of data is being shared between clients and the server and how the server models and stores the data itself. The only hard requirement is the use of a user identifier that is handled using HTTP cookies. This also means the protocol is not a good fit when the client is not a browser.
 
-Using cookies might sound invasive at first sight, yet if you evaluate the options on the table without any bias, it is [the most privacy friendly, secure and robust option](https://www.offen.dev/blog/privacy-cookies/) there is. Collection of usage data requires the user to consent in any case, so to us, there is no reason not to use this approach.
+Using cookies might sound invasive at first sight, yet if you evaluate the options on the table without any bias, it is [the most privacy friendly, secure and robust option](/blog/privacy-cookies/) there is. Collection of usage data requires the user to consent in any case, so to us, there is no reason not to use this approach.
 
 ### The specification
 
