@@ -53,9 +53,7 @@ Your analytics tool thinks it doesn't need a consent request? There are tweets e
 
 Well, we have developed a tool for these needs. Say hello and give it a try. We used it to conditionally embed the following Tweet.
 
-<div class="consent-container w-100 flex justify-center mt3">
-  Fallback content TBD
-</div>
+<div class="consent-container w-100 flex justify-center mt3"></div>
 <div class="tweet-container mb4"></div>
 
 <script src="https://consent.offen.dev/client.js"></script>
