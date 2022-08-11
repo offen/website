@@ -25,15 +25,15 @@ You can download the latest release from [https://get.offen.dev](https://get.off
 
 #### Customise your banner
 
-An essential point in feedback was the wish for better customisability of the Offen consent elements. Since the topic of conscious user decision is particularly important to us, we do not offer the option of integrating external consent banners. This is to avoid getting approval through dark patterns of any kind.
+An essential point in feedback was the wish for better customisability of the Offen Fair Web Analytics consent elements. Since the topic of conscious user decision is particularly important to us, we do not offer the option of integrating external consent banners. This is to avoid getting approval through dark patterns of any kind.
 
-To make it easier for operators to integrate Offen into their web offer, the banners can now be freely adapted via CSS. This is limited by some specifications to ensure the readability and functionality of the banner.
+To make it easier for operators to integrate Offen Fair Web Analytics into their web offer, the banners can now be freely adapted via CSS. This is limited by some specifications to ensure the readability and functionality of the banner.
 
 So unleash your inner artist and start customising your consent banner to match your website's design. Docs are found here: [https://docs.offen.dev/running-offen/customizing-consent-banner/](https://docs.offen.dev/running-offen/customizing-consent-banner/)
 
 #### Filter collected data
 
-One of the most important building blocks on the way to a v1.0 version has finally been implemented. Offen v0.4.3 allows you to filter the collected usage data based on URL, Referrer, UTM parameters and Landings as well as Exits.
+One of the most important building blocks on the way to a v1.0 version has finally been implemented. Offen Fair Web Analytics v0.4.3 allows you to filter the collected usage data based on URL, Referrer, UTM parameters and Landings as well as Exits.
 
 Furthermore, we have added the label "None" as a fallback for referrer values that are not provided. In this way, it is now also possible to filter for this cohort. Filters can be set and removed by clicking on the corresponding element.
 
@@ -53,7 +53,7 @@ To further contribute to user awareness, in a next step we want to give operator
 
 #### Dialogue
 
-We are always open to opportunities to present Offen and the idea of fair data transfer to an interested audience. In order to engage in dialogue with operators, users and activists, we are actively looking for suitable events around the world. Got something in mind that we should apply for? [Get in touch.](mailto:hioffen@posteo.de)
+We are always open to opportunities to present Offen Fair Web Analytics and the idea of fair data transfer to an interested audience. In order to engage in dialogue with operators, users and activists, we are actively looking for suitable events around the world. Got something in mind that we should apply for? [Get in touch.](mailto:hioffen@posteo.de)
 
 ---
 

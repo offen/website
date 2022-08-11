@@ -1,4 +1,4 @@
-title: Why Offen is a valid Matomo alternative
+title: Why Offen Fair Web Analytics is a valid Matomo alternative
 description: This brief comparison of both tools gives you a first insight into the field of fair and lightweight web analytics.
 date: 2020-08-28
 modified: 20.4.2021
@@ -9,7 +9,7 @@ image_url: /theme/images/offen-blog-0100-Matomo.jpg
 author: Hendrik Niefeld
 bottom_cta: budget
 
-# Why Offen is a valid Matomo alternative
+# Why Offen Fair Web Analytics is a valid Matomo alternative
 
 #### Matomo at a glance
 
@@ -27,15 +27,15 @@ On the technical side, the following issues are particularly apparent. Installin
 
 ### Operators and users as equal parties
 
-To address the above mentioned issues we develop a fair, self hosted and lightweigt web analytics tool that treats operators and users as equal parties. It is called Offen and is [available as a production ready version.](/get-started/)
+To address the above mentioned issues we develop a fair, self hosted and lightweigt web analytics tool that treats operators and users as equal parties. It is called Offen Fair Web Analytics and is [available as a production ready version.](/get-started/)
 
-*Offen's default is to NOT collect any data.* Usage data is collected after opt-in only. If users choose to opt in, they have full access to their data. They can delete it any time or opt out completly.
+*Offen Fair Web Analytics's default is to NOT collect any data.* Usage data is collected after opt-in only. If users choose to opt in, they have full access to their data. They can delete it any time or opt out completly.
 
 The collected data is presented to users with explanations that describe why a particular metric is relevant and what the privacy implications are. This helps to strengthen trust in operators.
 
 At the same time essential metrics give operators the chance to gain valuable insights in an ethical way. Thereby allowing them to improve their websites and develop ideas for new services. All without violating the privacy of their users.
 
-Offen is open source and will always be available for free with no hidden costs lurking. Operators self host the app and can be sure not to pass on any data to third parties.
+Offen Fair Web Analytics is open source and will always be available for free with no hidden costs lurking. Operators self host the app and can be sure not to pass on any data to third parties.
 
 The installation is relatively simple and supports the use of SQLite files as well. The tracking script is reduced to a bare minimum and allows pages to load much faster.
 
@@ -43,14 +43,14 @@ To complete the package, the app allows to manage several websites with one logi
 
 ### Confidential by design
 
-Our strict focus on data protection also means that there are some Matomo features we will never offer. This includes the export of data and public access to reports without prior login. Furthermore due to the integrated end-to-end encryption Offen does not provide access to the raw data.
+Our strict focus on data protection also means that there are some Matomo features we will never offer. This includes the export of data and public access to reports without prior login. Furthermore due to the integrated end-to-end encryption Offen Fair Web Analytics does not provide access to the raw data.
 
 ### Switch to fair web analytics
 
-We hope this overview helps you to get a better insight into the topic of fair web analytics. If you are passionate about ethical software and want *a truly lightweight and privacy focused alternative to Matomo* you should give Offen a try. Why not let both run parallel for a while and then see how it feels? We are looking forward to your [feedback.](mailto:hioffen@posteo.de)
+We hope this overview helps you to get a better insight into the topic of fair web analytics. If you are passionate about ethical software and want *a truly lightweight and privacy focused alternative to Matomo* you should give Offen Fair Web Analytics a try. Why not let both run parallel for a while and then see how it feels? We are looking forward to your [feedback.](mailto:hioffen@posteo.de)
 
 
-Find further information in our [explainer](/#bg-explainer), test it on your system or get everything you need to use Offen in production.
+Find further information in our [explainer](/#bg-explainer), test it on your system or get everything you need to use Offen Fair Web Analytics in production.
 
 <div class="flex flex-wrap justify-center mt4 mb6">
   <div class="w-100 w-40-ns mh0 mb3 mb0-ns mr3-ns">

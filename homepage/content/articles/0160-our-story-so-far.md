@@ -58,7 +58,7 @@ We realized how lucky we were immediately when we started working with the peopl
 
 Clearly, we did not always happen to agree during these discussions. But it was precisely this friction that has made a decisive contribution to our project. It was during this process we came to the conclusion that our web analytics tool should only be offered as a self host solution. A decision which, in retrospect, helped us a lot to focus on the more essential topic of fair data transfer.
 
-At the end of 2019 things started to take shape. We decided on the name 'Offen' and set out with the goal of creating a first working version within about 30 weeks. At the same time a documentation should be created and our project should be promoted to an interested audience.
+At the end of 2019 things started to take shape. We decided on the name 'Offen Fair Web Analytics' and set out with the goal of creating a first working version within about 30 weeks. At the same time a documentation should be created and our project should be promoted to an interested audience.
 
 Here it should be mentioned that we both still work part-time in our old jobs. A decision that we have made well-considered. Of course this slows you down, and you reach a lively environment late with your product. But this scenario also gives you the necessary distance to think deeper about how to create a real alternative to existing solutions.
 
@@ -68,7 +68,7 @@ Here it should be mentioned that we both still work part-time in our old jobs. A
 
 The first thing to say is that it took us a little longer. We reached the goals set out in our product plan at the beginning of September 2020. So we needed about 38 weeks to get there. This wasn't due to major issues regarding technical and editorial implementation. It was much more about personal preferences in terms of time budgeting and the impact of the Covid 19 pandemic, which of course also hovers over our personal lives.
 
-5 months have already passed since the official completion of the funding program. During this time, we have taken Offen even a good deal further. These are all key features available with our latest [v0.3.0 release.](https://github.com/offen/offen/releases/tag/v0.3.0)
+5 months have already passed since the official completion of the funding program. During this time, we have taken Offen Fair Web Analytics even a good deal further. These are all key features available with our latest [v0.3.0 release.](https://github.com/offen/offen/releases/tag/v0.3.0)
 
 * *Fair data collection*  
 Usage data collection is opt-in by default. Users have full access to their data with detailed explanations of metrics and terms. They can opt-out completely at any time or only delete existing usage data.
@@ -77,22 +77,22 @@ Usage data collection is opt-in by default. Users have full access to their data
 A clear presentation of all essential metrics regarding the use of your website, to help you improve your service. Usage data is only stored for 6 months and then automatically deleted. All event data is encrypted end-to-end.
 
 * *Easy to deploy*  
-Offen runs on-premises, or in any other deployment scenario that fits your need. You can easily analyze multiple websites within one installation. All website accounts can be shared within teams. A detailed documentation on how to run Offen is available.
+Offen Fair Web Analytics runs on-premises, or in any other deployment scenario that fits your need. You can easily analyze multiple websites within one installation. All website accounts can be shared within teams. A detailed documentation on how to run Offen Fair Web Analytics is available.
 
 ### Up next
 
-As mentioned at the beginning, the next major step is ahead. In the upcoming stage we want to develop Offen to a release v1.0 that deserves its name.
+As mentioned at the beginning, the next major step is ahead. In the upcoming stage we want to develop Offen Fair Web Analytics to a release v1.0 that deserves its name.
 
-This will involve enhancing the UX to a level that can fully compete with other web analytics tools. This includes raising website users awareness of the unique Offen feature - granting full access to one' s own data.
+This will involve enhancing the UX to a level that can fully compete with other web analytics tools. This includes raising website users awareness of the unique Offen Fair Web Analytics feature - granting full access to one' s own data.
 
-Furthermore, by factoring out tools from our code we will create an open access for all developers interested in the topic of fair data transfer. In addition to that we want to formalize the general approach we use in Offen and define a protocol spec that others can adopt, ideally generating an ecosystem of compatible client and server implementations.
+Furthermore, by factoring out tools from our code we will create an open access for all developers interested in the topic of fair data transfer. In addition to that we want to formalize the general approach we use in Offen Fair Web Analytics and define a protocol spec that others can adopt, ideally generating an ecosystem of compatible client and server implementations.
 
 NLnet is willing to support us once again in these ambitions. This time from the [NGI Zero Search and Discovery Fund.](https://nlnet.nl/discovery/) We are of course more than happy about this and would like to take this opportunity to thank the whole NLnet team for their confidence in our work.
 
-> *We want to formalize the general approach we use in Offen and define a protocol spec that others can adopt, ideally generating an ecosystem of compatible client and server implementations.*
+> *We want to formalize the general approach we use in Offen Fair Web Analytics and define a protocol spec that others can adopt, ideally generating an ecosystem of compatible client and server implementations.*
 
 ### Happy to hear from you
 
-Do you have feedback on the latest Offen release or our next steps? What is your experience in developing open source tools? Are you as enthusiastic about fair data transfer as we are?
+Do you have feedback on the latest Offen Fair Web Analytics release or our next steps? What is your experience in developing open source tools? Are you as enthusiastic about fair data transfer as we are?
 
 Drop us a [tweet](https://twitter.com/hioffen) or [email](mailto:hioffen@posteo.de) and feel invited to work together to drive this idea forward.
