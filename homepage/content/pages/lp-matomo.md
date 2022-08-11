@@ -1,4 +1,4 @@
-title: A truly privacy focused Matomo alternative | Offen
+title: A truly privacy focused Matomo alternative | Offen Fair Web Analytics
 description: There is room for improvement with Matomos decisions regarding privacy.
 slug: matomo-alternative
 template: lp-matomo

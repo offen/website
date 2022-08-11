@@ -1,4 +1,4 @@
-title: About | Offen
+title: About | Offen Fair Web Analytics
 description: Who we are, what we do, who supports us and how you can can get in touch.
 slug: about
 bottom_cta: fair
