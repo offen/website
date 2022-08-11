@@ -13,11 +13,11 @@ bottom_cta: cookie
 
 The variety of data protection regulations and the range of methods used to collect usage data make web analytics a confusing field. A well-defined way for websites to indicate their use of analytics and tracking software is still missing. Earlier this year we started working on such a standard and gave it the name `analytics.txt` .
 
-### Learning from building Offen
+### Learning from building Offen Fair Web Analytics
 
-We recently drafted a standards proposal that allows websites and services to disclose information about their use of analytics software and user tracking. As this is related to our work on [Offen](/), we wanted to provide some insight here into our motives, implementation and state of affairs on this matter.
+We recently drafted a standards proposal that allows websites and services to disclose information about their use of analytics software and user tracking. As this is related to our work on [Offen Fair Web Analytics](/), we wanted to provide some insight here into our motives, implementation and state of affairs on this matter.
 
-Offen is a fair web analytics software that treats operators and users as equal parties. Operators can self-host Offen and gain insights about how users interact with their services while ensuring that users remain in full control over their data.
+Offen Fair Web Analytics is a web analytics software that treats operators and users as equal parties. Operators can self-host Offen Fair Web Analytics and gain insights about how users interact with their services while ensuring that users remain in full control over their data.
 
 In the course of the development of our software, we came across a fundamental problem concerning the handling of user data on the internet today. The range of data protection regulations across the globe and the resulting variety of techniques for collecting usage data make web analytics a confusing field to navigate.
 
@@ -64,7 +64,7 @@ On your website, all that is needed is a simple text file stored in an defined l
 
 > *On your website, all that is needed is a simple text file stored in an defined location on the server.*
 
-This actual website is already provided with such a text file. As we obviously use Offen, our own fair web analytics tool, information on it is included in the data. This is what it looks like:
+This actual website is already provided with such a text file. As we obviously use Offen Fair Web Analytics, our own fair web analytics tool, information on it is included in the data. This is what it looks like:
 
 ```
 # analytics.txt file for www.offen.dev

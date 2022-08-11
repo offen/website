@@ -1,5 +1,5 @@
 title: Untold roads to v1.0
-description: Onboarding users onto a product that is still in development needs a thorough plan. These are our conclusions as we work our way to a v1.0 release of Offen.
+description: Onboarding users onto a product that is still in development needs a thorough plan. These are our conclusions as we work our way to a v1.0 release of Offen Fair Web Analytics.
 date: 2020-01-19
 slug: untold-roads-versioning-early-stage-software
 url: /blog/untold-roads-versioning-early-stage-software/
@@ -10,11 +10,11 @@ bottom_cta: blog
 
 # Untold roads to v1.0
 
-After a lot of experimenting, taking detours and having unanticipated revelations while building the foundation for Offen over the last months, the state of the project is starting to settle, and we are eager to get ready for users to install our software, and use it for transparently collecting usage statistics for their websites and applications.
+After a lot of experimenting, taking detours and having unanticipated revelations while building the foundation for Offen Fair Web Analytics over the last months, the state of the project is starting to settle, and we are eager to get ready for users to install our software, and use it for transparently collecting usage statistics for their websites and applications.
 
 Yet, onboarding users onto a product that is still being developed and that will stay pretty volatile in the near future needs a thorough plan so you do not burn and churn your early adopters by locking them into buggy software without an upgrade path. At the same time, you do not want to lose the velocity and flexibility of an early stage product, enabling you to iterate fast and add well architected features of real value.
 
-While there is lots of theory and writing about how to version and release software that is already established, the way to get there is mostly uncharted territory and has developers figure this journey out for themselves over and over again. In this post we try to collect our considerations, options and conclusions when trying to define *how we want to handle the versioning of Offen on its way from an alpha stage product to a stable v1.0*.
+While there is lots of theory and writing about how to version and release software that is already established, the way to get there is mostly uncharted territory and has developers figure this journey out for themselves over and over again. In this post we try to collect our considerations, options and conclusions when trying to define *how we want to handle the versioning of Offen Fair Web Analytics on its way from an alpha stage product to a stable v1.0*.
 
 ---
 
@@ -30,7 +30,7 @@ The only decision that affects the outside world at this point is the following:
 
 ### Lots of ways to break your software
 
-Another thing you will need to think about before you can even start versioning your software are the interfaces you expect your users to use, and those that your users will actually use. Just because you do not document a method of your library, it doesn't necessarily mean it will not be used in the wild. And just because your database migration script assumes a well defined set of tables in the application database, it doesn't mean some user might have started storing other data in there. Applications like Offen will have different constraints than libraries or developer tools do. It's important to know if *you need to interface with data, code or humans* as all of these interfaces come with their own set of constraints.
+Another thing you will need to think about before you can even start versioning your software are the interfaces you expect your users to use, and those that your users will actually use. Just because you do not document a method of your library, it doesn't necessarily mean it will not be used in the wild. And just because your database migration script assumes a well defined set of tables in the application database, it doesn't mean some user might have started storing other data in there. Applications like Offen Fair Web Analytics will have different constraints than libraries or developer tools do. It's important to know if *you need to interface with data, code or humans* as all of these interfaces come with their own set of constraints.
 
 Steering the code being written and the interfaces exposed into a direction where its usage is as unambiguous as possible will pay off when it comes to knowing what you can actually break with a release. If you explicitly consider something to be unstable and internal, communicating this clearly will be of great help to anyone who's trying to use your product or build upon it.
 
@@ -110,26 +110,26 @@ If you can embrace v1.0 and all the new requirements it brings, they will allow 
 
 ---
 
-### How we are going to version Offen
+### How we are going to version Offen Fair Web Analytics
 
-Offen's main channel of distribution will be via packaged binary files. Users can run them supervised or unsupervised against a supported set of OSes and database solutions. While we are indeed planning to enable the use Offen's code as the building blocks for other developers to create tailor made, privacy friendly analytics solutions, versioning the code-level interfaces is a non-goal for us at the moment.
+Offen Fair Web Analytics's main channel of distribution will be via packaged binary files. Users can run them supervised or unsupervised against a supported set of OSes and database solutions. While we are indeed planning to enable the use Offen Fair Web Analytics's code as the building blocks for other developers to create tailor made, privacy friendly analytics solutions, versioning the code-level interfaces is a non-goal for us at the moment.
 
 Upgrade paths for our users will mostly be bound to the event and key data that is stored in the database, and the way this data is being encrypted and decrypted in the browser, as well as application configuration. Our key considerations here are:
 
 - Can the changes to the database schema included in the changeset be covered by a migration script? Does encrypted data need to be changed as well? Once subject to a versioning scheme, we will aim for only making changes a database migration script can handle.
 - Can a compatibility layer be introduced that handles both old and new data at runtime and possibly even upgrades old data when it is decrypted in the browser? For a multitude of reasons, we are planning to use such techniques sparingly and may err on the side of introducing breaking changes instead.
-- Does the user need to change or augment runtime configuration in order for Offen to continue functioning? Can these changes be performed automatically or can we supply users with a script that does it for them?
+- Does the user need to change or augment runtime configuration in order for Offen Fair Web Analytics to continue functioning? Can these changes be performed automatically or can we supply users with a script that does it for them?
 - The user interface is not something we are planning to keep stable from a programmatic perspective. We are working hard to create a consistent and accessible user experience for everyone, but the underlying implementation will be considered private. This means we do not plan to guarantee any stability for things like scraping and headless automation.
 - The `/script.js` URI exposed by the web server is locked so that pages that embed the script can always expect a sensible response. We will try to keep the rest of the exposed routes stable, yet if it helps us improving the product in some way, we will change these too.
 - The development setup is kept subject to change at any time. Renaming a `make` target may be annoying to contributors once, but we prefer to keep things lean in this regard, and we hope our contributors will do the same.
 
 #### Initial development
 
-Right now, Offen is still in the stages of initial development. During this period we will *release an alpha version on each milestone* we hit. We invite users to start using Offen by deploying these releases (or by building any revision themselves), but we also need to make sure that while we are still in initial development, we will possibly *introduce breaking changes* or changes that are *hard to upgrade*.
+Right now, Offen Fair Web Analytics is still in the stages of initial development. During this period we will *release an alpha version on each milestone* we hit. We invite users to start using Offen Fair Web Analytics by deploying these releases (or by building any revision themselves), but we also need to make sure that while we are still in initial development, we will possibly *introduce breaking changes* or changes that are *hard to upgrade*.
 
 #### From v0.1 to v1.0
 
-Once all features we deem necessary for Offen to be used in the wild are included, we are planning to continue as following: kicking off, we will release an officially supported *v0.1.0*.
+Once all features we deem necessary for Offen Fair Web Analytics to be used in the wild are included, we are planning to continue as following: kicking off, we will release an officially supported *v0.1.0*.
 
 Working our way from there to a v1.0 we will follow these principles:
 
@@ -141,7 +141,7 @@ Working our way from there to a v1.0 we will follow these principles:
 
 When releasing a *v1.0* we will have worked hard to have a good upgrade story for users of early versions, but we'll also spare you the fortune telling we'd have to do to predict when and how this is going to happen.
 
-We definitely do invite you to start experimenting with Offen right now and also to start using it in user-facing scenarios once we are at *v0.1.0*. Get in touch if you have feedback or need help with configuring, running or upgrading Offen.
+We definitely do invite you to start experimenting with Offen Fair Web Analytics right now and also to start using it in user-facing scenarios once we are at *v0.1.0*. Get in touch if you have feedback or need help with configuring, running or upgrading Offen Fair Web Analytics.
 
 ---
 

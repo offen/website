@@ -23,7 +23,7 @@ And while there are definitely problems with the modern day usage of cookies, wi
 
 Inside the European union the so called "[Cookie Directive](https://en.wikipedia.org/wiki/Privacy_and_Electronic_Communications_Directive_2002)" mandates acquiring consent from users for setting non-essential cookies. Similar laws exist for example in California. The internet being a global phenomenon, you are very likely to be subject to these regulations in one way or the other the moment you serve any non-trivial website. Many developers like to complain vocally about so called "cookie banners", and the number of sleazy patterns that try to trick users into consenting makes these complaints relatable. A solution that does not require user consent must surely be the better option for privacy, right?
 
-It's not that easy though. If you think user privacy from the ground up, how do the technical details of your implementation matter? We'd argue they do not matter much. If you want to collect non-essential data from your visitors (analytics data in the case of Offen) in a privacy friendly way, you should be asking for user consent. No matter how your technical solution for doing so looks like, and no matter what regulations currently say. If you're not doing this and instead come up with something that allows you to avoid "the cookie banner" for collecting non-essential data, you are not building a privacy friendly solution, you are building a regulations friendly solution.
+It's not that easy though. If you think user privacy from the ground up, how do the technical details of your implementation matter? We'd argue they do not matter much. If you want to collect non-essential data from your visitors (analytics data in the case of Offen Fair Web Analytics) in a privacy friendly way, you should be asking for user consent. No matter how your technical solution for doing so looks like, and no matter what regulations currently say. If you're not doing this and instead come up with something that allows you to avoid "the cookie banner" for collecting non-essential data, you are not building a privacy friendly solution, you are building a regulations friendly solution.
 
 Think about it in this way maybe: if you feel like you really do not want ask users for consent, then maybe this is a good hint to reevaluate if you really need to collect that data you would need user consent for. Privacy values choices, and simply not making use of non-essential features should be an option for users always. Not convinced? Think about why ad blockers are so popular.
 
@@ -45,7 +45,7 @@ Most importantly, both essential and non-essential segments require making sure 
 
 ### Technical considerations for using cookies in a privacy friendly manner
 
-Offen is a fair web analytics software. This is a promise we can only deliver with an opt-in only solution. Not having to work around a "cookie banner" (for us, that's a feature) we are free to solve any task at hand in the most privacy friendly way we can come up with. And in many cases, this means using cookies. The following collects a few guidelines we've been following when building Offen.
+Offen Fair Web Analytics is a fair web analytics software. This is a promise we can only deliver with an opt-in only solution. Not having to work around a "cookie banner" (for us, that's a feature) we are free to solve any task at hand in the most privacy friendly way we can come up with. And in many cases, this means using cookies. The following collects a few guidelines we've been following when building Offen Fair Web Analytics.
 
 #### Choosing privacy friendly identifiers and values
 
@@ -123,6 +123,6 @@ Once again using the principle of [Datensparsamkeit](https://martinfowler.com/bl
 
 ### Wrapping up
 
-If you find yourself building a product where privacy is important - just like we do when building Offen - feel encouraged to consider cookies as an option for your tasks. Very often, it's a robust and simple choice that is beneficial for your user's privacy when done right, and the implicit requirement for acquiring user consent is a major privacy feature.
+If you find yourself building a product where privacy is important - just like we do when building Offen Fair Web Analytics - feel encouraged to consider cookies as an option for your tasks. Very often, it's a robust and simple choice that is beneficial for your user's privacy when done right, and the implicit requirement for acquiring user consent is a major privacy feature.
 
-Do you have comments or feedback about this article or about Offen in general? Tweet at us [@hioffen](https://twitter.com/hioffen) or email us at [hioffen@posteo.de](mailto:hioffen@posteo.de).
+Do you have comments or feedback about this article or about Offen Fair Web Analytics in general? Tweet at us [@hioffen](https://twitter.com/hioffen) or email us at [hioffen@posteo.de](mailto:hioffen@posteo.de).

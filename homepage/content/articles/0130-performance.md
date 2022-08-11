@@ -36,7 +36,7 @@ By adding an aggregate cache, we were able to significantly improve query perfor
 
 #### A better Auditorium
 
-Before we will tackle some major UX updates that will primarily benefit the operators, we first took a closer look at the user side. Users' access to their data is one of our key features. However, the feedback we have collected so far has shown us that the context and functionality presented in the Auditorium is not instantly clear to some users. To address this, there now is an onboarding feature for the first-time user when visiting the Auditorium. Here, in addition to a short insight into the data just collected, the basic functionality of Offen is pointed out once again. Moreover, as little extras, there is now an empty state illustration on the user side and a loading state animation for all to enjoy.
+Before we will tackle some major UX updates that will primarily benefit the operators, we first took a closer look at the user side. Users' access to their data is one of our key features. However, the feedback we have collected so far has shown us that the context and functionality presented in the Auditorium is not instantly clear to some users. To address this, there now is an onboarding feature for the first-time user when visiting the Auditorium. Here, in addition to a short insight into the data just collected, the basic functionality of Offen Fair Web Analytics is pointed out once again. Moreover, as little extras, there is now an empty state illustration on the user side and a loading state animation for all to enjoy.
 
 #### Tagging campaigns and sources
 
@@ -44,7 +44,7 @@ As we want to give website operators a fair and professional web analytics alter
 
 #### Migrate an instance to different hardware
 
-For operators who want to migrate an older running Offen instance to another hardware, there is now an important bugfix to pay attention to. If you find yourself affected by issues, check our [detailed workarround.](https://docs.offen.dev/running-offen/known-issues/)
+For operators who want to migrate an older running Offen Fair Web Analytics instance to another hardware, there is now an important bugfix to pay attention to. If you find yourself affected by issues, check our [detailed workarround.](https://docs.offen.dev/running-offen/known-issues/)
 
 ---
 
@@ -56,15 +56,15 @@ As already mentioned in our last milestone, localization ranks at the top of our
 
 #### Easily accessible analytics data
 
-For Offen to be a fully competitive analytics tool, some significant UX improvements are missing. To make the analytics data more accessible, we will add two elements for operators and users: A sophisticated selection of date ranges, which is easy to use even on mobile devices, and a flexible drill-down workflow, which provides a better insight into cohorts.
+For Offen Fair Web Analytics to be a fully competitive analytics tool, some significant UX improvements are missing. To make the analytics data more accessible, we will add two elements for operators and users: A sophisticated selection of date ranges, which is easy to use even on mobile devices, and a flexible drill-down workflow, which provides a better insight into cohorts.
 
 #### Once again, awareness
 
 We want to give operators a range of possibilities to insert ready-made elements on their website that make users aware of how to access their data. These and all existing consent elements will be made customizable in their design to make it less painful for operators to insert them.
 
-#### Expanding the idea underlying Offen
+#### Expanding the idea underlying Offen Fair Web Analytics
 
-Over the last year we have developed a fair, open and lightweigt web analytics tool that treats operators and users as equal parties. We like to describe the basic idea behind Offen with the concept of fair data transfer.
+Over the last year we have developed a fair, open and lightweigt web analytics tool that treats operators and users as equal parties. We like to describe the basic idea behind Offen Fair Web Analytics with the concept of fair data transfer.
 
 Taking this concept seriously, it cannot be limited to a single software project. That's why we decided to create the prerequisites to make it easier for others to get involved and use similar fair approaches. More on this in one of our following blog posts. Stay tuned.
 
@@ -72,6 +72,6 @@ Taking this concept seriously, it cannot be limited to a single software project
 
 ### Happy to hear from you
 
-Are you using Offen? We're happy to feature you in this [README.](https://github.com/offen/offen/blob/development/README.md) Send a PR adding your site or app to [this](https://github.com/offen/offen/blob/development/README.md#whos-using-offen) section.
+Are you using Offen Fair Web Analytics? We're happy to feature you in this [README.](https://github.com/offen/offen/blob/development/README.md) Send a PR adding your site or app to [this](https://github.com/offen/offen/blob/development/README.md#whos-using-offen) section.
 
 If you have any feedback, comment or bug report on the latest release, let us know. Open an [issue](https://github.com/offen/offen/issues) or send us an email at [hioffen@posteo.de](mailto:hioffen@posteo.de).

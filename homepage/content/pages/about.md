@@ -1,4 +1,4 @@
-title: About | Offen Fair Web Analytics
+title: About | Offen
 description: Who we are, what we do, who supports us and how you can can get in touch.
 slug: about
 bottom_cta: fair
@@ -43,11 +43,11 @@ As a regular user of the internet, are you really being spied upon? *What exactl
 >
 > [Eric Schmidt](https://www.eff.org/de/deeplinks/2009/12/google-ceo-eric-schmidt-dismisses-privacy) (at this time CEO of Google), 2009
 
-We would like to turn the tables on this much quoted statement and apply it to the operators of services and websites instead of their users. The analytics software Offen *transparently and uncompromisingly discloses what data is being collected and what it is being used for* to the users.
+We would like to turn the tables on this much quoted statement and apply it to the operators of services and websites instead of their users. Offen Fair Web Analytics *transparently and uncompromisingly discloses what data is being collected and what it is being used for* to the users.
 
 ### For users
 
-Visiting a website or using a web application that utilizes Offen, the user gains access to and ownership of the usage data collected. As a guiding principle, data collection is Opt-In only. Consent can be revoked at any time, just like users can choose delete their data retroactively. The cookie used by Offen allows viewing all of the associated metrics so that users can *assert themselves what is being collected and what isn't*. Data is being displayed in an accessible and articulate manner and each metric comes with explanations about its usage, relevance and possible privacy implications.
+Visiting a website or using a web application that utilizes Offen Fair Web Analytics, the user gains access to and ownership of the usage data collected. As a guiding principle, data collection is Opt-In only. Consent can be revoked at any time, just like users can choose delete their data retroactively. The cookie used by Offen Fair Web Analytics allows viewing all of the associated metrics so that users can *assert themselves what is being collected and what isn't*. Data is being displayed in an accessible and articulate manner and each metric comes with explanations about its usage, relevance and possible privacy implications.
 
 <img class="smaller-image-2 mt3" alt="Lots of ways to break your software" src="/theme/images/gfx-deepdive-B.png"/>
 
@@ -55,11 +55,11 @@ Visiting a website or using a web application that utilizes Offen, the user gain
 
 Operators of small and mid-sized websites and web applications are faced with growing challenges not only since the introduction of GDPR: how do they gain insights into what users are interested in and which of the features offered are being used? Is it possible to showcase *transparent and considerate handling of user data* - i.e. neither being spy or data leech - without surrendering and abandoning usage metrics altogether?
 
-Choosing Offen, websites and web applications obtain a free, open and robust tool for collecting and analyzing relevant usage data. The insights gained enable continuous improvement of these services while still respecting their user's privacy. *Opening up the data to the users does not constitute a disadvantage, but strengthens the relationship with them* by being entirely transparent.
+Choosing Offen Fair Web Analytics, websites and web applications obtain a free, open and robust tool for collecting and analyzing relevant usage data. The insights gained enable continuous improvement of these services while still respecting their user's privacy. *Opening up the data to the users does not constitute a disadvantage, but strengthens the relationship with them* by being entirely transparent.
 
 ### Part of the public debate
 
-Transparently handling usage data in the open creates mutual trust while still enabling operators to collect needed usage statistics. Offen is designed to be a mediating agent only, and does not side with either users or operators. Sharing knowledge between the two parties creates opportunities for an *open and fact based discussion* about user data and privacy. Users gain insights into what data is being collected and what these data points are used for, just like they learn about which kind of data is not part of the collection. They are enabled to reach self-determined decisions about what they consent with and what they disagree with when it comes to privacy on the web, also in other contexts than analytics.
+Transparently handling usage data in the open creates mutual trust while still enabling operators to collect needed usage statistics. Offen Fair Web Analytics is designed to be a mediating agent only, and does not side with either users or operators. Sharing knowledge between the two parties creates opportunities for an *open and fact based discussion* about user data and privacy. Users gain insights into what data is being collected and what these data points are used for, just like they learn about which kind of data is not part of the collection. They are enabled to reach self-determined decisions about what they consent with and what they disagree with when it comes to privacy on the web, also in other contexts than analytics.
 
 We want to exemplify that it is time to depart the age of ["data capitalism"](https://www.zeit.de/digital/datenschutz/2019-01/datenschutz-nick-couldry-datenkolonialismus-datenhandel/komplettansicht) and to create *technologies and infrastructure that are transparent, open and oriented towards the common good*
 
@@ -79,7 +79,7 @@ Users and operators are given intuitive and accessibility-focused tools for anal
 
 ### Modus Operandi
 
-Developing and running Offen can only work out when it is entirely *free of any kind of economic constraints or goals* and its only objective is *contributing to the common good*. Development of a prototype is reliant on public grants or similar funding sources. Long term development and maintenance of the software is tied to resources granted by foundations or being donated by the public.
+Developing and running Offen Fair Web Analytics can only work out when it is entirely *free of any kind of economic constraints or goals* and its only objective is *contributing to the common good*. Development of a prototype is reliant on public grants or similar funding sources. Long term development and maintenance of the software is tied to resources granted by foundations or being donated by the public.
 
 [![NLnet Foundation](/theme/images/nlnet-logo.svg){:width="160px" height="60px" class="mt4"}](https://nlnet.nl/)
 

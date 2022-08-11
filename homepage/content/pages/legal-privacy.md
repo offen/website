@@ -1,4 +1,4 @@
-title: Legal & Privacy | Offen Fair Web Analytics
+title: Legal & Privacy | Offen
 description: Information on the use of website analytics, external hosting and data processing in general.
 slug: legal-privacy
 exclude_from_sitemap: true

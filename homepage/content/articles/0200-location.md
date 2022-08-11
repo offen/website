@@ -38,7 +38,7 @@ Giving users the option to manage their usage data is only meaningful if users k
 
 As the only direct link to the User Auditorium is in the consent banner, it was important for us to provide further offers to improve user awareness. Widgets now give operators the possibility to easily integrate a link to the User Auditorium into their services.
 
-In this way, we would like to invite all operators who use Offen to give their users uncomplicated access to their data. At best with a link to the User Auditorium on every page.
+In this way, we would like to invite all operators who use Offen Fair Web Analytics to give their users uncomplicated access to their data. At best with a link to the User Auditorium on every page.
 
 #### Under the hood
 
@@ -58,7 +58,7 @@ There are still a few more small improvements on the agenda, but with the implem
 
 Over the past months, we have had the opportunity to share our vision and give some insights into the work on our projects. Thanks again to the teams from [FrOSCon](https://programm.froscon.de/2021/events/2659.html) and [PrivacyWeek](https://fahrplan.privacyweek.at/pw21/talk/L7VGKD/) for supporting us.
 
-As we are always open to present Offen and the idea of fair data transfer to an interested audience, we are actively looking for suitable events around the world. Got something in mind that we should apply for? [Get in touch.](mailto:hioffen@posteo.de)
+As we are always open to present Offen Fair Web Analytics and the idea of fair data transfer to an interested audience, we are actively looking for suitable events around the world. Got something in mind that we should apply for? [Get in touch.](mailto:hioffen@posteo.de)
 
 #### ¿Ayuda, por favor?
 
@@ -68,6 +68,6 @@ Open is currently available in English, French and German. Our translation workf
 
 ### Always happy to hear from you
 
-Are you using Offen? We're happy to feature you in this [README.](https://github.com/offen/offen/blob/development/README.md) Send a PR adding your site or app to [this](https://github.com/offen/offen/blob/development/README.md#whos-using-offen) section.
+Are you using Offen Fair Web Analytics? We're happy to feature you in this [README.](https://github.com/offen/offen/blob/development/README.md) Send a PR adding your site or app to [this](https://github.com/offen/offen/blob/development/README.md#whos-using-offen) section.
 
 If you have any feedback, comment or bug report on the latest release, let us know. Open an [issue](https://github.com/offen/offen/issues) or send us an email at [hioffen@posteo.de](mailto:hioffen@posteo.de).

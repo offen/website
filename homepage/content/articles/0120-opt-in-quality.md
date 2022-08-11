@@ -13,13 +13,13 @@ bottom_cta: matomo
 
 ### Fair web analytics
 
-A key feature of our fair and open web analytics tool [Offen](/get-started/) is that data will only be collected after website users have opted in. This is absolutely necessary for a fair data transfer, but also comes with another, not so obvious implication.
+A key feature of our fair and open web analytics tool [Offen Fair Web Analytics](/get-started/) is that data will only be collected after website users have opted in. This is absolutely necessary for a fair data transfer, but also comes with another, not so obvious implication.
 
 Collecting data only with *user consent has a significant impact on the quality of analytics* insights, especially for operators of smaller websites.
 
 ### Analyzing our own turf
 
-Our own homepage [offen.dev](/), on which of course an Offen instance is installed, can be described as rather small. It currently has an average of 280 unique users after opt-in and 660 verified page views per month.
+Our own homepage [offen.dev](/), on which of course an Offen Fair Web Analytics instance is installed, can be described as rather small. It currently has an average of 280 unique users after opt-in and 660 verified page views per month.
 
 We estimate our opt-in rate, meaning the percentage of website users who agree to the data collection, to be about 40%. This figure is a subjective estimate and derived solely from the personal feedback of a relatively small group of test users.
 
@@ -71,8 +71,8 @@ Many users are recorded even though they have visited your website with very lit
 
 This is why the use of all available data is not the way to do better web analytics. Only *a careful selection of the data to be evaluated leads to deeper insights* for optimization. All the better if this can be done in combination with a privacy friendly approach to data collection.
 
-### Try Offen today
+### Try Offen Fair Web Analytics today
 
-If you are looking for a self hosted as well as lightweight alternative to common web analytics tools and want to optimize your website for quality you should give Offen a try. Why not let it run parallel to your current tool for a while and then see how it feels? We are looking forward to your feedback.
+If you are looking for a self hosted as well as lightweight alternative to common web analytics tools and want to optimize your website for quality you should give Offen Fair Web Analytics a try. Why not let it run parallel to your current tool for a while and then see how it feels? We are looking forward to your feedback.
 
 Give it a spin with our [demo](/try-demo/) or directly head to our [get started](/get-started/) section.
