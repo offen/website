@@ -11,14 +11,14 @@ bottom_cta: cookie
 
 # Introducing the Offen Protocol
 
-The most unique feature Offen has to offer is the ability of users to discover their data and manage it in a "self-service" fashion. This might seem like a highly unique feature at first glance, it's also a requirement mandated by GDPR for everyone that collects data. The “rights of the data subject” are defined as:
+The most unique feature Offen Fair Web Analytics has to offer is the ability of users to discover their data and manage it in a "self-service" fashion. This might seem like a highly unique feature at first glance, it's also a requirement mandated by GDPR for everyone that collects data. The “rights of the data subject” are defined as:
 
 1. The right to be informed
 2. The right of access
 3. The right to rectification
 4. The right to erasure
 
-Implementing these ideas in Offen we discovered a lot of subtleties and details to be considered. Now that we have built a thorough understanding of how this can work we would like to share what we learned along the way with the public so our ideas and approaches can be adopted and extended by others.
+Implementing these ideas in Offen Fair Web Analytics we discovered a lot of subtleties and details to be considered. Now that we have built a thorough understanding of how this can work we would like to share what we learned along the way with the public so our ideas and approaches can be adopted and extended by others.
 
 ---
 
@@ -80,7 +80,7 @@ is a DELETE request against the endpoint, requesting deletion of data. It can be
 
 ### Reference implementations
 
-The protocol is not too complicated and maybe even more of a convention than a specification. Nonetheless, we factored out the code we use in Offen and added these implementations to the [GitHub repository](https://github.com/offen/protocol) that also contains the specification itself. The client is supposed to be used in the browser, the server part is written in Golang.
+The protocol is not too complicated and maybe even more of a convention than a specification. Nonetheless, we factored out the code we use in Offen Fair Web Analytics and added these implementations to the [GitHub repository](https://github.com/offen/protocol) that also contains the specification itself. The client is supposed to be used in the browser, the server part is written in Golang.
 
 Both can be used as a library or as a guideline for writing your own implementation.
 
