@@ -4,7 +4,7 @@ date: 2022-06-16
 slug: consent-tool
 url: /blog/consent-tool/
 sitemap_priority: 0.7
-image_url: /theme/images/offen-blog-230-consent-tool.jpg
+image_url: /theme/images/offen-blog-0230-consent-tool.jpg
 author: Hendrik Niefeld
 must_read: True
 bottom_cta: protocol
