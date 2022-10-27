@@ -55,7 +55,7 @@ It helps us to continue to improve Offen Fair Web Ananlytics and make the web a 
 
 Our consent banner and the Auditorium for operators as well as users can be displayed in one more locale. Offen is now available in English, French, German, Portuguese, Spanish and, most recently, Vietnamese. Thanks to the wonderful contribution by [@hiensarahly](https://github.com/hiensarahly).
 
-To run Offen in a non-default locale, you need to set *OFFEN_APP_LOCALE* to the desired value. In the case of Vietnamese that'd be *vt* for example. [Check the docs](https://docs.offen.dev/running-offen/configuring-the-application/#application) about configuring the application.
+To run Offen in a non-default locale, you need to set *OFFEN_APP_LOCALE* to the desired value. In the case of Vietnamese that'd be *vi* for example. [Check the docs](https://docs.offen.dev/running-offen/configuring-the-application/#application) about configuring the application.
 
 If you want to support fair web analytics by contributing Italian, Dutch, Polish or other language versions, don't hesitate to [request an invite.](mailto:hioffen@posteo.de)
 
