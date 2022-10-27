@@ -12,6 +12,10 @@ Hi, we are [Frederik Ring](https://www.frederikring.com/) and [Hendrik Niefeld.]
 
 The fair web analytics tool. Let your users access their data and gain valuable insights at the same time. Open source, lightweight, self hosted and free. [Learn more](/#bg-explainer)
 
+#### *[Offen Instant Access](/blog/instant-access/)*
+
+Keep track of all Offen Fair Web Ananlytics instances you have visited. [Learn more](/blog/instant-access/)
+
 #### *[analytics.txt](https://www.analyticstxt.org/)*
 
 A proposed standard which allows websites and services to disclose information about their usage of analytics software and user tracking. [Learn more](https://www.analyticstxt.org/)
