@@ -1,6 +1,6 @@
 title: Instant Access
 description: Keep track of all Offen Fair Web Ananlytics instances you have visited.
-date: 2022-10-27
+date: 2022-10-30
 slug: instant-access
 url: /blog/complete-stable/
 sitemap_priority: 0.6
