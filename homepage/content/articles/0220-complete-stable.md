@@ -54,4 +54,4 @@ Maybe now would be a good time to look back on the past 2 years. However, since 
 
 Obviously, the development of Offen Fair Web Analytics is not finished with ther current v1.0.0 version. We will continue to maintain the project and adapt it to new requirements. *For this we definitely need your continued support.* Keep testing and installing Offen Fair Web Analytics latest releases and share your experience with us.
 
-General feedback, comments or bug reports are always welcome. [Open an issue](https://github.com/offen/offen/issues), drop us a [tweet](https://twitter.com/hioffen), or send an [email](mailto:hioffen@posteo.de). Feel invited to work together to drive the idea of fair data transfer forward.
+General feedback, comments or bug reports are always welcome. [Open an issue](https://github.com/offen/offen/issues) or send an [email](mailto:hioffen@posteo.de). Feel invited to work together to drive the idea of fair data transfer forward.

@@ -52,7 +52,7 @@ All other installations can be updated without any extra steps. Read more about 
 
 #### Getting close
 
-There are still a few more small improvements on the agenda, but with the implementation of location stats we are a decisive step closer to v1.0. So stay tuned and follow us here or on [Twitter](https://twitter.com/hioffen) and [Mastodon](https://fosstodon.org/@offen) for the next release updates.
+There are still a few more small improvements on the agenda, but with the implementation of location stats we are a decisive step closer to v1.0. So stay tuned and follow us here or on [Mastodon](https://fosstodon.org/@offen) for the next release updates.
 
 #### More dialogue
 

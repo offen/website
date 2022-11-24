@@ -42,7 +42,7 @@ In the Auditorium (that runs on version v1.3.0 or later), all installations you 
 
 ### Supporters club
 
-We are very pleased that [@appwrite](https://twitter.com/appwrite) is supporting us as part of their initiative to promote the Open Source community. Big thanks guys for being our first [GitHub sponsor!](https://github.com/sponsors/offen)
+We are very pleased that [@appwrite](https://appwrite.io/) is supporting us as part of their initiative to promote the Open Source community. Big thanks guys for being our first [GitHub sponsor!](https://github.com/sponsors/offen)
 We really appreciate the [recognition](https://dev.to/appwrite/appwrite-loves-open-source-why-i-chose-to-sponsor-offen-5efn) and generous funding.
 
 It helps us to continue to improve Offen Fair Web Ananlytics and make the web a better place. Are you interested in joining the supporters club too? Enroll today on [GitHub](https://github.com/sponsors/offen) or [Patreon!](https://www.patreon.com/offen)

@@ -71,7 +71,7 @@ Well, we have developed a tool for these needs. Say hello and give it a try. We 
       if (result && result.decisions && result.decisions.twitter) {
         const blockquote = document.createElement('blockquote')
         blockquote.classList.add('twitter-tweet')
-        blockquote.innerHTML = '<a href="https://twitter.com/hioffen/status/1538763973591449600?ref_src=twsrc%5Etfw"></a>'
+        blockquote.innerHTML = '<a href="https://twitter.com/justinbieber/status/1770013181?ref_src=twsrc%5Etfw"></a>'
 
         document.querySelector('.tweet-container').appendChild(blockquote)
         const script = document.createElement('script')
