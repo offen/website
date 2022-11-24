@@ -95,4 +95,4 @@ NLnet is willing to support us once again in these ambitions. This time from the
 
 Do you have feedback on the latest Offen Fair Web Analytics release or our next steps? What is your experience in developing open source tools? Are you as enthusiastic about fair data transfer as we are?
 
-Drop us a [tweet](https://twitter.com/hioffen) or [email](mailto:hioffen@posteo.de) and feel invited to work together to drive this idea forward.
+[Email](mailto:hioffen@posteo.de) and feel invited to work together to drive this idea forward.

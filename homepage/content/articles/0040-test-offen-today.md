@@ -32,7 +32,7 @@ Although we have dug very deep, things may still contain issues. Therefore, we r
 
 Download or deploy Offen Fair Web Analytics today and give it a spin. *[Check our Docs](https://docs.offen.dev/) for detailed instructions.*
 
-We appreciate any feedback. No matter if you have difficulties with the installation, find our UI hard to understand or catch anything unexpected. Please get in touch via [Twitter,](https://twitter.com/hioffen) [LinkedIn](https://www.linkedin.com/company/hioffen/) or [email.](mailto:hioffen@posteo.de)
+We appreciate any feedback. No matter if you have difficulties with the installation, find our UI hard to understand or catch anything unexpected. Please get in touch via [email.](mailto:hioffen@posteo.de)
 
 We look forward to hearing from you. Happy testing!
 
