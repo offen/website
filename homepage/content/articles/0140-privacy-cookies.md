@@ -125,4 +125,4 @@ Once again using the principle of [Datensparsamkeit](https://martinfowler.com/bl
 
 If you find yourself building a product where privacy is important - just like we do when building Offen Fair Web Analytics - feel encouraged to consider cookies as an option for your tasks. Very often, it's a robust and simple choice that is beneficial for your user's privacy when done right, and the implicit requirement for acquiring user consent is a major privacy feature.
 
-Do you have comments or feedback about this article or about Offen Fair Web Analytics in general? Tweet at us [@hioffen](https://twitter.com/hioffen) or email us at [hioffen@posteo.de](mailto:hioffen@posteo.de).
+Do you have comments or feedback about this article or about Offen Fair Web Analytics in general? Email us at [hioffen@posteo.de](mailto:hioffen@posteo.de).

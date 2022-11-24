@@ -39,7 +39,7 @@ If you are working on a bigger project with a lot of traffic, you might consider
 
 ### Some available hosting providers
 
-This list is a non-exhaustive collection of hosting providers that we happen to know and have used ourselves. We are in no way affiliated with any of these, don't earn any money when you install Offen Fair Web Analytics there, and definitely don't want to push you anywhere. We do want you to use Offen Fair Web Analytics though, of course, but it's always your choice where to run it. If you know of any other good option, tweet them our way [@hioffen](https://twitter.com/hioffen).
+This list is a non-exhaustive collection of hosting providers that we happen to know and have used ourselves. We are in no way affiliated with any of these, don't earn any money when you install Offen Fair Web Analytics there, and definitely don't want to push you anywhere. We do want you to use Offen Fair Web Analytics though, of course, but it's always your choice where to run it.
 
 #### [AWS](https://aws.amazon.com/)
 
@@ -108,4 +108,4 @@ The lowdown on Linode:
 
 ### Where to head next
 
-If you made a choice and want to deploy your own Offen Fair Web Analytics instance, head over to our [Installation tutorials](https://docs.offen.dev/running-offen/tutorials/) where you will get further guidance on what to do next and how to get your instance up and running. And in case you get stuck or need help, file an [issue](https://github.com/offen/offen/issues), [tweet](https://twitter.com/hioffen) or [email](mailto:hioffen@posteo.de).
+If you made a choice and want to deploy your own Offen Fair Web Analytics instance, head over to our [Installation tutorials](https://docs.offen.dev/running-offen/tutorials/) where you will get further guidance on what to do next and how to get your instance up and running. And in case you get stuck or need help, file an [issue](https://github.com/offen/offen/issues) or [email](mailto:hioffen@posteo.de).

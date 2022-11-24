@@ -88,4 +88,4 @@ Both can be used as a library or as a guideline for writing your own implementat
 
 ### Thoughts? Please share them with us
 
-Do you build an application where the Offen Protocol could be of use? Do you have an idea about how to extend or improve the specification? We’re happy to open the discussion: [tweet at us](https://twitter.com/hioffen), send us [an email](mailto:hioffen@posteo.de), or [open an issue on the GitHub repository](https://github.com/offen/protocol) and let us know what you think.
+Do you build an application where the Offen Protocol could be of use? Do you have an idea about how to extend or improve the specification? We’re happy to open the discussion: send us [an email](mailto:hioffen@posteo.de) or [open an issue on the GitHub repository](https://github.com/offen/protocol) and let us know what you think.
