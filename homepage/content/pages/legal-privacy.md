@@ -44,8 +44,8 @@ Internet address: [www.hetzner.com](https://www.hetzner.com/)
 Data processing on this website is handled by the website operator. If you have any questions about data protection, please feel free to contact us at any time. Responsible for data processing and general contact for this website is:
 
 Frederik Ring  
-Torfstr. 22  
-13353 Berlin, Germany  
+Cuxhavener Str. 12  
+10555 Berlin, Germany
 
 E-mail: [hioffen@posteo.de](mailto:hioffen@posteo.de)  
 Internet address: [www.offen.dev](http://www.offen.dev)
