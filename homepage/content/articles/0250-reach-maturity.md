@@ -1,10 +1,10 @@
 title: Reach maturity
-description:
+description: An outline of how we intend to proceed with the individual Offen components.
 date: 2024-05-29
 slug: reach-maturity
 url: /blog/reach-maturity/
 sitemap_priority: 0.6
-image_url: /theme/images/offen-blog-0240-instant-access.jpg
+image_url: /theme/images/offen-blog-0250-reach-maturity.jpg
 author: Hendrik Niefeld
 bottom_cta: cookie
 
