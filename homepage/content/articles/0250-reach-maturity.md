@@ -1,6 +1,6 @@
 title: Reach maturity
 description: An outline of how we intend to proceed with the individual Offen components.
-date: 2024-05-29
+date: 2024-07-03
 slug: reach-maturity
 url: /blog/reach-maturity/
 sitemap_priority: 0.6
@@ -31,7 +31,7 @@ Offen Fair Web Analytics has always been intended as a fair, self-hosted alterna
 
 In 2019, we started working on the core analytics tool and have added more tools like the Offen Protocol and Offen Consent Tool over the years. We were generously supported in this project by [NLNet Foundation](https://nlnet.nl/) as part of its [Next Generation Internet](https://nlnet.nl/NGI/) initiative. Among other things, they really helped us to refine and further develop our ideas.
 
-Now, in the summer of 2024, all Offen tools have reached maturity. This is good news because we are more convinced than ever they make the web a better place. Here is an outline of how we intend to proceed with the individual components.
+Now, in summer of 2024, all Offen tools have reached maturity. This is good news because we are more convinced than ever they make the web a better place. Here is an outline of how we intend to proceed with the individual components.
 
 #### *[Offen Fair Web Analytics](https://www.offen.dev/#bg-explainer)*
 
@@ -73,7 +73,7 @@ And as we will continue to maintain OFWA we definitely need your continued suppo
 
 ### offen.software
 
-Now some may be wondering what comes after Offen for us.
+Now some may be wondering what comes after Offen Fair Web Analytics for us.
 
 In a nutshell, we want to continue to support change-makers by providing them with independent, fair and customized software that meets the highest standards of transparency, integrity and data protection.
 

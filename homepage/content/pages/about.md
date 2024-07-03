@@ -6,7 +6,7 @@ sitemap_priority: 0.3
 
 # About
 
-Hi, we are [Frederik Ring](https://www.frederikring.com/) and [Hendrik Niefeld.](http://niefeld.com/) We want to make the web a better place. Here are a few tools we have developed that may help with this.
+Hi, we are [Frederik Ring](https://www.frederikring.com/) and [Hendrik Niefeld.](https://niefeld.com/) We want to make the web a better place. Here are a few tools we have developed that may help with this.
 
 #### *[Offen Fair Web Analytics](/#bg-explainer)*
 
@@ -30,8 +30,6 @@ A lightweight solution for managing user consent on websites. [Learn more](/blog
 ### What is this thing called "my data" and why does seemingly everyone want to get hold of it?
 
 It has a ring, gives a slight spine-chilling sensation and generates a whole lot of clicks: consumer magazines like German "Computer Bild" caution about ["Google espionage"](https://www.computerbild.de/artikel/cb-Ratgeber-Kurse-Wissen-Was-weiss-Google-ueber-Sie-2799009.html) just like the internet has countless tutorials on turning off numerous ["data leeches"](https://praxistipps.chip.de/datenkrake-windows-10-so-schalten-sie-auffaellige-funktionen-ab_99652). Interestingly, diving into these realms will have you accidentally catching the next toolbar, malware infection or [even worse](https://blog.malwarebytes.com/cybercrime/2012/10/pick-a-download-any-download/).
-
-Yet, many internet users still do not know what really is happening to their data. Public relation activities trying to calm the public - as recently undertaken by Facebook [for example](https://www.zeit.de/digital/datenschutz/2019-01/social-media-facebook-mark-zuckerberg-ads-privacy-business-model-transparency) - end up being rather disturbing instead of creating transparency or adding any value to the public debate. Denelle Dixon, COO of Mozilla, just publicly [warned the European Commission](https://blog.mozilla.org/blog/2019/01/31/mozilla-raises-concerns-over-facebooks-lack-of-transparency/) about the dangerous effects an opaque apparatus such as Facebook can have on society. Updated Terms and Conditions only parenthetically mention that newly created Google accounts will now hand over real names to third parties for [advertising purposes](https://www.propublica.org/article/google-has-quietly-dropped-ban-on-personally-identifiable-web-tracking).
 
 <div class="flex justify-end pb5">
 <img class="smaller-image" alt="Detour" src="/theme/images/gfx-deepdive-A.png"/>
@@ -91,3 +89,16 @@ We are happy to work with [NLnet Foundation,](https://nlnet.nl/) which actively 
 
 [hioffen@posteo.de](mailto:hioffen@posteo.de)  
 [PGP Key](/theme/74B041E23DB29D552644CEB1B18C633D6967FE3F.asc)
+
+
+---
+
+### offen.software
+
+From summer 2024, all Offen tools have reached maturity. Now some may wonder what lies ahead of us next.
+
+In a nutshell, we want to continue to support change-makers by providing them with independent, fair and customized software that meets the highest standards of transparency, integrity and data protection.
+
+That is why we have a [new presence as a development outfit.](https://www.offen.software/)
+
+Based in Berlin, we're a small, reliable and well-rehearsed team of seniors that can take care of your software project from initial brainstorming to going live. Working fully open source, we value simple, resilient and accessible tools that are effortless to run and everyone can use, reuse and benefit from. 🙂 [Book a call.](https://cal.com/offen-software/30min?user=offen-software)
