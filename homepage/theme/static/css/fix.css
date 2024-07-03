@@ -518,7 +518,7 @@ STACKING IMAGES
 	z-index : 570;
 }
 .bg-cta-pfeil {
-	top: -13rem;
+	top: -11rem;
 	left: 66%;
 	z-index : 580;
 }
@@ -556,7 +556,7 @@ STACKING IMAGES
 		left: calc(30% + 1rem);
 	}
 	.bg-cta-pfeil {
-		top: -14rem;
+		top: -12rem;
 		left: 72%;
 	}
 }
