@@ -29,9 +29,9 @@ Download the latest release from [https://get.offen.dev](https://get.offen.dev/)
 
 Offen Fair Web Analytics has always been intended as a fair, self-hosted alternative to common web analytics tools. From the very beginning, we had a rather lightweight and minimalist approach, not least due to our strict concept of privacy on the web.
 
-In 2019, we started working on the core analytics tool and have added more tools like the Offen Protocol and Offen Consent Tool over the years. We were generously supported in this project by [NLNet Foundation](https://nlnet.nl/) as part of its [Next Generation Internet](https://nlnet.nl/NGI/) initiative. Among other things, they really helped us to refine and further develop our ideas.
+In 2019, we started working on the core analytics tool and have added more elements like the Offen Protocol and Offen Consent Tool over the years. We were generously supported in this project by [NLNet Foundation](https://nlnet.nl/) as part of its [Next Generation Internet](https://nlnet.nl/NGI/) initiative. Among other things, they really helped us to refine and further develop our ideas.
 
-Now, in summer of 2024, all Offen tools have reached maturity. This is good news because we are more convinced than ever they make the web a better place. Here is an outline of how we intend to proceed with the individual components.
+Now, in summer of 2024, all Offen elements have reached maturity. This is good news because we are more convinced than ever they make the web a better place. Here is an outline of how we intend to proceed with the individual components.
 
 #### *[Offen Fair Web Analytics](https://www.offen.dev/#bg-explainer)*
 

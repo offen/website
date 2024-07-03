@@ -6,7 +6,7 @@ sitemap_priority: 0.3
 
 # About
 
-Hi, we are [Frederik Ring](https://www.frederikring.com/) and [Hendrik Niefeld.](https://niefeld.com/) We want to make the web a better place. Here are a few tools we have developed that may help with this.
+Hi, we are [Frederik Ring](https://www.frederikring.com/) and [Hendrik Niefeld.](https://niefeld.com/) We want to make the web a better place. Here are a few things we have developed that may help with this.
 
 #### *[Offen Fair Web Analytics](/#bg-explainer)*
 
@@ -95,7 +95,7 @@ We are happy to work with [NLnet Foundation,](https://nlnet.nl/) which actively 
 
 ### offen.software
 
-From summer 2024, all Offen tools have reached maturity. Now some may wonder what lies ahead of us next.
+From summer 2024, all Offen elements have reached maturity. Now some may wonder what lies ahead of us next.
 
 In a nutshell, we want to continue to support change-makers by providing them with independent, fair and customized software that meets the highest standards of transparency, integrity and data protection.
 
